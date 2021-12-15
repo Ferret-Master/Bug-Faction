@@ -1,0 +1,121 @@
+{
+    "blend_root": {
+        "type": "unit_state",
+        "nodes": {
+            "being_built": {
+                "type": "bind_pose"
+            },
+            "living": {
+                "type": "sequence",
+                "entries": [
+                    {
+                        "type": "item",
+                        "name": "idle",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "idle",
+                            "looping": true,
+                            "events": []
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "is_moving",
+                                    "target": "walk",
+                                    "duration": 0.2
+                                },
+                                "transition_reverse": {
+                                    "func": "is_moving",
+                                    "target": "walk",
+                                    "duration": 0.2
+                                }
+                            }
+                        ],
+                        "reset": "playback_reset"
+                    },
+                    {
+                        "type": "item",
+                        "name": "walk",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "walk",
+                            "looping": true,
+                            "events": []
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "is_firing",
+                                    "target": "firing",
+                                    "duration": 0.5
+                                },
+                                "transition_reverse": {
+                                    "func": "is_firing",
+                                    "target": "firing",
+                                    "duration": 0.5
+                                }
+                            }
+                        ],
+                        "reset": "playback_reset"
+                    },
+                    {
+                        "type": "item",
+                        "name": "firing",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "firing",
+                            "looping": false,
+                            "events": []
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "is_moving",
+                                    "target": "walk",
+                                    "anim_complete": true,
+                                    "duration": 0.5
+                                },
+                                "transition_reverse": {
+                                    "func": "is_moving",
+                                    "target": "walk",
+                                    "duration": 0.2
+                                }
+                            },
+                            {
+                                "transition_forward": {
+                                    "func": "not_moving",
+                                    "target": "idle",
+                                    "anim_complete": true,
+                                    "duration": 0.5
+                                },
+                                "transition_reverse": {
+                                    "func": "not_moving",
+                                    "target": "idle",
+                                    "duration": 0.2
+                                }
+                            }
+                        ],
+                        "reset": "playback_reset"
+                    }
+                ]
+            },
+            "dead": {
+                "type": "bind_pose"
+            },
+            "ghost": {
+                "type": "bind_pose"
+            }
+        }
+    },
+    "skeleton_controls": [
+        {
+            "type": "fader",
+            "lerp_func": "not_being_built",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_turret",
+                "rotation_axis": "z"
+            }
+        }
+    ]
+}

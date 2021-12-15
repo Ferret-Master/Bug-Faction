@@ -1,0 +1,22 @@
+{
+    "base_spec": "/pa/effects/specs/dynamic_decal_base.json",
+    "layer": 1,
+    "bias": 200,
+    "simplex_range": [
+        0.0,
+        1.0
+    ],
+    "pos_range": [
+        0,
+        0
+    ],
+    "scale": [
+        10,
+        10,
+        1
+    ],
+    "scale_range": 0,
+    "count": 1,
+    "material_spec": "/pa/decals/bug_splat_01.json",
+    "lifetime": 0
+}

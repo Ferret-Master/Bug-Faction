@@ -1,0 +1,11 @@
+
+{
+    "ammo_type": "AMMO_Beam",
+    "damage": 5,
+    "recon": {
+      "observable": {
+        "ignore_radar": true
+      }
+    }
+  
+  }

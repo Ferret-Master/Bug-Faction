@@ -1,0 +1,107 @@
+{
+    "display_name": "Basilisk",
+    "description": "An advanced ranged bug that attacks at mid range.",
+    "si_name": "basilisk",
+    "TEMP_texelinfo": 8.06901,
+    "wreckage_health_frac": 0.0,
+    "attachable": {
+      "offsets": {
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "head": [
+          0,
+          0,
+          4.3
+        ]
+      }
+    },
+    "audio": {
+      "loops": {
+        "move": {
+          "cue": "/SE/Movement/veh/tank_inferno_loop",
+          "flag": "vel_changed",
+          "should_start_func": "is_moving",
+          "should_stop_func": "is_not_moving"
+        }
+      },
+      "selection_response": {
+        "cue": "/SE/Selection/veh/tank_inferno"
+      }
+    },
+    "base_spec": "/pa/units/land/bug_base_land/bug_base_land.json",
+    "build_metal_cost": 1000,
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/veh"
+      },
+      "fired": {
+        "audio_cue": "/SE/Weapons/veh/tank_flame",
+        "effect_spec": "/pa/units/land/bug_basilisk/basilisk_flame.pfx socket_barrel"
+      },
+      "died": {
+        "audio_cue": "/SE/Death/Veh",
+        "effect_scale": 1.4
+      }
+    },
+    "attack_range_frac": 0.7,
+    "max_health": 7000,
+    "mesh_bounds": [
+      10,
+      10,
+      15
+    ],
+    "model": {
+      "filename": "/pa/units/land/bug_basilisk/basilisk.papa",
+      "animations": {
+        "walk": "/pa/units/land/bug_basilisk/basilisk_walk.papa",
+        "idle": "/pa/units/land/bug_basilisk/basilisk_idle.papa"
+        
+      },
+      "animtree": "/pa/anim/anim_trees/bot_tesla_anim_tree.json"
+    },
+    "navigation": {
+      "type": "amphibious",
+      "acceleration": 100,
+      "brake": 100,
+      "move_speed": 12,
+      "turn_speed": 180,
+      "group_preference": "back"
+    },
+    "physics": {
+      "radius": 4.5
+    },
+ 
+   
+    "selection_icon": {
+      "diameter": 13.0
+    },
+    "tools": [
+      {
+        "spec_id": "/pa/units/land/bug_basilisk/bug_basilisk_weapon.json",
+        "aim_bone": "socket_barrel",
+        "muzzle_bone": "bone_pelvis"
+      }
+    ],
+    "transportable": {
+      "size": 1
+    },
+    "unit_types": [
+      "UNITTYPE_Tank",
+      "UNITTYPE_Heavy",
+      "UNITTYPE_Mobile",
+      "UNITTYPE_Offense",
+      "UNITTYPE_Land",
+      "UNITTYPE_Basic",
+      "UNITTYPE_FactoryBuild",
+      "UNITTYPE_Custom2"
+    ],
+  
+    "death": {
+        "decals": [
+          "/pa/decals/decal_bug_splat_big.json"
+        ]
+      }
+  }

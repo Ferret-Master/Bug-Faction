@@ -1,0 +1,107 @@
+
+{
+  "display_name": "Alpha Grunt",
+  "description": "An alpha basic melee bug unit, tanky with aoe swipes",
+  "si_name": "big_grunt",
+  "wreckage_health_frac": 0.0,
+  "TEMP_texelinfo": 4.07719,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0,
+        4
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/veh/tank_light_laser_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/bot/spark"
+    }
+  },
+  "base_spec": "/pa/units/land/bug_base_land/bug_base_land.json",
+  "build_metal_cost": 600,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/bot"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/sea/destroyer_fire"
+      
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Bot",
+      "effect_scale": 1.5
+    }
+  },
+  "attack_range_frac": 0.7,
+  
+  "max_health": 2000,
+  "mesh_bounds": [
+    8,
+    8,
+    12
+  ],
+  "model": {
+    "filename": "/pa/units/land/bug_grunt_big/big_grunt.papa",
+    "animations": {
+      "walk": "/pa/units/land/bug_grunt/Grunt_Walk.papa",
+      "firing": "/pa/units/land/bug_grunt/Grunt_Attack.papa",
+      "idle": "/pa/units/land/bug_grunt/Grunt_Idle.papa"
+    },
+    "animtree": "/pa/units/land/bug_grunt/bug_anim_tree.json",
+    "walk_speed": 0.1
+  },
+  "navigation": {
+    "type": "amphibious",
+    "acceleration": 30,
+    "brake": -1,
+    "move_speed": 14,
+    "turn_speed": 180,
+    "group_preference": "front"
+  },
+  "physics": {
+    "radius": 2.0
+  },
+  "selection_icon": {
+    "diameter": 11.0
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/units/land/bug_grunt_big/bug_grunt_weapon.json",
+      "aim_bone": "bone_barrel"
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Heavy",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom2"
+  ],
+
+  "death": {
+    "decals": [
+      "/pa/decals/decal_bug_splat_01.json"
+    ]
+  }
+}

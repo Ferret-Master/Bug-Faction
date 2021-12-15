@@ -1,0 +1,29 @@
+{
+    "context": "server",
+    "identifier": "bugs",
+    "display_name": "Bug Faction",
+    "description": "Adds a biological bugs faction",
+    "author": "Ferretmaster, BillTheBlueBot, Anonemous2, Taiga",
+    "version": "1.0",
+    "build": "115626",
+    "date": "2021-5-31",
+    "signature": "not yet implemented",
+    "forum": "",
+    "icon": "",
+    "priority": 100,
+    "category": [
+        "titans", "in-game","server"
+        
+    ],
+    
+    "scenes": {
+		
+		"icon_atlas": [
+			"coui://ui/mods/bugs_faction/icon_atlas.js"
+		],
+		"shared_build":[
+			"coui://ui/mods/bugs_faction/shared_build.js"
+		]
+		
+	}
+}

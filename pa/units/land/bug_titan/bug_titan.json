@@ -1,0 +1,109 @@
+{
+    "display_name": "Nug",
+    "description": "An Titan class melee bug unit, tanky with aoe stomps",
+    "si_name": "bug_titan",
+    "wreckage_health_frac": 0.0,
+    "TEMP_texelinfo": 4.07719,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                20
+            ]
+        }
+    },
+    "audio": {
+        "loops": {
+          "move": {
+            "cue": "",
+            "flag": "vel_changed",
+            "should_start_func": "is_moving",
+            "should_stop_func": "is_not_moving"
+          }
+        },
+        "selection_response": {
+          "cue": "/SE/Selection/titan/bot"
+        }
+      },
+    "base_spec": "/pa/units/land/bug_base_land/bug_base_land.json",
+    "build_metal_cost": 60000,
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/bot",
+            "effect_scale": 5
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/sea/destroyer_fire",
+            "effect_spec": null,
+            "effect_scale": 5
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Bot",
+            "effect_scale": 7.5
+        }
+    },
+    "attack_range_frac": 0.2,
+    "max_health": 100000,
+    "mesh_bounds": [
+        65,
+        65,
+        100
+    ],
+    "model": {
+        "filename": "/pa/units/land/bug_titan/bug_titan.papa",
+        "animations": {
+            "walk": "/pa/units/land/bug_titan/bug_titan_walk.papa"
+           
+        },
+        "animtree": "/pa/anim/anim_trees/titan_bot_anim_tree.json",
+        "walk_speed": 13
+    },
+    "navigation": {
+        "type": "amphibious-large",
+        "acceleration": 260,
+        "brake": -1.0,
+        "move_speed": 13,
+        "turn_speed": 60,
+        "turn_accel": 80,
+        "turn_in_place": true
+    },
+    "physics": {
+        "radius": 18,
+        "orient_interp_rate": 60.0
+      },
+    "selection_icon": {
+        "diameter": 70.0
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/bug_titan/bug_titan_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root"
+        }
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "unit_types": [
+        "UNITTYPE_Bot",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Heavy",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Land",
+        "UNITTYPE_Basic",
+        "UNITTYPE_Titan",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Custom2"
+    ],
+    "death": {
+        "decals": [
+            "/pa/decals/decal_bug_splat_big.json"
+        ]
+    }
+}

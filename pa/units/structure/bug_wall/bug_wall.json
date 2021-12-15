@@ -1,0 +1,115 @@
+{
+    "display_name": "tumor",
+    "description": "bug wall.",
+    "TEMP_texelinfo": 7.58193,
+    "area_build_separation": 0.5,
+    "si_name":"land_barrier",
+    "atrophy_cool_down": 0.5,
+    "atrophy_rate": 20.0,
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "build_metal_cost": 200,
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/barrier"
+      },
+      "died": {
+        "audio_cue": "/SE/Death/barrier",
+        "effect_spec": "/pa/effects/specs/default_explosion.pfx",
+        "effect_scale": 1.25
+      }
+    },
+  
+    "max_health": 5000,
+    "mesh_bounds": [
+      7,
+      7,
+      20
+    ],
+    "model": [
+      {
+        "layer": "WL_LandHorizontal",
+        "filename": "/pa/units/structure/bug_wall/tentacle_wall.papa"
+      }
+    ],
+    "physics": {
+      "type": "Structure",
+      "shape": "Box",
+      "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+      "radius": 1,
+      "air_friction": 1.0,
+      "allow_pushing": false,
+      "push_sideways": false,
+      "allow_underground": false
+    },
+    "placement_size": [
+      4,
+      4
+    ],
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 1
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 6.0
+    },
+    "spawn_layers": "WL_LandHorizontal",
+    "structure": {
+      "cost_stamp": {
+        "shape": "box",
+        "type_data": [
+          {
+            "move_type": "land-small",
+            "stamp_type": "wall"
+          },
+          {
+            "move_type": "amphibious",
+            "stamp_type": "wall"
+          },
+          {
+            "move_type": "amphibious-large",
+            "stamp_type": "wall"
+          },
+          {
+            "move_type": "hover",
+            "stamp_type": "wall"
+          },
+          {
+            "move_type": "water-hover",
+            "stamp_type": "wall"
+          },
+          {
+            "move_type": "hover-large",
+            "stamp_type": "wall"
+          },
+          {
+            "move_type": "deepwater",
+            "stamp_type": "wall"
+          },
+          {
+            "move_type": "underwater",
+            "stamp_type": "wall"
+          }
+        ]
+      }
+    },
+    "unit_name": "Wall",
+    "unit_types": [
+      "UNITTYPE_Structure",
+      "UNITTYPE_Basic",
+      "UNITTYPE_Wall",
+      "UNITTYPE_FabBuild",
+      "UNITTYPE_FabAdvBuild",
+      "UNITTYPE_CmdBuild",
+      "UNITTYPE_CombatFabAdvBuild",
+      "UNITTYPE_Custom2"
+    ],
+    "wreckage_health_frac": 0.0
+  }

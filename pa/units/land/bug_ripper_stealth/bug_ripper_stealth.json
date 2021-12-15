@@ -1,0 +1,114 @@
+{
+    "display_name": "Stealth Ripper",
+    "description": "stealth core melee unit",
+    "si_name": "ripper",
+    "TEMP_texelinfo": 4.07719,
+    "attachable": {
+      "offsets": {
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "head": [
+          0,
+          0,
+          2.4
+        ]
+      }
+    },
+    "audio": {
+      "loops": {
+        "move": {
+          "cue": "/SE/Movement/veh/tank_leveler_loop_T2",
+          "flag": "vel_changed",
+          "should_start_func": "is_moving",
+          "should_stop_func": "is_not_moving"
+        }
+      },
+      "selection_response": {
+        "cue": "/SE/Selection/bot/spark"
+      }
+    },
+    "guard_layer": "WL_AnySurface",
+    "guard_radius": 80,
+    "base_spec": "/pa/units/land/bug_base_land/bug_base_land.json",
+    "build_metal_cost":40,
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/bot",
+        "effect_scale": 0.6
+      },
+      "fired": {
+        "audio_cue": "/SE/Weapons/sea/destroyer_fire",
+        "effect_spec": null,
+        "effect_scale": 0.6
+      },
+      "died": {
+        "audio_cue": "/SE/Death/Bot",
+        "effect_scale": 0.90000004
+      }
+    },
+    "max_health": 56,
+    "mesh_bounds": [
+      3,
+      3,
+      3
+    ],
+    "model": {
+      "filename": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.papa",
+      "animations": {
+        "deploy":"/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.papa",
+        "walk": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_run.papa",
+        "firing": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_attack.papa",
+        "idle": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_idle.papa",
+        "turn_left":"/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_left_turn.papa",
+        "turn_right":"/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.papa",
+        "walk_stop:":"/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_stop.papa",
+        "death": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_death.papa",
+        "dead": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_dead.papa"
+
+      },
+      "animtree": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_tree.json",
+      "walk_speed": 20
+    },
+    "navigation": {
+      "type": "amphibious",
+      "acceleration": 50,
+      "brake": -1,
+      "move_speed": 30,
+      "turn_speed": 400,
+      "group_preference": "front"
+    },
+    "physics": {
+      "radius": 2
+    },
+ 
+    "selection_icon": {
+      "diameter": 3.0
+    },
+    "tools": [
+      {
+        "spec_id": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_weapon.json",
+        "aim_bone": "bone_head"
+      }
+    ],
+    "transportable": {
+      "size": 1
+    },
+    "unit_types": [
+      "UNITTYPE_Bot",
+      "UNITTYPE_Mobile",
+      "UNITTYPE_Heavy",
+      "UNITTYPE_Offense",
+      "UNITTYPE_Land",
+      "UNITTYPE_Basic",
+      "UNITTYPE_FactoryBuild",
+      "UNITTYPE_Custom2"
+    ],
+    "death": {
+      "decals": [
+        "/pa/decals/decal_bug_splat_01.json"
+      ]
+    }
+  }

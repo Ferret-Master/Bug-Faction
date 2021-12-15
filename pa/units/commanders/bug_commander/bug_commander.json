@@ -1,0 +1,93 @@
+{
+    "base_spec": "/pa/units/commanders/base_bug_commander/base_commander.json",
+    "display_name": "Bug Commander",
+    "description": "Bug Commander ",
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                15.6
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/commanders/bug_commander/tank_aeson.papa"
+    },
+    "scrolling_uv": {
+        "scroll_rate": -0.21,
+        "uv_split": 0.9
+    },
+    "headlights": [
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                0,
+                -2.215,
+                3.802
+            ],
+            "orientation": [
+                0.0,
+                45.0,
+                0.0
+            ],
+            "near_width": 5.0,
+            "near_height": 5.0,
+            "near_distance": 3.0,
+            "far_distance": 30.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 6.0,
+            "bone": "bone_spine",
+            "shadow_resolution": 128
+        }
+    ],
+    "lamps": [
+        {
+            "offset": [
+                0,
+                -2.215,
+                3.802
+            ],
+            "radius": 2.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 5.0,
+            "bone": "bone_spine"
+        },
+        {
+            "offset": [
+                0.4,
+                -4.06,
+                -1.1
+            ],
+            "radius": 4.0,
+            "color": [
+                0.4,
+                1.0,
+                0.01
+            ],
+            "intensity": 2.0,
+            "bone": "bone_leftShoulder"
+        }
+    ],
+    "catalog_object_name": "TankAeson",
+    "client": {
+        "ui": {
+            "image": "/pa/units/commanders/bug_commander/profile_bug.png",
+            "thumb_image": "/pa/units/commanders/bug_commander/profile_bug.png",
+            "profile_image": "/pa/units/commanders/bug_commander/profile_bug.png"
+        }
+    }
+}

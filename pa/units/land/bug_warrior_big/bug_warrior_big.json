@@ -1,0 +1,111 @@
+
+{
+    "display_name": "Alpha Warrior",
+    "description": "An alpha advanced melee bug unit, tanky with aoe swipes",
+    "si_name": "big_warrior",
+    "wreckage_health_frac": 0.0,
+    "TEMP_texelinfo": 4.07719,
+    "attachable": {
+      "offsets": {
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "head": [
+          0,
+          0,
+          4
+        ]
+      }
+    },
+    "audio": {
+      "loops": {
+        "move": {
+          "cue": "/SE/Movement/veh/tank_leveler_loop_T2",
+          "flag": "vel_changed",
+          "should_start_func": "is_moving",
+          "should_stop_func": "is_not_moving"
+        }
+      },
+      "selection_response": {
+        "cue": "/SE/Selection/bot/spark"
+      }
+    },
+    "base_spec": "/pa/units/land/bug_base_land/bug_base_land.json",
+    "build_metal_cost": 5000,
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/bot"
+      },
+      "fired": {
+        "audio_cue": "/SE/Weapons/sea/destroyer_fire",
+        "effect_spec": null
+      },
+      "died": {
+        "audio_cue": "/SE/Death/Bot",
+        "effect_scale": 1.5
+      }
+    },
+    "attack_range_frac": 0.7,
+    "max_health": 12000,
+    "mesh_bounds": [
+      13,
+      13,
+      20
+    ],
+    "model": {
+      "filename": "/pa/units/land/bug_warrior_big/bug_warrior_big.papa",
+      "animations": {
+        "walk": "/pa/units/land/bug_warrior_big/warrior_walk.papa",
+        "firing": "/pa/units/land/bug_warrior_big/warrior_attack.papa",
+        "idle": "/pa/units/land/bug_warrior_big/warrior_idle.papa"
+      },
+      "animtree": "/pa/units/land/bug_grunt/bug_anim_tree.json",
+      "walk_speed": 0.1
+    },
+    "navigation": {
+      "type": "amphibious",
+      "acceleration": 11,
+      "brake": -1,
+      "move_speed": 12,
+      "turn_speed": 180,
+      "group_preference": "front"
+    },
+    "physics": {
+      "radius": 6.0
+    },
+    "selection_icon": {
+      "diameter": 11.0
+    },
+    "tools": [
+      {
+        "spec_id": "/pa/units/land/bug_warrior_big/bug_warrior_weapon.json",
+        "aim_bone": "socket_muzzle_1",
+        "muzzle_bone": [
+          "socket_muzzle_1",
+          "socket_muzzle_2",
+          "socket_muzzle_3"
+        ],
+        "projectiles_per_fire": 3
+      }
+    ],
+    "transportable": {
+      "size": 1
+    },
+    "unit_types": [
+      "UNITTYPE_Bot",
+      "UNITTYPE_Mobile",
+      "UNITTYPE_Heavy",
+      "UNITTYPE_Offense",
+      "UNITTYPE_Land",
+      "UNITTYPE_Basic",
+      "UNITTYPE_FactoryBuild",
+      "UNITTYPE_Custom2"
+    ],
+    "death": {
+      "decals": [
+        "/pa/decals/decal_bug_splat_big.json"
+      ]
+    }
+  }
