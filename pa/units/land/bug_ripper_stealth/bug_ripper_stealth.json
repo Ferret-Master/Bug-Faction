@@ -1,7 +1,7 @@
 {
     "display_name": "Stealth Ripper",
     "description": "stealth core melee unit",
-    "si_name": "ripper",
+    "si_name": "ripper_stealth",
     "TEMP_texelinfo": 4.07719,
     "attachable": {
       "offsets": {
@@ -33,7 +33,7 @@
     "guard_layer": "WL_AnySurface",
     "guard_radius": 80,
     "base_spec": "/pa/units/land/bug_base_land/bug_base_land.json",
-    "build_metal_cost":40,
+    "build_metal_cost":25,
     "events": {
       "build_complete": {
         "audio_cue": "/SE/Build_Complete/bot",
@@ -49,7 +49,7 @@
         "effect_scale": 0.90000004
       }
     },
-    "max_health": 56,
+    "max_health": 35,
     "mesh_bounds": [
       3,
       3,
@@ -76,7 +76,7 @@
       "type": "amphibious",
       "acceleration": 50,
       "brake": -1,
-      "move_speed": 30,
+      "move_speed": 35,
       "turn_speed": 400,
       "group_preference": "front"
     },

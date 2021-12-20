@@ -1,7 +1,7 @@
 
 {
-  "display_name": "Alpha Grunt",
-  "description": "An alpha basic melee bug unit, tanky with aoe swipes",
+  "display_name": "Warrior Grunt",
+  "description": "An an upgraded basic melee bug unit, tanky with aoe swipes",
   "si_name": "big_grunt",
   "wreckage_health_frac": 0.0,
   "TEMP_texelinfo": 4.07719,
@@ -33,7 +33,7 @@
     }
   },
   "base_spec": "/pa/units/land/bug_base_land/bug_base_land.json",
-  "build_metal_cost": 600,
+  "build_metal_cost": 165,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/bot"
@@ -49,7 +49,7 @@
   },
   "attack_range_frac": 0.7,
   
-  "max_health": 2000,
+  "max_health": 750,
   "mesh_bounds": [
     8,
     8,
@@ -69,7 +69,7 @@
     "type": "amphibious",
     "acceleration": 30,
     "brake": -1,
-    "move_speed": 14,
+    "move_speed": 16,
     "turn_speed": 180,
     "group_preference": "front"
   },

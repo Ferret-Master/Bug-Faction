@@ -23,6 +23,7 @@ var newBuildScenario = {
     "/pa/units/research/unlocks/bug_ripper_normal_unlock/bug_ripper_normal_unlock.json": ["bug_research", 0, {row: 2, column: 0}],
     "/pa/units/research/unlocks/bug_ripper_stealth_return_unlock/bug_ripper_stealth_return_unlock.json":["bug_research",1,{row:2,column:1}],
     "/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json":["bug_research",2,{row:2,column:2}],
+    "/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json":["bug_research",2,{row:2,column:3}],
    
 
     //t1 hive
@@ -34,6 +35,7 @@ var newBuildScenario = {
 
     //t2 hive
     "/pa/units/land/bug_bot_fab_advanced/bug_bot_fab_advanced.json": ["bug_ground", 6, {row: 1, column: 0}],
+    "/pa/units/land/bug_scorcher/bug_scorcher.json": ["bug_ground", 7, {row: 1, column: 1}],
 
     //ammo
     "/pa/units/structure/bug_mine/bug_mine.json": ["bug_ammo", 14, {row: 2, column: 2}],

@@ -23,7 +23,14 @@
 		],
 		"shared_build":[
 			"coui://ui/mods/bugs_faction/shared_build.js"
-		]
+		],
+        "live_game_build_bar":[
+            "coui://ui/mods/bugs_faction/live_build_bar.js"
+          ],
+          "live_game": [
+            "coui://ui/mods/bugs_faction/research.js",
+                  "coui://ui/mods/bugs_faction/research_live_game.js"
+          ]
 		
 	}
 }

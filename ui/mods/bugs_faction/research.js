@@ -4,22 +4,48 @@
 
 //hardcoded locks, research packs can add to this by appending to it, units that have been locked will be removed, ensures units stay locked on resets
 
-model.unitsToLock = [];
+model.unitsToLock = ["/pa/units/land/bug_grunt_big/bug_grunt_big.json",
+                    "/pa/units/research/unlocks/bug_ripper_normal_unlock/bug_ripper_normal_unlock.json",
+                    "/pa/units/research/unlocks/bug_ripper_stealth_return_unlock/bug_ripper_stealth_return_unlock.json",
+                    "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.json"
+                    ];
 
 //tracks locked units
 model.lockedUnits = [];
 
-//hardcoded pairs, can be added to by research packs by appending, format is [[researchfactoryunit,unittounlock],[]]
-model.unlockPairs = [
-  
+//hardcoded pairs, can be added to by research packs by appending, format is [[researchfactoryunit,[unitsToUnlock],[unitToLock],replaceLockedUnitsBool]
 
+//to combo replace/lock have locked units be on the end of the unitsToLock array and not match up numerically with the unitsToUnlock array
+
+model.unlockPairs = [
+
+  ["/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json",//trigger unit
+  ["/pa/units/land/bug_grunt_big/bug_grunt_big.json"],//units added
+  ["/pa/units/land/bug_grunt/bug_grunt.json","/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json"],//units replaced/locked
+  true],//is a replace rather than just locks
+
+  ["/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json",
+  ["/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.json"],
+  ["/pa/units/land/bug_ripper/bug_ripper.json","/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json"],
+   true]
+
+//   ["/pa/units/research/unlocks/bug_ripper_normal_unlock/bug_ripper_normal_unlock.json",
+//   ["/pa/units/land/bug_ripper/bug_ripper.json","/pa/units/research/unlocks/bug_ripper_stealth_return_unlock/bug_ripper_stealth_return_unlock.json"],
+//   ["/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.json","/pa/units/research/unlocks/bug_ripper_normal_unlock/bug_ripper_normal_unlock.json"],
+//   true],
+
+//   ["/pa/units/research/unlocks/bug_ripper_stealth_return_unlock/bug_ripper_stealth_return_unlock.json",
+//   ["/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.json","/pa/units/research/unlocks/bug_ripper_normal_unlock/bug_ripper_normal_unlock.json"],
+//   ["/pa/units/land/bug_ripper/bug_ripper.json","/pa/units/research/unlocks/bug_ripper_stealth_return_unlock/bug_ripper_stealth_return_unlock.json"],
+//   true]
 ]
+
 //for circular research the older ones need to be deleted if a newer research is done.
 model.deleteOldPairs = [
 
 ]
 researchLoop = function(){
-
+   
     model.unitsToLock.forEach(function(unit){
        
         api.Panel.message("build_bar", 'lockUnit',unit)
@@ -27,39 +53,72 @@ researchLoop = function(){
 
     })
     model.unitsToLock = []
-    if(model.lockedUnits.length>0){
+    
+    if(model.lockedUnits.length > 0){
+       
         var armyPromise = model.allPlayerArmy(model.armyIndex())
         
         armyPromise.then(function(result){
 
             var armyKeys = _.keys(result)
-        
+           
             model.unlockPairs.forEach(function(pair){
-
-                if(_.contains(model.lockedUnits,pair[1])){//if the pair is not already unlocked
-                 // console.log("pair not unlocked")
+              
+                
+                if(_.contains(model.lockedUnits,pair[1][0])){//if the pair is not already unlocked
+                
                  
                     if(_.contains(armyKeys,pair[0])){//unlock unit exists so unit should be unlocked
-                       // console.log("unlock unit exists")
+                      
                         var armyDataPromise = api.getWorldView(0).getUnitState(result[pair[0]])
                         armyDataPromise.then(function(result){
                        
                         if(result[0].built_frac == undefined){
-                           // console.log("unlocking unit")
-                        api.Panel.message("build_bar", 'unlockUnit',pair[1])
+                      
+                       
+
+                        //if the unlock should actually be a replace
+                        if(pair[3] !== true){
+                        pair[1].forEach(function(unit){
+                            console.log("unlocking ",+unit)
+                            api.Panel.message("build_bar", 'unlockUnit',unit)
+                     
+                        })
                         if(pair[2] !== undefined){
                             pair[2].forEach(function(unit){
+                                console.log("locking ",+unit)
                                 api.Panel.message("build_bar", 'lockUnit',unit)
                                 model.lockedUnits.push(unit)
                             })
 
+                        }}
+                        else{
+                            console.log("replacing units")
+                            for(var i = 0; i< pair[2].length;i++){
+                                if(pair[1][i] !== undefined){//matching replace
+                                    console.log("replacing unit")
+                                    api.Panel.message("build_bar", 'replaceUnit',[[pair[2][i]],[pair[1][i]]])
+                                }
+                                else{//lock the pair 2 as it has no match
+                                    console.log("locking unit that did not have replace pair")
+                                    api.Panel.message("build_bar", 'lockUnit',pair[2][i])
+                                }
+                            }
                         }
+
+
 
                         for(var i = 0;i<model.lockedUnits.length;i++){
                            // console.log(lockedUnits[i],pair[1])
-                            if(model.lockedUnits[i] == pair[1]){
+                           pair[1].forEach(function(unit){
+                            if(model.lockedUnits[i] == unit){
                                 model.lockedUnits.splice(i,1)
                             }
+                        })
+                        
+                     
+                        
+                           
                         }
 
                         }
@@ -283,54 +342,54 @@ model.playerArmy = function(playerId, planetId,unitType, stateFlag,unitTypeValue
 
 }
 //taken from live game, stores the most up to date build order of selections
-model.parseSelection = function (payload)
-        {
-            var i = 0;
-            var tabs = {};
-            var selectionCanBuild = false;
+// model.parseSelection = function (payload)
+//         {
+//             var i = 0;
+//             var tabs = {};
+//             var selectionCanBuild = false;
 
-            self.allowedCommands = {};
+//             self.allowedCommands = {};
 
-            self.buildItemMinIndex(0);
+//             self.buildItemMinIndex(0);
 
-            self.cmdIndex(-1);
-            self.selectionTypes([]);
+//             self.cmdIndex(-1);
+//             self.selectionTypes([]);
 
-            for (var id in payload.spec_ids) {
-                var unit = self.unitSpecs[id];
-                if (!unit)
-                    continue;
+//             for (var id in payload.spec_ids) {
+//                 var unit = self.unitSpecs[id];
+//                 if (!unit)
+//                     continue;
 
-                for (i = 0; i < unit.commands.length; i++)
-                    self.allowedCommands[unit.commands[i]] = true;
+//                 for (i = 0; i < unit.commands.length; i++)
+//                     self.allowedCommands[unit.commands[i]] = true;
 
-                selectionCanBuild |= unit.canBuild;
+//                 selectionCanBuild |= unit.canBuild;
 
-                self.selectionTypes().push(id);
-            }
+//                 self.selectionTypes().push(id);
+//             }
 
-            if (!tabs[self.activeBuildGroup()])
-                self.activeBuildGroup(null);
+//             if (!tabs[self.activeBuildGroup()])
+//                 self.activeBuildGroup(null);
 
-            self.selectedMobile(payload.selected_mobile);
+//             self.selectedMobile(payload.selected_mobile);
 
-            if (self.reviewMode() || self.isSpectator())
-                selectionCanBuild = false;
+//             if (self.reviewMode() || self.isSpectator())
+//                 selectionCanBuild = false;
 
-            if (selectionCanBuild) {
-                if (self.selectedMobile()) {
-                    modify_keybinds({ remove: ['build unit'], add: ['build structure'] });
-                } else {
-                    modify_keybinds({ remove: ['build structure'], add: ['build unit'] });
-                }
-            }
-            else {
-                modify_keybinds({ remove: ['build structure', 'build unit'] });
-                model.clearBuildSequence();
-            }
+//             if (selectionCanBuild) {
+//                 if (self.selectedMobile()) {
+//                     modify_keybinds({ remove: ['build unit'], add: ['build structure'] });
+//                 } else {
+//                     modify_keybinds({ remove: ['build structure'], add: ['build unit'] });
+//                 }
+//             }
+//             else {
+//                 modify_keybinds({ remove: ['build structure', 'build unit'] });
+//                 model.clearBuildSequence();
+//             }
 
-            if (!$.isEmptyObject(payload.spec_ids))
-                self.selection(payload);
-            else
-                self.selection(null);
-        };
+//             if (!$.isEmptyObject(payload.spec_ids))
+//                 self.selection(payload);
+//             else
+//                 self.selection(null);
+//         };

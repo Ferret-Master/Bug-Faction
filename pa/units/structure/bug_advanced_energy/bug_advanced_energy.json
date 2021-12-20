@@ -10,7 +10,7 @@
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
     "area_build_type": "Line",
     "production": {
-        "energy": 5000
+        "energy": 3750
     },
     "unit_types": [
         "UNITTYPE_Structure",

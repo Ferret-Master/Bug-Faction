@@ -11,6 +11,7 @@
 
 var lockedUnits = []
 
+
 model.lockUnit = function(unitName){//units are locked by adding _disabled to the end of the id
 
     var units = model.buildSet().units
@@ -56,8 +57,14 @@ model.replaceUnit = function(originalNames, replacementNames){
                     if(slot.id == originalNames[nameIndex]){
                         
                         model.buildSet().tabs()[i].items()[j][k].id =  replacementNames[nameIndex]
-                        // var buildbarReplacement = replacementNames[nameIndex].replace('.json','_icon_buildbar.png')
-                        // model.buildSet.tabs()[i].items()[j][k].buildIcon(buildbarReplacement)
+                        var buildbarReplacement = replacementNames[nameIndex].replace('.json','_icon_buildbar.png')
+                        buildbarReplacement =  "coui:/" + buildbarReplacement
+                        console.log("old image")
+                        console.log(model.buildSet().tabs()[i].items()[j][k].buildIcon())
+
+                        console.log("new image")
+                        console.log(buildbarReplacement)
+                        model.buildSet().tabs()[i].items()[j][k].buildIcon(buildbarReplacement)
                     }
                 }
             }

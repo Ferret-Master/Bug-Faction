@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/ammo/base_shell/base_shell.json",
-    "damage": 10,
+    "damage": 70,
     
     "flight_type": "seeking",
     "fx_trail": {
@@ -15,7 +15,6 @@
     "physics": {
       "add_to_spatial_db": false
     },
-    "splash_damage": 10,
-    "splash_radius": 10,
+  
     "turn_rate": 360
   }

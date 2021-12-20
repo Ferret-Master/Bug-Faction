@@ -1,6 +1,8 @@
   
 var paeiouIcons = [
-	"research_basic",
+	"bug_evo_chamber",
+	"ripper",
+	"ripper_stealth",
 	"bug_titan",
 	"small_egg",
 	"medium_egg",

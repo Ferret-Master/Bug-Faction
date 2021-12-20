@@ -59,11 +59,18 @@
     "model": {
       "filename": "/pa/units/land/bug_ripper/bug_ripper.papa",
       "animations": {
-        "walk": "/pa/units/land/bug_ripper/bug_ripper_walk.papa",
-        "firing": "/pa/units/land/bug_ripper/bug_ripper_attack.papa",
-        "idle": "/pa/units/land/bug_ripper/bug_ripper_idle.papa"
+        "deploy":"/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.papa",
+        "walk": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_run.papa",
+        "firing": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_attack.papa",
+        "idle": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_idle.papa",
+        "turn_left":"/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_left_turn.papa",
+        "turn_right":"/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.papa",
+        "walk_stop:":"/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_stop.papa",
+        "death": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_death.papa",
+        "dead": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_dead.papa"
+
       },
-      "animtree": "/pa/units/land/bug_runner/runner_anim_tree.json",
+      "animtree": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_tree.json",
       "walk_speed": 0.35
     },
     "navigation": {
