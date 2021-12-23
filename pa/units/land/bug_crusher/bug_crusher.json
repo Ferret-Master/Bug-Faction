@@ -1,0 +1,111 @@
+{
+    "display_name": "Crusher",
+    "description": "Seismic Bug - Heavily armored. Short range. Huge splash damage. Attacks land and sea targets.",
+    "si_name": "warrior",
+    "TEMP_texelinfo": 9.04444,
+    "attachable": {
+      "offsets": {
+        "head": [
+          0,
+          -0.5,
+          6.1
+        ],
+        "root": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "attack_range_frac": 0.1,
+    "audio": {
+      "loops": {
+        "move": {
+          "cue": "/SE/Movement/veh/tank_vagaurd_loop_T2",
+          "flag": "vel_changed",
+          "should_start_func": "is_moving",
+          "should_stop_func": "is_not_moving"
+        }
+      },
+      "selection_response": {
+        "cue": "/SE/Selection/veh/tank_vagaurd_T2"
+      }
+    },
+    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "build_metal_cost": 2000,
+    "events": {
+      "died": {
+        "effect_scale": 2
+      }
+    
+    },
+    "guard_layer": "WL_LandHorizontal",
+    "max_health": 6000,
+    "mesh_bounds": [
+        10,
+        10,
+        15
+      ],
+      "model": {
+        "filename": "/pa/units/land/bug_warrior/bug_warrior.papa",
+        "animations": {
+          "walk": "/pa/units/land/bug_warrior/bug_warrior_walk.papa",
+          "firing": "/pa/units/land/bug_warrior/bug_warrior_attack.papa",
+          "idle": "/pa/units/land/bug_warrior/bug_warrior_idle.papa"
+        },
+        "animtree": "/pa/units/land/bug_grunt/bug_anim_tree.json",
+        "walk_speed": 0.1
+      },
+      "navigation": {
+        "type": "amphibious",
+        "acceleration": 30,
+        "brake": -1,
+        "move_speed": 15,
+        "turn_speed": 90,
+        "group_preference": "front"
+      },
+      "physics": {
+        "radius": 4.0
+      },
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "channel": "sight",
+            "layer": "surface_and_air",
+            "radius": 100,
+            "shape": "capsule"
+          }
+        ]
+      }
+    },
+    "scrolling_uv": {
+      "scroll_rate": 0.58,
+      "uv_split": 0.855
+    },
+    "selection_icon": {
+      "diameter": -14
+    },
+    "tools": [
+      {
+        "aim_bone": "bone_root",
+        "fire_event": "fired0",
+        "muzzle_bone": "socket_muzzle",
+        "record_index": 0,
+        "spec_id": "/pa/units/land/bug_crusher/bug_crusher_weapon.json"
+      }
+    ],
+    "transportable": {
+      "size": 1
+    },
+    "unit_types": [
+      "UNITTYPE_Tank",
+      "UNITTYPE_Heavy",
+      "UNITTYPE_Mobile",
+      "UNITTYPE_Offense",
+      "UNITTYPE_Land",
+      "UNITTYPE_Advanced",
+      "UNITTYPE_FactoryBuild",
+      "UNITTYPE_Custom2"
+    ]
+  }

@@ -2,7 +2,6 @@
     "display_name": "Nug",
     "description": "An Titan class melee bug unit, tanky with aoe stomps",
     "si_name": "bug_titan",
-    "wreckage_health_frac": 0.0,
     "TEMP_texelinfo": 4.07719,
     "attachable": {
         "offsets": {
@@ -31,7 +30,7 @@
           "cue": "/SE/Selection/titan/bot"
         }
       },
-    "base_spec": "/pa/units/land/bug_base_land/bug_base_land.json",
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "build_metal_cost": 60000,
     "events": {
         "build_complete": {
@@ -97,8 +96,8 @@
         "UNITTYPE_Offense",
         "UNITTYPE_Land",
         "UNITTYPE_Basic",
+        "UNITTYPE_FabOrbBuild",
         "UNITTYPE_Titan",
-        "UNITTYPE_FactoryBuild",
         "UNITTYPE_Custom2"
     ],
     "death": {

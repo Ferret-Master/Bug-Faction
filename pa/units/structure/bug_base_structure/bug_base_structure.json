@@ -7,7 +7,8 @@
       "UNITTYPE_Bot",
       "UNITTYPE_Mobile",
       "UNITTYPE_Land",
-      "UNITTYPE_Custom2"
+      "UNITTYPE_Custom2",
+      "UNITTYPE_NoBuild"
     ],
     "wreckage_health_frac": 0.5,
     "recon": {
@@ -27,5 +28,7 @@
           }
         ]
       }
-    }
+    },
+    "guard_layer": "WL_AnySurface",
+    "guard_radius":80
 }

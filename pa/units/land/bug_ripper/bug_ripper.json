@@ -2,7 +2,7 @@
     "display_name": "Ripper",
     "description": "Basic bug.",
     "si_name": "ripper",
-    "wreckage_health_frac": 0.0,
+
     "TEMP_texelinfo": 4.07719,
     "attachable": {
       "offsets": {
@@ -31,7 +31,7 @@
         "cue": "/SE/Selection/bot/spark"
       }
     },
-    "base_spec": "/pa/units/land/bug_base_land/bug_base_land.json",
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "build_metal_cost": 25,
     "events": {
       "build_complete": {
@@ -71,7 +71,7 @@
 
       },
       "animtree": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_tree.json",
-      "walk_speed": 0.35
+      "walk_speed": 20
     },
     "navigation": {
       "type": "amphibious",

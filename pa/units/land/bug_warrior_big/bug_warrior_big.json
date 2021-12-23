@@ -3,7 +3,6 @@
     "display_name": "Alpha Warrior",
     "description": "An alpha advanced melee bug unit, tanky with aoe swipes",
     "si_name": "big_warrior",
-    "wreckage_health_frac": 0.0,
     "TEMP_texelinfo": 4.07719,
     "attachable": {
       "offsets": {
@@ -32,7 +31,7 @@
         "cue": "/SE/Selection/bot/spark"
       }
     },
-    "base_spec": "/pa/units/land/bug_base_land/bug_base_land.json",
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "build_metal_cost": 5000,
     "events": {
       "build_complete": {

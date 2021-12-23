@@ -22,7 +22,10 @@
         "/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json",
         "/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json",
 
+        "/pa/units/land/bug_crusher/bug_crusher.json",
         "/pa/units/land/bug_bot_fab/bug_bot_fab.json",
+        "/pa/units/land/bug_aa/bug_aa.json",
+        "/pa/units/land/bug_aa_big/bug_aa_big.json",
         "/pa/units/land/bug_bot_fab_advanced/bug_bot_fab_advanced.json",
         "/pa/units/land/bug_boomer/bug_boomer.json",
         "/pa/units/land/bug_boomer_big/bug_boomer_big.json",
@@ -37,6 +40,7 @@
 	    "/pa/units/land/bug_grunt_big/bug_grunt_big.json",
         "/pa/units/land/bug_warrior/bug_warrior.json",
         "/pa/units/land/bug_needler/bug_needler.json",
+  
         "/pa/units/land/bug_grunt/bug_grunt.json",
 
         "/pa/units/air/air_factory/air_factory.json",

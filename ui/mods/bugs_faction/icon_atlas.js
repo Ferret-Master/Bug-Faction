@@ -1,5 +1,8 @@
   
 var paeiouIcons = [
+	"bug_aa",
+	"bug_adv_aa",
+	"manticore",
 	"bug_evo_chamber",
 	"ripper",
 	"ripper_stealth",

@@ -109,6 +109,5 @@
       "UNITTYPE_Offense",
       "UNITTYPE_SelfDestruct",
       "UNITTYPE_Custom2"
-    ],
-    "wreckage_health_frac": 0.0
+    ]
   }

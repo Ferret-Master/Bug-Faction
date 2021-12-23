@@ -3,7 +3,6 @@
     "description": "An advanced ranged bug that attacks at mid range.",
     "si_name": "basilisk",
     "TEMP_texelinfo": 8.06901,
-    "wreckage_health_frac": 0.0,
     "attachable": {
       "offsets": {
         "root": [
@@ -31,7 +30,7 @@
         "cue": "/SE/Selection/veh/tank_inferno"
       }
     },
-    "base_spec": "/pa/units/land/bug_base_land/bug_base_land.json",
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "build_metal_cost": 1000,
     "events": {
       "build_complete": {
