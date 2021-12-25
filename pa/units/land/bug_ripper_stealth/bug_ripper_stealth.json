@@ -86,7 +86,7 @@
     "fx_offsets": [
       {
         "type": "idle",
-        "filename": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_idle.json",
+        "filename": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_idle.pfx",
         "bone": "socket_wings",
         "offset": [
           0,

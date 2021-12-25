@@ -53,11 +53,7 @@
     ],
     "model": {
       "filename": "/pa/units/land/bug_needler/bug_needler.papa",
-      "animations": {
-        "idle": "/pa/units/land/bug_needler/bug_needler_idle.papa",  
-        "walk": "/pa/units/land/bug_needler/bug_needler_walking.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/bot_tesla_anim_tree.json",
+  
       "walk_speed": 2
     },
     "navigation": {
@@ -79,7 +75,7 @@
         "spec_id": "/pa/units/land/bug_needler/bug_needler_weapon.json",
         "aim_bone": "bone_turret",
         "muzzle_bone": [
-            "bone_barrel"
+            "socket_muzzle"
            
           ]
       }

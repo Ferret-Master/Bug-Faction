@@ -96,7 +96,7 @@
         "UNITTYPE_Offense",
         "UNITTYPE_Land",
         "UNITTYPE_Basic",
-        "UNITTYPE_FabOrbBuild",
+        "UNITTYPE_FabAdvBuild",
         "UNITTYPE_Titan",
         "UNITTYPE_Custom2"
     ],

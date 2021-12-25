@@ -4,11 +4,11 @@
   "damage": 45,
   "events": {
     "died": {
-      "effect_spec": "/pa/units/land/bug_needler/bug_weapon_explosion.pfx"
+      "effect_spec": "/pa/units/land/bug_needler/needle_explosion.pfx"
     }
   },
   "fx_trail": {
-    "filename": "/pa/units/land/bug_needler/bug_weapon_trail.pfx",
+    "filename": "/pa/units/land/bug_needler/needle.pfx",
     "offset": [
       0.0,
       1.0,

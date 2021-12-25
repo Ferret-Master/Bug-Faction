@@ -18,6 +18,7 @@ model.executeStartBuild = function (params) {
     var urgent = params.urgent;
     var more = params.more;
 
+
     if (model.selectedMobile()) {
         model.endCommandMode();
         model.currentBuildStructureId(id);
@@ -32,6 +33,10 @@ model.executeStartBuild = function (params) {
     }
     else {
         var count = batch ? model.batchBuildSize() : 1;
+        console.log(id)
+        console.log(urgent)
+        console.log(count)
+        console.log(more)
         if (cancel) {
             api.unit.cancelBuild(id, count, urgent);
             api.audio.playSound('/SE/UI/UI_factory_remove_from_queue');
