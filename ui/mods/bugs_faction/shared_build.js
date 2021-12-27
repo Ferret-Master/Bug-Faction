@@ -31,14 +31,16 @@ var newBuildScenario = {
     "/pa/units/land/bug_grunt/bug_grunt.json": ["bug_ground", 13, {row: 2, column: 1}],
     "/pa/units/land/bug_ripper/bug_ripper.json": ["bug_ground", 14, {row: 2, column: 2}],
     "/pa/units/land/bug_needler/bug_needler.json": ["bug_ground", 20, {row: 2, column: 6}],
-    "/pa/units/land/bug_runner/bug_runner.json": ["bug_ground", 15, {row: 2, column: 3}],
-    "/pa/units/land/bug_aa/bug_aa.json": ["bug_ground", 15, {row: 2, column: 4}],
+    "/pa/units/land/bug_runner/bug_runner.json": ["bug_ground", 16, {row: 2, column: 3}],
+    //"/pa/units/land/bug_boomer/bug_boomer.json": ["bug_ground", 17, {row: 2, column: 5}],
+    "/pa/units/land/bug_aa/bug_aa.json": ["bug_ground", 18, {row: 2, column: 4}],
 
     //t2 hive
     "/pa/units/land/bug_bot_fab_advanced/bug_bot_fab_advanced.json": ["bug_ground", 6, {row: 1, column: 0}],
     "/pa/units/land/bug_scorcher/bug_scorcher.json": ["bug_ground", 7, {row: 1, column: 1}],
-    "/pa/units/land/bug_manticore/bug_manticore.json": ["bug_ground", 15, {row: 1, column: 4}],
+    "/pa/units/land/bug_manticore/bug_manticore.json": ["bug_ground", 15, {row: 1, column: 2}],
     "/pa/units/land/bug_crusher/bug_crusher.json": ["bug_ground", 15, {row: 1, column: 4}],
+   // "/pa/units/land/bug_boomer_big/bug_boomer_big.json": ["bug_ground", 15, {row: 2, column: 3}],
     "/pa/units/land/bug_aa_big/bug_aa_big.json": ["bug_ground", 15, {row: 1, column: 6}],
 
     //titans

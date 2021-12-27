@@ -53,6 +53,24 @@
     5,
     10
   ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 120
+        }
+      ]
+    }
+  },
   "model": {
     "filename": "/pa/units/land/bug_grunt/Grunt.papa",
     "animations": {
@@ -61,7 +79,7 @@
       "idle": "/pa/units/land/bug_grunt/Grunt_Idle.papa"
     },
     "animtree": "/pa/units/land/bug_grunt/bug_anim_tree.json",
-    "walk_speed": 0.1
+    "walk_speed": 0.08
   },
   "navigation": {
     "type": "amphibious",

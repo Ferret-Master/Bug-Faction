@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "unit_name": "Energy Plant",
+    "unit_name": "Bug Energy Plant",
     "si_name":"energy_plant",
     "display_name": "!LOC:Energy Plant",
     "description": "!LOC:Basic Economy - Produces energy.",

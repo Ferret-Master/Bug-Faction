@@ -1,5 +1,6 @@
 {
     "display_name": "Alpha Boomer",
+    "si_name":"adv_boomer",
     "description": "!LOC:Bomb Bot - Self destructs to deal very heavy damage over a nearby area. Extremely fast.",
     "TEMP_texelinfo": 6.38702,
     "attachable": {
@@ -53,14 +54,8 @@
       3.2
     ],
     "model": {
-        "filename": "/pa/units/land/bug_boomer_big/boomer_big.papa",
-      "animations": {
-        "death01": "/pa/units/land/bot_bomb/bot_bomb_anim_death01.papa",
-        "idle": "/pa/units/land/bot_bomb/bot_bomb_anim_idle.papa",
-        "walk": "/pa/units/land/bot_bomb/bot_bomb_anim_run.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/bot_bomb_anim_tree.json",
-      "walk_speed": 40
+        "filename": "/pa/units/land/bug_boomer_big/bug_boomer_big.papa"
+     
     },
     "navigation": {
       "type": "land-small",

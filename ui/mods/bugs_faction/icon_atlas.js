@@ -1,5 +1,7 @@
   
 var paeiouIcons = [
+	"boomer",
+	"adv_boomer",
 	"bug_aa",
 	"bug_adv_aa",
 	"manticore",
