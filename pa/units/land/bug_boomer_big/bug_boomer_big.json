@@ -61,7 +61,7 @@
       "type": "land-small",
       "acceleration": 400,
       "brake": -1,
-      "move_speed": 25,
+      "move_speed": 30,
       "turn_speed": 720
     },
     "physics": {

@@ -4,7 +4,7 @@
     "base_spec": "/pa/tools/base_artillery_turret_unit/base_artillery_turret_unit.json",
     "arc_type": "ARC_High",
     "idle_aim_delay": 10,
-    "max_range": 200,
+    "max_range": 220,
     "pitch_range": 89,
     "pitch_rate": 30,
     "rate_of_fire": 4,

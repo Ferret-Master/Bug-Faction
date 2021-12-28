@@ -60,9 +60,7 @@
       40,
       55
     ],
-    "production": {
-        "energy": -2000
-      },
+
     "recon": {
       "observer": {
         "items": [
