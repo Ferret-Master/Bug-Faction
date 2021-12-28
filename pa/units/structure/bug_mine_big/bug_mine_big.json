@@ -1,0 +1,143 @@
+{
+    "unit_name": "Big Boomer Egg",
+    "display_name": "Big Boomer Egg",
+    "si_name":"bug_adv_boomer_egg",
+    "description": "Boomer Egg - Detonates when enemy units are in proximity.",
+    "strategic_icon_priority": 3,
+    "max_health": 5,
+    "build_metal_cost": 200,
+    "wreckage_health_frac": 0.0,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "area_build_type": "Sphere",
+    "area_build_separation": 2.0,
+    "area_max_radius": 150.0,
+    "alt_area_build_type": "Sphere",
+    "alt_area_build_separation": 1.0,
+    "alt_area_max_radius": 150.0,
+    "alt_area_build_pattern": [
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    ],
+    "unit_types": [
+        "UNITTYPE_Structure",
+        "UNITTYPE_Land",
+        "UNITTYPE_Naval",
+        "UNITTYPE_Defense",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_CombatFabAdvBuild",
+        "UNITTYPE_Custom2"
+    ],
+    "physics": {
+        "type": "Structure",
+        "shape": "Box",
+        "radius": 1,
+        "allow_pushing": false,
+        "push_sideways": false,
+        "allow_underground": false,
+        "collide_with_types": [
+            "Projectile"
+        ]
+    },
+    "recon": {
+        "observable": {
+            "layer": "mine"
+        },
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "radar",
+                    "shape": "sphere",
+                    "radius": 2
+                }
+            ]
+        }
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/structure/bug_mine_big/bug_mine_big_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root"
+        }
+    ],
+    "model": [
+        {
+            "filename": "/pa/units/structure/bug_mine_big/bug_mine_big.papa"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/barrier"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/barrier",
+            "effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx"
+        }
+    },
+    "selection_icon": {
+        "diameter": 7.0
+    },
+    "mesh_bounds": [
+        4.0,
+        4.0,
+        1.0
+    ],
+    "TEMP_texelinfo": 2.37699
+}

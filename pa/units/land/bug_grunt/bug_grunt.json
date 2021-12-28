@@ -47,7 +47,7 @@
     }
   },
   "attack_range_frac": 0.7,
-  "max_health": 500,
+  "max_health": 600,
   "mesh_bounds": [
     5,
     5,

@@ -38,7 +38,7 @@
         "effect_scale": 1.0
       }
     },
-    "factory_cooldown_time": 1.5,
+    "factory_cooldown_time": 0.5,
     "fx_offsets": [
       {
         "bone": "bone_bar001",

@@ -1,0 +1,107 @@
+{
+    "display_name": "Bombardier",
+    "description": "!LOC:Fire Support - Medium range. Can fire over walls. Attacks land and sea targets.",
+    "si_name":"bombardier",
+    "TEMP_texelinfo": 4.07719,
+    "attachable": {
+      "offsets": {
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "head": [
+          0,
+          0,
+          4
+        ]
+      }
+    },
+    "audio": {
+      "loops": {
+        "move": {
+          "cue": "/SE/Movement/bot/grenadier_loop",
+          "flag": "vel_changed",
+          "should_start_func": "is_moving",
+          "should_stop_func": "is_not_moving"
+        }
+      },
+      "selection_response": {
+        "cue": "/SE/Selection/bot/grenadier"
+      }
+    },
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "build_metal_cost": 100,
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/bot"
+      },
+      "fired": {
+        "audio_cue": "/SE/Weapons/bot/grenadier_fire"
+        
+      },
+      "died": {
+        "audio_cue": "/SE/Death/Bot",
+        "effect_scale": 1.0
+      }
+    },
+    "guard_layer": "WL_AnySurface",
+    "max_health": 80,
+    "mesh_bounds": [
+      5,
+      5,
+      4.7
+    ],
+    "model": {
+      "filename": "/pa/units/land/bug_gren/bug_gren.papa"
+      
+    },
+    "navigation": {
+      "type": "land-small",
+      "acceleration": 100,
+      "brake": -1,
+      "move_speed": 12,
+      "turn_speed": 720,
+      "group_preference": "back"
+    },
+    "physics": {
+      "radius": 2.0
+    },
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 100
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 9.0
+    },
+    "tools": [
+      {
+        "spec_id": "/pa/units/land/bug_gren/bug_gren_weapon.json",
+        "aim_bone": "bone_root",
+        "muzzle_bone": "bone_root"
+      }
+    
+    ],
+    "transportable": {
+      "size": 1
+    },
+    "unit_types": [
+      "UNITTYPE_Bot",
+      "UNITTYPE_Mobile",
+      "UNITTYPE_Offense",
+      "UNITTYPE_Artillery",
+      "UNITTYPE_Land",
+      "UNITTYPE_Basic",
+      "UNITTYPE_FactoryBuild",
+      "UNITTYPE_CannonBuildable",
+      "UNITTYPE_Custom2"
+    ]
+  }

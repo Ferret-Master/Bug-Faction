@@ -29,10 +29,11 @@ var newBuildScenario = {
     //t1 hive
     "/pa/units/land/bug_bot_fab/bug_bot_fab.json": ["bug_ground", 12, {row: 2, column: 0}],
     "/pa/units/land/bug_grunt/bug_grunt.json": ["bug_ground", 13, {row: 2, column: 1}],
+    "/pa/units/land/bug_gren/bug_gren.json": ["bug_ground_2", 13, {row: 2, column: 0}],
     "/pa/units/land/bug_ripper/bug_ripper.json": ["bug_ground", 14, {row: 2, column: 2}],
     "/pa/units/land/bug_needler/bug_needler.json": ["bug_ground", 20, {row: 2, column: 6}],
     "/pa/units/land/bug_runner/bug_runner.json": ["bug_ground", 16, {row: 2, column: 3}],
-    //"/pa/units/land/bug_boomer/bug_boomer.json": ["bug_ground", 17, {row: 2, column: 5}],
+    "/pa/units/land/bug_boomer/bug_boomer.json": ["bug_ground", 17, {row: 2, column: 5}],
     "/pa/units/land/bug_aa/bug_aa.json": ["bug_ground", 18, {row: 2, column: 4}],
 
     //t2 hive
@@ -40,13 +41,16 @@ var newBuildScenario = {
     "/pa/units/land/bug_scorcher/bug_scorcher.json": ["bug_ground", 7, {row: 1, column: 1}],
     "/pa/units/land/bug_manticore/bug_manticore.json": ["bug_ground", 15, {row: 1, column: 2}],
     "/pa/units/land/bug_crusher/bug_crusher.json": ["bug_ground", 15, {row: 1, column: 4}],
-   // "/pa/units/land/bug_boomer_big/bug_boomer_big.json": ["bug_ground", 15, {row: 2, column: 3}],
+    "/pa/units/land/bug_boomer_big/bug_boomer_big.json": ["bug_ground", 15, {row: 1, column: 3}],
+    "/pa/units/land/bug_sniper/bug_sniper.json": ["bug_ground", 15, {row: 1, column: 5}],
     "/pa/units/land/bug_aa_big/bug_aa_big.json": ["bug_ground", 15, {row: 1, column: 6}],
+    "/pa/units/land/bug_hydra/bug_hydra.json": ["bug_ground", 15, {row: 0, column: 0}],
 
     //titans
     "/pa/units/land/bug_titan/bug_titan.json": ["bug_factory", 3, {row: 0, column: 3}],
     //ammo
     "/pa/units/structure/bug_mine/bug_mine.json": ["bug_ammo", 14, {row: 2, column: 2}],
+    "/pa/units/structure/bug_mine_big/bug_mine_big.json": ["bug_ammo", 15, {row: 2, column: 3}],
 }
 if (Build && Build.HotkeyModel && Build.HotkeyModel.SpecIdToGridMap) {
     _.extend(Build.HotkeyModel.SpecIdToGridMap, newBuildScenario);

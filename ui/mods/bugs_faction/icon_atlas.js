@@ -1,5 +1,10 @@
   
 var paeiouIcons = [
+	"hydra",
+	"bombardier",
+	"bug_sniper",
+	"bug_boomer_egg",
+	"bug_adv_boomer_egg",
 	"boomer",
 	"adv_boomer",
 	"bug_aa",

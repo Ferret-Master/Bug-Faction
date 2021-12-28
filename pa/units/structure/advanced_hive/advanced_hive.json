@@ -34,7 +34,7 @@
         "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx"
       }
     },
-    "factory_cooldown_time": 4,
+    "factory_cooldown_time": 3,
     "fx_offsets": [
       {
         "bone": "socket_nozzle01",

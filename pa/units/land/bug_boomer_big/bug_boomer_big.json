@@ -1,7 +1,7 @@
 {
     "display_name": "Alpha Boomer",
     "si_name":"adv_boomer",
-    "description": "!LOC:Bomb Bot - Self destructs to deal very heavy damage over a nearby area. Extremely fast.",
+    "description": "Advanced self destruct bug - Self destructs to deal very heavy damage over a nearby area, also leaves behind a damaging puddle.Fast.",
     "TEMP_texelinfo": 6.38702,
     "attachable": {
       "offsets": {
@@ -31,7 +31,7 @@
       }
     },
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
-    "build_metal_cost": 45,
+    "build_metal_cost": 200,
     "events": {
       "build_complete": {
         "audio_cue": "/SE/Build_Complete/bot"
@@ -47,7 +47,7 @@
       }
     },
     "guard_layer": "WL_LandHorizontal",
-    "max_health": 10,
+    "max_health": 100,
     "mesh_bounds": [
       3.8,
       4.5,
@@ -61,7 +61,7 @@
       "type": "land-small",
       "acceleration": 400,
       "brake": -1,
-      "move_speed": 40,
+      "move_speed": 25,
       "turn_speed": 720
     },
     "physics": {
@@ -86,7 +86,7 @@
     "spawn_layers": "WL_LandHorizontal",
     "tools": [
       {
-        "spec_id": "/pa/units/land/bot_bomb/bot_bomb_tool_weapon.json",
+        "spec_id": "/pa/units/land/bug_boomer_big/bug_boomer_big_weapon.json",
         "aim_bone": "bone_root",
         "muzzle_bone": "bone_root"
       }

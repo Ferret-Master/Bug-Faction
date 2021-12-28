@@ -1,6 +1,8 @@
 {
     "units": [  
         "/pa/units/structure/bug_mine/bug_mine.json",
+        "/pa/units/structure/bug_mine_big/bug_mine_big.json",
+        "/pa/units/structure/bug_mine_big/bug_mine_big_dot.json",
         "/pa/units/structure/bug_aa_small/bug_aa_small.json",
         "/pa/units/structure/bug_aa_large/bug_aa_large.json",
         "/pa/units/structure/bug_radar_advanced/bug_radar_advanced.json",
@@ -23,6 +25,8 @@
         "/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json",
 
         "/pa/units/land/bug_crusher/bug_crusher.json",
+        "/pa/units/land/bug_hydra/bug_hydra.json",
+        "/pa/units/land/bug_gren/bug_gren.json",
         "/pa/units/land/bug_bot_fab/bug_bot_fab.json",
         "/pa/units/land/bug_aa/bug_aa.json",
         "/pa/units/land/bug_aa_big/bug_aa_big.json",
@@ -42,6 +46,7 @@
         "/pa/units/land/bug_warrior/bug_warrior.json",
         "/pa/units/land/bug_needler/bug_needler.json",
         "/pa/units/land/bug_manticore/bug_manticore.json",
+        "/pa/units/land/bug_sniper/bug_sniper.json",
   
         "/pa/units/land/bug_grunt/bug_grunt.json",
 

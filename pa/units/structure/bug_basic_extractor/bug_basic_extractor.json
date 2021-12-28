@@ -1,7 +1,7 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "unit_name": "Bug Metal Extractor",
-    "display_name": "!LOC:Metal Extractor",
+    "display_name": "Bug Metal Extractor",
     "si_name":"metal_extractor",
     "description": "!LOC:Basic Economy - Produces metal, can only be placed on metal deposits.",
     "max_health": 1000,
