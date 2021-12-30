@@ -20,6 +20,9 @@ var newBuildScenario = {
     "/pa/units/structure/basic_hive/basic_hive.json": ["bug_factory", 16, {row: 2, column: 4}],
     "/pa/units/structure/advanced_hive/advanced_hive.json": ["bug_factory", 10, {row: 1, column: 4}],
     "/pa/units/research/basic_research_station/basic_research_station.json": ["bug_factory", 0, {row: 0, column: 0}],
+    "/pa/units/structure/bug_orbital_launcher/bug_orbital_launcher.json": ["bug_factory", 12, {row: 2, column: 0}],
+    "/pa/units/structure/basic_air_hive/basic_air_hive.json": ["bug_factory", 14, {row: 2, column: 2}],
+    "/pa/units/structure/basic_naval_hive/basic_naval_hive.json": ["bug_factory", 13, {row: 2, column: 1}],
 
     //unlocks
     "/pa/units/research/unlocks/bug_ripper_normal_unlock/bug_ripper_normal_unlock.json": ["bug_research", 0, {row: 2, column: 0}],
@@ -57,3 +60,4 @@ var newBuildScenario = {
 if (Build && Build.HotkeyModel && Build.HotkeyModel.SpecIdToGridMap) {
     _.extend(Build.HotkeyModel.SpecIdToGridMap, newBuildScenario);
 }
+

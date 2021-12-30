@@ -3,6 +3,7 @@
         "/pa/units/structure/bug_mine/bug_mine.json",
         "/pa/units/structure/bug_mine_big/bug_mine_big.json",
         "/pa/units/structure/bug_metal_storage/bug_metal_storage.json",
+        "/pa/units/structure/bug_anti_orbital/bug_anti_orbital.json",
         "/pa/units/structure/bug_mine_big/bug_mine_big_dot.json",
         "/pa/units/structure/bug_aa_small/bug_aa_small.json",
         "/pa/units/structure/bug_aa_large/bug_aa_large.json",
@@ -15,6 +16,9 @@
         "/pa/units/structure/bug_turret_small/bug_turret_small.json",
         "/pa/units/structure/advanced_hive/advanced_hive.json",
         "/pa/units/structure/basic_hive/basic_hive.json",
+        "/pa/units/structure/bug_orbital_launcher/bug_orbital_launcher.json",
+        "/pa/units/structure/basic_air_hive/basic_air_hive.json",
+        "/pa/units/structure/basic_naval_hive/basic_naval_hive.json",
         "/pa/units/structure/bug_wall/bug_wall.json",
 
         "/pa/units/research/basic_research_station/basic_research_station.json",
