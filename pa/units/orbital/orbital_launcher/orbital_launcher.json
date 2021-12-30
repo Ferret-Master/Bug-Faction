@@ -7,7 +7,7 @@
     "build_metal_cost": 2700,
     "atrophy_rate": 45.0,
     "atrophy_cool_down": 15.0,
-    "buildable_types": "(Orbital & FactoryBuild & Basic) - Custom1 - Custom 2 - Custom3 - Custom4",
+    "buildable_types": "(Orbital & FactoryBuild & Basic) - Custom1 - Custom2 - Custom3 - Custom4",
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
     "enable_orbital_shell": true,
     "wait_to_rolloff_time": 3,

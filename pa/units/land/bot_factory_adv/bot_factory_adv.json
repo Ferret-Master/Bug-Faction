@@ -7,7 +7,7 @@
     "build_metal_cost": 4800,
     "atrophy_rate": 80.0,
     "atrophy_cool_down": 15.0,
-    "buildable_types": "(Bot & Mobile & FactoryBuild) - Custom1 - Custom 2 - Custom3 - Custom4",
+    "buildable_types": "(Bot & Mobile & FactoryBuild) - Custom1 - Custom2 - Custom3 - Custom4",
     "rolloff_dirs": [
         [
             0,

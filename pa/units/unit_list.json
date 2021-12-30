@@ -2,6 +2,7 @@
     "units": [  
         "/pa/units/structure/bug_mine/bug_mine.json",
         "/pa/units/structure/bug_mine_big/bug_mine_big.json",
+        "/pa/units/structure/bug_metal_storage/bug_metal_storage.json",
         "/pa/units/structure/bug_mine_big/bug_mine_big_dot.json",
         "/pa/units/structure/bug_aa_small/bug_aa_small.json",
         "/pa/units/structure/bug_aa_large/bug_aa_large.json",

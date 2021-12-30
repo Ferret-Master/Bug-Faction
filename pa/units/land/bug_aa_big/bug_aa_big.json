@@ -33,10 +33,6 @@
       "build_complete": {
         "audio_cue": "/SE/Build_Complete/veh"
       },
-      "fired": {
-        "audio_cue": "/SE/Weapons/veh/tank_T2_sheller",
-        "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle01"
-      },
       "died": {
         "audio_cue": "/SE/Death/Veh",
         "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",

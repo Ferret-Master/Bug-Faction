@@ -1,0 +1,21 @@
+{
+    "ammo_id": [
+      {
+        "layer": "WL_AnyLand",
+        "id": "/pa/units/land/bug_manticore/bug_manticore_ammo.json"
+      }
+    ],
+    "auto_attack": true,
+    "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+    "idle_aim_delay": 1.0,
+    "max_range": 100,
+    "pitch_range": 40,
+    "pitch_rate": 360,
+    "rate_of_fire": 0.34,
+    "target_layers": [
+      "WL_LandHorizontal",
+      "WL_WaterSurface"
+    ],
+    "yaw_range": 180,
+    "yaw_rate": 360
+  }

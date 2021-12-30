@@ -115,8 +115,13 @@
       7.6
     ],
     "model": {
-      "filename": "/pa/units/land/bug_sniper/bug_sniper.papa"
-     
+      "filename": "/pa/units/land/bug_sniper/bug_sniper.papa",
+      "animations": {
+        "walk": "/pa/units/land/bug_sniper/bug_sniper_walk.papa",
+        "idle":"/pa/units/land/bug_sniper/bug_sniper_idle.papa"
+      },
+      "walk_speed": 12,
+      "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json"
     },
     "navigation": {
       "type": "land-small",

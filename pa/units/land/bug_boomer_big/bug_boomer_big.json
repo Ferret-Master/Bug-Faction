@@ -54,8 +54,14 @@
       3.2
     ],
     "model": {
-        "filename": "/pa/units/land/bug_boomer_big/bug_boomer_big.papa"
-     
+        "filename": "/pa/units/land/bug_boomer_big/bug_boomer_big.papa",
+        "animations": {
+        
+          "idle": "/pa/units/land/bug_boomer_big/bug_boomer_big_idle.papa",
+          "walk": "/pa/units/land/bug_boomer_big/bug_boomer_big_walk.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/bot_bomb_anim_tree.json",
+        "walk_speed": 30
     },
     "navigation": {
       "type": "land-small",

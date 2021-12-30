@@ -8,6 +8,7 @@
     "atrophy_rate": 45.0,
     "atrophy_cool_down": 15.0,
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "si_name":"energy_plant_adv",
     "area_build_type": "Line",
     "production": {
         "energy": 3750
@@ -39,13 +40,8 @@
         }
     },
     "model": [
+       
         {
-            "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/structure/bug_advanced_energy/bug_advanced_energy.papa"
-        
-        },
-        {
-            "layer": "WL_WaterSurface",
             "filename": "/pa/units/structure/bug_advanced_energy/bug_advanced_energy.papa"
         }
     ],

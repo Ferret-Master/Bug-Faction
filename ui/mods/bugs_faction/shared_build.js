@@ -7,12 +7,14 @@ var newBuildScenario = {
     "/pa/units/structure/bug_advanced_extractor/bug_advanced_extractor.json": ["bug_utility", 4, {row: 0, column: 4}],
     "/pa/units/structure/bug_radar/bug_radar.json": ["bug_utility", 14, {row: 2, column: 2}],
     "/pa/units/structure/bug_radar_advanced/bug_radar_advanced.json": ["bug_utility", 8, {row: 1, column: 2}],
+    "/pa/units/structure/bug_metal_storage/bug_metal_storage.json": ["bug_utility", 16, {row: 2, column: 4}],
 
     
     //defenses
     "/pa/units/structure/bug_turret_small/bug_turret_small.json": ["bug_combat", 6, {row: 1, column: 0}],
     "/pa/units/structure/bug_aa_small/bug_aa_small.json": ["bug_combat", 13, {row: 2, column: 1}],
     "/pa/units/structure/bug_aa_large/bug_aa_large.json": ["bug_combat", 7, {row: 1, column: 1}],
+     "/pa/units/structure/bug_anti_orbital/bug_anti_orbital.json": ["bug_combat", 16, {row: 2, column: 4}],
 
     //factorys
     "/pa/units/structure/basic_hive/basic_hive.json": ["bug_factory", 16, {row: 2, column: 4}],

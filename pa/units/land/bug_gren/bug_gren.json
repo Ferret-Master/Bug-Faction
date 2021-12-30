@@ -31,7 +31,7 @@
       }
     },
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
-    "build_metal_cost": 100,
+    "build_metal_cost": 120,
     "events": {
       "build_complete": {
         "audio_cue": "/SE/Build_Complete/bot"
@@ -74,7 +74,7 @@
             "layer": "surface_and_air",
             "channel": "sight",
             "shape": "capsule",
-            "radius": 100
+            "radius": 120
           }
         ]
       }

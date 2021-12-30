@@ -81,13 +81,13 @@
             "layer": "surface_and_air",
             "channel": "sight",
             "shape": "capsule",
-            "radius": 85
+            "radius": 100
           },
           {
             "layer": "underwater",
             "channel": "sight",
             "shape": "capsule",
-            "radius": 85
+            "radius": 100
           }
         ]
       }
@@ -97,22 +97,14 @@
     },
     "tools": [
       {
-        "spec_id": "/pa/units/land/assault_bot_adv/assault_bot_adv_tool_weapon.json",
+        "spec_id": "/pa/units/land/bug_manticore/bug_manticore_weapon.json",
         "aim_bone": "bone_turret",
         "muzzle_bone": [
           "socket_rightMuzzle",
           "socket_leftMuzzle"
         ]
-      },
-      {
-        "spec_id": "/pa/units/land/assault_bot_adv/assault_bot_adv_torpedo_tool_weapon.json",
-        "aim_bone": "bone_turret",
-        "muzzle_bone": [
-          "socket_rightMuzzle",
-          "socket_leftMuzzle"
-        ],
-        "show_range": false
       }
+  
     ],
     "transportable": {
       "size": 1

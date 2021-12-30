@@ -103,6 +103,10 @@
       {
         "spec_id": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_weapon.json",
         "aim_bone": "bone_head"
+      },
+      {
+        "spec_id": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_metal_weapon.json",
+        "aim_bone": "bone_head"
       }
     ],
     "transportable": {

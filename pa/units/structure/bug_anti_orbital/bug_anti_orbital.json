@@ -1,0 +1,160 @@
+{
+    "display_name": "Bug Umbrella",
+    "description": "!LOC:Anti-Orbital Defense - Rapid fire with high damage. Attacks orbital targets and intercepts drop pods.",
+    "TEMP_texelinfo": 32.1806,
+    "area_build_separation": 50,
+    "si_name":"ion_defense",
+    "area_build_type": "Sphere",
+    "atrophy_cool_down": 15.0,
+    "atrophy_rate": 29.16667,
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "build_metal_cost": 900,
+    "command_caps": [
+      "ORDER_Attack"
+    ],
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/structure_small"
+      },
+      "fired0": {
+        "audio_cue": "/SE/Weapons/orb/umbrella_laser_fire",
+        "effect_spec": "/pa/units/orbital/ion_defense/ion_defense_muzzle_flash.pfx socket_muzzle01"
+      },
+      "fired1": {
+        "audio_cue": "/SE/Weapons/orb/umbrella_mis_anti_unitcannon_fire"
+      },
+      "died": {
+        "audio_cue": "/SE/Death/structure_small",
+        "effect_scale": 1.0
+      }
+    },
+    "guard_layer": "WL_Orbital",
+    "lamps": [
+      {
+        "offset": [
+          -8.0,
+          8.0,
+          4.22
+        ],
+        "radius": 5.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 5.75
+      },
+      {
+        "offset": [
+          2.8,
+          -4.8,
+          0
+        ],
+        "radius": 8.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 2.0,
+        "bone": "bone_pitch"
+      },
+      {
+        "offset": [
+          -2.8,
+          -4.8,
+          0
+        ],
+        "radius": 8.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 2.0,
+        "bone": "bone_pitch"
+      }
+    ],
+    "max_health": 900,
+    "mesh_bounds": [
+      19,
+      20.6558,
+      15.4
+    ],
+    "model": [
+      {
+        "layer": "WL_LandHorizontal",
+        "filename": "/pa/units/orbital/ion_defense/ion_defense.papa",
+        "animtree": "/pa/anim/anim_trees/ion_defense_anim_tree.json",
+        "skirt_decal": "/pa/effects/specs/skirt_ion_defense.json"
+      },
+      {
+        "layer": "WL_WaterSurface",
+        "filename": "/pa/units/sea/ion_defense/ion_defense.papa",
+        "animtree": "/pa/anim/anim_trees/ion_defense_anim_tree.json"
+      }
+    ],
+    "physics": {
+      "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
+    },
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 100
+          },
+          {
+            "layer": "orbital",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 500
+          },
+          {
+            "layer": "underwater",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 100
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 34.0
+    },
+    "show_in_orbital_layer": false,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "tools": [
+      {
+        "spec_id": "/pa/units/orbital/ion_defense/ion_defense_tool_weapon.json",
+        "aim_bone": "bone_turret",
+        "record_index": 0,
+        "fire_event": "fired0",
+        "muzzle_bone": [
+          "socket_muzzle01"
+        ]
+      },
+      {
+        "spec_id": "/pa/units/orbital/ion_defense/ion_defense_tool_antidrop.json",
+        "aim_bone": "bone_turret",
+        "record_index": 1,
+        "fire_event": "fired1",
+        "muzzle_bone": [
+          "socket_muzzle02",
+          "socket_muzzle03"
+        ]
+      }
+    ],
+    "unit_types": [
+      "UNITTYPE_Structure",
+      "UNITTYPE_Basic",
+      "UNITTYPE_Defense",
+      "UNITTYPE_OrbitalDefense",
+      "UNITTYPE_FabBuild",
+      "UNITTYPE_FabAdvBuild",
+      "UNITTYPE_CombatFabAdvBuild",
+      "UNITTYPE_CmdBuild"
+    ]
+  }
