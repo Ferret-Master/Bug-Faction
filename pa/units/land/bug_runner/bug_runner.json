@@ -34,7 +34,12 @@
     "selection_response": {
       "cue": "/SE/Selection/bot/spark"
     },
-  
+    "command_caps": [
+      "ORDER_Move",
+      "ORDER_Patrol",
+      "ORDER_Assist",
+      "ORDER_Use"
+    ],
   "build_metal_cost": 100,
   "events": {
     "build_complete": {
@@ -112,12 +117,6 @@
   "selection_icon": {
     "diameter": 11.0
   },
-  "tools": [
-    {
-      "spec_id": "/pa/units/land/bug_runner/bug_runner_weapon.json",
-      "aim_bone": "bone_head"
-    }
-  ],
   "transportable": {
     "size": 1
   },

@@ -55,7 +55,7 @@
       3
     ],
     "guard_layer": "WL_AnySurface",
-    "guard_radius": 80,
+    "guard_radius":200,
     "model": {
       "filename": "/pa/units/land/bug_ripper/bug_ripper.papa",
       "animations": {

@@ -155,6 +155,7 @@
       "UNITTYPE_FabBuild",
       "UNITTYPE_FabAdvBuild",
       "UNITTYPE_CombatFabAdvBuild",
-      "UNITTYPE_CmdBuild"
+      "UNITTYPE_CmdBuild",
+      "UNITTYPE_Custom2"
     ]
   }
