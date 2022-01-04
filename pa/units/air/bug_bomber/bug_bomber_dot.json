@@ -10,8 +10,7 @@
         "audio_cue": "/SE/Build_Complete/barrier"
       },
       "died": {
-        "audio_cue": "/SE/Death/barrier",
-        "effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx"
+        "audio_cue": "/SE/Death/barrier"
       }
     },
     "max_health": 100,
@@ -23,12 +22,8 @@
     ],
     "model": [
       {
-        "layer": "WL_LandHorizontal",
-        "filename": "/pa/units/land/land_mine/land_mine.papa"
-      },
-      {
-        "layer": "WL_WaterSurface",
-        "filename": "/pa/units/sea/sea_mine/sea_mine.papa"
+       
+        "filename": ""
       }
     ],
     "physics": {

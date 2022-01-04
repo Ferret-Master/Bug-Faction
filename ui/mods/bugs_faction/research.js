@@ -341,55 +341,5 @@ model.playerArmy = function(playerId, planetId,unitType, stateFlag,unitTypeValue
 
 
 }
-//taken from live game, stores the most up to date build order of selections
-// model.parseSelection = function (payload)
-//         {
-//             var i = 0;
-//             var tabs = {};
-//             var selectionCanBuild = false;
 
-//             self.allowedCommands = {};
 
-//             self.buildItemMinIndex(0);
-
-//             self.cmdIndex(-1);
-//             self.selectionTypes([]);
-
-//             for (var id in payload.spec_ids) {
-//                 var unit = self.unitSpecs[id];
-//                 if (!unit)
-//                     continue;
-
-//                 for (i = 0; i < unit.commands.length; i++)
-//                     self.allowedCommands[unit.commands[i]] = true;
-
-//                 selectionCanBuild |= unit.canBuild;
-
-//                 self.selectionTypes().push(id);
-//             }
-
-//             if (!tabs[self.activeBuildGroup()])
-//                 self.activeBuildGroup(null);
-
-//             self.selectedMobile(payload.selected_mobile);
-
-//             if (self.reviewMode() || self.isSpectator())
-//                 selectionCanBuild = false;
-
-//             if (selectionCanBuild) {
-//                 if (self.selectedMobile()) {
-//                     modify_keybinds({ remove: ['build unit'], add: ['build structure'] });
-//                 } else {
-//                     modify_keybinds({ remove: ['build structure'], add: ['build unit'] });
-//                 }
-//             }
-//             else {
-//                 modify_keybinds({ remove: ['build structure', 'build unit'] });
-//                 model.clearBuildSequence();
-//             }
-
-//             if (!$.isEmptyObject(payload.spec_ids))
-//                 self.selection(payload);
-//             else
-//                 self.selection(null);
-//         };

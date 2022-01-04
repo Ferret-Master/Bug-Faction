@@ -51,8 +51,13 @@
       3.8
     ],
     "model": {
-      "filename": "/pa/units/land/bug_hydra/bug_hydra.papa"
-     
+      "filename": "/pa/units/land/bug_hydra/bug_hydra.papa",
+      "animations": {
+        "walk": "/pa/units/land/bug_hydra/bug_hydra_walk.papa",
+        "idle":"/pa/units/land/bug_hydra/bug_hydra_idle.papa"
+      },
+      "walk_speed": 12,
+      "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json"
      
     },
     "navigation": {
@@ -85,7 +90,7 @@
     "tools": [
       {
         "spec_id": "/pa/units/land/bug_hydra/bug_hydra_weapon.json",
-        "aim_bone": "socket_aim",
+        "aim_bone": "bone_turret",
         "muzzle_bone": "socket_muzzle"
       }
     ],

@@ -39,6 +39,21 @@ model.mapFactoryBuildToIds = function(selectedFacIds, unitSpec, count, cancel, u
 
 }
 
+// model.replaceUnitQueue = function(facsToReQueue,oldUnit, newUnit, cancel){
+//     for (var i = 0; i < facsToReQueue.length; i++) {
+//         var amount = factoryMap[facsToReQueue[i]][oldUnit] 
+//         if(cancel == false){
+//             api.unit.build(newUnit, amount, priority);
+//             api.unit.cancelBuild(oldUnit, amount, priority);
+//         }
+//         else{
+//             api.unit.cancelBuild(oldUnit, amount, priority);
+//         }
+//     }
+// }
+
+
+
 //this does not track issuing stop commands which are also important for tracking
 model.executeStartBuild = function (params) {
     var selectedFacIds = [];
