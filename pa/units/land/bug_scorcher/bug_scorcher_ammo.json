@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/ammo/base_shell/base_shell.json",
-    "damage": 70,
+    "damage": 50,
     
     "flight_type": "seeking",
     "fx_trail": {

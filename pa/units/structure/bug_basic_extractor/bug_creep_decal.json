@@ -1,0 +1,5 @@
+{
+    "diffuse": "/pa/units/structure/bug_basic_extractor/creep_decal_02_diffuse.papa",
+    "normal": "/pa/units/structure/bug_basic_extractor/creep_decal_02_normal.papa",
+    "material": "/pa/effects/textures/skirts/skirt_01_material.papa"
+}

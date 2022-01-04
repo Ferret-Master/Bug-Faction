@@ -1,6 +1,6 @@
 {
     "display_name": "Ripper",
-    "description": "Basic bug.",
+    "description": "Basic Bug -  Melee raider, fast, extremely expendable.",
     "si_name": "ripper",
 
     "TEMP_texelinfo": 4.07719,
@@ -48,7 +48,7 @@
         "effect_scale": 0.90000004
       }
     },
-    "max_health": 40,
+    "max_health": 50,
     "mesh_bounds": [
       3,
       3,
@@ -91,10 +91,6 @@
     "tools": [
       {
         "spec_id": "/pa/units/land/bug_ripper/bug_ripper_weapon.json",
-        "aim_bone": "bone_head"
-      },
-      {
-        "spec_id": "/pa/units/land/bug_ripper/bug_ripper_metal_weapon.json",
         "aim_bone": "bone_head"
       }
     ],

@@ -6,11 +6,55 @@ model.oldUnits = []//units being replaced, this is checked before building anyth
 
 model.newUnits = []//replaces the id if an old unit is hotkeyed
 
+//factory map will link each factory id to a buildqueue
+//in order to track correctly this will be done on orders issued rather than factory selection
+factorySpecs = [
+    "/pa/units/structure/advanced_hive/advanced_hive.json",
+    "/pa/units/structure/basic_hive/basic_hive.json"
+]
+
+model.factoryMap = {}
+
+model.mapFactoryBuildToIds = function(selectedFacIds, unitSpec, count, cancel, urgent){//if urgent we ignore otherwise we update the map
+
+    for(var i = 0 ; i < selectedFacIds.length; i++){
+        if(urgent){continue}
+        if(model.factoryMap[selectedFacIds[i]] == undefined){
+            model.factoryMap[selectedFacIds[i]] = {}
+        }
+        var unitsQueued = model.factoryMap[selectedFacIds[i]][unitSpec];
+        if(unitsQueued == undefined){
+            model.factoryMap[selectedFacIds[i]][unitSpec] = 0;
+            unitsQueued = 0;
+        }
+        if(cancel){
+            unitsQueued = unitsQueued - count
+            if(unitsQueued < 0){unitsQueued = 0}
+        }
+        else{
+            unitsQueued = unitsQueued + count
+        }
+        model.factoryMap[selectedFacIds[i]][unitSpec] = unitsQueued;
+    }
+
+}
+
+//this does not track issuing stop commands which are also important for tracking
 model.executeStartBuild = function (params) {
+    var selectedFacIds = [];
     var id = params.item;
     for(var i = 0;i<model.oldUnits.length;i++){
         if(id == model.oldUnits[i]){
             id = model.newUnits[i];
+        }
+    }
+    for(var i = 0; i < factorySpecs.length; i++){
+        var facTypeInSelection = model.selection().spec_ids[factorySpecs[i]]
+        if(facTypeInSelection !== undefined){
+            for(var j = 0; j < facTypeInSelection.length; j++){
+                selectedFacIds.push(facTypeInSelection[j])
+            }
+            
         }
     }
     var batch = params.batch;
@@ -33,10 +77,7 @@ model.executeStartBuild = function (params) {
     }
     else {
         var count = batch ? model.batchBuildSize() : 1;
-        console.log(id)
-        console.log(urgent)
-        console.log(count)
-        console.log(more)
+        model.mapFactoryBuildToIds(selectedFacIds, id, count, cancel, urgent)
         if (cancel) {
             api.unit.cancelBuild(id, count, urgent);
             api.audio.playSound('/SE/UI/UI_factory_remove_from_queue');
@@ -72,3 +113,5 @@ handlers.replaceHotkey = function(unitPair){
     model.oldUnits.push(unitPair[0])
     model.newUnits.push(unitPair[1])
 }
+
+

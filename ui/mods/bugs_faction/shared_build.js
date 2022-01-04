@@ -8,6 +8,7 @@ var newBuildScenario = {
     "/pa/units/structure/bug_radar/bug_radar.json": ["bug_utility", 14, {row: 2, column: 2}],
     "/pa/units/structure/bug_radar_advanced/bug_radar_advanced.json": ["bug_utility", 8, {row: 1, column: 2}],
     "/pa/units/structure/bug_metal_storage/bug_metal_storage.json": ["bug_utility", 16, {row: 2, column: 4}],
+    "/pa/units/structure/bug_teleporter/bug_teleporter.json": ["bug_utility", 13, {row: 2, column: 1}],
 
     
     //defenses
@@ -40,6 +41,10 @@ var newBuildScenario = {
     "/pa/units/land/bug_runner/bug_runner.json": ["bug_ground", 16, {row: 2, column: 3}],
     "/pa/units/land/bug_boomer/bug_boomer.json": ["bug_ground", 17, {row: 2, column: 5}],
     "/pa/units/land/bug_aa/bug_aa.json": ["bug_ground", 18, {row: 2, column: 4}],
+
+    //t1 air hive
+    "/pa/units/air/bug_fighter/bug_fighter.json": ["bug_air", 13, {row: 2, column: 1}],
+    "/pa/units/air/bug_bomber/bug_bomber.json": ["bug_air", 14, {row: 2, column: 2}],
 
     //t2 hive
     "/pa/units/land/bug_bot_fab_advanced/bug_bot_fab_advanced.json": ["bug_ground", 6, {row: 1, column: 0}],

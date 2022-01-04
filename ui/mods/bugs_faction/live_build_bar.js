@@ -43,8 +43,9 @@ model.unlockUnit = function(unitName){//units are unlocked by removing the _disa
 //loop through each of these and replace any id's/buildbar icons that need replacing
 
 //takes in array of units to replace and what to replace them with
-model.replaceUnit = function(originalNames, replacementNames){
-  
+//if replaceQueue is true it replaces the old unit in the queue, if it is false it removes it, if undefined nothing
+model.replaceUnit = function(originalNames, replacementNames, replaceQueue){
+
     var tabs = model.buildSet().tabs()
     for(var i = 0;i<tabs.length;i++){
         var tab = tabs[i].items();
@@ -74,10 +75,30 @@ model.replaceUnit = function(originalNames, replacementNames){
     for(var i = 0; i< originalNames.length;i++){
         api.Panel.message(api.Panel.parentId,'replaceHotkey',[originalNames[i],replacementNames[i]]);
         model.setupReplaceCount([originalNames[i],replacementNames[i]])
+
+        //can use autofac method or sendOrder method, autofac is known to work so will go with that
+    // if(factoryMap !== undefined && replaceQueue !== undefined){
+    //     var facKeys = _.keys(factoryMap)
+    //     var facsToReQueue = []
+    //     for(var j = 0; j < facKeys.length; j++){
+    //         if(factoryMap[facKeys[j]][originalNames[i]] > 0){//if the factory has any of the original unit
+    //             facsToReQueue.push(facKeys[j])
+    //         }
+    //     }
+    //     if(replaceQueue === true){
+    //         model.replaceUnitQueue(facsToReQueue,originalNames[i],replacementNames[i], false)
+    //     }
+    //     else{
+    //         model.replaceUnitQueue(facsToReQueue,originalNames[i],replacementNames[i], true)
+    //     }
+    // }
     }
-   
+
+    
 
 }
+
+
 
 handlers.lockUnit = function(payload){
     console.log("locking unit"+payload)
@@ -92,7 +113,7 @@ handlers.unlockUnit = function(payload){
 
 handlers.replaceUnit = function(payload){
     console.log("replacing units"+payload)
-    model.replaceUnit(payload[0],payload[1])
+    model.replaceUnit(payload[0],payload[1],payload[2])
 }
 
 var tempfunction = function(selection)//shadowing the selection function to fake unit counts

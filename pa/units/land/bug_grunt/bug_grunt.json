@@ -1,7 +1,7 @@
 
 {
   "display_name": "Grunt",
-  "description": "A basic melee bug unit, tanky with aoe swipes",
+  "description": "Armored Bug - Melee, heavily armored, expendable.",
   "si_name": "grunt",
   "TEMP_texelinfo": 4.07719,
   "attachable": {

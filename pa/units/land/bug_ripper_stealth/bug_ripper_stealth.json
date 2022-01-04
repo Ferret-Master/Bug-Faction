@@ -49,7 +49,7 @@
         "effect_scale": 0.90000004
       }
     },
-    "max_health": 40,
+    "max_health": 60,
     "mesh_bounds": [
       3,
       3,

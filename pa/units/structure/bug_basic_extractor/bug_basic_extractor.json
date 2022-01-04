@@ -54,7 +54,8 @@
             "animations": {
                 "idle": "/pa/units/land/metal_extractor/metal_extractor_anim_work.papa"
             },
-            "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json"
+            "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json",
+            "skirt_decal": "/pa/units/structure/bug_basic_extractor/bug_creep_skirt.json"
         },
         {
             "layer": "WL_WaterSurface",
@@ -62,7 +63,8 @@
             "animations": {
                 "idle": "/pa/units/sea/sea_metal_extractor/sea_metal_extractor_anim_work.papa"
             },
-            "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json"
+            "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json",
+            "skirt_decal": "/pa/units/structure/bug_basic_extractor/bug_creep_skirt.json"
         }
     ],
     "replaceable_units": [

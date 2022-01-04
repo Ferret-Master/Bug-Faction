@@ -1,0 +1,12 @@
+{
+    "base_spec": "/pa/effects/specs/dynamic_decal_base.json",
+    "layer": 0,
+    "bias": 200,
+    "simplex_range": [ 10, 10 ],
+    "pos_range": [ 10, 10 ],
+    "scale": [ 160, 160, 1 ],
+    "scale_range": 0.2,
+    "count": 1,
+    "fixed_orient": false,
+    "material_spec": "/pa/units/structure/bug_basic_extractor/bug_creep_decal.json"
+}

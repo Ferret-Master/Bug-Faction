@@ -43,9 +43,9 @@
     "factory_cooldown_time": 5,
     "max_health": 6000,
     "mesh_bounds": [
-      29.5,
-      30.5,
-      40.2
+      25.5,
+      25.5,
+      25.2
     ],
     "model": {
      

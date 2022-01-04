@@ -31,7 +31,7 @@
       }
     },
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
-    "build_metal_cost": 120,
+    "build_metal_cost": 130,
     "events": {
       "build_complete": {
         "audio_cue": "/SE/Build_Complete/bot"

@@ -1,6 +1,7 @@
 {
     "display_name": "bug boomer dot",
     "description": "damage over time unit",
+    "si_name":"blank_blip",
     "TEMP_texelinfo": 2.37699,
  
   
@@ -45,7 +46,9 @@
     },
     "recon": {
       "observable": {
-        "layer": "mine"
+        "ignore_radar": true,
+        "ignore_sight": true,
+        "layer": "surface_and_air"
       },
       "observer": {
         "items": [
