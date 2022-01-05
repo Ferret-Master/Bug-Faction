@@ -38,7 +38,7 @@
       },
       "fired": {
         "audio_cue": "/SE/Weapons/bot/assault_adv_fire",
-        "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/default_small_muzzle_flash.pfx socket_leftMuzzle"
+        "effect_spec": "/pa/units/land/bug_manticore/manticore_muzzle.pfx bone_root"
       },
       "died": {
         "audio_cue": "/SE/Death/Bot",

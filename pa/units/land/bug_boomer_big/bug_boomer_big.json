@@ -41,9 +41,8 @@
         "effect_spec": ""
       },
       "died": {
-        "audio_cue": "/SE/Death/Bot_bomb",
-        "effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx",
-        "effect_scale": 1.0
+        "audio_cue": "/SE/Death/Bot_bomb"
+
       }
     },
     "guard_layer": "WL_AnySurface",
@@ -90,6 +89,7 @@
     "selection_icon": {
       "diameter": 9.0
     },
+   
     "spawn_layers": "WL_LandHorizontal",
     "tools": [
       {

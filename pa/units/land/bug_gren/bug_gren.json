@@ -37,7 +37,8 @@
         "audio_cue": "/SE/Build_Complete/bot"
       },
       "fired": {
-        "audio_cue": "/SE/Weapons/bot/grenadier_fire"
+        "audio_cue": "/SE/Weapons/bot/grenadier_fire",
+        "effect_spec": "/pa/units/land/bug_gren/gren_muzzle.pfx socket_muzzle"
         
       },
       "died": {

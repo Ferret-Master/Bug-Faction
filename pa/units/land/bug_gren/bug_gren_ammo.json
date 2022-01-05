@@ -4,7 +4,7 @@
     "damage": 120,
     "events": {
       "died": {
-        "effect_spec": "/pa/units/land/bug_needler/needle_explosion.pfx"
+        "effect_spec": "/pa/units/land/bug_gren/gren_impact_explosion.pfx"
       }
     },
 

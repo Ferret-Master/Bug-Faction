@@ -34,7 +34,8 @@
         "audio_cue": "/SE/Build_Complete/veh"
       },
       "fired": {
-        "audio_cue": "/SE/Weapons/veh/tank_T2_sheller"
+        "audio_cue": "/SE/Weapons/veh/tank_T2_sheller",
+        "effect_spec": "/pa/units/land/bug_hydra/hydra_muzzle.pfx socket_muzzle"
       },
       "died": {
         "audio_cue": "/SE/Death/Veh",
@@ -46,9 +47,9 @@
     "influence_radius": 400,
     "max_health": 500,
     "mesh_bounds": [
-      7,
-      7.5,
-      3.8
+      12,
+      12,
+      15
     ],
     "model": {
       "filename": "/pa/units/land/bug_hydra/bug_hydra.papa",
@@ -90,7 +91,7 @@
     "tools": [
       {
         "spec_id": "/pa/units/land/bug_hydra/bug_hydra_weapon.json",
-        "aim_bone": "bone_turret",
+        "aim_bone": "bone_pitch",
         "muzzle_bone": "socket_muzzle"
       }
     ],

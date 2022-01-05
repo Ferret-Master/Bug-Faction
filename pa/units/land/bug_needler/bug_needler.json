@@ -56,7 +56,7 @@
       },
       "fired": {
         "audio_cue": "/SE/Weapons/bot/assault_fire",
-        "effect_spec": "/pa/units/land/bug_needler/bug_muzzle_flash.pfx bone_barrel"
+        "effect_spec": "/pa/units/land/bug_needler/needler_muzzle.pfx bone_root"
       },
       "died": {
         "audio_cue": "/SE/Death/Bot",

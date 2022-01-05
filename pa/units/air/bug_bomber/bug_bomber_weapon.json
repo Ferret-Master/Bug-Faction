@@ -15,7 +15,7 @@
     },
     "firing_standard_deviation": 1,
     "max_range": 100,
-    "pitch_range": 40,
+    "pitch_range": 30,
     "pitch_rate": 3600,
     "rate_of_fire": 7.5,
     "spread_fire": true,

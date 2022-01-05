@@ -4,7 +4,7 @@
     "events": {
       "died": {
         "audio_cue": "/SE/Impacts/bomb_bot_plasma",
-        "effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx"
+        "effect_spec":"/pa/units/air/bug_bomber/acid_puddle.pfx"
       }
     },
     "full_splash_damage_radius": 3,

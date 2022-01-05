@@ -52,7 +52,7 @@
     "mesh_bounds": [
         65,
         65,
-        100
+        50
     ],
     "model": {
         "filename": "/pa/units/land/bug_titan/bug_titan.papa",
