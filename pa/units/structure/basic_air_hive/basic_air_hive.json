@@ -38,7 +38,7 @@
         "effect_scale": 1.0
       }
     },
-    "factory_cooldown_time": 2,
+    "factory_cooldown_time": 1.5,
     "fx_offsets": [
       {
         "bone": "bone_outsideRing",
