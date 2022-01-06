@@ -1,6 +1,7 @@
   
 var paeiouIcons = [
 	"bug_bomber",
+	"bug_commander",
 	"bug_harpy",
 	"bug_fighter",
 	"bug_radar",
@@ -25,6 +26,7 @@ var paeiouIcons = [
 	"big_runner",
 	"runner",
 	"asteroid",
+	"bug_swarm_hive",
 	"basic_hive",
 	"medium_hive",
 	"advanced_hive",

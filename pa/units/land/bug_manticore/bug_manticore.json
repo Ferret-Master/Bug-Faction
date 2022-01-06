@@ -119,5 +119,10 @@
       "UNITTYPE_CannonBuildable",
       "UNITTYPE_Amphibious",
       "UNITTYPE_Custom2"
-    ]
+    ],
+    "death": {
+      "decals": [
+        "/pa/decals/decal_bug_splat_big.json"
+      ]
+    }
   }

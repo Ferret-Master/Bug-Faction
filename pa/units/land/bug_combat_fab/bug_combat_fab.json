@@ -2,6 +2,7 @@
     "display_name": "Stitch",
     "description": "!LOC:Combat Fabricator - Repairs damaged units. Can build and detect mines. Can build teleporters. Can't help build other structures.",
     "TEMP_texelinfo": 5.11028,
+    "si_name":"fabrication_bot_combat",
     "attachable": {
       "offsets": {
         "head": [

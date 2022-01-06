@@ -40,7 +40,7 @@
       "ORDER_Assist",
       "ORDER_Use"
     ],
-  "build_metal_cost": 100,
+  "build_metal_cost": 80,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/bot",

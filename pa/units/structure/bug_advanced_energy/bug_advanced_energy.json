@@ -84,5 +84,10 @@
         30,
         30
     ],
-    "TEMP_texelinfo": 32.6108
+    "TEMP_texelinfo": 32.6108,
+    "death": {
+        "decals": [
+          "/pa/decals/decal_bug_splat_big.json"
+        ]
+      }
 }

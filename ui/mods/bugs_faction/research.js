@@ -15,6 +15,8 @@ model.lockedUnits = [];
 
 //hardcoded pairs, can be added to by research packs by appending, format is [[researchfactoryunit,[unitsToUnlock],[unitToLock],replaceLockedUnitsBool]
 
+//with the addition of replacing units queued I think I will have it be default as the only edge case is research which I will just not track
+
 //to combo replace/lock have locked units be on the end of the unitsToLock array and not match up numerically with the unitsToUnlock array
 
 model.unlockPairs = [
@@ -96,11 +98,13 @@ researchLoop = function(){
                             console.log("replacing units")
                             for(var i = 0; i< pair[2].length;i++){
                                 if(pair[1][i] !== undefined){//matching replace
-                                    console.log("replacing unit")
-                                    api.Panel.message("build_bar", 'replaceUnit',[[pair[2][i]],[pair[1][i]]])
+                                 
+                                    api.Panel.message("build_bar", 'replaceUnit',[[pair[2][i]],[pair[1][i]], pair[3]])
                                 }
                                 else{//lock the pair 2 as it has no match
-                                    console.log("locking unit that did not have replace pair")
+                                   
+                                    //replace that sets the new unit to undefined as a way to cancel its build order
+                                    api.Panel.message("build_bar", 'replaceUnit',[[pair[2][i]],[undefined], pair[3]])
                                     api.Panel.message("build_bar", 'lockUnit',pair[2][i])
                                 }
                             }

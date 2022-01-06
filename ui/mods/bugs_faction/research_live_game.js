@@ -10,7 +10,10 @@ model.newUnits = []//replaces the id if an old unit is hotkeyed
 //in order to track correctly this will be done on orders issued rather than factory selection
 factorySpecs = [
     "/pa/units/structure/advanced_hive/advanced_hive.json",
-    "/pa/units/structure/basic_hive/basic_hive.json"
+    "/pa/units/structure/basic_hive/basic_hive.json",
+    "/pa/units/structure/basic_air_hive/basic_air_hive.json",
+    "/pa/units/research/basic_research_station/basic_research_station.json"
+
 ]
 
 model.factoryMap = {}
@@ -39,18 +42,43 @@ model.mapFactoryBuildToIds = function(selectedFacIds, unitSpec, count, cancel, u
 
 }
 
-// model.replaceUnitQueue = function(facsToReQueue,oldUnit, newUnit, cancel){
-//     for (var i = 0; i < facsToReQueue.length; i++) {
-//         var amount = factoryMap[facsToReQueue[i]][oldUnit] 
-//         if(cancel == false){
-//             api.unit.build(newUnit, amount, priority);
-//             api.unit.cancelBuild(oldUnit, amount, priority);
-//         }
-//         else{
-//             api.unit.cancelBuild(oldUnit, amount, priority);
-//         }
-//     }
-// }
+model.replaceUnitQueue = function(facsToReQueue,oldUnit, newUnit, maxAmount){//this should only run between selections
+    var selectedIdArray = [];
+    if(model.selection()){
+
+        selectedUnitArray = model.selection().spec_ids;
+        var unitKeys = _.keys(selectedUnitArray);
+        for(key in unitKeys){
+           
+            selectedIdArray = selectedIdArray.concat(selectedIdArray, selectedUnitArray[unitKeys[key]]);
+
+        }
+    }
+    var facIds = [];
+    _.forEach(facsToReQueue, function(fac){facIds.push(fac[0])})
+    //select facs that are needed initally
+    api.select.unitsById(facIds);
+    api.unit.cancelBuild(oldUnit, 100, false);
+    //deselect facs that have the right amount queued
+    for (var i = 0; i < maxAmount; i++) {
+        for (var j = 0; j < facsToReQueue.length; j++) {
+    
+            var amount = facsToReQueue[j][1]
+           
+            if(amount == i){
+                facIds.splice(j,1);
+                console.log("spliced fac out of selection");
+                facsToReQueue.splice(j,1);
+            }
+        }
+       api.select.unitsById(facIds);
+       if(newUnit !== null){
+       api.unit.build(newUnit, 1, false);}
+    }
+    api.select.empty();
+    api.select.unitsById(selectedIdArray);
+}
+
 
 
 
@@ -125,8 +153,25 @@ handlers.replaceHotkey = function(unitPair){
             return;
         }
     }
-    model.oldUnits.push(unitPair[0])
-    model.newUnits.push(unitPair[1])
+    model.oldUnits.push(unitPair[0]);
+    model.newUnits.push(unitPair[1]);
+}
+
+handlers.replaceQueue = function(unitPair){
+    
+    var oldUnit = unitPair[0];
+    var newUnit = unitPair[1];
+    var facKeys = _.keys(model.factoryMap);
+    var facsToQueue = [];//will contain fac id's along with the amount of the unit queued
+    var maxAmount = 0;
+    _.forEach(facKeys,function(key){
+        var amount = model.factoryMap[key][oldUnit]
+        if(amount > maxAmount){maxAmount = amount}
+        if(amount > 0){
+            facsToQueue.push([parseInt(key),amount])
+        }
+    })
+    model.replaceUnitQueue(facsToQueue,oldUnit,newUnit,maxAmount);
 }
 
 

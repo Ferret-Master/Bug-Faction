@@ -45,7 +45,8 @@ model.unlockUnit = function(unitName){//units are unlocked by removing the _disa
 //takes in array of units to replace and what to replace them with
 //if replaceQueue is true it replaces the old unit in the queue, if it is false it removes it, if undefined nothing
 model.replaceUnit = function(originalNames, replacementNames, replaceQueue){
-
+    console.log(replacementNames[0])
+    if(replacementNames[0] !== null){
     var tabs = model.buildSet().tabs()
     for(var i = 0;i<tabs.length;i++){
         var tab = tabs[i].items();
@@ -60,21 +61,25 @@ model.replaceUnit = function(originalNames, replacementNames, replaceQueue){
                         model.buildSet().tabs()[i].items()[j][k].id =  replacementNames[nameIndex]
                         var buildbarReplacement = replacementNames[nameIndex].replace('.json','_icon_buildbar.png')
                         buildbarReplacement =  "coui:/" + buildbarReplacement
-                        console.log("old image")
-                        console.log(model.buildSet().tabs()[i].items()[j][k].buildIcon())
+                        // console.log("old image")
+                        // console.log(model.buildSet().tabs()[i].items()[j][k].buildIcon())
 
-                        console.log("new image")
-                        console.log(buildbarReplacement)
+                        // console.log("new image")
+                        // console.log(buildbarReplacement)
                         model.buildSet().tabs()[i].items()[j][k].buildIcon(buildbarReplacement)
                     }
                 }
             }
         }
     }
-
+}
     for(var i = 0; i< originalNames.length;i++){
-        api.Panel.message(api.Panel.parentId,'replaceHotkey',[originalNames[i],replacementNames[i]]);
+        if(replacementNames[0] !== null){
+        api.Panel.message(api.Panel.parentId,'replaceHotkey',[originalNames[i],replacementNames[i]]);}
+        if(replaceQueue == true){api.Panel.message(api.Panel.parentId,'replaceQueue',[originalNames[i],replacementNames[i]]);}
+        if(replacementNames[0] !== null){
         model.setupReplaceCount([originalNames[i],replacementNames[i]])
+        }
 
         //can use autofac method or sendOrder method, autofac is known to work so will go with that
     // if(factoryMap !== undefined && replaceQueue !== undefined){

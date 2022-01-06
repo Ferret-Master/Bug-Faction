@@ -1,6 +1,7 @@
 {
     "base_spec": "/pa/units/commanders/base_bug_commander/base_commander.json",
     "display_name": "Bug Commander",
+    "si_name":"bug_commander",
     "description": "Bug Commander ",
     "attachable": {
         "offsets": {
