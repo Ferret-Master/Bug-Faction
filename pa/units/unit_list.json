@@ -28,8 +28,6 @@
         "/pa/units/research/basic_research_station/basic_research_station.json",
         "/pa/units/research/advanced_research_station/advanced_research_station.json",
 
-        "/pa/units/research/unlocks/bug_ripper_normal_unlock/bug_ripper_normal_unlock.json",
-        "/pa/units/research/unlocks/bug_ripper_stealth_return_unlock/bug_ripper_stealth_return_unlock.json",
         "/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json",
         "/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json",
 
@@ -52,14 +50,13 @@
         "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.json",
         "/pa/units/land/bug_ripper/bug_ripper.json",
         "/pa/units/land/bug_runner/bug_runner.json",
-        "/pa/units/land/bug_runner_big/runner_big.json",
-        "/pa/units/land/bug_basilisk/bug_basilisk.json",
+        
         "/pa/units/land/bug_scorcher/bug_scorcher.json",
         "/pa/units/land/bug_titan/bug_titan.json",
         "/pa/units/land/bug_boomer/bug_boomer.json",
-		"/pa/units/land/bug_warrior_big/bug_warrior_big.json",
+		
 	    "/pa/units/land/bug_grunt_big/bug_grunt_big.json",
-        "/pa/units/land/bug_warrior/bug_warrior.json",
+   
         "/pa/units/land/bug_needler/bug_needler.json",
         "/pa/units/land/bug_manticore/bug_manticore.json",
         "/pa/units/land/bug_sniper/bug_sniper.json",

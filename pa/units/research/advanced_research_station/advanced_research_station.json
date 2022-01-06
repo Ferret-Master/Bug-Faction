@@ -50,7 +50,7 @@
     "model": {
      
     
-      "filename": "/pa/units/research/basic_research_station/research_station.papa"
+      "filename": "/pa/units/research/advanced_research_station/advanced_research_station.papa"
      
     },
     "physics": {
@@ -60,9 +60,7 @@
       40,
       55
     ],
-    "production": {
-        "energy": -2000
-      },
+  
     "recon": {
       "observer": {
         "items": [

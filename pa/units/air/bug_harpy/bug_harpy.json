@@ -23,7 +23,7 @@
       },
       "fired": {
         "audio_cue": "/SE/Weapons/air/gunship_fire",
-        "effect_spec": "/pa/units/air/gunship/gunship_muzzle_flash.pfx socket_rightMuzzle /pa/units/air/gunship/gunship_muzzle_flash.pfx socket_leftMuzzle"
+        "effect_spec": "/pa/units/air/bug_harpy/harpy_muzzle.pfx socket_muzzle_left /pa/units/air/bug_harpy/harpy_muzzle.pfx socket_muzzle_right"
       },
       "died": {
         "audio_cue": "/SE/Death/Air",
@@ -42,6 +42,38 @@
       "filename": "/pa/units/air/bug_harpy/bug_harpy.papa"
       
     },
+    "fx_offsets": [
+      {
+        "type": "idle",
+        "filename": "/pa/units/air/bug_harpy/harpy_barrel.pfx",
+        "bone": "socket_muzzle_left",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "orientation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "type": "idle",
+        "filename": "/pa/units/air/bug_harpy/harpy_barrel.pfx",
+        "bone": "socket_muzzle_right",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "orientation": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
     "navigation": {
       "type": "air",
       "acceleration": 60,

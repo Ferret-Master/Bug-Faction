@@ -26,7 +26,7 @@ var paeiouIcons = [
 	"big_runner",
 	"runner",
 	"asteroid",
-	"bug_swarm_hive",
+	"bug_hive_swarm",
 	"basic_hive",
 	"medium_hive",
 	"advanced_hive",

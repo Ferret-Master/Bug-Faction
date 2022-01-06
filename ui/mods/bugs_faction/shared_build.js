@@ -5,6 +5,7 @@ var newBuildScenario = {
      "/pa/units/structure/bug_hive_swarm/bug_hive_swarm.json": ["bug_factory", 16, {row: 2, column: 5}],
      "/pa/units/structure/advanced_hive/advanced_hive.json": ["bug_factory", 10, {row: 1, column: 4}],
      "/pa/units/research/basic_research_station/basic_research_station.json": ["bug_factory", 0, {row: 0, column: 0}],
+     "/pa/units/research/advanced_research_station/advanced_research_station.json": ["bug_factory", 0, {row: 0, column: 1}],
      "/pa/units/structure/bug_orbital_launcher/bug_orbital_launcher.json": ["bug_factory", 12, {row: 2, column: 0}],
      "/pa/units/structure/basic_air_hive/basic_air_hive.json": ["bug_factory", 14, {row: 2, column: 2}],
      "/pa/units/structure/basic_naval_hive/basic_naval_hive.json": ["bug_factory", 13, {row: 2, column: 1}],
@@ -26,8 +27,8 @@ var newBuildScenario = {
     "/pa/units/structure/bug_aa_small/bug_aa_small.json": ["bug_combat", 13, {row: 2, column: 1}],
     "/pa/units/structure/bug_aa_large/bug_aa_large.json": ["bug_combat", 7, {row: 1, column: 1}],
      "/pa/units/structure/bug_anti_orbital/bug_anti_orbital.json": ["bug_combat", 16, {row: 2, column: 4}],
-     "/pa/units/structure/bug_arty_small/bug_arty_small.json": ["combat", 14, {row: 2, column: 2}],
-     "/pa/units/structure/bug_arty_large/bug_arty_large.json": ["combat", 2, {row: 0, column: 2}],
+     "/pa/units/structure/bug_arty_small/bug_arty_small.json": ["bug_combat", 14, {row: 2, column: 2}],
+     "/pa/units/structure/bug_arty_large/bug_arty_large.json": ["bug_combat", 2, {row: 0, column: 2}],
 
    
 
