@@ -4,7 +4,7 @@
       "AT_Air": 0.0,
       "AT_Orbital": 0.0
     },
-    "damage": 5,
+    "damage": 4,
     "damage_volume": {
       "burnable_remove_radius": 20,
       "delay": 1,
