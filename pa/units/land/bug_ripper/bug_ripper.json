@@ -48,7 +48,7 @@
         "effect_scale": 0.90000004
       }
     },
-    "max_health": 50,
+    "max_health": 40,
     "mesh_bounds": [
       3,
       3,
@@ -78,7 +78,7 @@
       "type": "amphibious",
       "acceleration": 50,
       "brake": -1,
-      "move_speed": 30,
+      "move_speed": 25,
       "turn_speed": 500,
       "group_preference": "front"
     },
