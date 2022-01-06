@@ -104,7 +104,7 @@
     "walk_speed": 0.35
   },
   "navigation": {
-    "type": "amphibious",
+    "type": "land-small",
     "acceleration": 50,
     "brake": -1,
     "move_speed": 40,
