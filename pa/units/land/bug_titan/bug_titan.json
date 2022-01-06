@@ -95,7 +95,7 @@
         "UNITTYPE_Heavy",
         "UNITTYPE_Offense",
         "UNITTYPE_Land",
-        "UNITTYPE_Basic",
+        "UNITTYPE_Advanced",
         "UNITTYPE_FabAdvBuild",
         "UNITTYPE_Titan",
         "UNITTYPE_Custom2"

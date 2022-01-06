@@ -1,0 +1,14 @@
+{
+    "recon": {
+        "observable": {
+            "layer": "surface_and_air",
+            "sphere_radius": 5,
+            "ignore_radar": true
+        }
+    },
+    "spawn_response": {
+        "effect_spec": "/pa/units/land/bug_crusher/crusher_attack.pfx",
+        "effect_world_aligned": true
+        
+    }
+}

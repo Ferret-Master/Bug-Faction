@@ -1,6 +1,9 @@
 
 {
-  "ammo_type": "AMMO_Beam",
+  "base_spec": "/pa/ammo/base_beam/base_beam.json",
+  "collision_check": "enemies",
+  "fx_collision_spec": "/pa/units/land/bug_grunt/melee_sparks.pfx",
+  "fx_beam_spec": "/pa/units/land/bug_grunt/melee_beam.pfx",
   "damage": 40,
   "recon": {
     "observable": {

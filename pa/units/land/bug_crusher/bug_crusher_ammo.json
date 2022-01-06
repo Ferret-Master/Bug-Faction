@@ -18,7 +18,8 @@
         "/pa/effects/specs/scorch_b_01.json"
       ]
     },
-    "full_damage_splash_radius": 15,
+    "sim_fire_effect": "/pa/units/land/bug_crusher/bug_crusher_explosion_ent.json",
+    "full_damage_splash_radius": 30,
     "splash_damage": 400,
     "splash_damages_allies": false,
     "splash_radius": 55
