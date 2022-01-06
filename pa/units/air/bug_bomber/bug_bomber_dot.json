@@ -16,8 +16,8 @@
     "max_health": 100,
     "passive_health_regen": -20,
     "mesh_bounds": [
-      4.0,
-      4.0,
+      1.0,
+      1.0,
       1.0
     ],
     "model": [

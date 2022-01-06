@@ -8,6 +8,7 @@ var newBuildScenario = {
     "/pa/units/structure/bug_radar/bug_radar.json": ["bug_utility", 14, {row: 2, column: 2}],
     "/pa/units/structure/bug_radar_advanced/bug_radar_advanced.json": ["bug_utility", 8, {row: 1, column: 2}],
     "/pa/units/structure/bug_metal_storage/bug_metal_storage.json": ["bug_utility", 16, {row: 2, column: 4}],
+    "/pa/units/structure/bug_energy_storage/bug_energy_storage.json": ["utility", 15, {row: 2, column: 3}],
     "/pa/units/structure/bug_teleporter/bug_teleporter.json": ["bug_utility", 13, {row: 2, column: 1}],
 
     
@@ -16,6 +17,8 @@ var newBuildScenario = {
     "/pa/units/structure/bug_aa_small/bug_aa_small.json": ["bug_combat", 13, {row: 2, column: 1}],
     "/pa/units/structure/bug_aa_large/bug_aa_large.json": ["bug_combat", 7, {row: 1, column: 1}],
      "/pa/units/structure/bug_anti_orbital/bug_anti_orbital.json": ["bug_combat", 16, {row: 2, column: 4}],
+     "/pa/units/structure/bug_arty_small/bug_arty_small.json": ["combat", 14, {row: 2, column: 2}],
+     "/pa/units/structure/bug_arty_large/bug_arty_large.json": ["combat", 2, {row: 0, column: 2}],
 
     //factorys
     "/pa/units/structure/basic_hive/basic_hive.json": ["bug_factory", 16, {row: 2, column: 4}],
@@ -41,10 +44,14 @@ var newBuildScenario = {
     "/pa/units/land/bug_runner/bug_runner.json": ["bug_ground", 16, {row: 2, column: 3}],
     "/pa/units/land/bug_boomer/bug_boomer.json": ["bug_ground", 17, {row: 2, column: 5}],
     "/pa/units/land/bug_aa/bug_aa.json": ["bug_ground", 18, {row: 2, column: 4}],
+    "/pa/units/land/bug_combat_fab/bug_combat_fab.json": ["bug_ground_2", 15, {row: 2, column: 1}],
 
     //t1 air hive
     "/pa/units/air/bug_fighter/bug_fighter.json": ["bug_air", 13, {row: 2, column: 1}],
     "/pa/units/air/bug_bomber/bug_bomber.json": ["bug_air", 14, {row: 2, column: 2}],
+    "/pa/units/air/bug_air_scout/bug_air_scout.json": ["bug_air", 15, {row: 2, column: 3}],
+    "/pa/units/air/bug_air_fab/bug_air_fab.json": ["bug_air", 12, {row: 2, column: 0}],
+    "/pa/units/air/bug_harpy/bug_harpy.json": ["bug_air", 17, {row: 2, column: 5}],
 
     //t2 hive
     "/pa/units/land/bug_bot_fab_advanced/bug_bot_fab_advanced.json": ["bug_ground", 6, {row: 1, column: 0}],

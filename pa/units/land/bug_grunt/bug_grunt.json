@@ -92,7 +92,7 @@
     "group_preference": "front"
   },
   "physics": {
-    "radius": 2.0
+    "radius": 1.5
   },
   "selection_icon": {
     "diameter": 11.0

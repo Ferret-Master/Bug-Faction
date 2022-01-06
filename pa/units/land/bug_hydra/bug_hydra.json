@@ -44,6 +44,7 @@
       }
     },
     "guard_layer": "WL_AnySurface",
+    "guard_radius":180,
     "influence_radius": 400,
     "max_health": 500,
     "mesh_bounds": [
@@ -69,7 +70,7 @@
       "turn_speed": 60,
       "group_preference": "back"
     },
-    "nearby_target_tick_update_interval": 15,
+    "nearby_target_tick_update_interval": 2,
     "physics": {
       "radius": 6
     },
@@ -91,7 +92,7 @@
     "tools": [
       {
         "spec_id": "/pa/units/land/bug_hydra/bug_hydra_weapon.json",
-        "aim_bone": "bone_pitch",
+        "aim_bone": "bone_turret",
         "muzzle_bone": "socket_muzzle"
       }
     ],

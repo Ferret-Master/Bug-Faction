@@ -21,6 +21,9 @@
         "/pa/units/structure/basic_naval_hive/basic_naval_hive.json",
         "/pa/units/structure/bug_wall/bug_wall.json",
         "/pa/units/structure/bug_teleporter/bug_teleporter.json",
+        "/pa/units/structure/bug_arty_small/bug_arty_small.json",
+        "/pa/units/structure/bug_arty_large/bug_arty_large.json",
+        "/pa/units/structure/bug_energy_storage/bug_energy_storage.json",
 
         "/pa/units/research/basic_research_station/basic_research_station.json",
         "/pa/units/research/advanced_research_station/advanced_research_station.json",
@@ -32,7 +35,11 @@
 
         "/pa/units/air/bug_fighter/bug_fighter.json",
         "/pa/units/air/bug_bomber/bug_bomber.json",
+        "/pa/units/air/bug_air_scout/bug_air_scout.json",
+        "/pa/units/air/bug_air_fab/bug_air_fab.json",
+        "/pa/units/air/bug_harpy/bug_harpy.json",
 
+        "/pa/units/land/bug_combat_fab/bug_combat_fab.json",
         "/pa/units/land/bug_crusher/bug_crusher.json",
         "/pa/units/land/bug_hydra/bug_hydra.json",
         "/pa/units/land/bug_gren/bug_gren.json",
