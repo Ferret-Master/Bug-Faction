@@ -1,5 +1,5 @@
 {
-    "display_name": "Pelter",
+    "display_name": "Bug Pelter",
     "description": "!LOC:Artillery - Medium range for siege and area denial. Attacks land and sea targets.",
     "TEMP_texelinfo": 12.901,
     "si_name":"artillery_long",

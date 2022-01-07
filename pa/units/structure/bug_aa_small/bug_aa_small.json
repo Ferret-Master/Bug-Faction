@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "display_name": "Galata Turret",
+    "display_name": "Bug Galata Turret",
     "si_name":"air_defense",
     "description": "!LOC:Anti-Air Defense - Equipped with homing missiles. Only attacks air.",
     "max_health": 1000,

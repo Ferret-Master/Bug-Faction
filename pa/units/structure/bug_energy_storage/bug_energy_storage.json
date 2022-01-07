@@ -1,5 +1,5 @@
 {
-    "display_name": "!LOC:Energy Storage",
+    "display_name": "Bug Energy Storage",
     "description": "!LOC:Storage - Increases maximum energy storage capacity.",
     "TEMP_texelinfo": 26.4567,
     "si_name":"energy_storage",

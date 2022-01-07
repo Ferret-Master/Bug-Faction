@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "unit_name": "Advanced Energy Plant",
+    "unit_name": "Bug Advanced Energy Plant",
     "display_name": "!LOC:Advanced Energy Plant",
     "description": "!LOC:Advanced Economy - Produces energy.",
     "max_health": 5000,

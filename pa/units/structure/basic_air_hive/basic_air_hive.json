@@ -1,5 +1,5 @@
 {
-    "display_name": "!LOC:Air Factory",
+    "display_name": "Bug Air Factory",
     "description": "!LOC:Basic Manufacturing - Builds basic air units.",
     "si_name":"air_factory",
     "TEMP_texelinfo": 37.6046,

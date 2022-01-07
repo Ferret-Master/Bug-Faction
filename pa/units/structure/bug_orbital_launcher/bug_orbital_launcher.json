@@ -1,5 +1,5 @@
 {
-    "display_name": "!LOC:Orbital Launcher",
+    "display_name": "Bug Orbital Launcher",
     "description": "!LOC:Basic Manufacturing - Builds and launches basic orbital units.",
     "si_name":"orbital_launcher",
     "TEMP_texelinfo": 63.4807,
