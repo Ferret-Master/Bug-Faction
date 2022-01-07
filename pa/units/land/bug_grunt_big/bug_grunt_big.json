@@ -70,7 +70,7 @@
     "type": "land-small",
     "acceleration": 30,
     "brake": -1,
-    "move_speed": 18,
+    "move_speed": 16,
     "turn_speed": 180,
     "group_preference": "front"
   },
