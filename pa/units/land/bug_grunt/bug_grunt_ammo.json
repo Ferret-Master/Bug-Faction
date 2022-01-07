@@ -1,7 +1,7 @@
 
 {
 
-  "damage": 40,
+  "damage": 50,
   "recon": {
     "observable": {
       "ignore_radar": true

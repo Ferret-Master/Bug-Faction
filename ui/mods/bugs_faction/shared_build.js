@@ -2,7 +2,7 @@ var newBuildScenario = {
 
      //factorys
      "/pa/units/structure/basic_hive/basic_hive.json": ["bug_factory", 16, {row: 2, column: 4}],
-     "/pa/units/structure/bug_hive_swarm/bug_hive_swarm.json": ["bug_factory", 16, {row: 2, column: 5}],
+     "/pa/units/structure/bug_swarm_hive/bug_swarm_hive.json": ["bug_factory", 16, {row: 2, column: 5}],
      "/pa/units/structure/advanced_hive/advanced_hive.json": ["bug_factory", 10, {row: 1, column: 4}],
      "/pa/units/research/basic_research_station/basic_research_station.json": ["bug_factory", 0, {row: 0, column: 0}],
      "/pa/units/research/advanced_research_station/advanced_research_station.json": ["bug_factory", 0, {row: 0, column: 1}],
