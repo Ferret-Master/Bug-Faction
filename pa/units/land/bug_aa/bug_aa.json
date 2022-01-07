@@ -65,7 +65,7 @@
       "type": "land-small",
       "acceleration": 100,
       "brake": 100,
-      "move_speed": 14,
+      "move_speed": 12,
       "turn_speed": 180
     },
     "nearby_target_tick_update_interval": 3,
