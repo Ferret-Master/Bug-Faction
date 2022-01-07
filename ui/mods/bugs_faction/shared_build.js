@@ -8,6 +8,7 @@ var newBuildScenario = {
      "/pa/units/research/advanced_research_station/advanced_research_station.json": ["bug_factory", 0, {row: 0, column: 1}],
      "/pa/units/structure/bug_orbital_launcher/bug_orbital_launcher.json": ["bug_factory", 12, {row: 2, column: 0}],
      "/pa/units/structure/basic_air_hive/basic_air_hive.json": ["bug_factory", 14, {row: 2, column: 2}],
+     "/pa/units/structure/advanced_air_hive/advanced_air_hive.json": ["bug_factory", 14, {row: 1, column: 2}],
      "/pa/units/structure/basic_naval_hive/basic_naval_hive.json": ["bug_factory", 13, {row: 2, column: 1}],
 
     //utility
@@ -33,24 +34,36 @@ var newBuildScenario = {
    
 
     //unlocks
-    "/pa/units/research/unlocks/bug_ripper_normal_unlock/bug_ripper_normal_unlock.json": ["bug_research", 0, {row: 2, column: 0}],
-    "/pa/units/research/unlocks/bug_ripper_stealth_return_unlock/bug_ripper_stealth_return_unlock.json":["bug_research",1,{row:2,column:1}],
-    "/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json":["bug_research",2,{row:2,column:2}],
-    "/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json":["bug_research",2,{row:2,column:3}],
-   
+
+    "/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json":["bug_research",2,{row:2,column:0}],
+    "/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json":["bug_research",2,{row:2,column:1}],
+    "/pa/units/research/unlocks/bug_needler_fast_unlock/bug_needler_fast_unlock.json":["bug_research",2,{row:2,column:2}],
+    "/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/bug_combat_fab_cheap_unlock.json":["bug_research",2,{row:2,column:3}],
 
     //t1 hive
     "/pa/units/land/bug_bot_fab/bug_bot_fab.json": ["bug_ground", 12, {row: 2, column: 0}],
+    "/pa/units/land/bug_needler/bug_needler.json": ["bug_ground", 20, {row: 2, column: 1}],
     "/pa/units/land/bug_grunt/bug_grunt.json": ["bug_ground", 13, {row: 2, column: 2}],
-    "/pa/units/land/bug_gren/bug_gren.json": ["bug_ground", 13, {row: 2, column: 5}],
-    "/pa/units/land/bug_needler/bug_needler.json": ["bug_ground", 20, {row: 2, column: 6}],
-    "/pa/units/land/bug_runner/bug_runner.json": ["bug_ground", 16, {row: 2, column: 3}],
-    "/pa/units/land/bug_aa/bug_aa.json": ["bug_ground", 18, {row: 2, column: 4}],
-    "/pa/units/land/bug_combat_fab/bug_combat_fab.json": ["bug_ground", 15, {row: 2, column: 1}],
+    "/pa/units/land/bug_aa/bug_aa.json": ["bug_ground", 18, {row: 2, column: 3}],
+    "/pa/units/land/bug_gren/bug_gren.json": ["bug_ground", 13, {row: 2, column: 4}],
 
+     //t2 hive
+     "/pa/units/land/bug_bot_fab_advanced/bug_bot_fab_advanced.json": ["bug_ground", 6, {row: 1, column: 0}],
+     "/pa/units/land/bug_manticore/bug_manticore.json": ["bug_ground", 15, {row: 1, column: 1}],
+     "/pa/units/land/bug_crusher/bug_crusher.json": ["bug_ground", 15, {row: 1, column: 2}],
+     "/pa/units/land/bug_aa_big/bug_aa_big.json": ["bug_ground", 15, {row: 1, column: 3}],
+     "/pa/units/land/bug_hydra/bug_hydra.json": ["bug_ground", 15, {row: 0, column: 4}],
+     "/pa/units/land/bug_scorcher/bug_scorcher.json": ["bug_ground", 7, {row: 1, column: 5}],
+     "/pa/units/land/bug_sniper/bug_sniper.json": ["bug_ground", 15, {row: 1, column: 6}],
+     "/pa/units/land/bug_boomer_big/bug_boomer_big.json": ["bug_ground", 15, {row: 0, column: 0}],
+
+   
     //swarm hive
-    "/pa/units/land/bug_boomer/bug_boomer.json": ["bug_ground_2", 17, {row: 2, column: 0}],
-    "/pa/units/land/bug_ripper/bug_ripper.json": ["bug_ground_2", 14, {row: 2, column: 1}],
+    "/pa/units/land/bug_combat_fab/bug_combat_fab.json": ["bug_ground_2", 15, {row: 2, column: 0}],
+    "/pa/units/land/bug_boomer/bug_boomer.json": ["bug_ground_2", 17, {row: 2, column: 1}],
+    "/pa/units/land/bug_ripper/bug_ripper.json": ["bug_ground_2", 14, {row: 2, column: 2}],
+    "/pa/units/land/bug_runner/bug_runner.json": ["bug_ground_2", 16, {row: 2, column: 3}],
+
     //t1 air hive
     "/pa/units/air/bug_fighter/bug_fighter.json": ["bug_air", 13, {row: 2, column: 1}],
     "/pa/units/air/bug_bomber/bug_bomber.json": ["bug_air", 14, {row: 2, column: 2}],
@@ -58,15 +71,9 @@ var newBuildScenario = {
     "/pa/units/air/bug_air_fab/bug_air_fab.json": ["bug_air", 12, {row: 2, column: 0}],
     "/pa/units/air/bug_harpy/bug_harpy.json": ["bug_air", 17, {row: 2, column: 5}],
 
-    //t2 hive
-    "/pa/units/land/bug_bot_fab_advanced/bug_bot_fab_advanced.json": ["bug_ground", 6, {row: 1, column: 0}],
-    "/pa/units/land/bug_scorcher/bug_scorcher.json": ["bug_ground", 7, {row: 1, column: 1}],
-    "/pa/units/land/bug_manticore/bug_manticore.json": ["bug_ground", 15, {row: 1, column: 2}],
-    "/pa/units/land/bug_crusher/bug_crusher.json": ["bug_ground", 15, {row: 1, column: 4}],
-    "/pa/units/land/bug_boomer_big/bug_boomer_big.json": ["bug_ground", 15, {row: 1, column: 3}],
-    "/pa/units/land/bug_sniper/bug_sniper.json": ["bug_ground", 15, {row: 1, column: 5}],
-    "/pa/units/land/bug_aa_big/bug_aa_big.json": ["bug_ground", 15, {row: 1, column: 6}],
-    "/pa/units/land/bug_hydra/bug_hydra.json": ["bug_ground", 15, {row: 0, column: 0}],
+    //t2 air hive
+    "/pa/units/air/bug_basilisk/bug_basilisk.json": ["bug_air", 17, {row: 1, column: 5}],
+
 
     //titans
     "/pa/units/land/bug_titan/bug_titan.json": ["bug_factory", 3, {row: 0, column: 3}],

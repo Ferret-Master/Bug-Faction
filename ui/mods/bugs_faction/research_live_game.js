@@ -13,6 +13,7 @@ factorySpecs = [
     "/pa/units/structure/basic_hive/basic_hive.json",
     "/pa/units/structure/bug_swarm_hive/bug_swarm_hive.json",
     "/pa/units/structure/basic_air_hive/basic_air_hive.json",
+    "/pa/units/structure/advanced_air_hive/advanced_air_hive.json",
     "/pa/units/research/basic_research_station/basic_research_station.json",
     "/pa/units/research/advanced_research_station/advanced_research_station.json"
 

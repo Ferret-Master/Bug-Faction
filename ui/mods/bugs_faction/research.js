@@ -5,9 +5,9 @@
 //hardcoded locks, research packs can add to this by appending to it, units that have been locked will be removed, ensures units stay locked on resets
 
 model.unitsToLock = ["/pa/units/land/bug_grunt_big/bug_grunt_big.json",
-                    "/pa/units/research/unlocks/bug_ripper_normal_unlock/bug_ripper_normal_unlock.json",
-                    "/pa/units/research/unlocks/bug_ripper_stealth_return_unlock/bug_ripper_stealth_return_unlock.json",
-                    "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.json"
+                    "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.json",
+                    "/pa/units/land/bug_combat_fab/bug_combat_fab_cheap.json",
+                    "/pa/units/land/bug_needler/bug_needler_fast.json"
                     ];
 
 //tracks locked units
@@ -29,7 +29,20 @@ model.unlockPairs = [
   ["/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json",
   ["/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.json"],
   ["/pa/units/land/bug_ripper/bug_ripper.json","/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json"],
-   true]
+   true],
+
+   ["/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/bug_combat_fab_cheap_unlock.json",
+   ["/pa/units/land/bug_combat_fab/bug_combat_fab_cheap.json"],
+   ["/pa/units/land/bug_combat_fab/bug_combat_fab.json","/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/bug_combat_fab_cheap_unlock.json"],
+    true],
+
+    ["/pa/units/research/unlocks/bug_needler_fast_unlock/bug_needler_fast_unlock.json",
+    ["/pa/units/land/bug_needler/bug_needler_fast.json"],
+    ["/pa/units/land/bug_needler/bug_needler.json","/pa/units/research/unlocks/bug_needler_fast_unlock/bug_needler_fast_unlock.json"],
+     true]
+ 
+
+    
 
 //   ["/pa/units/research/unlocks/bug_ripper_normal_unlock/bug_ripper_normal_unlock.json",
 //   ["/pa/units/land/bug_ripper/bug_ripper.json","/pa/units/research/unlocks/bug_ripper_stealth_return_unlock/bug_ripper_stealth_return_unlock.json"],

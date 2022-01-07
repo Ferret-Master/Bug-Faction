@@ -1,7 +1,7 @@
 {
-    "display_name": "Harpy",
-    "si_name":"bug_harpy",
-    "description": "!LOC:Gunship - Fast. Cheap. Durable. Attacks land and sea targets.",
+    "display_name": "Basilisk",
+    "si_name":"bug_gunship_adv",
+    "description": "Gunship - Salvo Fire. Attacks land and sea targets.",
     "audio": {
       "loops": {
         "move": {
@@ -16,14 +16,14 @@
       }
     },
     "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-    "build_metal_cost": 175,
+    "build_metal_cost": 800,
     "events": {
       "build_complete": {
         "audio_cue": "/SE/Build_Complete/air"
       },
       "fired": {
         "audio_cue": "/SE/Weapons/air/gunship_fire",
-        "effect_spec": "/pa/units/air/bug_harpy/harpy_muzzle.pfx socket_muzzle_left /pa/units/air/bug_harpy/harpy_muzzle.pfx socket_muzzle_right"
+        "effect_spec": "/pa/units/air/bug_harpy/harpy_muzzle.pfx socket_muzzle_left /pa/units/air/bug_harpy/harpy_muzzle.pfx socket_muzzle_right /pa/units/air/bug_harpy/harpy_muzzle.pfx socket_muzzle_big_left /pa/units/air/bug_harpy/harpy_muzzle.pfx socket_muzzle_big_right"
       },
       "died": {
         "audio_cue": "/SE/Death/Air",
@@ -32,14 +32,14 @@
       }
     },
     "guard_layer": "WL_Anysurface",
-    "max_health": 85,
+    "max_health": 300,
     "mesh_bounds": [
       6.5,
       8.5,
       2.6193
     ],
     "model": {
-      "filename": "/pa/units/air/bug_harpy/bug_harpy.papa"
+      "filename": "/pa/units/air/bug_basilisk/bug_gunship_adv.papa"
       
     },
     "fx_offsets": [
@@ -72,16 +72,46 @@
           0,
           0
         ]
+      },
+      {
+        "type": "idle",
+        "filename": "/pa/units/air/bug_harpy/harpy_barrel.pfx",
+        "bone": "socket_muzzle_big_left",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "orientation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "type": "idle",
+        "filename": "/pa/units/air/bug_harpy/harpy_barrel.pfx",
+        "bone": "socket_muzzle_big_right",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "orientation": [
+          0,
+          0,
+          0
+        ]
       }
     ],
     "navigation": {
       "type": "air",
       "acceleration": 60,
       "brake": 60,
-      "move_speed": 50,
+      "move_speed": 60,
       "turn_speed": 120,
       "vertical_speed": 50,
-      "aggressive_distance": 65.0,
+      "aggressive_distance": 75.0,
       "aggressive_behavior": "circle",
       "circle_min_time": 1.0,
       "circle_max_time": 2.0,
@@ -115,14 +145,9 @@
     "spawn_layers": "WL_Air",
     "tools": [
         {
-          "spec_id": "/pa/units/air/bug_harpy/bug_harpy_weapon.json",
+          "spec_id": "/pa/units/air/bug_basilisk/bug_basilisk_weapon.json",
           "aim_bone": "bone_root",
-          "muzzle_bone": "socket_muzzle_right"
-        },
-        {
-          "spec_id": "/pa/units/air/bug_harpy/bug_harpy_weapon.json",
-          "aim_bone": "bone_root",
-          "muzzle_bone": "socket_muzzle_left"
+          "muzzle_bone": ["socket_muzzle_big_left","socket_muzzle_left","socket_muzzle_right","socket_muzzle_big_right"]
         }
       ],
     "unit_types": [

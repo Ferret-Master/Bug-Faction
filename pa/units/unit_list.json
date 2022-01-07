@@ -18,6 +18,7 @@
         "/pa/units/structure/bug_swarm_hive/bug_swarm_hive.json",
         "/pa/units/structure/bug_orbital_launcher/bug_orbital_launcher.json",
         "/pa/units/structure/basic_air_hive/basic_air_hive.json",
+        "/pa/units/structure/advanced_air_hive/advanced_air_hive.json",
         "/pa/units/structure/basic_naval_hive/basic_naval_hive.json",
         "/pa/units/structure/bug_teleporter/bug_teleporter.json",
         "/pa/units/structure/bug_arty_small/bug_arty_small.json",
@@ -29,14 +30,18 @@
 
         "/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json",
         "/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json",
+        "/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/bug_combat_fab_cheap_unlock.json",
+        "/pa/units/research/unlocks/bug_needler_fast_unlock/bug_needler_fast_unlock.json",
 
         "/pa/units/air/bug_fighter/bug_fighter.json",
         "/pa/units/air/bug_bomber/bug_bomber.json",
         "/pa/units/air/bug_air_scout/bug_air_scout.json",
         "/pa/units/air/bug_air_fab/bug_air_fab.json",
         "/pa/units/air/bug_harpy/bug_harpy.json",
+        "/pa/units/air/bug_basilisk/bug_basilisk.json",
 
         "/pa/units/land/bug_combat_fab/bug_combat_fab.json",
+        "/pa/units/land/bug_combat_fab/bug_combat_fab_cheap.json",
         "/pa/units/land/bug_crusher/bug_crusher.json",
         "/pa/units/land/bug_hydra/bug_hydra.json",
         "/pa/units/land/bug_gren/bug_gren.json",
@@ -57,6 +62,7 @@
 	    "/pa/units/land/bug_grunt_big/bug_grunt_big.json",
    
         "/pa/units/land/bug_needler/bug_needler.json",
+        "/pa/units/land/bug_needler/bug_needler_fast.json",
         "/pa/units/land/bug_manticore/bug_manticore.json",
         "/pa/units/land/bug_sniper/bug_sniper.json",
   
