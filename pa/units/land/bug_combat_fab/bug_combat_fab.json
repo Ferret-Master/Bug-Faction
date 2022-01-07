@@ -134,7 +134,7 @@
     "tools": [
       {
         "aim_bone": "bone_turret",
-        "spec_id": "/pa/units/land/fabrication_bot_combat/fabrication_bot_combat_build_arm.json"
+        "spec_id": "/pa/units/land/bug_combat_fab/bug_combat_fab_build_arm.json"
       }
     ],
     "transportable": {

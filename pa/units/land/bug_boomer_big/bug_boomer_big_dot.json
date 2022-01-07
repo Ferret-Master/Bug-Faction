@@ -5,7 +5,7 @@
     "TEMP_texelinfo": 2.37699,
  
   
-    "build_metal_cost": 200,
+    "build_metal_cost": 0.01,
     "events": {
       "build_complete": {
         "audio_cue": "/SE/Build_Complete/barrier"

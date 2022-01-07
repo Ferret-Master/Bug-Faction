@@ -4,7 +4,7 @@
     "TEMP_texelinfo": 2.37699,
     "si_name":"blank_blip",
   
-    "build_metal_cost": 1,
+    "build_metal_cost": 0.01,
     "events": {
       "build_complete": {
         "audio_cue": "/SE/Build_Complete/barrier"
