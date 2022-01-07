@@ -16,6 +16,7 @@ var paeiouIcons = [
 	"bug_aa",
 	"bug_adv_aa",
 	"manticore",
+	"bug_adv_evo_chamber",
 	"bug_evo_chamber",
 	"ripper",
 	"ripper_stealth",
