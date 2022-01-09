@@ -60,6 +60,21 @@
       },
       {
         "type": "idle",
+        "filename": "/pa/units/air/bug_harpy/harpy_trail.pfx",
+        "bone": "bone_root",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "orientation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "type": "idle",
         "filename": "/pa/units/air/bug_harpy/harpy_barrel.pfx",
         "bone": "socket_muzzle_right",
         "offset": [

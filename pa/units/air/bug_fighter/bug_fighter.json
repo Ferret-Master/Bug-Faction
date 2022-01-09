@@ -33,12 +33,18 @@
     },
     "fx_offsets": [
       {
-        "type": "moving_forward",
-        "filename": "/pa/units/air/fighter/fighter_jets.pfx",
+        "type": "idle",
+        "filename": "/pa/units/air/bug_fighter/bug_fighter_trail.pfx",
+        "bone": "bone_root",
         "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "orientation": [
           0,
-          2.9,
-          0.836
+          0,
+          0
         ]
       }
     ],

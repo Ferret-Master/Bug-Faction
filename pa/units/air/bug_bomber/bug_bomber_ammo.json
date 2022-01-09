@@ -8,7 +8,10 @@
     },
     "full_damage_splash_radius": 1,
     "fx_trail": {
-      "filename": "/pa/units/air/strafer/strafer_ammo_trail.pfx"
+      "filename": "/pa/units/air/bug_bomber/bug_bomber_proj.pfx"
+    },
+    "model": {
+      "filename": ""
     },
     "flight_type": "Seeking",
     "turn_rate":1,

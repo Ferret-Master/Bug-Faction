@@ -33,11 +33,11 @@
     "fx_offsets": [
       {
         "type": "moving_forward",
-        "filename": "/pa/units/air/bomber/bomber_jets.pfx",
+        "filename": "/pa/units/air/bug_bomber/bug_bomber_trail.pfx",
         "offset": [
           0,
-          2.32,
-          1.393
+         0,
+          0
         ]
       }
     ],

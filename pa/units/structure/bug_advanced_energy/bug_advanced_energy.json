@@ -45,6 +45,7 @@
             "filename": "/pa/units/structure/bug_advanced_energy/bug_advanced_energy.papa"
         }
     ],
+    
     "events": {
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/energy"
@@ -62,15 +63,22 @@
     },
     "fx_offsets": [
         {
-            "type": "idle",
-            "filename": "/pa/units/land/energy_plant_adv/energy_plant_adv_idle.pfx",
-            "offset": [
-                0,
-                0,
-                6.7
-            ]
+          "type": "idle",
+          "filename": "/pa/units/structure/bug_advanced_energy/sphere_arcs_large.pfx",
+          "bone": "bone_socket",
+          "offset": [
+            0.0,
+            0.0,
+            0
+          ],
+          "orientation": [
+            0,
+            0,
+            0
+          ]
         }
-    ],
+
+      ],
   
     "selection_icon": {
         "diameter": 34.0

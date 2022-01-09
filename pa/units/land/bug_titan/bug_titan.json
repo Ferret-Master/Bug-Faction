@@ -61,7 +61,7 @@
            
         },
         "animtree": "/pa/anim/anim_trees/titan_bot_anim_tree.json",
-        "walk_speed": 13
+        "walk_speed": 15
     },
     "navigation": {
         "type": "amphibious-large",

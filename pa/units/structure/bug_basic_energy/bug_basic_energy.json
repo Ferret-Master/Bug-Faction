@@ -47,6 +47,24 @@
             
         }
     ],
+    "fx_offsets": [
+        {
+          "type": "idle",
+          "filename": "/pa/units/structure/bug_basic_energy/sphere_arcs.pfx",
+          "bone": "bone_socket",
+          "offset": [
+            0.0,
+            0.0,
+            0
+          ],
+          "orientation": [
+            0,
+            0,
+            0
+          ]
+        }
+
+      ],
     "events": {
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/energy"

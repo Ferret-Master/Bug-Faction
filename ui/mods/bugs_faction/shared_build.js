@@ -52,7 +52,7 @@ var newBuildScenario = {
      "/pa/units/land/bug_manticore/bug_manticore.json": ["bug_ground", 15, {row: 1, column: 1}],
      "/pa/units/land/bug_crusher/bug_crusher.json": ["bug_ground", 15, {row: 1, column: 2}],
      "/pa/units/land/bug_aa_big/bug_aa_big.json": ["bug_ground", 15, {row: 1, column: 3}],
-     "/pa/units/land/bug_hydra/bug_hydra.json": ["bug_ground", 15, {row: 0, column: 4}],
+     "/pa/units/land/bug_hydra/bug_hydra.json": ["bug_ground", 15, {row: 1, column: 4}],
      "/pa/units/land/bug_scorcher/bug_scorcher.json": ["bug_ground", 7, {row: 1, column: 5}],
      "/pa/units/land/bug_sniper/bug_sniper.json": ["bug_ground", 15, {row: 1, column: 6}],
      "/pa/units/land/bug_boomer_big/bug_boomer_big.json": ["bug_ground", 15, {row: 0, column: 0}],
