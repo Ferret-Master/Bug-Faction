@@ -31,7 +31,7 @@
       }
     },
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
-    "build_metal_cost": 45,
+    "build_metal_cost": 50,
     "events": {
       "build_complete": {
         "audio_cue": "/SE/Build_Complete/bot"
@@ -48,7 +48,7 @@
     },
     "guard_layer": "WL_AnySurface",
     "guard_radius":200,
-    "max_health": 35,
+    "max_health": 40,
     "mesh_bounds": [
       3.8,
       4.5,
@@ -69,7 +69,7 @@
       "type": "land-small",
       "acceleration": 400,
       "brake": -1,
-      "move_speed": 27,
+      "move_speed": 30,
       "turn_speed": 720
     },
     "physics": {

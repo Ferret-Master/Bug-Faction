@@ -5,8 +5,8 @@
     "arc_type": "ARC_High",
     "idle_aim_delay": 5,
     "max_range": 220,
-    "pitch_range": 89,
-    "pitch_rate": 30,
+    "pitch_range": 110,
+    "pitch_rate": 50,
     "rate_of_fire": 4,
     "ammo_capacity": 6,
     "carpet_fire": true,
@@ -23,5 +23,5 @@
       "WL_Underwater"
     ],
     "yaw_range": 180,
-    "yaw_rate": 30
+    "yaw_rate": 50
   }
