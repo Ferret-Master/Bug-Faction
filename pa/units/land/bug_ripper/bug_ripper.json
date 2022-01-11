@@ -60,7 +60,7 @@
         "effect_scale": 0.90000004
       }
     },
-    "max_health": 35,
+    "max_health": 20,
     "mesh_bounds": [
       3,
       3,
@@ -90,7 +90,7 @@
       "type": "land-small",
       "acceleration": 50,
       "brake": -1,
-      "move_speed": 25,
+      "move_speed": 30,
       "turn_speed": 500,
       "group_preference": "front"
     },
