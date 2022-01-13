@@ -277,21 +277,13 @@
     "model": [
         {
           "layer": "WL_LandHorizontal",
-          "filename": "/pa/units/structure/advanced_hive/advanced_hive.papa",
-          "animations": {
-           
-            "idle": "/pa/units/structure/basic_hive/advanced_hive_undulate.papa"
-          },
-          "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json"
+          "filename": "/pa/units/structure/advanced_hive/advanced_hive.papa"
+         
         },
         {
           "layer": "WL_WaterSurface",
-          "filename": "/pa/units/structure/advanced_hive/advanced_hive.papa",
-          "animations": {
-           
-            "idle": "/pa/units/structure/advanced_hive/advanced_hive_undulate.papa"
-          },
-          "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json"
+          "filename": "/pa/units/structure/advanced_hive/advanced_hive.papa"
+        
         }
       ],
     "physics": {
