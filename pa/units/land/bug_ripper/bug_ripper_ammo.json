@@ -3,6 +3,10 @@
 
 {
   "base_spec": "/pa/ammo/base_beam/base_beam.json",
+  "armor_damage_map": {
+    "AT_Structure": 0.75,
+    "AT_Commander": 0.5
+  },
   "collision_check": "enemies",
   "fx_collision_spec": "/pa/units/land/bug_grunt/melee_sparks.pfx",
   "fx_beam_spec": "/pa/units/land/bug_grunt/melee_beam.pfx",
