@@ -3,6 +3,8 @@
     "description": "An Titan class melee bug unit, tanky with aoe stomps",
     "si_name": "bug_titan",
     "TEMP_texelinfo": 4.07719,
+    "atrophy_cool_down": 15.0,
+  "atrophy_rate": 200.0,
     "attachable": {
         "offsets": {
             "root": [
