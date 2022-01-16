@@ -89,7 +89,6 @@
     "selection_icon": {
       "diameter": 9.0
     },
-   
     "spawn_layers": "WL_LandHorizontal",
     "tools": [
       {
