@@ -2,7 +2,6 @@
     "units": [  
         "/pa/units/structure/bug_mine/bug_mine.json",
         "/pa/units/structure/bug_mine_big/bug_mine_big.json",
-        "/pa/units/structure/bug_metal_storage/bug_metal_storage.json",
         "/pa/units/structure/bug_anti_orbital/bug_anti_orbital.json",
         "/pa/units/structure/bug_aa_small/bug_aa_small.json",
         "/pa/units/structure/bug_aa_large/bug_aa_large.json",
@@ -23,7 +22,7 @@
         "/pa/units/structure/bug_teleporter/bug_teleporter.json",
         "/pa/units/structure/bug_arty_small/bug_arty_small.json",
         "/pa/units/structure/bug_arty_large/bug_arty_large.json",
-        "/pa/units/structure/bug_energy_storage/bug_energy_storage.json",
+        "/pa/units/structure/bug_combined_storage/bug_combined_storage.json",
 
         "/pa/units/research/basic_research_station/basic_research_station.json",
         "/pa/units/research/advanced_research_station/advanced_research_station.json",

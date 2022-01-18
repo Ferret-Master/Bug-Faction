@@ -18,8 +18,7 @@ var newBuildScenario = {
     "/pa/units/structure/bug_advanced_extractor/bug_advanced_extractor.json": ["bug_utility", 4, {row: 0, column: 4}],
     "/pa/units/structure/bug_radar/bug_radar.json": ["bug_utility", 14, {row: 2, column: 2}],
     "/pa/units/structure/bug_radar_advanced/bug_radar_advanced.json": ["bug_utility", 8, {row: 1, column: 2}],
-    "/pa/units/structure/bug_metal_storage/bug_metal_storage.json": ["bug_utility", 16, {row: 2, column: 4}],
-    "/pa/units/structure/bug_energy_storage/bug_energy_storage.json": ["bug_utility", 15, {row: 2, column: 3}],
+    "/pa/units/structure/bug_combined_storage/bug_combined_storage.json": ["bug_utility", 15, {row: 2, column: 3}],
     "/pa/units/structure/bug_teleporter/bug_teleporter.json": ["bug_utility", 13, {row: 2, column: 1}],
 
     
