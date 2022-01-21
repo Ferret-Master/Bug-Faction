@@ -57,8 +57,13 @@
       "filename": "/pa/units/land/bug_manticore/bug_manticore.papa",
       "animations": {
       
-        "walk": "/pa/units/land/bug_manticore/bug_manticore_walk.papa",
-        "idle": "/pa/units/land/bug_manticore/bug_manticore_idle.papa"
+        "walk": "/pa/units/land/bug_manticore/bug_manticore_anim_run.papa",
+        "idle": "/pa/units/land/bug_manticore/bug_manticore_anim_idle.papa",
+        "aim_up": "/pa/units/land/bug_manticore/bug_manticore_anim_aim_up.papa",
+        "aim_down": "/pa/units/land/bug_manticore/bug_manticore_anim_aim_down.papa",
+        "turn_left": "/pa/units/land/bug_manticore/bug_manticore_anim_turn_left.papa",
+        "turn_right": "/pa/units/land/bug_manticore/bug_manticore_anim_turn_right.papa"
+      
        
       },
       "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json",
