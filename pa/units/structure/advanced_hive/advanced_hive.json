@@ -37,124 +37,19 @@
     "factory_cooldown_time": 3,
     "fx_offsets": [
       {
-        "bone": "socket_nozzle01",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "bone": "bone_root",
+        "filename": "/pa/units/structure/advanced_hive/adv_tentacles.pfx",
         "offset": [
           0,
           0,
-          0
+          0.2
         ],
         "orientation": [
           0,
           0,
           0
         ],
-        "type": "build"
-      },
-      {
-        "bone": "socket_nozzle02",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          0
-        ],
-        "type": "build"
-      },
-      {
-        "bone": "socket_nozzle03",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          0
-        ],
-        "type": "build"
-      },
-      {
-        "bone": "socket_nozzle04",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          0
-        ],
-        "type": "build"
-      },
-      {
-        "bone": "socket_nozzle05",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          0
-        ],
-        "type": "build"
-      },
-      {
-        "bone": "socket_nozzle06",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          0
-        ],
-        "type": "build"
-      },
-      {
-        "bone": "socket_nozzle07",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          0
-        ],
-        "type": "build"
-      },
-      {
-        "bone": "socket_nozzle08",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          0
-        ],
-        "type": "build"
+        "type": "energy"
       }
     ],
     "headlights": [
