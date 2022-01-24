@@ -41,133 +41,19 @@
     "factory_cooldown_time": 2,
     "fx_offsets": [
       {
-        "bone": "bone_bar001",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "bone": "bone_root",
+        "filename": "/pa/units/structure/basic_hive/basic_hive_pool.pfx",
         "offset": [
-          5.509,
-          2.718,
-          0
+          0,
+          0,
+          5
         ],
         "orientation": [
           0,
           0,
-          135
+         0
         ],
-        "type": "build"
-      },
-      {
-        "bone": "bone_bar001",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "offset": [
-          -5.51,
-          2.718,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          -135
-        ],
-        "type": "build"
-      },
-      {
-        "bone": "bone_bar002",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "offset": [
-          5.509,
-          2.718,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          135
-        ],
-        "type": "build"
-      },
-      {
-        "bone": "bone_bar002",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "offset": [
-          -5.51,
-          2.718,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          -135
-        ],
-        "type": "build"
-      }
-    ],
-    "headlights": [
-      {
-        "color": [
-          1.5,
-          1.52,
-          1.6
-        ],
-        "debug": false,
-        "far_distance": 30.0,
-        "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-        "near_distance": 10.0,
-        "near_height": 20.0,
-        "near_width": 20.0,
-        "offset": [
-          0.0,
-          0.0,
-          20.0
-        ],
-        "orientation": [
-          0.0,
-          0.0,
-          0.0
-        ]
-      }
-    ],
-    "lamps": [
-      {
-        "color": [
-          0.1,
-          1.0,
-          0.1
-        ],
-        "intensity": 2.0,
-        "offset": [
-          5.47,
-          -12.71,
-          11.0
-        ],
-        "radius": 6.0
-      },
-      {
-        "color": [
-          0.1,
-          1.0,
-          0.1
-        ],
-        "intensity": 2.0,
-        "offset": [
-          -5.47,
-          -12.71,
-          11.0
-        ],
-        "radius": 6.0
-      },
-      {
-        "color": [
-          1.0,
-          0.0,
-          0.0
-        ],
-        "intensity": 2.0,
-        "offset": [
-          9.81,
-          10.88,
-          5.49
-        ],
-        "radius": 4.0
+        "type": "energy"
       }
     ],
     "max_health": 6000,
@@ -179,12 +65,7 @@
     "model": [
         {
           "layer": "WL_LandHorizontal",
-          "filename": "/pa/units/structure/basic_hive/basic_hive.papa",
-          "animations": {
-           
-            "idle": "/pa/units/structure/basic_hive/bug_factory_undulate.papa"
-          },
-          "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json"
+          "filename": "/pa/units/structure/basic_hive/basic_hive.papa"
         }
       ],
     "physics": {

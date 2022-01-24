@@ -103,10 +103,10 @@
     "tools": [
       {
         "spec_id": "/pa/units/land/bug_manticore/bug_manticore_weapon.json",
-        "aim_bone": "bone_turret",
+        "aim_bone": "bone_upper_torso",
         "muzzle_bone": [
-          "socket_rightMuzzle",
-          "socket_leftMuzzle"
+          "socket_left",
+          "socket_right"
         ]
       }
   
