@@ -1,0 +1,27 @@
+
+{
+  "base_spec": "/pa/ammo/base_bullet/base_bullet.json",
+  "damage": 200,
+  "events": {
+    "died": {
+      "effect_spec": "/pa/units/land/bug_needler/needle_explosion.pfx"
+    }
+  },
+  "fx_trail": {
+    "filename": "/pa/units/land/bug_needler/needle.pfx",
+    "offset": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "initial_velocity": 165.0,
+  "lifetime": 1.0,
+  "max_velocity": 165.0,
+  "model": null,
+  "physics": {
+    "add_to_spatial_db": true
+  },
+  "splash_damage": 0,
+  "splash_radius": 0
+}

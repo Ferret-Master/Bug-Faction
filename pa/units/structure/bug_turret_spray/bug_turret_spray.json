@@ -1,21 +1,21 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "unit_name": "large spitter turret",
-    "display_name": "Large Spitter Turret",
+    "unit_name": "Small spitter turret",
+    "display_name": "Small Spitter Turret",
     "si_name": "laser_defense",
-    "description": "Advanced anti land turret.",
-    "max_health": 4000,
-    "build_metal_cost": 900,
+    "description": "Basic anti land turret.",
+    "max_health": 2000,
+    "build_metal_cost": 350,
     "atrophy_rate": 7.5,
     "atrophy_cool_down": 15.0,
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
     "unit_types": [
         "UNITTYPE_Structure",
-        "UNITTYPE_Advanced",
+        "UNITTYPE_Basic",
         "UNITTYPE_Land",
         "UNITTYPE_SurfaceDefense",
         "UNITTYPE_Defense",
-        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_FabBuild",
         "UNITTYPE_Custom2"
     ],
     "command_caps": [
@@ -44,13 +44,13 @@
         {
             "layer": "WL_LandHorizontal",
             "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json",
-            "filename": "/pa/units/structure/bug_turret_large/bug_turret_large.papa"
+            "filename": "/pa/units/structure/bug_turret_small/bug_turret_small.papa"
            
         }
     ],
     "tools": [
         {
-            "spec_id": "/pa/units/structure/bug_turret_large/bug_turret_large_weapon.json",
+            "spec_id": "/pa/units/structure/bug_turret_small/bug_turret_small_weapon.json",
             "aim_bone": "socket_muzzle",
             "muzzle_bone": [
                 "socket_muzzle"
@@ -74,10 +74,10 @@
         "diameter": 12.0
     },
     "mesh_bounds": [
-        8,
-        8,
-        23
-      ],
+        6,
+        6,
+        17.2
+    ],
     "TEMP_texelinfo": 10.2184,
     "area_build_separation": 18
 }

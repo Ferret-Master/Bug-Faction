@@ -1,0 +1,5 @@
+{
+    "diffuse": "/pa/units/misc/bug_scorch.papa",
+    "normal": "/pa/effects/textures/scorch/scorch_c_01_normal.papa",
+    "material": "/pa/effects/textures/scorch/scorch_c_01_material.papa"
+}

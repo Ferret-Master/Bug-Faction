@@ -18,7 +18,7 @@
     "spawn_unit_on_death": "/pa/units/air/bug_bomber/bug_bomber_dot.json",
     "spawn_unit_on_death_with_velocity": false,
     "initial_velocity": 50.0,
-    "lifetime": 2,
+    "lifetime": 1.5,
     "max_velocity": 150.0,
     "physics": {
       "add_to_spatial_db": true

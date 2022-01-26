@@ -32,7 +32,7 @@
     ],
     "death": {
       "decals": [
-        "/pa/effects/specs/scorch_c_01.json"
+        "/pa/units/misc/bug_scorch.json"
       ]
     },
     "events": {
