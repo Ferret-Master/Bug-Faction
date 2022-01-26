@@ -25,6 +25,7 @@ var newBuildScenario = {
     //defenses
     "/pa/units/structure/bug_turret_small/bug_turret_small.json": ["bug_combat", 6, {row: 1, column: 0}],
     "/pa/units/structure/bug_turret_large/bug_turret_large.json": ["bug_combat", 6, {row: 0, column: 0}],
+    "/pa/units/structure/bug_turret_spray/bug_turret_spray.json": ["bug_combat", 6, {row: 0, column: 1}],
     "/pa/units/structure/bug_turret_needle/bug_turret_needle.json": ["bug_combat", 6, {row: 2, column: 0}],
     "/pa/units/structure/bug_turret_acid/bug_turret_acid.json": ["bug_combat", 6, {row: 2, column: 3}],
     "/pa/units/structure/bug_aa_small/bug_aa_small.json": ["bug_combat", 13, {row: 2, column: 1}],

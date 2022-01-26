@@ -1,11 +1,11 @@
 {
-    "ammo_id": "/pa/units/structure/bug_turret_small/bug_turret_small_ammo.json",
+    "ammo_id": "/pa/units/structure/bug_turret_spray/bug_turret_spray_ammo.json",
     "auto_attack": true,
     "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
-    "max_range": 110,
+    "max_range": 140,
     "pitch_range": 90,
     "pitch_rate": 180,
-    "rate_of_fire": 2,
+    "rate_of_fire": 10,
     "target_layers": [
       "WL_LandHorizontal",
       "WL_Seafloor",
@@ -13,5 +13,5 @@
  
     ],
     "yaw_range": 180,
-    "yaw_rate": 180
+    "yaw_rate": 90
   }
