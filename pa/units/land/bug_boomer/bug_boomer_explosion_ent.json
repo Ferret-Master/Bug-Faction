@@ -1,0 +1,12 @@
+{
+    "recon": {
+        "observable": {
+            "layer": "surface_and_air",
+            "sphere_radius": 15
+        }
+    },
+    "spawn_response": {
+        "audio_cue": "/SE/Impacts/bomb_bot_plasma",
+        "effect_spec": "/pa/units/land/bug_boomer/boomer_explosion.pfx"
+    }
+}
