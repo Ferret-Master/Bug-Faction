@@ -1,6 +1,6 @@
 {
     "display_name": "Manticore",
-    "description": "!LOC:Assault Bot - Armoured with high damage guns and torpedoes. Amphibious. Attacks land and sea.",
+    "description": "High damage And Low Fire Rate Core Army Unit",
     "si_name":"manticore",
     "TEMP_texelinfo": 6.39639,
     "attachable": {

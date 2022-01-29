@@ -32,7 +32,7 @@
       }
     },
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
-    "build_metal_cost": 25,
+    "build_metal_cost": 35,
     "recon": {
       "observer": {
         "items": [
@@ -60,7 +60,7 @@
         "effect_scale": 0.90000004
       }
     },
-    "max_health": 20,
+    "max_health": 40,
     "mesh_bounds": [
       3,
       3,
