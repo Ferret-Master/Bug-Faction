@@ -16,7 +16,8 @@
         "UNITTYPE_SurfaceDefense",
         "UNITTYPE_Defense",
         "UNITTYPE_FabBuild",
-        "UNITTYPE_Custom2"
+        "UNITTYPE_Custom2",
+        "UNITTYPE_CmdBuild"
     ],
     "command_caps": [
         "ORDER_Attack"

@@ -1,5 +1,7 @@
 {
     "units": [  
+        "/pa/units/structure/bug_nuke/bug_nuke.json",
+        "/pa/units/structure/bug_anti_nuke/bug_anti_nuke.json",
         "/pa/units/structure/bug_mine/bug_mine.json",
         "/pa/units/structure/bug_mine_big/bug_mine_big.json",
         "/pa/units/structure/bug_anti_orbital/bug_anti_orbital.json",

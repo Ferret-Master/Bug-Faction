@@ -34,6 +34,8 @@ var newBuildScenario = {
      "/pa/units/structure/bug_arty_small/bug_arty_small.json": ["bug_combat", 14, {row: 2, column: 2}],
      "/pa/units/structure/bug_arty_large/bug_arty_large.json": ["bug_combat", 2, {row: 0, column: 2}],
 
+     "/pa/units/structure/bug_nuke/bug_nuke.json": ["bug_combat", 4, {row: 0, column: 4}],
+     "/pa/units/structure/bug_anti_nuke/bug_anti_nuke.json": ["bug_combat", 10, {row: 1, column: 4}],
    
 
     //unlocks

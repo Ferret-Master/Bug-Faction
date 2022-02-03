@@ -9,9 +9,6 @@
     },
     "full_splash_damage_radius": 3,
     
-    "impact_decals": [
-      "/pa/effects/specs/scorch_a_01.json"
-    ],
     "initial_velocity": 80,
     "lifetime": 30,
     "max_velocity": 150,
