@@ -82,6 +82,8 @@ var newBuildScenario = {
 
     //titans
     "/pa/units/land/bug_titan/bug_titan.json": ["bug_factory", 3, {row: 0, column: 3}],
+    "/pa/units/land/bug_matriarch/bug_matriarch.json": ["bug_factory", 3, {row: 0, column: 2}],
+    "/pa/units/land/bug_rak/bug_rak.json": ["bug_factory", 3, {row: 0, column:4}],
     //ammo
     "/pa/units/structure/bug_mine/bug_mine.json": ["bug_ammo", 14, {row: 2, column: 2}],
     "/pa/units/structure/bug_mine_big/bug_mine_big.json": ["bug_ammo", 15, {row: 2, column: 3}],

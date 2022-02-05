@@ -56,12 +56,14 @@
         "/pa/units/land/bug_bot_fab_advanced/bug_bot_fab_advanced.json",
         "/pa/units/land/bug_boomer/bug_boomer.json",
         "/pa/units/land/bug_boomer_big/bug_boomer_big.json",
+        "/pa/units/land/bug_matriarch/bug_matriarch.json",
         "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.json",
         "/pa/units/land/bug_ripper/bug_ripper.json",
         "/pa/units/land/bug_runner/bug_runner.json",
         
         "/pa/units/land/bug_scorcher/bug_scorcher.json",
         "/pa/units/land/bug_titan/bug_titan.json",
+        "/pa/units/land/bug_rak/bug_rak.json",
         "/pa/units/land/bug_boomer/bug_boomer.json",
 		
 	    "/pa/units/land/bug_grunt_big/bug_grunt_big.json",

@@ -1,0 +1,23 @@
+{
+    "base_spec": "/pa/ammo/base_bomb/base_bomb.json",
+    "damage": 0,
+    "death": {
+      "decals": [
+        ""
+      ]
+    },
+    "fx_trail": {
+      "filename": "/pa/effects/specs/none.pfx"
+    },
+    "initial_velocity": 17,
+    "lifetime": 1,
+    "max_velocity": 20,
+    "min_velocity": 17,
+    "model": {
+      "filename": ""
+    },
+    "spawn_unit_on_death": "/pa/units/land/bug_boomer/bug_boomer.json",
+    "spawn_unit_on_death_with_velocity": false,
+    "splash_damage": 0,
+    "splash_radius": 0
+  }

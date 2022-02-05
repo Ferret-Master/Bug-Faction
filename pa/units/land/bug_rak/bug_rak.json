@@ -1,0 +1,114 @@
+{
+    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "si_name": "bug_rak",
+    "display_name": "Rak",
+    "description": "Demi Titan - long range beam weapon.",
+    "max_health": 40000,
+    "build_metal_cost": 15000,
+    "influence_radius": 400,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                3.1
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Bot",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Land",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Titan",
+        "UNITTYPE_Important",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Custom2"
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "guard_layer": "WL_LandHorizontal",
+    "navigation": {
+        "type": "land-small",
+        "acceleration": 100,
+        "brake": 100,
+        "move_speed": 12,
+        "turn_speed": 25,
+        "group_preference": "back"
+    },
+    "physics": {
+        "radius": 6
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 300
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 300
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/land/bug_rak/bug_laser_spider.papa"
+        
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/bug_rak/bug_rak_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_muzzle"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/veh"
+        },
+        "died": {
+            "audio_cue": "",
+            "effect_spec": "",
+            "effect_scale": 1.0
+        },
+        "fired": {
+            "audio_cue": "",
+            "effect_spec": ""
+        }
+    
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/veh/tank_heavy_mortar_loop_sheller_T2",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        }
+    },
+    "selection_icon": {
+        "diameter": 50
+    },
+    "TEMP_texelinfo": 9.31488,
+    "mesh_bounds": [
+        50,
+        50,
+        50
+    ],
+    "headlights": [],
+    "lamps": []
+}
