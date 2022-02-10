@@ -5,7 +5,7 @@ var newBuildScenario = {
      "/pa/units/structure/bug_swarm_hive/bug_swarm_hive.json": ["bug_factory", 16, {row: 2, column: 5}],
      "/pa/units/structure/advanced_hive/advanced_hive.json": ["bug_factory", 10, {row: 1, column: 4}],
      "/pa/units/research/basic_research_station/basic_research_station.json": ["bug_factory", 0, {row: 0, column: 0}],
-    // "/pa/units/research/advanced_research_station/advanced_research_station.json": ["bug_factory", 0, {row: 0, column: 1}],
+     "/pa/units/research/advanced_research_station/advanced_research_station.json": ["bug_factory", 0, {row: 0, column: 1}],
      "/pa/units/structure/bug_orbital_launcher/bug_orbital_launcher.json": ["bug_factory", 12, {row: 2, column: 0}],
      "/pa/units/structure/basic_air_hive/basic_air_hive.json": ["bug_factory", 14, {row: 2, column: 2}],
      "/pa/units/structure/advanced_air_hive/advanced_air_hive.json": ["bug_factory", 14, {row: 1, column: 2}],
@@ -45,6 +45,10 @@ var newBuildScenario = {
     "/pa/units/research/unlocks/bug_needler_fast_unlock/bug_needler_fast_unlock.json":["bug_research",2,{row:2,column:2}],
     "/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/bug_combat_fab_cheap_unlock.json":["bug_research",2,{row:2,column:3}],
 
+    //t2 unlocks
+    "/pa/units/research/unlocks/bug_crusher_unlock/bug_crusher_unlock.json":["bug_adv_research",2,{row:2,column:0}],
+    "/pa/units/research/unlocks/bug_hydra_unlock/bug_hydra_unlock.json":["bug_adv_research",2,{row:2,column:1}],
+
     //t1 hive
     "/pa/units/land/bug_bot_fab/bug_bot_fab.json": ["bug_ground", 12, {row: 2, column: 0}],
     "/pa/units/land/bug_needler/bug_needler.json": ["bug_ground", 20, {row: 2, column: 1}],
@@ -78,12 +82,14 @@ var newBuildScenario = {
 
     //t2 air hive
     "/pa/units/air/bug_basilisk/bug_basilisk.json": ["bug_air", 17, {row: 1, column: 5}],
-
+    "/pa/units/air/bug_air_fab_adv/bug_air_fab_adv.json": ["bug_air", 6, {row: 1, column: 0}],
+    "/pa/units/air/bug_fighter_adv/bug_fighter_adv.json": ["air", 7, {row: 1, column: 1}],
 
     //titans
     "/pa/units/land/bug_titan/bug_titan.json": ["bug_factory", 3, {row: 0, column: 3}],
-    "/pa/units/land/bug_matriarch/bug_matriarch.json": ["bug_factory", 3, {row: 0, column: 2}],
-    "/pa/units/land/bug_rak/bug_rak.json": ["bug_factory", 3, {row: 0, column:4}],
+    "/pa/units/air/bug_air_titan/bug_air_titan.json": ["bug_factory", 2, {row: 0, column: 2}],
+    "/pa/units/land/bug_matriarch/bug_matriarch.json": ["bug_factory", 3, {row: 1, column: 1}],
+    "/pa/units/land/bug_laser_spider/bug_laser_spider.json": ["bug_factory", 3, {row: 1, column:0}],
     //ammo
     "/pa/units/structure/bug_mine/bug_mine.json": ["bug_ammo", 14, {row: 2, column: 2}],
     "/pa/units/structure/bug_mine_big/bug_mine_big.json": ["bug_ammo", 15, {row: 2, column: 3}],

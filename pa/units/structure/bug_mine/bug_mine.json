@@ -79,11 +79,14 @@
         "UNITTYPE_Land",
         "UNITTYPE_Naval",
         "UNITTYPE_Defense",
-        "UNITTYPE_CombatFabBuild",
+  
         "UNITTYPE_FabBuild",
-        "UNITTYPE_CombatFabAdvBuild",
+
         "UNITTYPE_Custom2"
     ],
+    "command_caps": [
+        "ORDER_FireSecondaryWeapon"
+      ],
     "physics": {
         "type": "Structure",
         "shape": "Box",
@@ -115,7 +118,13 @@
             "spec_id": "/pa/units/structure/bug_mine/bug_mine_weapon.json",
             "aim_bone": "bone_root",
             "muzzle_bone": "bone_root"
-        }
+        },
+        {
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root",
+            "secondary_weapon": true,
+            "spec_id": "/pa/units/structure/bug_mine/bug_mine_alt_weapon.json"
+          }
     ],
     "model": [
         {

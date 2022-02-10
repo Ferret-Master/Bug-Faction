@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
-    "ammo_id": "/pa/units/land/bug_rak/bug_rak_ammo.json",
+    "ammo_id": "/pa/units/land/bug_laser_spider/bug_laser_spider_ammo.json",
     "rate_of_fire": 10.0,
     "max_range": 200,
     "yaw_rate": 60,

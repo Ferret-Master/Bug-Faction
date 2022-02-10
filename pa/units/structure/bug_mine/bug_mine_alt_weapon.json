@@ -1,0 +1,30 @@
+{
+    "ammo_id": "/pa/units/structure/bug_mine/bug_mine_alt_ammo.json",
+    "ammo_capacity": 300,
+    "ammo_demand":60,
+    "ammo_per_shot": 300,
+    "start_fully_charged": false,
+    "ammo_source": "energy",
+    "auto_attack": false,
+    "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+    "carpet_fire": false,
+    "firing_arc_pitch": 100,
+    "firing_arc_yaw": 100,
+    "firing_standard_deviation": 100,
+    "force_fire_from_muzzle": true,
+    "idle_aim_delay": 0,
+    "manual_fire": true,
+    "max_range": 50,
+    
+    "pitch_range": 360,
+    "pitch_rate": 1500,
+    "rate_of_fire": 1,
+    "self_destruct": true,
+    "target_layers": [
+      "WL_LandHorizontal",
+      "WL_WaterSurface"
+    ],
+    "tool_type": "TOOL_Weapon",
+    "yaw_range": 360,
+    "yaw_rate": 3000
+  }

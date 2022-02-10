@@ -1,12 +1,12 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "unit_name": "Bug Advanced Metal Extractor",
-    "display_name": "Bug Advanced Metal Extractor",
-    "si_name":"metal_extractor_adv",
-    "description": "!LOC:Advanced Economy - Produces metal, can only be placed on metal deposits.",
+    "unit_name": "Bug t3 Metal Extractor",
+    "display_name": "Bug t3 Metal Extractor",
+    "si_name":"metal_extractor_t3",
+    "description": "Advanced Economy - Can be attached to existing extractors for a small amount of extra income.",
     "strategic_icon_priority": 5,
-    "max_health": 5000,
-    "build_metal_cost": 2000,
+    "max_health": 2000,
+    "build_metal_cost": 1000,
     "atrophy_rate": 33.3333,
     "atrophy_cool_down": 15.0,
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
@@ -16,7 +16,7 @@
     "force_snap_to_feature_orientation": true,
     "area_build_type": "Sphere",
     "production": {
-        "metal": 16
+        "metal": 3
     },
     "consumption": {
         "energy": 0
@@ -50,27 +50,21 @@
     "model": [
         {
             "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/land/metal_extractor_adv/metal_extractor_adv.papa",
-            "animations": {
-                "idle": "/pa/units/land/metal_extractor_adv/metal_extractor_adv_anim_work.papa"
-            },
-            "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
-            "arrows": 10
+            "filename": "/pa/units/land/bug_t3_extractor/bug_t3_extractor.papa"
         },
         {
             "layer": "WL_WaterSurface",
-            "filename": "/pa/units/sea/sea_metal_extractor_adv/sea_metal_extractor_adv.papa",
-            "animations": {
-                "idle": "/pa/units/sea/sea_metal_extractor_adv/sea_metal_extractor_adv_anim_work.papa"
-            },
-            "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
-            "arrows": 10
+            "filename": "/pa/units/sea/bug_t3_extractor/bug_t3_extractor.papa"
         }
     ],
     "replaceable_units": [
         "/pa/units/land/metal_extractor/metal_extractor.json",
         "/pa/units/structure/bug_basic_extractor/bug_basic_extractor.json",
-        "/pa/units/land/l_mex/l_mex.json"
+        "/pa/units/land/metal_extractor_adv/metal_extractor_adv.json",
+        "/pa/units/structure/bug_advanced_extractor/bug_advanced_extractor.json",
+        "/pa/units/land/l_mex/l_mex.json",
+        "/pa/units/land/l_mex_adv/l_mex_adv.json"
+
     ],
     "events": {
         "build_complete": {

@@ -23,7 +23,7 @@
       }
     },
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "build_metal_cost": 12000,
+    "build_metal_cost": 13200,
     "buildable_projectiles": [
       "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_ammo.json"
     ],

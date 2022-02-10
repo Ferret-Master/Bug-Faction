@@ -28,6 +28,7 @@
         "/pa/units/structure/bug_teleporter/bug_teleporter.json",
         "/pa/units/structure/bug_arty_small/bug_arty_small.json",
         "/pa/units/structure/bug_arty_large/bug_arty_large.json",
+        "/pa/units/structure/bug_direct_arty/bug_direct_arty.json",
         "/pa/units/structure/bug_combined_storage/bug_combined_storage.json",
 
         "/pa/units/research/basic_research_station/basic_research_station.json",
@@ -35,15 +36,20 @@
 
         "/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json",
         "/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json",
+        "/pa/units/research/unlocks/bug_crusher_unlock/bug_crusher_unlock.json",
+        "/pa/units/research/unlocks/bug_hydra_unlock/bug_hydra_unlock.json",
         "/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/bug_combat_fab_cheap_unlock.json",
         "/pa/units/research/unlocks/bug_needler_fast_unlock/bug_needler_fast_unlock.json",
 
         "/pa/units/air/bug_fighter/bug_fighter.json",
+        "/pa/units/air/bug_fighter_adv/bug_fighter_adv.json",
         "/pa/units/air/bug_bomber/bug_bomber.json",
         "/pa/units/air/bug_air_scout/bug_air_scout.json",
         "/pa/units/air/bug_air_fab/bug_air_fab.json",
+        "/pa/units/air/bug_air_fab_adv/bug_air_fab_adv.json",
         "/pa/units/air/bug_harpy/bug_harpy.json",
         "/pa/units/air/bug_basilisk/bug_basilisk.json",
+        "/pa/units/air/bug_air_titan/bug_air_titan.json",
 
         "/pa/units/land/bug_combat_fab/bug_combat_fab.json",
         "/pa/units/land/bug_combat_fab/bug_combat_fab_cheap.json",
@@ -63,7 +69,7 @@
         
         "/pa/units/land/bug_scorcher/bug_scorcher.json",
         "/pa/units/land/bug_titan/bug_titan.json",
-        "/pa/units/land/bug_rak/bug_rak.json",
+        "/pa/units/land/bug_laser_spider/bug_laser_spider.json",
         "/pa/units/land/bug_boomer/bug_boomer.json",
 		
 	    "/pa/units/land/bug_grunt_big/bug_grunt_big.json",

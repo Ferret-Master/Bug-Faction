@@ -1,0 +1,166 @@
+{
+    "display_name": "Bug Direct Arty Test",
+    "description": "Experimental direct fire artillery",
+    "TEMP_texelinfo": 12.901,
+    "si_name":"artillery_short",
+    "alt_area_build_pattern": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "alt_area_build_type": "Sphere",
+    "atrophy_cool_down": 15.0,
+    "atrophy_rate": 25,
+    "audio": {
+      "selection_response": {
+        "cue": "/SE/Selection/structure/artillery"
+      }
+    },
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "build_metal_cost": 900,
+    "command_caps": [
+      "ORDER_Attack"
+    ],
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/structure_small"
+      },
+      "fired": {
+        "audio_cue": "/SE/Weapons/structure/artillery_short_fire",
+        "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx"
+      },
+      "died": {
+        "audio_cue": "/SE/Death/structure_small",
+        "effect_scale": 0.6
+      }
+    },
+    "guard_layer": "WL_AnySurface",
+    "lamps": [
+      {
+        "offset": [
+          0.0,
+          -4.24,
+          1.77
+        ],
+        "radius": 1.75,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 2.0,
+        "bone": "bone_pitch"
+      }
+    ],
+    "max_health": 1000,
+    "mesh_bounds": [
+      8,
+      10,
+      8.9
+    ],
+    "model": [
+    
+      {
+ 
+        "filename": "/pa/units/structure/bug_direct_arty/bug_direct_arty.papa"
+       
+      }
+    ],
+    "nearby_target_tick_update_interval": 15,
+    "placement_size": [
+      15,
+      15
+    ],
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 100
+          },
+          {
+            "layer": "underwater",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 100
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 21.0
+    },
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "tools": [
+      {
+        "spec_id": "/pa/units/land/artillery_short/artillery_short_tool_weapon.json",
+        "aim_bone": "bone_turret",
+        "muzzle_bone": "socket_muzzle"
+      }
+    ],
+    "unit_types": [
+      "UNITTYPE_Structure",
+      "UNITTYPE_Artillery",
+      "UNITTYPE_Defense",
+      "UNITTYPE_FabBuild",
+      "UNITTYPE_Basic",
+      "UNITTYPE_Custom2"
+    ]
+  }
