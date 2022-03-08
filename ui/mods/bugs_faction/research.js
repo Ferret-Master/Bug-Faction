@@ -9,7 +9,9 @@ model.unitsToLock = ["/pa/units/land/bug_grunt_big/bug_grunt_big.json",
                     "/pa/units/land/bug_combat_fab/bug_combat_fab_cheap.json",
                     "/pa/units/land/bug_needler/bug_needler_fast.json",
                     "/pa/units/land/bug_crusher/bug_crusher.json",
-                    "/pa/units/land/bug_hydra/bug_hydra.json"
+                    "/pa/units/land/bug_hydra/bug_hydra.json",
+                    "/pa/units/land/bug_boomer/bug_boomer_r.json",
+                    "/pa/units/structures/bug_mine/bug_mine.json"
                     ];
 
 //tracks locked units
@@ -20,6 +22,8 @@ model.lockedUnits = [];
 //with the addition of replacing units queued I think I will have it be default as the only edge case is research which I will just not track
 
 //to combo replace/lock have locked units be on the end of the unitsToLock array and not match up numerically with the unitsToUnlock array
+
+//issue when I want to unlock a unit + replace another so need to double up on the unlock
 
 model.unlockPairs = [
 
@@ -47,6 +51,12 @@ model.unlockPairs = [
     ["/pa/units/land/bug_needler/bug_needler.json","/pa/units/research/unlocks/bug_needler_fast_unlock/bug_needler_fast_unlock.json"],
      true],
 
+     //boomer mine transform unlock
+    ["/pa/units/research/unlocks/bug_boomer_mine_unlock/bug_boomer_mine_unlock.json",
+    ["/pa/units/land/bug_boomer/bug_boomer_r.json","/pa/units/structure/bug_mine/bug_mine.json"],
+    ["/pa/units/land/bug_boomer/bug_boomer.json","/pa/units/structure/bug_mine/bug_mine.json", "/pa/units/research/unlocks/bug_boomer_mine_unlock/bug_boomer_mine_unlock.json"],
+     true],
+     
      //crusher unlock
     ["/pa/units/research/unlocks/bug_crusher_unlock/bug_crusher_unlock.json",
     ["/pa/units/land/bug_crusher/bug_crusher.json"],

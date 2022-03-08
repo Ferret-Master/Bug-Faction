@@ -16,6 +16,7 @@ var paeiouIcons = [
 	"bug_boomer_egg",
 	"bug_adv_boomer_egg",
 	"boomer",
+	"boomer_r",
 	"adv_boomer",
 	"bug_aa",
 	"bug_adv_aa",

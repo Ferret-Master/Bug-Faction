@@ -44,6 +44,7 @@ var newBuildScenario = {
     "/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json":["bug_research",2,{row:2,column:1}],
     "/pa/units/research/unlocks/bug_needler_fast_unlock/bug_needler_fast_unlock.json":["bug_research",2,{row:2,column:2}],
     "/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/bug_combat_fab_cheap_unlock.json":["bug_research",2,{row:2,column:3}],
+    "/pa/units/research/unlocks/bug_boomer_mine_unlock/bug_boomer_mine_unlock.json":["bug_research",2,{row:2,column:4}],
 
     //t2 unlocks
     "/pa/units/research/unlocks/bug_crusher_unlock/bug_crusher_unlock.json":["bug_adv_research",2,{row:2,column:0}],

@@ -108,7 +108,7 @@
                     "layer": "surface_and_air",
                     "channel": "radar",
                     "shape": "sphere",
-                    "radius": 2
+                    "radius": 20
                 }
             ]
         }
@@ -123,6 +123,7 @@
             "aim_bone": "bone_root",
             "muzzle_bone": "bone_root",
             "secondary_weapon": true,
+            "show_range": false,
             "spec_id": "/pa/units/structure/bug_mine/bug_mine_alt_weapon.json"
           }
     ],

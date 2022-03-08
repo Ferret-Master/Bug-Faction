@@ -34,6 +34,7 @@
         "/pa/units/research/advanced_research_station/advanced_research_station.json",
 
         "/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json",
+        "/pa/units/research/unlocks/bug_boomer_mine_unlock/bug_boomer_mine_unlock.json",
         "/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json",
         "/pa/units/research/unlocks/bug_crusher_unlock/bug_crusher_unlock.json",
         "/pa/units/research/unlocks/bug_hydra_unlock/bug_hydra_unlock.json",
@@ -60,6 +61,7 @@
         "/pa/units/land/bug_aa_big/bug_aa_big.json",
         "/pa/units/land/bug_bot_fab_advanced/bug_bot_fab_advanced.json",
         "/pa/units/land/bug_boomer/bug_boomer.json",
+        "/pa/units/land/bug_boomer/bug_boomer_r.json",
         "/pa/units/land/bug_boomer_big/bug_boomer_big.json",
         "/pa/units/land/bug_matriarch/bug_matriarch.json",
         "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.json",
@@ -69,7 +71,6 @@
         "/pa/units/land/bug_scorcher/bug_scorcher.json",
         "/pa/units/land/bug_titan/bug_titan.json",
         "/pa/units/land/bug_laser_spider/bug_laser_spider.json",
-        "/pa/units/land/bug_boomer/bug_boomer.json",
 		
 	    "/pa/units/land/bug_grunt_big/bug_grunt_big.json",
    

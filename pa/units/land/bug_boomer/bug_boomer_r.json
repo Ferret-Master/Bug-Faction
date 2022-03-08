@@ -1,7 +1,7 @@
 {
     "display_name": "Boomer",
-    "description": "!LOC:Bomb Bot - Self destructs to deal very heavy damage over a nearby area. Extremely fast.",
-    "si_name":"boomer",
+    "description": "!LOC:Bomb Bot - Self destructs to deal very heavy damage over a nearby area. Extremely fast. Can alt fire to become a mine",
+    "si_name":"boomer_r",
     "TEMP_texelinfo": 6.38702,
     "attachable": {
       "offsets": {
@@ -32,7 +32,14 @@
     },
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "build_metal_cost": 50,
-
+    "command_caps": [
+      "ORDER_Move",
+      "ORDER_Patrol",
+      "ORDER_Attack",
+      "ORDER_Assist",
+      "ORDER_Use",
+      "ORDER_FireSecondaryWeapon"
+    ],
     "events": {
       "build_complete": {
         "audio_cue": "/SE/Build_Complete/bot"
@@ -101,6 +108,13 @@
         "spec_id": "/pa/units/land/bug_boomer/bug_boomer_weapon.json",
         "aim_bone": "bone_root",
         "muzzle_bone": "bone_root"
+      },
+      {
+        "spec_id": "/pa/units/land/bug_boomer/bug_boomer_alt_weapon.json",
+        "aim_bone": "bone_root",
+        "muzzle_bone": "bone_root",
+        "secondary_weapon": true,
+        "show_range": false
       }
     ],
     "transportable": {

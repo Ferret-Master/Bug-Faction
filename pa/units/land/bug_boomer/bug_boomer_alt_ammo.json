@@ -25,5 +25,5 @@
 			"die_here":true
 		}
 	],
-    "spawn_unit_on_death": "/pa/units/land/bug_boomer/bug_boomer_r.json"
-  }
+	"spawn_unit_on_death": "/pa/units/structure/bug_mine/bug_mine.json"
+}
