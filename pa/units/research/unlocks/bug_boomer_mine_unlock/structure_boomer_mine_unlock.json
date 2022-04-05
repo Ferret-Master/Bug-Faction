@@ -1,0 +1,114 @@
+{
+    "display_name": "Boomer Unlock",
+    "si_name":"bug_evo_chamber",
+    "description": "Allows boomers to alt fire and make mines where they stand and vise versa",
+    "TEMP_texelinfo": 38.3936,
+    "area_build_separation": 4,
+    "atrophy_cool_down": 15.0,
+    "atrophy_rate": 10.0,
+    "audio": {
+      "loops": {
+        "build": {
+          "cue": "/SE/Construction/Factory_contruction_loop_bot",
+          "flag": "build_target_changed",
+          "should_start_func": "has_build_target",
+          "should_stop_func": "no_build_target"
+        }
+      }
+    },
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "build_metal_cost": 1000,
+    "buildable_types": "(Basic & FactoryBuild & Wall & Custom2) - Custom1 - Custom3 - Custom4",
+    "command_caps": [
+    
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_FactoryBuild",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Attack",
+    "ORDER_Assist"
+    
+    ],
+    "factory": {
+        "initial_build_spec": "/pa/units/land/nuke_launcher/nuke_launcher_ammo.json"
+      },
+    "death": {
+      "decals": [
+        "/pa/effects/specs/scorch_c_01.json"
+      ]
+    },
+    "events": {
+      "died": {
+        "effect_scale": 1.0
+      }
+    },
+    "factory_cooldown_time": 5,
+    "max_health": 6000,
+    "mesh_bounds": [
+      25.5,
+      25.5,
+      25.2
+    ],
+    "model": {
+     
+    
+      "filename": "/pa/units/research/basic_research_station/research_station.papa"
+     
+    },
+    "physics": {
+      "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
+    },
+    "placement_size": [
+      40,
+      55
+    ],
+
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "channel": "sight",
+            "layer": "surface_and_air",
+            "radius": 110,
+            "shape": "capsule"
+          },
+          {
+            "channel": "sight",
+            "layer": "underwater",
+            "radius": 110,
+            "shape": "capsule"
+          }
+        ]
+      }
+    },
+    "rolloff_dirs": [
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "selection_icon": {
+      "diameter": 49.5
+    },
+    "tools": [
+      {
+        "aim_bone": "bone_root",
+        "spec_id": "/pa/units/land/bot_factory/bot_factory_build_arm.json"
+      }
+    ],
+    "unit_types": [
+      "UNITTYPE_Factory",
+      "UNITTYPE_Construction",
+      "UNITTYPE_Land",
+      "UNITTYPE_Bot",
+      "UNITTYPE_Structure",
+      "UNITTYPE_Basic",
+      "UNITTYPE_FabBuild",
+      "UNITTYPE_FabAdvBuild",
+      "UNITTYPE_Important",
+      "UNITTYPE_Custom2"
+    ],
+    "wait_to_rolloff_time": 0
+  }

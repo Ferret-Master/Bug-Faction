@@ -1,0 +1,135 @@
+{
+    "display_name": "leech",
+    "description": "Leech - Expensive. medium range. low damage. Hover. Generates a small amount of metal when attacking. Attacks land and sea targets.",
+    "TEMP_texelinfo": 6.38702,
+    "icon_si":"bot_nanoswarm",
+    "attachable": {
+      "offsets": {
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "head": [
+          0,
+          0.25,
+          4.5
+        ]
+      }
+    },
+    "audio": {
+      "loops": {
+        "build": {
+          "cue": "/SE/Construction/Fab_contruction_beam_loop",
+          "flag": "build_target_changed",
+          "should_start_func": "has_build_target",
+          "should_stop_func": "no_build_target"
+        },
+        "move": {
+          "cue": "/SE/Movement/bot/swarm_loop",
+          "flag": "vel_changed",
+          "should_start_func": "is_moving",
+          "should_stop_func": "is_not_moving"
+        }
+      },
+      "selection_response": {
+        "cue": "/SE/Selection/bot/swarm"
+      }
+    },
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "build_metal_cost": 200,
+    "buildable_types": "",
+    "events": {
+      "fired": {
+        "audio_cue": "/SE/Weapons/bot/swarm",
+        "effect_spec": ""
+      },
+      "died": {
+        "audio_cue": "/SE/Death/swarm",
+        "effect_scale": 1.0
+      }
+    },
+    "fx_offsets": [
+      {
+        "type": "idle",
+        "filename": "/pa/units/land/bug_leech/leech_body.pfx",
+        "bone": "bone_body",
+        "offset": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "guard_layer": "WL_LandHorizontal",
+    "max_health": 300,
+    "mesh_bounds": [
+      4,
+      4,
+      4
+    ],
+    "model": {
+      "filename": "/pa/units/land/bot_nanoswarm/bot_nanoswarm.papa",
+      "animations": {
+        "idle": "/pa/units/land/bot_nanoswarm/bot_nanoswarm_anim_idle.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/bot_nanoswarm_anim_tree.json"
+    },
+    "navigation": {
+      "type": "hover",
+      "acceleration": 400,
+      "brake": 400,
+      "move_speed": 14,
+      "turn_speed": 1080,
+      "group_preference": "back"
+    },
+    "physics": {
+      "radius": 4,
+      "allow_pushing": true
+    },
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 100
+          },
+          {
+            "layer": "underwater",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 100
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 7.0
+    },
+    "spawn_layers": "WL_LandHorizontal",
+    "tools": [
+      {
+        "spec_id": "/pa/units/land/bug_leech/bug_leech_weapon.json",
+        "aim_bone": "bone_body"
+      },
+      {
+        "spec_id": "/pa/units/land/bug_leech/bug_leech_metal_weapon.json",
+        "aim_bone": "bone_body"
+      }
+    ],
+    "transportable": {
+      "size": 1
+    },
+    "unit_types": [
+      "UNITTYPE_Bot",
+      "UNITTYPE_Mobile",
+      "UNITTYPE_Basic",
+      "UNITTYPE_Land",
+      "UNITTYPE_Offense",
+      "UNITTYPE_Hover",
+      "UNITTYPE_Custom2"
+    ],
+    "wreckage_health_frac": 0.0
+  }

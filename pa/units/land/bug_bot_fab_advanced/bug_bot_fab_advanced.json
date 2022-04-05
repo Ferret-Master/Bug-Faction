@@ -1,7 +1,7 @@
 {
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "unit_name": "Advanced Fabrication Bot",
-    "si_name":"fabrication_bot_adv",
+    "si_name":"bug_fab_adv",
     "display_name": "!LOC:Advanced Fabrication Bot",
     "description": "!LOC:Advanced Fabricator - Build basic and advanced structures.",
     "max_health": 150,
@@ -77,17 +77,15 @@
         }
     },
     "model": {
-        "filename": "/pa/units/land/fabrication_bot_adv/fabrication_bot_adv.papa",
         "animations": {
-            "death01": "/pa/units/land/fabrication_bot_adv/fabrication_bot_adv_anim_death01.papa",
-            "idle": "/pa/units/land/fabrication_bot_adv/fabrication_bot_adv_anim_idle.papa",
-            "walk": "/pa/units/land/fabrication_bot_adv/fabrication_bot_adv_anim_run.papa",
-            "aim_up": "/pa/units/land/fabrication_bot_adv/fabrication_bot_adv_anim_aimUp.papa",
-            "aim_down": "/pa/units/land/fabrication_bot_adv/fabrication_bot_adv_anim_aimDown.papa"
+          "death01": "/pa/units/land/bug_bot_fab_advanced/bug_bot_fab_death_anim.papa",
+          "idle": "/pa/units/land/bug_bot_fab_advanced/bug_bot_fab_advanced_idle.papa",
+          "walk": "/pa/units/land/bug_bot_fab_advanced/bug_bot_fab_advanced_run.papa"
         },
-        "animtree": "/pa/anim/anim_trees/fabrication_bipedal_mech_anim_tree.json",
-        "walk_speed": 4.9
-    },
+        "animtree": "/pa/anim/anim_trees/bot_bomb_anim_tree.json",
+        "filename": "/pa/units/land/bug_bot_fab_advanced/bug_bot_fab_advanced.papa",
+        "walk_speed": 12
+      },
     "tools": [
         {
             "spec_id": "/pa/units/land/fabrication_bot_adv/fabrication_bot_adv_build_arm.json",
@@ -127,26 +125,11 @@
         {
             "type": "build",
             "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "socket_rightMuzzle",
+            "bone": "bone_head",
             "offset": [
                 0,
                 0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "socket_leftMuzzle",
-            "offset": [
-                0,
-                0,
-                0
+                -2
             ],
             "orientation": [
                 0,

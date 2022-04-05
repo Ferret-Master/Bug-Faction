@@ -2,7 +2,7 @@
     "display_name": "Bug Fab",
     "description": "Basic fabricator, builds bug structures",
     "TEMP_texelinfo": 5.11028,
-    "si_name":"fabrication_bot",
+    "si_name":"bug_fab",
     "attachable": {
       "offsets": {
         "head": [
@@ -62,22 +62,7 @@
     },
     "fx_offsets": [
       {
-        "bone": "bone_rightElbow",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "offset": [
-          0,
-          -1.891,
-          -0.11
-        ],
-        "orientation": [
-          0,
-          0,
-          0
-        ],
-        "type": "build"
-      },
-      {
-        "bone": "bone_leftElbow",
+        "bone": "bone_head",
         "filename": "/pa/effects/specs/fab_spray.pfx",
         "offset": [
           0,
@@ -101,14 +86,12 @@
     ],
     "model": {
       "animations": {
-        "aim_down": "/pa/units/land/fabrication_bot/fabrication_bot_anim_aimDown.papa",
-        "aim_up": "/pa/units/land/fabrication_bot/fabrication_bot_anim_aimUp.papa",
-        "death01": "/pa/units/land/fabrication_bot/fabrication_bot_anim_death01.papa",
-        "idle": "/pa/units/land/fabrication_bot/fabrication_bot_anim_idle.papa",
-        "walk": "/pa/units/land/fabrication_bot/fabrication_bot_anim_run.papa"
+        "death01": "/pa/units/land/bug_bot_fab/bug_bot_fab_death_anim.papa",
+        "idle": "/pa/units/land/bug_bot_fab/bug_bot_fab_idle.papa",
+        "walk": "/pa/units/land/bug_bot_fab/bug_bot_fab_run.papa"
       },
-      "animtree": "/pa/anim/anim_trees/fabrication_bipedal_mech_anim_tree.json",
-      "filename": "/pa/units/land/fabrication_bot/fabrication_bot.papa",
+      "animtree": "/pa/anim/anim_trees/bot_bomb_anim_tree.json",
+      "filename": "/pa/units/land/bug_bot_fab/bug_bot_fab.papa",
       "walk_speed": 12
     },
     "navigation": {
