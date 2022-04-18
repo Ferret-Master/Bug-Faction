@@ -128,7 +128,7 @@
       "acceleration": 120,
       "brake": -1,
       "move_speed": 12,
-      "turn_speed": 720,
+      "turn_speed": 200,
       "group_preference": "back"
     },
     "nearby_target_tick_update_interval": 15,

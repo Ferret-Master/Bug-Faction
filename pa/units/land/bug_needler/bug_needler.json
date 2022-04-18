@@ -73,7 +73,13 @@
     ],
     "model": {
       "filename": "/pa/units/land/bug_needler/bug_needler.papa",
-  
+      "animations": {
+      
+        "walk": "/pa/units/land/bug_needler/bug_needler_anim_walk.papa",
+        "idle": "/pa/units/land/bug_needler/bug_needler_anim_idle.papa"
+       
+      },
+      "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json",
       "walk_speed": 2
     },
     "navigation": {
