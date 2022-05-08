@@ -21,16 +21,23 @@
 		"icon_atlas": [
 			"coui://ui/mods/bugs_faction/icon_atlas.js"
 		],
+    "new_game": [
+			"coui://ui/mods/bugs_faction/new_game.js"
+		],
 		"shared_build":[
 			"coui://ui/mods/bugs_faction/shared_build.js"
 		],
-        "live_game_build_bar":[
+
+    "live_game_build_bar":[
             "coui://ui/mods/bugs_faction/live_build_bar.js"
-          ],
-          "live_game": [
-            "coui://ui/mods/bugs_faction/research.js",
-                  "coui://ui/mods/bugs_faction/research_live_game.js"
-          ]
+    ],
+    "live_game": [
+        "coui://ui/mods/bugs_faction/research.js",
+        "coui://ui/mods/bugs_faction/research_live_game.js"
+    ],
+    "start": [
+      "coui://ui/mods/bugs_faction/start.js"
+    ]
 		
 	}
 }
