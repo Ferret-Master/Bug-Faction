@@ -36,5 +36,8 @@
       "coui://ui/mods/bugs_faction/start.js"
     ]
 		
-	}
+	},
+  "dependencies": [
+    "com.pa.ferretmaster.commander-merge"
+  ]
 }
