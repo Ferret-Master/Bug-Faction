@@ -44,6 +44,7 @@
         "/pa/units/air/bug_fighter/bug_fighter.json",
         "/pa/units/air/bug_fighter_adv/bug_fighter_adv.json",
         "/pa/units/air/bug_bomber/bug_bomber.json",
+        "/pa/units/air/bug_bomber_adv/bug_bomber_adv.json",
         "/pa/units/air/bug_air_scout/bug_air_scout.json",
         "/pa/units/air/bug_air_fab/bug_air_fab.json",
         "/pa/units/air/bug_air_fab_adv/bug_air_fab_adv.json",

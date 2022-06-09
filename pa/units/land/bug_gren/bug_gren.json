@@ -43,7 +43,8 @@
       },
       "died": {
         "audio_cue": "/SE/Death/Bot",
-        "effect_scale": 1.0
+        "effect_spec": "/pa/units/land/bug_crusher/bug_explosion_large.pfx",
+        "effect_scale": 0.6
       }
     },
     "guard_layer": "WL_AnySurface",
@@ -59,7 +60,7 @@
         "walk": "/pa/units/land/bug_gren/bug_gren_walk.papa",
         "idle":"/pa/units/land/bug_gren/bug_gren_idle.papa"
       },
-      "walk_speed": 12,
+      "walk_speed": 14,
       "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json"
     },
     "navigation": {

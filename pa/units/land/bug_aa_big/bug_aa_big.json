@@ -34,9 +34,9 @@
         "audio_cue": "/SE/Build_Complete/veh"
       },
       "died": {
-        "audio_cue": "/SE/Death/Veh",
-        "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
-        "effect_scale": 1.0
+          "audio_cue": "/SE/Death/Bot",
+          "effect_spec": "/pa/units/land/bug_crusher/bug_explosion_large.pfx",
+          "effect_scale": 1.0
       }
     },
     "guard_layer": "WL_AnySurface",
@@ -44,11 +44,15 @@
     "mesh_bounds": [
       7,
       7.5,
-      3.8
+      7
     ],
     "model": {
       "filename": "/pa/units/land/bug_aa_big/bug_aa_big.papa",
-      "animtree": "/pa/anim/anim_trees/tank_flak_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json",
+      "animations": {
+        "walk": "/pa/units/land/bug_aa_big/bug_aa_big_walk.papa",
+        "idle":"/pa/units/land/bug_aa_big/bug_aa_big_idle.papa"
+      },
       "arrows": 5
     },
     "navigation": {
@@ -74,10 +78,6 @@
           }
         ]
       }
-    },
-    "scrolling_uv": {
-      "scroll_rate": -3.0,
-      "uv_split": 0.899
     },
     "selection_icon": {
       "diameter": 14.0

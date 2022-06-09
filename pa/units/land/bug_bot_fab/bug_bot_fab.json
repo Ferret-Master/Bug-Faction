@@ -57,7 +57,8 @@
       },
       "died": {
         "audio_cue": "/SE/Death/Bot",
-        "effect_scale": 0.8
+        "effect_spec": "/pa/units/land/bug_crusher/bug_explosion_large.pfx",
+        "effect_scale": 0.6
       }
     },
     "fx_offsets": [
@@ -80,9 +81,9 @@
     "guard_layer": "WL_LandHorizontal",
     "max_health": 50,
     "mesh_bounds": [
-      4,
-      3.8,
-      4
+      5,
+      3,
+      5
     ],
     "model": {
       "animations": {
@@ -92,7 +93,7 @@
       },
       "animtree": "/pa/anim/anim_trees/bot_bomb_anim_tree.json",
       "filename": "/pa/units/land/bug_bot_fab/bug_bot_fab.papa",
-      "walk_speed": 12
+      "walk_speed": 20
     },
     "navigation": {
       "acceleration": 160,
@@ -104,7 +105,7 @@
     },
     "physics": {
       "allow_pushing": true,
-      "radius": 2
+      "radius": 3.5
     },
     "recon": {
       "observer": {

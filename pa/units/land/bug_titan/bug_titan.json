@@ -46,8 +46,9 @@
         },
         "died": {
             "audio_cue": "/SE/Death/Bot",
-            "effect_scale": 7.5
-        }
+            "effect_spec": "/pa/units/land/bug_crusher/bug_explosion_large.pfx",
+            "effect_scale": 5
+          }
     },
     "attack_range_frac": 0.2,
     "max_health": 120000,

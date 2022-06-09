@@ -41,8 +41,9 @@
         "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle"
       },
       "died": {
-        "audio_cue": "/SE/Death/Veh",
-        "effect_scale": 1.0
+        "audio_cue": "/SE/Death/Bot",
+        "effect_spec": "/pa/units/land/bug_crusher/bug_explosion_large.pfx",
+        "effect_scale": 0.6
       }
     },
     "guard_layer": "WL_Air",

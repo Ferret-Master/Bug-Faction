@@ -62,7 +62,8 @@
       },
       "died": {
         "audio_cue": "/SE/Death/Bot",
-        "effect_scale": 1.0
+        "effect_spec": "/pa/units/land/bug_crusher/bug_explosion_large.pfx",
+        "effect_scale": 0.6
       }
     },
     "max_health": 100,
@@ -80,7 +81,7 @@
        
       },
       "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json",
-      "walk_speed": 2
+      "walk_speed": 16
     },
     "navigation": {
       "type": "amphibious",

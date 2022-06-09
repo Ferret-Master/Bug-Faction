@@ -84,8 +84,9 @@ var newBuildScenario = {
 
     //t2 air hive
     "/pa/units/air/bug_basilisk/bug_basilisk.json": ["bug_air", 17, {row: 1, column: 5}],
+    "/pa/units/air/bug_bomber_adv/bug_bomber_adv.json": ["bug_air", 14, {row: 1, column: 2}],
     "/pa/units/air/bug_air_fab_adv/bug_air_fab_adv.json": ["bug_air", 6, {row: 1, column: 0}],
-    "/pa/units/air/bug_fighter_adv/bug_fighter_adv.json": ["air", 7, {row: 1, column: 1}],
+    "/pa/units/air/bug_fighter_adv/bug_fighter_adv.json": ["bug_air", 7, {row: 1, column: 1}],
 
     //titans
     "/pa/units/land/bug_titan/bug_titan.json": ["bug_factory", 3, {row: 0, column: 3}],

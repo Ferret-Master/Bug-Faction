@@ -38,9 +38,11 @@
         "effect_spec": "/pa/units/land/bug_hydra/hydra_muzzle.pfx socket_muzzle"
       },
       "died": {
-        "audio_cue": "/SE/Death/Veh",
-        "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
-        "effect_scale": 1.0
+        
+          "audio_cue": "/SE/Death/Bot",
+          "effect_spec": "/pa/units/land/bug_crusher/bug_explosion_large.pfx",
+          "effect_scale": 1.0
+        
       }
     },
     "guard_layer": "WL_AnySurface",

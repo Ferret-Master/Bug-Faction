@@ -51,13 +51,14 @@
         "effect_scale": 0.6
       },
       "fired": {
-        "audio_cue": "/SE/Weapons/sea/destroyer_fire",
+        "audio_cue": "/SE/Weapons/veh/attack_vehicle_fire",
         "effect_spec": null,
         "effect_scale": 0.6
       },
       "died": {
         "audio_cue": "/SE/Death/Bot",
-        "effect_scale": 0.90000004
+        "effect_spec": "/pa/units/land/bug_crusher/bug_explosion_large.pfx",
+        "effect_scale": 0.5
       }
     },
     "max_health": 40,
@@ -84,7 +85,7 @@
 
       },
       "animtree": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_tree.json",
-      "walk_speed": 20
+      "walk_speed": 22
     },
     "navigation": {
       "type": "land-small",

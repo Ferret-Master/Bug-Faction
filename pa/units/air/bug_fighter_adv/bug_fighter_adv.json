@@ -1,7 +1,7 @@
 {
     "display_name": "Bug Phoenix",
     "description": "Bug Advanced Interplanetary Fighter - Stronger fighter. Can move between planets. Can only attack air targets.",
-    "si_name":"fighter_adv",
+    "si_name":"bug_fighter_adv",
     "TEMP_texelinfo": 7.96209,
     "audio": {
       "loops": {

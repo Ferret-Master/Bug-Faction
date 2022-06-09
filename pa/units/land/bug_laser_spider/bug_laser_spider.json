@@ -80,9 +80,9 @@
             "audio_cue": "/SE/Build_Complete/veh"
         },
         "died": {
-            "audio_cue": "",
-            "effect_spec": "",
-            "effect_scale": 1.0
+            "audio_cue": "/SE/Death/Bot",
+            "effect_spec": "/pa/units/land/bug_crusher/bug_explosion_large.pfx",
+            "effect_scale": 4
         },
         "fired": {
             "audio_cue": "",

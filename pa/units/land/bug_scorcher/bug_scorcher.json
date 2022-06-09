@@ -61,8 +61,9 @@
       "effect_spec": "/pa/units/land/bug_scorcher/scorcher_flame.pfx socket_barrel"
     },
     "died": {
-      "audio_cue": "/SE/Death/Veh",
-      "effect_scale": 1.4
+      "audio_cue": "/SE/Death/Bot",
+      "effect_spec": "/pa/units/land/bug_crusher/bug_explosion_large.pfx",
+      "effect_scale": 1.0
     }
   },
   "attack_range_frac": 0.7,

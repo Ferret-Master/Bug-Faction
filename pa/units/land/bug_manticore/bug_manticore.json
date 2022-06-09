@@ -41,9 +41,9 @@
         "effect_spec": "/pa/units/land/bug_manticore/manticore_muzzle.pfx bone_root"
       },
       "died": {
-        "audio_cue": "/SE/Death/Bot",
-        "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
-        "effect_scale": 1.0
+          "audio_cue": "/SE/Death/Bot",
+          "effect_spec": "/pa/units/land/bug_crusher/bug_explosion_large.pfx",
+          "effect_scale": 1.0
       }
     },
     "guard_layer": "WL_AnySurface",

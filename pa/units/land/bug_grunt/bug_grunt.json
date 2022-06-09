@@ -38,12 +38,13 @@
       "audio_cue": "/SE/Build_Complete/bot"
     },
     "fired": {
-      "audio_cue": "/SE/Weapons/sea/destroyer_fire"
+      "audio_cue": "/SE/Weapons/veh/tank_light_fire"
       
     },
     "died": {
       "audio_cue": "/SE/Death/Bot",
-      "effect_scale": 1.5
+      "effect_spec": "/pa/units/land/bug_crusher/bug_explosion_large.pfx",
+      "effect_scale": 0.6
     }
   },
   "attack_range_frac": 0.7,
@@ -81,7 +82,7 @@
       "idle": "/pa/units/land/bug_grunt/Grunt_Idle.papa"
     },
     "animtree": "/pa/units/land/bug_grunt/bug_anim_tree.json",
-    "walk_speed": 0.08
+    "walk_speed": 0.1
   },
   "navigation": {
     "type": "land-small",

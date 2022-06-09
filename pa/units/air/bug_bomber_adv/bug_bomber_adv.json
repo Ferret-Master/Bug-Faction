@@ -1,0 +1,121 @@
+{
+    "display_name": "Stheno",
+    "si_name": "bug_bomber_adv",
+    "description": "Acid Bomber - High damage over a wide area, leaves an acid puddle. Fragile and slow. Attacks land, sea and undersea targets.",
+    "TEMP_texelinfo": 10.4258,
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/air/air_bomber_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/air/bomber"
+        }
+    },
+    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+    "build_metal_cost": 2000,
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/air",
+            "effect_scale": 2.5
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/air/bomber_fire",
+            "effect_scale": 2.5
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Air",
+            "effect_scale": 1.875
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "moving_forward",
+            "filename": "/pa/units/air/bug_bomber/bug_bomber_trail.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "guard_layer": "WL_AnySurface",
+    "guard_radius": 120,
+    "maintain_priority_target": false,
+    "max_health": 1500,
+    "mesh_bounds": [
+        35,
+        18.75,
+        6.5
+    ],
+    "model": {
+        "filename": "/pa/units/air/bug_bomber_adv/bug_bomber_adv.papa",
+        "arrows": 5
+    },
+    "navigation": {
+        "type": "air",
+        "acceleration": 20,
+        "brake": 40,
+        "ignore_overshoot": true,
+        "move_speed": 40,
+        "turn_speed": 100,
+        "dodge_radius": 0,
+        "dodge_multiplier": 0.0,
+        "aggressive_behavior": "line",
+        "aggressive_distance": 50.0,
+        "aggressive_height": 100.0,
+        "wobble_factor": 0.05,
+        "wobble_speed": 0.1,
+        "bank_factor": 0.3,
+        "leash_behavior": "line",
+        "leash_distance": 0
+    },
+    "physics": {
+        "radius": 6,
+        "gravity_scalar": 1,
+        "push_sideways": false,
+        "allow_pushing": false,
+        "air_friction": 1.0
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 200
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 200
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": 23.0
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/air/bug_bomber_adv/bug_bomber_adv_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root"
+        }
+    ],
+    "unit_types": [
+        "UNITTYPE_Bomber",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Air",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Custom2"
+    ]
+}

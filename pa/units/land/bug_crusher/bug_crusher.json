@@ -35,7 +35,9 @@
     "build_metal_cost": 1600,
     "events": {
       "died": {
-        "effect_scale": 2
+        "audio_cue": "/SE/Death/Bot",
+        "effect_spec": "/pa/units/land/bug_crusher/bug_explosion_large.pfx",
+        "effect_scale": 1.0
       }
     
     },

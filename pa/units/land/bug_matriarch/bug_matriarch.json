@@ -40,7 +40,11 @@
       15
     ],
     "model": {
-      "filename": "/pa/units/land/bug_matriarch/bug_matriarch.papa"
+      "filename": "/pa/units/land/bug_matriarch/bug_matriarch.papa",
+      "animations": {
+        "walk": "/pa/units/land/bug_matriarch/bug_matriarch_moving.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/bot_bomb_anim_tree.json"
     },
     "navigation": {
       "type": "land-small",
@@ -119,11 +123,11 @@
       {
         "aim_bone": "bone_root",
         "muzzle_bone": [
-          "bone_spawn_1",
-          "bone_spawn_2",
-          "bone_spawn_3",
-          "bone_spawn_4",
-          "bone_spawn_1"
+          "socket_muzzle_1",
+          "socket_muzzle_2",
+          "socket_muzzle_3",
+          "socket_muzzle_4",
+          "socket_muzzle_1"
          
         
         ],
