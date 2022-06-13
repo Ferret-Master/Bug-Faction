@@ -46,7 +46,7 @@
       }
     },
     "guard_layer": "WL_AnySurface",
-    "guard_radius":200,
+    "guard_radius":120,
     "max_health": 100,
     "mesh_bounds": [
       3.8,
@@ -61,7 +61,7 @@
           "walk": "/pa/units/land/bug_boomer_big/bug_boomer_big_walk.papa"
         },
         "animtree": "/pa/anim/anim_trees/bot_bomb_anim_tree.json",
-        "walk_speed": 30
+        "walk_speed": 25
     },
     "navigation": {
       "type": "land-small",

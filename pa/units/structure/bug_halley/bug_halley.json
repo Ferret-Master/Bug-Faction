@@ -1,0 +1,377 @@
+{
+    "display_name": "Halley",
+    "description": "!LOC:Delta V Engine - Used to move small to medium celestial bodies.",
+    "TEMP_texelinfo": 77.8386,
+    "atrophy_cool_down": 15.0,
+    "atrophy_rate": 650,
+    "audio": {
+      "loops": {
+        "enabled": {
+          "cue": "/SE/Celestial/Planet_Engines_Loop",
+          "flag": "enable_changed",
+          "should_start_func": "is_enabled",
+          "should_stop_func": "is_disabled",
+          "interplanetary": true
+        }
+      }
+    },
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "build_metal_cost": 40000,
+    "build_restrictions": "Thrustable",
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/delta_v"
+      },
+      "died": {
+        "audio_cue": "/SE/Death/delta_v",
+        "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx",
+        "effect_scale": 1.0
+      }
+    },
+    "fx_offsets": [
+      {
+        "type": "enabled",
+        "filename": "/pa/units/orbital/delta_v_engine/delta_v_jet.pfx",
+        "offset": [
+          0,
+          0,
+          21
+        ],
+        "orientation": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "headlights": [
+      {
+        "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+        "offset": [
+          20.4,
+          20.4,
+          15.6
+        ],
+        "orientation": [
+          25.0,
+          -23.0,
+          0.0
+        ],
+        "near_width": 5.5,
+        "near_height": 5.5,
+        "near_distance": 2.5,
+        "far_distance": 30.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 3.0
+      },
+      {
+        "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+        "offset": [
+          20.4,
+          -20.4,
+          15.6
+        ],
+        "orientation": [
+          25.0,
+          23.0,
+          0.0
+        ],
+        "near_width": 5.5,
+        "near_height": 5.5,
+        "near_distance": 2.5,
+        "far_distance": 30.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 3.0
+      },
+      {
+        "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+        "offset": [
+          -20.4,
+          20.4,
+          15.6
+        ],
+        "orientation": [
+          -25.0,
+          -23.0,
+          0.0
+        ],
+        "near_width": 5.5,
+        "near_height": 5.5,
+        "near_distance": 2.5,
+        "far_distance": 30.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 3.0
+      },
+      {
+        "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+        "offset": [
+          -20.4,
+          -20.4,
+          15.6
+        ],
+        "orientation": [
+          -25.0,
+          23.0,
+          0.0
+        ],
+        "near_width": 5.5,
+        "near_height": 5.5,
+        "near_distance": 2.5,
+        "far_distance": 30.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 3.0
+      }
+    ],
+    "lamps": [
+      {
+        "offset": [
+          -21.39,
+          9.9,
+          11.25
+        ],
+        "radius": 4.0,
+        "color": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "intensity": 2.0
+      },
+      {
+        "offset": [
+          -21.39,
+          -9.9,
+          11.25
+        ],
+        "radius": 4.0,
+        "color": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "intensity": 2.0
+      },
+      {
+        "offset": [
+          25.44,
+          0.0,
+          12.4
+        ],
+        "radius": 4.0,
+        "color": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "intensity": 2.0
+      },
+      {
+        "offset": [
+          -23.8,
+          0.0,
+          14.7
+        ],
+        "radius": 3.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 2.0
+      },
+      {
+        "offset": [
+          20.4,
+          20.4,
+          15.6
+        ],
+        "radius": 3.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 2.0
+      },
+      {
+        "offset": [
+          20.4,
+          -20.4,
+          15.6
+        ],
+        "radius": 3.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 2.0
+      },
+      {
+        "offset": [
+          -20.4,
+          20.4,
+          15.6
+        ],
+        "radius": 3.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 2.0
+      },
+      {
+        "offset": [
+          -20.4,
+          -20.4,
+          15.6
+        ],
+        "radius": 3.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 2.0
+      },
+      {
+        "offset": [
+          14.38,
+          0.0,
+          2.0
+        ],
+        "radius": 3.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 2.0,
+        "bone": "bone_cross01"
+      },
+      {
+        "offset": [
+          14.38,
+          0.0,
+          2.0
+        ],
+        "radius": 3.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 2.0,
+        "bone": "bone_cross02"
+      },
+      {
+        "offset": [
+          14.38,
+          0.0,
+          2.0
+        ],
+        "radius": 3.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 2.0,
+        "bone": "bone_cross03"
+      },
+      {
+        "offset": [
+          14.38,
+          0.0,
+          2.0
+        ],
+        "radius": 3.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 2.0,
+        "bone": "bone_cross04"
+      }
+    ],
+    "max_health": 20000,
+    "mesh_bounds": [
+      50.0454,
+      50.0306,
+      43
+    ],
+    "model": {
+      "filename": "/pa/units/orbital/delta_v_engine/delta_v_engine.papa",
+      "animations": {
+        "start": "/pa/units/orbital/delta_v_engine/delta_v_engine_anim_start.papa",
+        "loop": "/pa/units/orbital/delta_v_engine/delta_v_engine_anim_loop.papa",
+        "end": "/pa/units/orbital/delta_v_engine/delta_v_engine_anim_end.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/constant_idle_transition_anim_tree.json"
+    },
+    "orbital_thruster": {
+      "power": 1
+    },
+    "physics": {
+      "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
+    },
+    "recon": {
+      "observable": {
+        "always_visible": true
+      },
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 110
+          },
+          {
+            "layer": "underwater",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 110
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 69.0,
+      "vertical_offset": 3.0
+    },
+    "unit_types": [
+      "UNITTYPE_Factory",
+      "UNITTYPE_Custom2",
+      "UNITTYPE_Construction",
+      "UNITTYPE_Structure",
+      "UNITTYPE_Land",
+      "UNITTYPE_PlanetEngine",
+      "UNITTYPE_Advanced",
+      "UNITTYPE_FabAdvBuild",
+      "UNITTYPE_Important"
+    ],
+    "wreckage_mesh_bounds": [
+      50.0454,
+      50.0306,
+      20
+    ]
+  }

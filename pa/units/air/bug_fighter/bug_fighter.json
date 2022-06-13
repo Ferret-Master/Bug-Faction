@@ -57,6 +57,12 @@
     ],
     "model": {
       "filename": "/pa/units/air/bug_fighter/bug_fighter.papa",
+      "animations": {
+        "walk": "/pa/units/air/bug_fighter/bug_fighter_flying.papa",
+        "idle":"/pa/units/air/bug_fighter/bug_fighter_idle.papa"
+      },
+      "walk_speed": 24,
+      "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json",
       "arrows": 5
     },
     "navigation": {

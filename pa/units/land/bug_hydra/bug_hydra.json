@@ -60,7 +60,7 @@
         "walk": "/pa/units/land/bug_hydra/bug_hydra_walk.papa",
         "idle":"/pa/units/land/bug_hydra/bug_hydra_idle.papa"
       },
-      "walk_speed": 12,
+      "walk_speed": 9,
       "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json"
      
     },

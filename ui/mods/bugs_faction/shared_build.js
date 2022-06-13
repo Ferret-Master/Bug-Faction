@@ -20,7 +20,9 @@ var newBuildScenario = {
     "/pa/units/structure/bug_radar_advanced/bug_radar_advanced.json": ["bug_utility", 8, {row: 1, column: 2}],
     "/pa/units/structure/bug_combined_storage/bug_combined_storage.json": ["bug_utility", 15, {row: 2, column: 3}],
     "/pa/units/structure/bug_teleporter/bug_teleporter.json": ["bug_utility", 13, {row: 2, column: 1}],
-
+    "/pa/units/structure/bug_halley/bug_halley.json": ["bug_utility", 7, {row: 1, column: 1}],
+    "/pa/units/structure/bug_rag/bug_rag.json": ["bug_utility", 0, {row: 0, column: 0}],
+    "/pa/units/structure/bug_catalyst/bug_catalyst.json": ["bug_utility", 1, {row: 0, column: 1}],
     
     //defenses
     "/pa/units/structure/bug_turret_small/bug_turret_small.json": ["bug_combat", 6, {row: 1, column: 0}],

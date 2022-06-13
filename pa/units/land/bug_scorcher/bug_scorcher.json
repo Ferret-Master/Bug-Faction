@@ -80,7 +80,7 @@
         "idle": "/pa/units/land/bug_scorcher/scorcher_idle.papa"
       },
       "animtree": "/pa/anim/anim_trees/bot_tesla_anim_tree.json",
-      "walk_speed": 0.1
+      "walk_speed": 0.09
     },
   "navigation": {
     "type": "amphibious",

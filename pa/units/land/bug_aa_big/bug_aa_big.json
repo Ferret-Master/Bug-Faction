@@ -53,6 +53,7 @@
         "walk": "/pa/units/land/bug_aa_big/bug_aa_big_walk.papa",
         "idle":"/pa/units/land/bug_aa_big/bug_aa_big_idle.papa"
       },
+      "walk_speed": 7,
       "arrows": 5
     },
     "navigation": {

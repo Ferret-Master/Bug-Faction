@@ -120,7 +120,7 @@
         "walk": "/pa/units/land/bug_sniper/bug_sniper_walk.papa",
         "idle":"/pa/units/land/bug_sniper/bug_sniper_idle.papa"
       },
-      "walk_speed": 12,
+      "walk_speed": 11,
       "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json"
     },
     "navigation": {

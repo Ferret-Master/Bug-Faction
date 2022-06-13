@@ -69,7 +69,7 @@
     ],
     "guard_layer": "WL_AnySurface",
     "attack_range_frac": 0.5,
-    "guard_radius":200,
+    "guard_radius":100,
     "model": {
       "filename": "/pa/units/land/bug_ripper/bug_ripper.papa",
       "animations": {

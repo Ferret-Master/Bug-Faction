@@ -84,7 +84,7 @@
         },
         "animtree": "/pa/anim/anim_trees/bot_bomb_anim_tree.json",
         "filename": "/pa/units/land/bug_bot_fab_advanced/bug_bot_fab_advanced.papa",
-        "walk_speed": 20
+        "walk_speed": 40
       },
     "tools": [
         {

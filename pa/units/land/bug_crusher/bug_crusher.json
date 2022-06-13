@@ -57,7 +57,7 @@
           "idle": "/pa/units/land/bug_warrior/bug_warrior_idle.papa"
         },
         "animtree": "/pa/units/land/bug_grunt/bug_anim_tree.json",
-        "walk_speed": 0.1
+        "walk_speed": 0.01
       },
       "navigation": {
         "type": "land-small",

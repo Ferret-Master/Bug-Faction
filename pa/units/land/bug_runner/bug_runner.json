@@ -101,8 +101,8 @@
       "firing": "/pa/units/land/bug_runner/bug_runner_anim_attack.papa",
       "idle": "/pa/units/land/bug_runner/bug_runner_anim_idle.papa"
     },
-    "animtree": "/pa/units/land/bug_runner/runner_anim_tree.json",
-    "walk_speed": 0.35
+  "animtree": "/pa/units/land/bug_grunt/bug_anim_tree.json",
+    "walk_speed": 0.01
   },
   "navigation": {
     "type": "land-small",

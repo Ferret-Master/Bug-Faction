@@ -1,0 +1,199 @@
+{
+    "display_name": "Catalyst",
+    "description": "!LOC:Super Weapon - Build five on a metal planet to activate the Annihilazer.",
+    "TEMP_texelinfo": 51.0,
+    "activates_control_point": true,
+    "area_build_type": "Sphere",
+    "atrophy_cool_down": 15.0,
+    "atrophy_rate": 500,
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "build_metal_cost": 40000,
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/control_point"
+      },
+      "died": {
+        "audio_cue": "/SE/Death/control_point",
+        "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx",
+        "effect_scale": 3.0
+      }
+    },
+    "feature_requirements": [
+      "control_point"
+    ],
+    "feature_snap_ignores_pathability": true,
+    "force_snap_to_feature_orientation": true,
+    "fx_offsets": [
+      {
+        "type": "idle",
+        "filename": "/pa/units/land/control_module/control_module_strobe01.pfx",
+        "bone": "bone_rightArm",
+        "offset": [
+          0.35,
+          -112.156,
+          2.578
+        ]
+      },
+      {
+        "type": "idle",
+        "filename": "/pa/units/land/control_module/control_module_strobe02.pfx",
+        "bone": "bone_leftArm",
+        "offset": [
+          -0.35,
+          -112.156,
+          2.578
+        ]
+      },
+      {
+        "type": "idle",
+        "filename": "/pa/units/land/control_module/control_module_enabled.pfx",
+        "bone": "bone_conductor02",
+        "offset": [
+          0,
+          -63,
+          4
+        ]
+      }
+    ],
+    "headlights": [
+      {
+        "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+        "offset": [
+          5.688,
+          -75.598,
+          12.0
+        ],
+        "orientation": [
+          0.0,
+          35.0,
+          0.0
+        ],
+        "near_width": 1.0,
+        "near_height": 1.2,
+        "near_distance": 0.5,
+        "far_distance": 15.0,
+        "color": [
+          1.5,
+          1.52,
+          1.6
+        ],
+        "intensity": 5.0,
+        "bone": "bone_rightArm"
+      },
+      {
+        "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+        "offset": [
+          -5.688,
+          -75.598,
+          12.0
+        ],
+        "orientation": [
+          0.0,
+          35.0,
+          0.0
+        ],
+        "near_width": 1.0,
+        "near_height": 1.2,
+        "near_distance": 0.5,
+        "far_distance": 15.0,
+        "color": [
+          1.5,
+          1.52,
+          1.6
+        ],
+        "intensity": 5.0,
+        "bone": "bone_leftArm"
+      }
+    ],
+    "lamps": [
+      {
+        "offset": [
+          -30.126,
+          -44.99,
+          32.0
+        ],
+        "radius": 4.0,
+        "color": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "intensity": 2.0
+      },
+      {
+        "offset": [
+          30.126,
+          -44.99,
+          32.0
+        ],
+        "radius": 4.0,
+        "color": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "intensity": 2.0
+      }
+    ],
+    "max_health": 20000,
+    "mesh_bounds": [
+      80,
+      150,
+      100
+    ],
+    "model": {
+      "filename": "/pa/units/land/control_module/control_module.papa",
+      "animations": {
+        "start": "/pa/units/land/control_module/control_module_anim_start.papa",
+        "loop": "/pa/units/land/control_module/control_module_anim_loop.papa",
+        "end": "/pa/units/land/control_module/control_module_anim_end.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json"
+    },
+    "placement_size": [
+      100,
+      170,
+      100
+    ],
+    "recon": {
+      "observable": {
+        "layer": "surface_and_air",
+        "ignore_radar": true,
+        "always_visible": true
+      },
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 100
+          },
+          {
+            "layer": "underwater",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 100
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 200,
+      "vertical_offset": 3.5
+    },
+    "unit_types": [
+      "UNITTYPE_Structure",
+      "UNITTYPE_Custom2",
+      "UNITTYPE_ControlModule",
+      "UNITTYPE_Advanced",
+      "UNITTYPE_FabAdvBuild",
+      "UNITTYPE_Important"
+    ],
+    "wreckage_mesh_bounds": [
+      80,
+      150,
+      75
+    ]
+  }
+  

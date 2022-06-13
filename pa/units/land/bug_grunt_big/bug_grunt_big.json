@@ -56,7 +56,7 @@
     12
   ],
   "guard_layer": "WL_AnySurface",
-  "guard_radius":200,
+  "guard_radius":80,
   "model": {
     "filename": "/pa/units/land/bug_grunt_big/big_grunt.papa",
     "animations": {
@@ -65,7 +65,7 @@
       "idle": "/pa/units/land/bug_grunt/Grunt_Idle.papa"
     },
     "animtree": "/pa/units/land/bug_grunt/bug_anim_tree.json",
-    "walk_speed": 0.1
+    "walk_speed": 0.15
   },
   "navigation": {
     "type": "land-small",
