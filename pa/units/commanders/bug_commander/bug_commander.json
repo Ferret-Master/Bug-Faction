@@ -1,94 +1,92 @@
 {
-    "base_spec": "/pa/units/commanders/base_bug_commander/base_commander.json",
-    "display_name": "Bug Commander",
-    "si_name":"bug_commander",
-    "description": "Bug Commander ",
-    "attachable": {
-        "offsets": {
-            "root": [
-                0,
-                0,
-                0
-            ],
-            "head": [
-                0,
-                0,
-                15.6
-            ]
-        }
-    },
-    "model": {
-        "filename": "/pa/units/commanders/bug_commander/tank_aeson.papa"
-    },
-    "scrolling_uv": {
-        "scroll_rate": -0.21,
-        "uv_split": 0.9
-    },
-    "headlights": [
-        {
-            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-            "offset": [
-                0,
-                -2.215,
-                3.802
-            ],
-            "orientation": [
-                0.0,
-                45.0,
-                0.0
-            ],
-            "near_width": 5.0,
-            "near_height": 5.0,
-            "near_distance": 3.0,
-            "far_distance": 30.0,
-            "color": [
-                1.0,
-                1.0,
-                1.0
-            ],
-            "intensity": 6.0,
-            "bone": "bone_spine",
-            "shadow_resolution": 128
-        }
-    ],
-    "lamps": [
-        {
-            "offset": [
-                0,
-                -2.215,
-                3.802
-            ],
-            "radius": 2.0,
-            "color": [
-                1.0,
-                1.0,
-                1.0
-            ],
-            "intensity": 5.0,
-            "bone": "bone_spine"
-        },
-        {
-            "offset": [
-                0.4,
-                -4.06,
-                -1.1
-            ],
-            "radius": 4.0,
-            "color": [
-                0.4,
-                1.0,
-                0.01
-            ],
-            "intensity": 2.0,
-            "bone": "bone_leftShoulder"
-        }
-    ],
-    "catalog_object_name": "TankAeson",
-    "client": {
-        "ui": {
-            "image": "/pa/units/commanders/bug_commander/profile_bug.png",
-            "thumb_image": "/pa/units/commanders/bug_commander/profile_bug.png",
-            "profile_image": "/pa/units/commanders/bug_commander/profile_bug.png"
-        }
+  "display_name": "Bug Alpha Commander",
+  "description": "Bug Alpha Commander",
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0,
+        13.2
+      ]
     }
+  },
+  "catalog_object_name": "TankAeson",
+  "client": {
+    "ui": {
+      "image": "/pa/units/commanders/bug_commander/profile_bug.png",
+      "thumb_image": "/pa/units/commanders/bug_commander/profile_bug.png",
+      "profile_image": "/pa/units/commanders/bug_commander/profile_bug.png"
+    }
+  },
+  "base_spec": "/pa/units/commanders/base_bug_commander/base_commander.json",
+  
+  "model": {
+    "filename": "/pa/units/commanders/bug_commander/bug_alpha_com.papa",
+    "animations": {
+      
+      "walk": "/pa/units/commanders/bug_commander/bug_alpha_com_walk.papa",
+      "idle": "/pa/units/commanders/bug_commander/bug_alpha_com_idle.papa",
+      "walk_stop": "/pa/units/commanders/bug_commander/bug_alpha_com_idle.papa",
+      "turn_left": "/pa/units/commanders/bug_commander/bug_alpha_com_turn_left.papa",
+      "turn_right": "/pa/units/commanders/bug_commander/bug_alpha_com_turn_right.papa"
+    
+     
+    },
+    "animtree": "/pa/units/commanders/bug_commander/bug_alpha_com_anim_tree.json",
+    "walk_speed": 7
+  },
+  "events": {
+    "fired0": {
+        "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle_right"
+    },
+    "fired1": {
+      "effect_spec": "/pa/units/commanders/base_bug_commander/pfx/uber_charge.pfx socket_muzzle_right /pa/units/commanders/base_bug_commander/pfx/uber_shockwave.pfx bone_root"
+  }
+  },
+  "fx_offsets": [
+    {
+        "type": "build",
+        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "bone": "socket_fab_mouth"
+    }
+],
+  "tools": [
+    {
+      "spec_id": "/pa/tools/commander_build_arm/commander_build_arm.json",
+      "aim_bone": "bone_turret"
+    },
+    {
+      "spec_id": "/pa/units/commanders/base_bug_commander/base_commander_tool_laser_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle_right",
+      "fire_event": "fired0",
+      "primary_weapon": true
+    },
+    {
+      "spec_id": "/pa/units/commanders/base_bug_commander/base_commander_uber_cannon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle_right",
+      "fire_event": "fired1",
+      "secondary_weapon": true
+    },
+    {
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle_right",
+      "primary_weapon": false,
+      "show_range": false
+    },
+    {
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle_right",
+      "primary_weapon": false,
+      "show_range": false
+    }
+  ]
 }

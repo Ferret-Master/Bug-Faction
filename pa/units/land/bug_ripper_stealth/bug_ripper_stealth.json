@@ -86,6 +86,7 @@
       "animtree": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth_anim_tree.json",
       "walk_speed": 22
     },
+    "has_death_effects": true,
     "navigation": {
       "type": "land-small",
       "acceleration": 50,

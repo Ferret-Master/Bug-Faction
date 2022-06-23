@@ -66,6 +66,24 @@
         "animtree": "/pa/anim/anim_trees/titan_bot_anim_tree.json",
         "walk_speed": 10.0
     },
+    "recon": {
+        "observer": {
+          "items": [
+            {
+              "layer": "surface_and_air",
+              "channel": "sight",
+              "shape": "capsule",
+              "radius": 140
+            },
+            {
+              "layer": "underwater",
+              "channel": "sight",
+              "shape": "capsule",
+              "radius": 140
+            }
+          ]
+        }
+      },
     "navigation": {
         "type": "amphibious-large",
         "acceleration": 260,

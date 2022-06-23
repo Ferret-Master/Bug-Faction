@@ -1,0 +1,22 @@
+{
+    "tool_type": "TOOL_Weapon",
+    "ammo_id": "/pa/units/commanders/base_bug_commander/base_commander_uber_cannon_ammo.json",
+    "target_layers": [
+        "WL_LandHorizontal",
+        "WL_WaterSurface",
+        "WL_Air"
+    ],
+    "ammo_source": "energy",
+    "ammo_capacity": 12500,
+    "ammo_demand": 2500,
+    "ammo_per_shot": 12500,
+    "max_range": 110,
+    "yaw_rate": 360,
+    "pitch_rate": 360,
+    "yaw_range": 180,
+    "pitch_range": 90,
+    "rate_of_fire": 1.0,
+    "auto_attack": false,
+    "manual_fire": true,
+    "auto_task_type": "none"
+}

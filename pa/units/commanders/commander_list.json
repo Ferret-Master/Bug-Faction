@@ -1,6 +1,7 @@
 {
     "commanders": [
         "/pa/units/commanders/bug_commander/bug_commander.json",
+        "/pa/units/bug_commanders/bug_commander/bug_commander.json",
         "/pa/units/commanders/imperial_fusion/imperial_fusion.json",
         "/pa/units/commanders/raptor_unicorn/raptor_unicorn.json",
         "/pa/units/commanders/imperial_able/imperial_able.json",

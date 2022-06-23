@@ -1,7 +1,7 @@
 {
     "display_name": "Base Commander",
     "description": "Base Commander Description - If you're seeing this, something is wrong in your commander.",
-    "si_name": "commander",
+    "si_name": "bug_commander",
     "strategic_icon_priority": 0,
     "max_health": 12500,
     "build_metal_cost": 25000,

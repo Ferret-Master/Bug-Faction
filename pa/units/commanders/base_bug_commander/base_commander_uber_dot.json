@@ -1,0 +1,87 @@
+{
+    "display_name": "uber cannon dot",
+    "description": "damage over time unit",
+    "TEMP_texelinfo": 2.37699,
+    "si_name":"blank_blip",
+  
+    "build_metal_cost": 0.01,
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/barrier"
+      },
+      "died": {
+        "audio_cue": "/SE/Death/barrier"
+      }
+    },
+    "max_health": 100,
+    "passive_health_regen": -20,
+    "mesh_bounds": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "model": [
+      {
+       
+        "filename": "/pa/units/misc/empty_unit.papa"
+      }
+    ],
+    "physics": {
+      "type": "Structure",
+      "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+      "shape": "Box",
+      "radius": 0.5,
+      "allow_pushing": false,
+      "push_sideways": false,
+      "allow_underground": false,
+      "collide_with_types": [
+        "Projectile"
+      ]
+    },
+    "recon": {
+        "observable": {
+            "ignore_radar": true,
+            "ignore_sight": true,
+            "layer": "surface_and_air"
+          },
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "sphere",
+            "radius": 2
+          },
+          {
+            "layer": "underwater",
+            "channel": "sight",
+            "shape": "sphere",
+            "radius": 2
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 7.0
+    },
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "strategic_icon_priority": 3,
+    "tools": [
+      {
+        "spec_id": "/pa/units/commanders/base_bug_commander/base_commander_uber_dot_weapon.json",
+        "aim_bone": "bone_root",
+        "muzzle_bone": "bone_root"
+      }
+    ],
+    "unit_name": "Land Mine",
+    "unit_types": [
+      "UNITTYPE_Structure",
+      "UNITTYPE_Land",
+      "UNITTYPE_Naval",
+      "UNITTYPE_Defense",
+      "UNITTYPE_CombatFabBuild",
+      "UNITTYPE_CombatFabAdvBuild",
+      "UNITTYPE_NoBuild"
+    ],
+    "wreckage_health_frac": 0.0
+  }
