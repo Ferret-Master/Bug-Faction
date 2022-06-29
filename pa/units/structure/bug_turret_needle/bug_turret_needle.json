@@ -75,8 +75,8 @@
         "diameter": 12.0
     },
     "mesh_bounds": [
-        5,
-        5,
+        4,
+        4,
         12.2
     ],
     "TEMP_texelinfo": 10.2184,

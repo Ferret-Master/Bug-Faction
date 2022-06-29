@@ -24,8 +24,8 @@
     },
     "max_health": 3750,
     "mesh_bounds": [
-      14,
-      14,
+      12,
+      12,
      12
     ],
     "model": [

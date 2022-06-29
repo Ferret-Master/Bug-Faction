@@ -18,8 +18,8 @@
   "catalog_object_name": "TankAeson",
   "client": {
     "ui": {
-      "image": "/pa/units/commanders/bug_commander/profile_bug.png",
-      "thumb_image": "/pa/units/commanders/bug_commander/profile_bug.png",
+      "image": "/pa/units/commanders/bug_commander/img_bug_com.png",
+      "thumb_image": "/pa/units/commanders/bug_commander/img_bug_com_thumb.png",
       "profile_image": "/pa/units/commanders/bug_commander/profile_bug.png"
     }
   },
