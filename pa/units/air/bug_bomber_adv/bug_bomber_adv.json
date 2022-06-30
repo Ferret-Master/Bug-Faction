@@ -46,7 +46,7 @@
     "guard_layer": "WL_AnySurface",
     "guard_radius": 120,
     "maintain_priority_target": false,
-    "max_health": 1500,
+    "max_health": 1800,
     "mesh_bounds": [
         35,
         18.75,
@@ -61,7 +61,7 @@
         "acceleration": 20,
         "brake": 40,
         "ignore_overshoot": true,
-        "move_speed": 40,
+        "move_speed": 50,
         "turn_speed": 100,
         "dodge_radius": 0,
         "dodge_multiplier": 0.0,

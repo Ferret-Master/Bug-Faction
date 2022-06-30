@@ -53,8 +53,8 @@
     "max_health": 40,
     "attack_range_frac": 0.5,
     "mesh_bounds": [
-      3,
-      3,
+      3.5,
+      3.5,
       3
     ],
     "recon": {

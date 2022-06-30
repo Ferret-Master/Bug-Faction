@@ -51,8 +51,8 @@
   
   "max_health": 700,
   "mesh_bounds": [
-    8,
-    8,
+    9,
+    9,
     12
   ],
   "guard_layer": "WL_AnySurface",
@@ -100,7 +100,7 @@
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom2"
   ],
-
+  "wreckage_health_frac": 0.7,
   "death": {
     "decals": [
       "/pa/decals/decal_bug_splat_01.json"

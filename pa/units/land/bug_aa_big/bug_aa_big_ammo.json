@@ -24,13 +24,13 @@
         "effect_spec": "/pa/units/land/tank_flak/flak_tank_explosion.pfx"
       }
     },
-    "full_damage_splash_radius": 40,
+    "full_damage_splash_radius": 20,
     "base_spec": "/pa/ammo/base_beam/base_beam.json",
-    "damage": 10,
+    "damage": 40,
     "fx_beam_spec": "/pa/units/land/bug_aa_big/aa_adv_beam.pfx",
     "fx_collision_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_hit.pfx",
-   
-    "splash_radius": 100
+    "splash_damage": 20,
+    "splash_radius": 40
    
   
   }

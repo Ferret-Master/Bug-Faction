@@ -83,6 +83,7 @@
       "diameter": 17.0
     },
     "unit_types": [
+      "UNITTYPE_NoBuild",
       "UNITTYPE_Scout",
       "UNITTYPE_Mobile",
       "UNITTYPE_Air",

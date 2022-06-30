@@ -6,7 +6,7 @@
     "max_range": 65,
     "pitch_range": 100,
     "pitch_rate": 360,
-    "rate_of_fire": 1.5,
+    "rate_of_fire": 1.4,
     "target_layers": [
       "WL_LandHorizontal",
       "WL_WaterSurface"

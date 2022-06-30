@@ -57,7 +57,7 @@
       "effect_scale": 0.6
     }
   },
-  "max_health": 100,
+  "max_health": 60,
   "mesh_bounds": [
     3,
     4.8,
@@ -69,25 +69,25 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 200,
+          "radius": 160,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 200,
+          "radius": 160,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "mine",
-          "radius": 200,
+          "radius": 160,
           "shape": "capsule"
         },
         {
           "channel": "radar",
           "layer": "surface_and_air",
-          "radius": 200,
+          "radius": 160,
           "shape": "capsule",
           "uses_energy": true
         }

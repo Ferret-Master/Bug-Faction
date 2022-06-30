@@ -26,10 +26,10 @@ var newBuildScenario = {
     
     //defenses
     "/pa/units/structure/bug_turret_small/bug_turret_small.json": ["bug_combat", 6, {row: 1, column: 0}],
-    "/pa/units/structure/bug_turret_large/bug_turret_large.json": ["bug_combat", 6, {row: 0, column: 0}],
+    //"/pa/units/structure/bug_turret_large/bug_turret_large.json": ["bug_combat", 6, {row: 0, column: 0}],
     "/pa/units/structure/bug_turret_spray/bug_turret_spray.json": ["bug_combat", 6, {row: 0, column: 1}],
     "/pa/units/structure/bug_turret_needle/bug_turret_needle.json": ["bug_combat", 6, {row: 2, column: 0}],
-    "/pa/units/structure/bug_turret_acid/bug_turret_acid.json": ["bug_combat", 6, {row: 2, column: 3}],
+   // "/pa/units/structure/bug_turret_acid/bug_turret_acid.json": ["bug_combat", 6, {row: 2, column: 3}],
     "/pa/units/structure/bug_aa_small/bug_aa_small.json": ["bug_combat", 13, {row: 2, column: 1}],
     "/pa/units/structure/bug_aa_large/bug_aa_large.json": ["bug_combat", 7, {row: 1, column: 1}],
      "/pa/units/structure/bug_anti_orbital/bug_anti_orbital.json": ["bug_combat", 16, {row: 2, column: 4}],
@@ -80,7 +80,7 @@ var newBuildScenario = {
     //t1 air hive
     "/pa/units/air/bug_fighter/bug_fighter.json": ["bug_air", 13, {row: 2, column: 1}],
     "/pa/units/air/bug_bomber/bug_bomber.json": ["bug_air", 14, {row: 2, column: 2}],
-    "/pa/units/air/bug_air_scout/bug_air_scout.json": ["bug_air", 15, {row: 2, column: 3}],
+   // "/pa/units/air/bug_air_scout/bug_air_scout.json": ["bug_air", 15, {row: 2, column: 3}],
     "/pa/units/air/bug_air_fab/bug_air_fab.json": ["bug_air", 12, {row: 2, column: 0}],
     "/pa/units/air/bug_harpy/bug_harpy.json": ["bug_air", 17, {row: 2, column: 5}],
 

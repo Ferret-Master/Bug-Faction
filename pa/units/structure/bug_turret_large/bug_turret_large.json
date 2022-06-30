@@ -15,6 +15,7 @@
         "UNITTYPE_Land",
         "UNITTYPE_SurfaceDefense",
         "UNITTYPE_Defense",
+        "UNITTYPE_NoBuild",
         "UNITTYPE_FabAdvBuild",
         "UNITTYPE_Custom2"
     ],

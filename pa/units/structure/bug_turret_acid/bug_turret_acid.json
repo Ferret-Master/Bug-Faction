@@ -11,6 +11,7 @@
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
     "unit_types": [
         "UNITTYPE_Structure",
+        "UNITTYPE_NoBuild",
         "UNITTYPE_Basic",
         "UNITTYPE_Land",
         "UNITTYPE_SurfaceDefense",
