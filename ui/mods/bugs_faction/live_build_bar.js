@@ -13,7 +13,8 @@ var lockedUnits = []
 
 
 model.lockUnit = function(unitName){//units are locked by adding _disabled to the end of the id
-
+    var buildSet = model.buildSet();
+    if(buildSet == undefined){_.delay(model.lockUnit,100,unitName)}
     var units = model.buildSet().units
     if(units[unitName] !== undefined){
         var unitId = units[unitName].id 
@@ -212,3 +213,5 @@ var delayedAssign = function(){
 }
 
 _.delay(delayedAssign,5000)
+
+api.Panel.message(api.Panel.parentId,'buildRestart',"restarted");

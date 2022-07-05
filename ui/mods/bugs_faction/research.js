@@ -87,6 +87,15 @@ model.unlockPairs = [
 model.deleteOldPairs = [
 
 ]
+
+model.reLockUnits = function(){
+    model.lockedUnits.forEach(function(unit){
+       
+        api.Panel.message("build_bar", 'lockUnit',unit)
+      
+
+    })
+}
 researchLoop = function(){
    
     model.unitsToLock.forEach(function(unit){
@@ -388,3 +397,7 @@ model.playerArmy = function(playerId, planetId,unitType, stateFlag,unitTypeValue
 }
 
 
+
+handlers.buildRestart = function(payload){//build ui has restarted so tell it what to lock again
+    model.reLockUnits();
+}
