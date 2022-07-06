@@ -1,7 +1,7 @@
 {
   "context": "server",
   "identifier": "com.pa.ferretmaster.bugs",
-  "display_name": "Bug Faction",
+  "display_name": "Bug Faction[WIP]",
   "description": "Adds a biological bugs faction",
   "author": "Ferretmaster, BillTheBlueBot, Anonemous2, Taiga",
   "version": "1.01",
