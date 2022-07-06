@@ -38,7 +38,8 @@
 		
 	},
   "dependencies": [
-    "com.pa.ferretmaster.bugs-client"
+    "com.pa.ferretmaster.bugs-client",
+    "com.pa.ferretmaster.commander-merge"
   ],
   "companions": ["com.pa.ferretmaster.bugs-client"]
 }
