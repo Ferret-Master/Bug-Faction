@@ -1,12 +1,12 @@
 {
     "context": "server",
-    "identifier": "bugs",
+    "identifier": "com.pa.ferretmaster.bugs",
     "display_name": "Bug Faction",
     "description": "Adds a biological bugs faction",
     "author": "Ferretmaster, BillTheBlueBot, Anonemous2, Taiga",
     "version": "1.01",
-    "build": "115673",
-    "date": "2022-5-31",
+    "build": "115872",
+    "date": "2022-07-06",
     "signature": "not yet implemented",
     "forum": "",
     "icon": "https://github.com/Ferret-Master/Bug-Faction/blob/main/bugs_icon.png?raw=true",
@@ -38,6 +38,7 @@
 		
 	},
   "dependencies": [
-    "com.pa.ferretmaster.commander-merge"
-  ]
+    "com.pa.ferretmaster.bugs-client"
+  ],
+  "companions": ["com.pa.ferretmaster.bugs-client"]
 }
