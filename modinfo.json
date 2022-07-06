@@ -1,45 +1,48 @@
 {
-    "context": "server",
-    "identifier": "com.pa.ferretmaster.bugs",
-    "display_name": "Bug Faction",
-    "description": "Adds a biological bugs faction",
-    "author": "Ferretmaster, BillTheBlueBot, Anonemous2, Taiga",
-    "version": "1.01",
-    "build": "115872",
-    "date": "2022-07-06",
-    "signature": "not yet implemented",
-    "forum": "",
-    "icon": "https://github.com/Ferret-Master/Bug-Faction/blob/main/bugs_icon.png?raw=true",
-    "priority": 100,
-    "category": [
-        "titans", "in-game","server"
-        
+  "context": "server",
+  "identifier": "com.pa.ferretmaster.bugs",
+  "display_name": "Bug Faction",
+  "description": "Adds a biological bugs faction",
+  "author": "Ferretmaster, BillTheBlueBot, Anonemous2, Taiga",
+  "version": "1.01",
+  "build": "115872",
+  "date": "2022-07-06",
+  "signature": "not yet implemented",
+  "forum": "https://steamcommunity.com/app/386070/discussions/0/3413181885098188214/",
+  "icon": "https://github.com/Ferret-Master/Bug-Faction/blob/main/bugs_icon.png?raw=true",
+  "priority": 100,
+  "category": [
+    "titans",
+    "in-game",
+    "server",
+    "faction",
+    "unit",
+    "bugs",
+    "expansion"
+  ],
+  "scenes": {
+    "icon_atlas": [
+      "coui://ui/mods/bugs_faction/icon_atlas.js"
     ],
-    
-    "scenes": {
-		
-		"icon_atlas": [
-			"coui://ui/mods/bugs_faction/icon_atlas.js"
-		],
-		"shared_build":[
-			"coui://ui/mods/bugs_faction/shared_build.js"
-		],
-
-    "live_game_build_bar":[
-            "coui://ui/mods/bugs_faction/live_build_bar.js"
+    "shared_build": [
+      "coui://ui/mods/bugs_faction/shared_build.js"
+    ],
+    "live_game_build_bar": [
+      "coui://ui/mods/bugs_faction/live_build_bar.js"
     ],
     "live_game": [
-        "coui://ui/mods/bugs_faction/research.js",
-        "coui://ui/mods/bugs_faction/research_live_game.js"
+      "coui://ui/mods/bugs_faction/research.js",
+      "coui://ui/mods/bugs_faction/research_live_game.js"
     ],
     "start": [
       "coui://ui/mods/bugs_faction/start.js"
     ]
-		
-	},
+  },
   "dependencies": [
     "com.pa.ferretmaster.bugs-client",
     "com.pa.ferretmaster.commander-merge"
   ],
-  "companions": ["com.pa.ferretmaster.bugs-client"]
+  "companions": [
+    "com.pa.ferretmaster.bugs-client"
+  ]
 }
