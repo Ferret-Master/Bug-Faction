@@ -78,7 +78,7 @@
     "BugAdvancedMetalExtractor": {
       "spec_id": "/pa/units/structure/bug_advanced_extractor/bug_advanced_extractor.json"
     },
-    "SmallLandTurret": {
+    "SmallSpitterTurret": {
       "spec_id": "/pa/units/structure/bug_turret_small/bug_turret_small.json"
     },
     "LargeSpitterTurret": {
