@@ -1,0 +1,76 @@
+{
+  "build_list": [
+    {
+      "name": "Bugs - Basic Evolution Chamber",
+      "to_build": "BugBasicEvolutionChamber",
+      "instance_count": 1,
+      "priority": 360,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugBasicEvolutionChamber"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Factory & Construction & Basic) - Air - Bot - Tank - Naval - Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugBasicEvolutionChamber"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bugs - Advanced Evolution Chamber",
+      "to_build": "BugAdvancedEvolutionChamber",
+      "instance_count": 1,
+      "priority": 360,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugAdvancedEvolutionChamber"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Factory & Construction & Advanced) - Air - Bot - Tank - Naval - Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugAdvancedEvolutionChamber"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    }
+  ]
+}
