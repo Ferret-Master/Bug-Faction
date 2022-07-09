@@ -7,7 +7,7 @@
       "priority": 360,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
-      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
+      "builders": ["AnyBugFabberBasic", "AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
