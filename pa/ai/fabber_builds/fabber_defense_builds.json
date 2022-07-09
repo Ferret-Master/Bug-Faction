@@ -1,13 +1,13 @@
 {
   "build_list": [
     {
-      "name": "Basic Air Defense - Mex",
-      "to_build": "BasicAirDefense",
+      "name": "Bugs - Basic Air Defense - Mex",
+      "to_build": "BugBasicAATurret",
       "instance_count": 1,
-      "shared_instance_count": "BasicAirDefense",
+      "shared_instance_count": "BasicAATurret",
       "priority": 261,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyBasicFabber"],
+      "builders": ["AnyBugFabberBasic"],
       "build_conditions": [
         [
           {
@@ -38,7 +38,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirDefense"
+            "string0": "BugBasicAATurret"
           }
         ],
         [
@@ -70,7 +70,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirDefense"
+            "string0": "BugBasicAATurret"
           }
         ]
       ],
@@ -102,13 +102,13 @@
       }
     },
     {
-      "name": "Basic Land Defense Single - Mex",
-      "to_build": "BasicLandDefenseSingle",
+      "name": "Bugs - Needle Turret - Mex",
+      "to_build": "NeedleTurret",
       "instance_count": 1,
-      "shared_instance_count": "BasicLandDefense",
+      "shared_instance_count": "SmallSpitterTurret",
       "priority": 261,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyBasicFabber"],
+      "builders": ["AnyBugFabberBasic"],
       "build_conditions": [
         [
           {
@@ -138,7 +138,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicLandDefenseSingle"
+            "string0": "NeedleTurret"
           }
         ],
         [
@@ -169,7 +169,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicLandDefenseSingle"
+            "string0": "NeedleTurret"
           }
         ]
       ],
@@ -201,13 +201,13 @@
       }
     },
     {
-      "name": "Basic Air Defense",
-      "to_build": "BasicAirDefense",
+      "name": "Bugs - Basic Air Defense",
+      "to_build": "BugBasicAATurret",
       "instance_count": 1,
-      "shared_instance_count": "BasicAirDefense",
+      "shared_instance_count": "BasicAATurret",
       "priority": 85,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyBasicFabber"],
+      "builders": ["AnyBugFabberBasic"],
       "build_conditions": [
         [
           {
@@ -233,7 +233,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirDefense"
+            "string0": "BugBasicAATurret"
           }
         ],
         [
@@ -260,7 +260,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirDefense"
+            "string0": "BugBasicAATurret"
           }
         ]
       ],
@@ -286,13 +286,13 @@
       }
     },
     {
-      "name": "Basic Air Defense - Threat",
-      "to_build": "BasicAirDefense",
+      "name": "Bugs - Basic Air Defense - Threat",
+      "to_build": "BugBasicAATurret",
       "instance_count": 1,
-      "shared_instance_count": "BasicAirDefense",
+      "shared_instance_count": "BasicAATurret",
       "priority": 262,
       "base_sort": "FromPerimeter",
-      "builders": ["Commander", "AnyBasicFabber"],
+      "builders": ["BugCommander", "AnyBugFabberBasic"],
       "build_conditions": [
         [
           {
@@ -324,7 +324,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirDefense"
+            "string0": "BugBasicAATurret"
           }
         ]
       ],
@@ -350,13 +350,13 @@
       }
     },
     {
-      "name": "Basic Land Defense Single",
-      "to_build": "BasicLandDefenseSingle",
+      "name": "Bugs - Needle Turret",
+      "to_build": "NeedleTurret",
       "instance_count": 1,
-      "shared_instance_count": "BasicLandDefense",
+      "shared_instance_count": "SmallSpitterTurret",
       "priority": 85,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyBasicFabber"],
+      "builders": ["AnyBugFabberBasic"],
       "build_conditions": [
         [
           {
@@ -386,7 +386,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicLandDefenseSingle"
+            "string0": "NeedleTurret"
           }
         ],
         [
@@ -417,7 +417,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicLandDefenseSingle"
+            "string0": "NeedleTurret"
           }
         ]
       ],
@@ -443,13 +443,13 @@
       }
     },
     {
-      "name": "Basic Land Defense Single - Threat",
-      "to_build": "BasicLandDefenseSingle",
+      "name": "Bugs - Needle Turret - Threat",
+      "to_build": "NeedleTurret",
       "instance_count": 1,
-      "shared_instance_count": "BasicLandDefense",
+      "shared_instance_count": "SmallSpitterTurret",
       "priority": 262,
       "base_sort": "FromPerimeter",
-      "builders": ["Commander"],
+      "builders": ["BugCommander"],
       "build_conditions": [
         [
           {
@@ -486,7 +486,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicLandDefenseSingle"
+            "string0": "NeedleTurret"
           }
         ]
       ],
@@ -512,12 +512,12 @@
       }
     },
     {
-      "name": "Basic Land Defense",
-      "to_build": "BasicLandDefense",
+      "name": "Bugs - Small Spitter Turret",
+      "to_build": "SmallSpitterTurret",
       "instance_count": 1,
       "priority": 85,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyBasicFabber"],
+      "builders": ["AnyBugFabberBasic"],
       "build_conditions": [
         [
           {
@@ -542,7 +542,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicLandDefense"
+            "string0": "SmallSpitterTurret"
           }
         ],
         [
@@ -568,7 +568,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicLandDefense"
+            "string0": "SmallSpitterTurret"
           }
         ]
       ],
@@ -594,12 +594,12 @@
       }
     },
     {
-      "name": "Basic Land Defense - Threat",
-      "to_build": "BasicLandDefense",
+      "name": "Bugs - Small Spitter Turret - Threat",
+      "to_build": "SmallSpitterTurret",
       "instance_count": 1,
       "priority": 262,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyBasicFabber"],
+      "builders": ["AnyBugFabberBasic"],
       "build_conditions": [
         [
           {
@@ -631,7 +631,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicLandDefense"
+            "string0": "SmallSpitterTurret"
           }
         ]
       ],
@@ -657,13 +657,13 @@
       }
     },
     {
-      "name": "Basic Artillery",
-      "to_build": "BasicArtillery",
+      "name": "Bugs - Basic Artillery",
+      "to_build": "BugBasicArtillery",
       "instance_count": 1,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
       "priority": 245,
-      "builders": ["AnyBasicFabber"],
+      "builders": ["AnyBugFabberBasic"],
       "build_conditions": [
         [
           {
@@ -696,7 +696,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicArtillery"
+            "string0": "BugBasicArtillery"
           }
         ]
       ],
@@ -721,12 +721,12 @@
       }
     },
     {
-      "name": "Advanced Air Defense",
-      "to_build": "AdvancedAirDefense",
+      "name": "Bugs - Advanced Air Defense",
+      "to_build": "BugAdvancedAATurret",
       "instance_count": 1,
       "priority": 255,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -762,7 +762,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedAirDefense"
+            "string0": "BugAdvancedAATurret"
           }
         ],
         [
@@ -794,7 +794,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedAirDefense"
+            "string0": "BugAdvancedAATurret"
           }
         ]
       ],
@@ -820,12 +820,12 @@
       }
     },
     {
-      "name": "Advanced Air Defense - Threat",
-      "to_build": "AdvancedAirDefense",
+      "name": "Bugs - Advanced Air Defense - Threat",
+      "to_build": "BugAdvancedAATurret",
       "instance_count": 1,
       "priority": 379,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -868,7 +868,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedAirDefense"
+            "string0": "BugAdvancedAATurret"
           }
         ]
       ],
@@ -894,12 +894,12 @@
       }
     },
     {
-      "name": "Advanced Land Defense",
-      "to_build": "AdvancedLandDefense",
+      "name": "Bugs - Beam Turret",
+      "to_build": "BeamTurret",
       "instance_count": 1,
       "priority": 255,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -924,7 +924,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedLandDefense"
+            "string0": "BeamTurret"
           }
         ],
         [
@@ -950,7 +950,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedLandDefense"
+            "string0": "BeamTurret"
           }
         ]
       ],
@@ -976,12 +976,12 @@
       }
     },
     {
-      "name": "Advanced Land Defense - Threat",
-      "to_build": "AdvancedLandDefense",
+      "name": "Bugs - Beam Turret - Threat",
+      "to_build": "BeamTurret",
       "instance_count": 1,
       "priority": 379,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -1013,7 +1013,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedLandDefense"
+            "string0": "BeamTurret"
           }
         ]
       ],
@@ -1039,55 +1039,11 @@
       }
     },
     {
-      "name": "Wall",
-      "to_build": "Wall",
-      "instance_count": 1,
-      "priority": 0,
-      "base_sort": "FromPerimeter",
-      "builders": ["AnyBasicFabber", "AnyAdvancedFabber"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Defense",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "Wall"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromMainBasePerimeter",
-        "unit_count_rules": [
-          {
-            "unit_type_string": "Structure & Defense - AirDefense",
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "range": 8,
-            "count": 1
-          },
-          {
-            "unit_type_string": "Structure & Wall",
-            "alliance": "Ally",
-            "compare_type": "<",
-            "range": 20,
-            "count": 4
-          }
-        ]
-      }
-    },
-    {
-      "name": "Umbrella",
-      "to_build": "Umbrella",
+      "name": "Bugs - Umbrella",
+      "to_build": "BugUmbrella",
       "instance_count": 1,
       "priority": 378,
-      "builders": ["Commander", "AnyBasicFabber", "AnyAdvancedFabber"],
+      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -1113,7 +1069,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "Umbrella"
+            "string0": "BugUmbrella"
           }
         ],
         [
@@ -1134,13 +1090,13 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "unit_type_string0": "Structure & (BugHalley | ControlModule)",
             "compare0": ">",
             "value0": 0
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "Umbrella"
+            "string0": "BugUmbrella"
           }
         ],
         [
@@ -1161,13 +1117,13 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Commander",
+            "unit_type_string0": "BugCommander",
             "compare0": ">",
             "value0": 0
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "Umbrella"
+            "string0": "BugUmbrella"
           }
         ]
       ],
@@ -1186,11 +1142,11 @@
       }
     },
     {
-      "name": "Umbrella - Rush",
-      "to_build": "Umbrella",
+      "name": "Bugs - Umbrella - Rush",
+      "to_build": "BugUmbrella",
       "instance_count": 1,
       "priority": 386,
-      "builders": ["Commander", "AnyBasicFabber", "AnyAdvancedFabber"],
+      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -1216,7 +1172,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "Umbrella"
+            "string0": "BugUmbrella"
           }
         ],
         [
@@ -1237,13 +1193,13 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "unit_type_string0": "Structure & (BugHalley | ControlModule)",
             "compare0": ">",
             "value0": 0
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "Umbrella"
+            "string0": "BugUmbrella"
           }
         ],
         [
@@ -1264,13 +1220,13 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Commander",
+            "unit_type_string0": "BugCommander",
             "compare0": ">",
             "value0": 0
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "Umbrella"
+            "string0": "BugUmbrella"
           }
         ]
       ],
@@ -1289,17 +1245,17 @@
       }
     },
     {
-      "name": "Anti Nuke Silo",
-      "to_build": "AntiNukeSilo",
+      "name": "Bugs - Anti Nuke Silo",
+      "to_build": "BugAntiNuke",
       "instance_count": 1,
-      "shared_instance_count": "AntiNukeSilo",
+      "shared_instance_count": "AntiNuke",
       "priority": 380,
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AntiNukeSilo"
+            "string0": "BugAntiNuke"
           },
           {
             "test_type": "SystemToPlanetThreatRatio",
@@ -1316,13 +1272,13 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AntiNukeSilo"
+            "string0": "BugAntiNuke"
           }
         ],
         [
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AntiNukeSilo"
+            "string0": "BugAntiNuke"
           },
           {
             "test_type": "SystemToPlanetThreatRatio",
@@ -1333,19 +1289,19 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Commander",
+            "unit_type_string0": "BugCommander",
             "compare0": ">",
             "value0": 0
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AntiNukeSilo"
+            "string0": "BugAntiNuke"
           }
         ],
         [
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AntiNukeSilo"
+            "string0": "BugAntiNuke"
           },
           {
             "test_type": "SystemToPlanetThreatRatio",
@@ -1356,13 +1312,13 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "unit_type_string0": "Structure & (BugHalley | ControlModule)",
             "compare0": ">",
             "value0": 0
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AntiNukeSilo"
+            "string0": "BugAntiNuke"
           }
         ]
       ],
@@ -1388,19 +1344,19 @@
       }
     },
     {
-      "name": "Anti Nuke Silo - Rush",
-      "to_build": "AntiNukeSilo",
+      "name": "Bugs - Anti Nuke Silo - Rush",
+      "to_build": "BugAntiNuke",
       "instance_count": 1,
-      "shared_instance_count": "AntiNukeSilo",
+      "shared_instance_count": "AntiNuke",
       "priority": 386,
       "min_num_assisters": 5,
       "max_num_assisters": 12,
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AntiNukeSilo"
+            "string0": "BugAntiNuke"
           },
           {
             "test_type": "SystemToPlanetThreatRatio",
@@ -1423,13 +1379,13 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AntiNukeSilo"
+            "string0": "BugAntiNuke"
           }
         ],
         [
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AntiNukeSilo"
+            "string0": "BugAntiNuke"
           },
           {
             "test_type": "HaveHadANukeEvent",
@@ -1449,13 +1405,13 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AntiNukeSilo"
+            "string0": "BugAntiNuke"
           }
         ],
         [
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AntiNukeSilo"
+            "string0": "BugAntiNuke"
           },
           {
             "test_type": "SystemToPlanetThreatRatio",
@@ -1466,7 +1422,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "unit_type_string0": "Structure & (BugHalley | ControlModule)",
             "compare0": ">",
             "value0": 0
           },
@@ -1478,13 +1434,13 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AntiNukeSilo"
+            "string0": "BugAntiNuke"
           }
         ],
         [
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AntiNukeSilo"
+            "string0": "BugAntiNuke"
           },
           {
             "test_type": "HaveHadANukeEvent",
@@ -1492,7 +1448,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "unit_type_string0": "Structure & (BugHalley | ControlModule)",
             "compare0": ">",
             "value0": 0
           },
@@ -1504,7 +1460,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AntiNukeSilo"
+            "string0": "BugAntiNuke"
           }
         ]
       ],

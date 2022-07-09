@@ -1,11 +1,11 @@
 {
   "build_list": [
     {
-      "name": "Probe",
+      "name": "Bugs - Probe",
       "to_build": "OrbitalProbe",
       "instance_count": 1,
       "priority": 100,
-      "builders": ["OrbitalLauncher", "OrbitalFactory"],
+      "builders": ["BugOrbitalLauncher", "OrbitalFactory"],
       "build_conditions": [
         [
           {
@@ -35,11 +35,11 @@
       ]
     },
     {
-      "name": "Probe - Pri",
+      "name": "Bugs - Probe - Pri",
       "to_build": "OrbitalProbe",
       "instance_count": 1,
       "priority": 102,
-      "builders": ["OrbitalLauncher", "OrbitalFactory"],
+      "builders": ["BugOrbitalLauncher", "OrbitalFactory"],
       "build_conditions": [
         [
           {

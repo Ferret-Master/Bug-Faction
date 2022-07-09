@@ -1,14 +1,158 @@
 {
   "build_list": [
     {
-      "name": "Tesla Gunship",
-      "to_build": "TeslaGunship",
+      "name": "Bugs - Nug",
+      "to_build": "Nug",
       "instance_count": 1,
       "min_num_assisters": 3,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 480,
-      "builders": ["AdvancedAirFabber"],
+      "builders": ["AdvancedBotFabber", "SupportCommander"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "Nug"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Nug"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bugs - Rak",
+      "to_build": "Rak",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 15,
+      "shared_instance_count": "Titan",
+      "priority": 480,
+      "builders": ["AdvancedVehicleFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "Rak"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Rak"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bugs - Matriarch",
+      "to_build": "Matriarch",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 15,
+      "shared_instance_count": "Titan",
+      "priority": 480,
+      "builders": ["AdvancedVehicleFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "Matriarch"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Matriarch"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bugs - Tesla Gunship",
+      "to_build": "BugAirTitan",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 15,
+      "shared_instance_count": "Titan",
+      "priority": 480,
+      "builders": ["BugAdvancedAirFabber"],
       "build_conditions": [
         [
           {
@@ -29,7 +173,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "TeslaGunship"
+            "string0": "BugAirTitan"
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -39,139 +183,12 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "TeslaGunship"
+            "string0": "BugAirTitan"
           }
         ]
       ],
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Orbital Mothership",
-      "to_build": "MotherShip",
-      "instance_count": 1,
-      "min_num_assisters": 3,
-      "max_num_assisters": 15,
-      "shared_instance_count": "Titan",
-      "priority": 480,
-      "builders": ["OrbitalFabber"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Orbital",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "MotherShip"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
-        "threat": {
-          "influence_type": "AntiOrbital",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Planet Splitter",
-      "to_build": "PlanetSplitter",
-      "instance_count": 1,
-      "min_num_assisters": 3,
-      "max_num_assisters": 15,
-      "shared_instance_count": "Titan",
-      "priority": 480,
-      "builders": ["AnyAdvancedFabber"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Economy",
-            "compare0": ">",
-            "value0": 5000
-          },
-          {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": ">=",
-            "value0": 2
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "PlanetSplitter"
-          },
-          {
-            "test_type": "PlanetHasUseablePlanetWeapon",
-            "boolean": false
-          },
-          {
-            "test_type": "PlanetIsMainEcoBase",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Advanced & SelfDestruct",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "AlliedUnitCountOnPlanet",
-            "unit_type_string0": "Structure & Advanced & SelfDestruct",
-            "compare0": "<=",
-            "boolean": true,
-            "value0": 0
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "PlanetSplitter"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
-        "buffer": 5,
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

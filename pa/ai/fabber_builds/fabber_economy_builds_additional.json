@@ -1,8 +1,8 @@
 {
   "build_list": [
     {
-      "name": "Basic Metal Extractor - Desire - Area - Orbital",
-      "to_build": "BasicMetalExtractor",
+      "name": "Bugs - Basic Metal Extractor - Desire - Area - Orbital",
+      "to_build": "BugBasicMetalExtractor",
       "instance_count": 2,
       "shared_instance_count": "BasicMetal",
       "priority": 501,
@@ -41,8 +41,8 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Basic Metal Extractor - Expand - Area 1 - Orbital",
-      "to_build": "BasicMetalExtractor",
+      "name": "Bugs - Basic Metal Extractor - Expand - Area 1 - Orbital",
+      "to_build": "BugBasicMetalExtractor",
       "instance_count": 2,
       "shared_instance_count": "BasicMetal",
       "priority": 499,
@@ -106,7 +106,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Commander",
+            "unit_type_string0": "BugCommander",
             "compare0": ">",
             "value0": 0
           }
@@ -124,8 +124,8 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Basic Metal Extractor - Expand - Area Alone - Orbital",
-      "to_build": "BasicMetalExtractor",
+      "name": "Bugs - Basic Metal Extractor - Expand - Area Alone - Orbital",
+      "to_build": "BugBasicMetalExtractor",
       "instance_count": 4,
       "shared_instance_count": "BasicMetal",
       "priority": 499,
@@ -195,7 +195,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Commander",
+            "unit_type_string0": "BugCommander",
             "compare0": ">",
             "value0": 0
           }
@@ -213,8 +213,8 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Basic Metal Extractor - Expand Low Pri - Area - Orbital",
-      "to_build": "BasicMetalExtractor",
+      "name": "Bugs - Basic Metal Extractor - Expand Low Pri - Area - Orbital",
+      "to_build": "BugBasicMetalExtractor",
       "instance_count": 4,
       "shared_instance_count": "BasicMetal",
       "priority": 2,
@@ -258,8 +258,8 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Basic Metal Extractor - Desire - Orbital",
-      "to_build": "BasicMetalExtractor",
+      "name": "Bugs - Basic Metal Extractor - Desire - Orbital",
+      "to_build": "BugBasicMetalExtractor",
       "instance_count": 2,
       "shared_instance_count": "BasicMetal",
       "priority": 501,
@@ -291,8 +291,8 @@
       }
     },
     {
-      "name": "Basic Metal Extractor - Expand 1 - Orbital",
-      "to_build": "BasicMetalExtractor",
+      "name": "Bugs - Basic Metal Extractor - Expand 1 - Orbital",
+      "to_build": "BugBasicMetalExtractor",
       "instance_count": 2,
       "shared_instance_count": "BasicMetal",
       "priority": 499,
@@ -348,7 +348,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Commander",
+            "unit_type_string0": "BugCommander",
             "compare0": ">",
             "value0": 0
           }
@@ -365,8 +365,8 @@
       }
     },
     {
-      "name": "Basic Metal Extractor - Expand Low Pri - Orbital",
-      "to_build": "BasicMetalExtractor",
+      "name": "Bugs - Basic Metal Extractor - Expand Low Pri - Orbital",
+      "to_build": "BugBasicMetalExtractor",
       "instance_count": 4,
       "shared_instance_count": "BasicMetal",
       "priority": 2,

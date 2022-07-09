@@ -1,13 +1,13 @@
 {
   "build_list": [
     {
-      "name": "Orbital Launcher - Commander",
-      "to_build": "OrbitalLauncher",
+      "name": "Bugs - Orbital Launcher - Commander",
+      "to_build": "BugOrbitalLauncher",
       "instance_count": 1,
       "shared_instance_count": "OrbitalLauncher",
       "priority": 485,
       "max_num_assisters": 3,
-      "builders": ["Commander"],
+      "builders": ["BugCommander"],
       "build_conditions": [
         [
           {
@@ -15,7 +15,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalLauncher"
+            "string0": "BugOrbitalLauncher"
           },
           {
             "test_type": "WantCommanderOffPlanet",
@@ -32,7 +32,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalLauncher"
+            "string0": "BugOrbitalLauncher"
           }
         ],
         [
@@ -41,7 +41,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalLauncher"
+            "string0": "BugOrbitalLauncher"
           },
           {
             "test_type": "PlanetWithoutPresence",
@@ -58,7 +58,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalLauncher"
+            "string0": "BugOrbitalLauncher"
           }
         ]
       ],
@@ -67,14 +67,14 @@
       }
     },
     {
-      "name": "Orbital Launcher - Rush - Commander",
-      "to_build": "OrbitalLauncher",
+      "name": "Bugs - Orbital Launcher - Rush - Commander",
+      "to_build": "BugOrbitalLauncher",
       "instance_count": 1,
       "shared_instance_count": "OrbitalLauncher",
       "min_num_assisters": 3,
       "max_num_assisters": 5,
       "priority": 486,
-      "builders": ["Commander"],
+      "builders": ["BugCommander"],
       "build_conditions": [
         [
           {
@@ -104,7 +104,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalLauncher"
+            "string0": "BugOrbitalLauncher"
           }
         ],
         [
@@ -139,7 +139,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalLauncher"
+            "string0": "BugOrbitalLauncher"
           }
         ],
         [
@@ -174,7 +174,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalLauncher"
+            "string0": "BugOrbitalLauncher"
           }
         ]
       ],

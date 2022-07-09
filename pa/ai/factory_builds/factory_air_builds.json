@@ -1,12 +1,12 @@
 {
   "build_list": [
     {
-      "name": "Basic Air Fabber",
-      "to_build": "BasicAirFabber",
+      "name": "Bugs - Basic Air Fabber",
+      "to_build": "BugBasicAirFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 100,
-      "builders": ["BasicAirFactory"],
+      "builders": ["BasicAirHive"],
       "build_conditions": [
         [
           {
@@ -21,7 +21,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFabber"
+            "string0": "BugBasicAirFabber"
           }
         ],
         [
@@ -37,73 +37,12 @@
       ]
     },
     {
-      "name": "Air Scout",
-      "to_build": "AirScout",
-      "instance_count": 1,
-      "priority": 98,
-      "builders": ["BasicAirFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Air & Scout",
-            "compare0": "<",
-            "value0": 150
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          }
-        ],
-        [
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Scout",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          }
-        ],
-        [
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Scout",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": true
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Basic Air Fighter",
-      "to_build": "BasicFighter",
+      "name": "Bugs - Basic Air Fighter",
+      "to_build": "BugBasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 97,
-      "builders": ["BasicAirFactory"],
+      "builders": ["BasicAirHive"],
       "build_conditions": [
         [
           {
@@ -169,12 +108,12 @@
       ]
     },
     {
-      "name": "Basic Air Bomber",
-      "to_build": "BasicBomber",
+      "name": "Bugs - Medusa",
+      "to_build": "Medusa",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 97,
-      "builders": ["BasicAirFactory"],
+      "builders": ["BasicAirHive"],
       "build_conditions": [
         [
           {
@@ -203,12 +142,46 @@
       ]
     },
     {
-      "name": "Advanced Air Fabber",
-      "to_build": "AdvancedAirFabber",
+      "name": "Bugs - Harpy",
+      "to_build": "Harpy",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": ["BasicAirHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Gunship",
+            "compare0": "<",
+            "value0": 20
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Advanced Air Fabber",
+      "to_build": "BugAdvancedAirFabber",
       "instance_count": 1,
       "max_num_assisters": 15,
       "priority": 200,
-      "builders": ["AdvancedAirFactory"],
+      "builders": ["AdvancedAirHive"],
       "build_conditions": [
         [
           {
@@ -223,7 +196,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedAirFabber"
+            "string0": "BugAdvancedAirFabber"
           }
         ],
         [
@@ -241,12 +214,83 @@
       ]
     },
     {
-      "name": "Advanced Air Bomber",
-      "to_build": "AdvancedBomber",
+      "name": "Bugs - Advanced Air Fighter",
+      "to_build": "BugAdvancedFighter",
       "instance_count": -1,
       "max_num_assisters": 15,
       "priority": 199,
-      "builders": ["AdvancedAirFactory"],
+      "builders": ["AdvancedAirHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": "<",
+            "value0": 50
+          }
+        ],
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": "<",
+            "value0": 20
+          }
+        ],
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Air & Fighter",
+            "unit_type_string1": "Air & (Bomber | Gunship)",
+            "compare0": "<",
+            "value0": 0.15
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1.0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Stheno",
+      "to_build": "Stheno",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": ["AdvancedAirHive"],
       "build_conditions": [
         [
           {
@@ -275,12 +319,12 @@
       ]
     },
     {
-      "name": "Advanced Gunship",
-      "to_build": "AdvancedGunship",
+      "name": "Bugs - Basilisk",
+      "to_build": "Basilisk",
       "instance_count": -1,
       "max_num_assisters": 15,
       "priority": 199,
-      "builders": ["AdvancedAirFactory"],
+      "builders": ["AdvancedAirHive"],
       "build_conditions": [
         [
           {

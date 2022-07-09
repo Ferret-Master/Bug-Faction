@@ -1,17 +1,17 @@
 {
   "build_list": [
     {
-      "name": "Basic Naval Factory",
-      "to_build": "BasicNavalFactory",
+      "name": "Bugs - Basic Naval Hive",
+      "to_build": "BasicNavalHive",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
       "priority": 376,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
       "builders": [
-        "Commander",
-        "BasicAirFabber",
-        "AdvancedAirFabber",
+        "BugCommander",
+        "BugBasicAirFabber",
+        "BugAdvancedAirFabber",
         "BasicNavalFabber",
         "AdvancedNavalFabber"
       ],
@@ -27,7 +27,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicNavalFactory"
+            "string0": "BasicNavalHive"
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -35,7 +35,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicNavalFactory"
+            "string0": "BasicNavalHive"
           }
         ],
         [
@@ -49,7 +49,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicNavalFactory"
+            "string0": "BasicNavalHive"
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -57,7 +57,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicNavalFactory"
+            "string0": "BasicNavalHive"
           }
         ],
         [
@@ -77,7 +77,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicNavalFactory"
+            "string0": "BasicNavalHive"
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -85,7 +85,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicNavalFactory"
+            "string0": "BasicNavalHive"
           }
         ],
         [
@@ -105,7 +105,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicNavalFactory"
+            "string0": "BasicNavalHive"
           }
         ]
       ],
@@ -120,17 +120,17 @@
       }
     },
     {
-      "name": "Basic Naval Factory - Wasting",
-      "to_build": "BasicNavalFactory",
+      "name": "Bugs - Basic Naval Hive - Wasting",
+      "to_build": "BasicNavalHive",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
       "priority": 515,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
       "builders": [
-        "Commander",
-        "BasicAirFabber",
-        "AdvancedAirFabber",
+        "BugCommander",
+        "BugBasicAirFabber",
+        "BugAdvancedAirFabber",
         "BasicNavalFabber",
         "AdvancedNavalFabber"
       ],
@@ -170,11 +170,11 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicNavalFactory"
+            "string0": "BasicNavalHive"
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicNavalFactory"
+            "string0": "BasicNavalHive"
           }
         ],
         [
@@ -207,129 +207,11 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicNavalFactory"
+            "string0": "BasicNavalHive"
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicNavalFactory"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Advanced Naval Factory",
-      "to_build": "AdvancedNavalFactory",
-      "instance_count": 1,
-      "shared_instance_count": "AdvancedFactory",
-      "priority": 477,
-      "min_num_assisters": 3,
-      "max_num_assisters": 5,
-      "builders": ["BasicNavalFabber", "AdvancedNavalFabber"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
-            "test_type": "NeedAdvancedNavalFactory",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedNavalFactory"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedNavalFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "UnableToExpand",
-            "boolean": true
-          },
-          {
-            "test_type": "NeedAdvancedNavalFactory",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Factory & Advanced) - NukeDefense - Nuke - SelfDestruct",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedNavalFactory"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Advanced Naval Factory - Wasting",
-      "to_build": "AdvancedNavalFactory",
-      "instance_count": 1,
-      "shared_instance_count": "AdvancedFactory",
-      "priority": 525,
-      "min_num_assisters": 3,
-      "max_num_assisters": 5,
-      "builders": ["BasicNavalFabber", "AdvancedNavalFabber"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "PreventsWaste",
-            "boolean": true
-          },
-          {
-            "test_type": "CurrentMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "MetalStorageFrac",
-            "compare0": ">",
-            "value0": 0.05
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "NeedAdvancedNavalFactory",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedNavalFactory"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedNavalFactory"
+            "string0": "BasicNavalHive"
           }
         ]
       ],

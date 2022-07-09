@@ -1,11 +1,11 @@
 {
   "build_list": [
     {
-      "name": "Nuke Missile",
+      "name": "Bugs - Nuke Missile",
       "to_build": "NukeMissile",
       "instance_count": -1,
       "priority": 151,
-      "builders": ["NukeSilo"],
+      "builders": ["BugNuke"],
       "build_conditions": [
         [
           {
@@ -18,13 +18,13 @@
       ]
     },
     {
-      "name": "Nuke Missile - No Antis",
+      "name": "Bugs - Nuke Missile - No Antis",
       "to_build": "NukeMissile",
       "instance_count": 2,
       "min_num_assisters": 3,
       "max_num_assisters": 12,
       "priority": 387,
-      "builders": ["NukeSilo"],
+      "builders": ["BugNuke"],
       "build_conditions": [
         [
           {
@@ -43,11 +43,11 @@
       ]
     },
     {
-      "name": "Anti Nuke Missile",
+      "name": "Bugs - Anti Nuke Missile",
       "to_build": "AntiNukeMissile",
       "instance_count": -1,
       "priority": 151,
-      "builders": ["AntiNukeSilo"],
+      "builders": ["BugAntiNuke"],
       "build_conditions": [
         [
           {
@@ -60,13 +60,13 @@
       ]
     },
     {
-      "name": "Anti Nuke Missile - Rush",
+      "name": "Bugs - Anti Nuke Missile - Rush",
       "to_build": "AntiNukeMissile",
       "instance_count": -1,
       "min_num_assisters": 5,
       "max_num_assisters": 12,
       "priority": 388,
-      "builders": ["AntiNukeSilo"],
+      "builders": ["BugAntiNuke"],
       "build_conditions": [
         [
           {

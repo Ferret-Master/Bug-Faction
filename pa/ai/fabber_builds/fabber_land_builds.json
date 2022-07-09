@@ -1,19 +1,14 @@
 {
   "build_list": [
     {
-      "name": "Basic Bot Factory",
-      "to_build": "BasicBotFactory",
+      "name": "Bugs - Swarm Hive",
+      "to_build": "SwarmHive",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
       "priority": 376,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
-      "builders": [
-        "Commander",
-        "AnyBasicFabber",
-        "AnyAdvancedFabber",
-        "SupportCommander"
-      ],
+      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -26,7 +21,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicBotFactory"
+            "string0": "SwarmHive"
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -34,7 +29,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicBotFactory"
+            "string0": "SwarmHive"
           }
         ],
         [
@@ -48,7 +43,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicBotFactory"
+            "string0": "SwarmHive"
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -56,7 +51,92 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicBotFactory"
+            "string0": "SwarmHive"
+          }
+        ],
+        [
+          {
+            "test_type": "UnableToExpand",
+            "boolean": true
+          },
+          {
+            "test_type": "NeedBasicBotFactory",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction) - Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "SwarmHive"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bugs - Basic Hive",
+      "to_build": "BasicHive",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 376,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": false
+          },
+          {
+            "test_type": "NeedBasicVehicleFactory",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicHive"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicHive"
+          }
+        ],
+        [
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "NeedBasicVehicleFactory",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicHive"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicHive"
           }
         ],
         [
@@ -76,7 +156,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicBotFactory"
+            "string0": "SwarmHive"
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -84,97 +164,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicBotFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "UnableToExpand",
-            "boolean": true
-          },
-          {
-            "test_type": "NeedBasicBotFactory",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Factory & Construction) - Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicBotFactory"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Basic Vehicle Factory",
-      "to_build": "BasicVehicleFactory",
-      "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
-      "priority": 376,
-      "min_num_assisters": 2,
-      "max_num_assisters": 5,
-      "builders": [
-        "Commander",
-        "AnyBasicFabber",
-        "AnyAdvancedFabber",
-        "SupportCommander"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": false
-          },
-          {
-            "test_type": "NeedBasicVehicleFactory",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
-            "test_type": "NeedBasicVehicleFactory",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
+            "string0": "SwarmHive"
           }
         ],
         [
@@ -194,7 +184,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
+            "string0": "BasicHive"
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -202,7 +192,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
+            "string0": "BasicHive"
           }
         ],
         [
@@ -222,7 +212,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
+            "string0": "BasicHive"
           }
         ]
       ],
@@ -237,19 +227,14 @@
       }
     },
     {
-      "name": "Basic Bot Factory - Wasting",
-      "to_build": "BasicBotFactory",
+      "name": "Bugs - Swarm Hive - Wasting",
+      "to_build": "SwarmHive",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
       "priority": 515,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
-      "builders": [
-        "Commander",
-        "AnyBasicFabber",
-        "AnyAdvancedFabber",
-        "SupportCommander"
-      ],
+      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -282,7 +267,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicBotFactory"
+            "string0": "SwarmHive"
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -290,7 +275,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicBotFactory"
+            "string0": "SwarmHive"
           }
         ],
         [
@@ -324,7 +309,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicBotFactory"
+            "string0": "SwarmHive"
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -332,7 +317,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicBotFactory"
+            "string0": "SwarmHive"
           }
         ]
       ],
@@ -347,19 +332,14 @@
       }
     },
     {
-      "name": "Basic Vehicle Factory - Wasting",
-      "to_build": "BasicVehicleFactory",
+      "name": "Bugs - Basic Hive - Wasting",
+      "to_build": "BasicHive",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
       "priority": 515,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
-      "builders": [
-        "Commander",
-        "AnyBasicFabber",
-        "AnyAdvancedFabber",
-        "SupportCommander"
-      ],
+      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -392,7 +372,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
+            "string0": "BasicHive"
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -400,7 +380,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
+            "string0": "BasicHive"
           }
         ],
         [
@@ -434,7 +414,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
+            "string0": "BasicHive"
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -442,7 +422,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
+            "string0": "BasicHive"
           }
         ]
       ],
@@ -457,14 +437,14 @@
       }
     },
     {
-      "name": "Advanced Bot Factory",
-      "to_build": "AdvancedBotFactory",
+      "name": "Bugs - Advanced Hive",
+      "to_build": "AdvancedHive",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
       "priority": 477,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "builders": ["BasicBotFabber", "AdvancedBotFabber", "SupportCommander"],
+      "builders": ["BugFab", "BugAdvancedBotFabber"],
       "build_conditions": [
         [
           {
@@ -483,7 +463,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedBotFactory"
+            "string0": "AdvancedHive"
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -491,7 +471,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedBotFactory"
+            "string0": "AdvancedHive"
           }
         ],
         [
@@ -517,30 +497,9 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedBotFactory"
+            "string0": "AdvancedHive"
           }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Advanced Vehicle Factory",
-      "to_build": "AdvancedVehicleFactory",
-      "instance_count": 1,
-      "shared_instance_count": "AdvancedFactory",
-      "priority": 477,
-      "min_num_assisters": 3,
-      "max_num_assisters": 5,
-      "builders": ["BasicVehicleFabber", "AdvancedVehicleFabber"],
-      "build_conditions": [
+        ],
         [
           {
             "test_type": "HaveEcoForAdvanced",
@@ -558,7 +517,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedVehicleFactory"
+            "string0": "AdvancedHive"
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -566,7 +525,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedVehicleFactory"
+            "string0": "AdvancedHive"
           }
         ],
         [
@@ -596,7 +555,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedVehicleFactory"
+            "string0": "AdvancedHive"
           }
         ]
       ],
@@ -611,14 +570,14 @@
       }
     },
     {
-      "name": "Advanced Bot Factory - Wasting",
-      "to_build": "AdvancedBotFactory",
+      "name": "Bugs - Advanced Hive - Wasting",
+      "to_build": "AdvancedHive",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
       "priority": 525,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "builders": ["BasicBotFabber", "AdvancedBotFabber", "SupportCommander"],
+      "builders": ["BugFab", "BugAdvancedBotFabber"],
       "build_conditions": [
         [
           {
@@ -657,7 +616,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedBotFactory"
+            "string0": "AdvancedHive"
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -665,30 +624,9 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedBotFactory"
+            "string0": "AdvancedHive"
           }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Advanced Vehicle Factory - Wasting",
-      "to_build": "AdvancedVehicleFactory",
-      "instance_count": 1,
-      "shared_instance_count": "AdvancedFactory",
-      "priority": 525,
-      "min_num_assisters": 3,
-      "max_num_assisters": 5,
-      "builders": ["BasicVehicleFabber", "AdvancedVehicleFabber"],
-      "build_conditions": [
+        ],
         [
           {
             "test_type": "HaveEcoForAdvanced",
@@ -730,11 +668,11 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedVehicleFactory"
+            "string0": "AdvancedHive"
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedVehicleFactory"
+            "string0": "AdvancedHive"
           }
         ]
       ],
