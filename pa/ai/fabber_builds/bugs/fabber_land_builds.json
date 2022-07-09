@@ -12,6 +12,10 @@
       "build_conditions": [
         [
           {
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": true
+          },
+          {
             "test_type": "HaveEcoForAdvanced",
             "boolean": false
           },
@@ -34,6 +38,10 @@
         ],
         [
           {
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": true
+          },
+          {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
@@ -48,26 +56,6 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "SwarmHive"
-          }
-        ],
-        [
-          {
-            "test_type": "UnableToExpand",
-            "boolean": true
-          },
-          {
-            "test_type": "NeedBasicBotFactory",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Factory & Construction) - Orbital",
-            "compare0": "<=",
-            "value0": 0
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -238,6 +226,10 @@
       "build_conditions": [
         [
           {
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": true
+          },
+          {
             "test_type": "HaveEcoForAdvanced",
             "boolean": false
           },
@@ -279,6 +271,10 @@
           }
         ],
         [
+          {
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": true
+          },
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
