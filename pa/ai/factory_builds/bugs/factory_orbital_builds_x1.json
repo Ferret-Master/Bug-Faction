@@ -10,15 +10,23 @@
       "builders": ["BugOrbitalLauncher", "OrbitalFactory"],
       "build_conditions": [
         [
-          { "test_type": "CanAffordBuildDemand" },
-          { "test_type": "CanAffordPotentialDrain", "string0": "OrbitalProbe" },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "OrbitalProbe"
+          },
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Orbital & Fighter",
             "compare0": ">",
             "value0": 2
           },
-          { "test_type": "OtherPlanetNeedsReconAssistance", "boolean": true }
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          }
         ]
       ]
     },
@@ -31,7 +39,9 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
           {
             "test_type": "SystemThreat",
             "string0": "Orbital",
@@ -57,7 +67,9 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
           {
             "test_type": "SystemThreat",
             "string0": "Orbital",
@@ -72,7 +84,9 @@
           }
         ],
         [
-          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
           {
             "test_type": "BaseThreat",
             "string0": "Orbital",
@@ -87,7 +101,9 @@
           }
         ],
         [
-          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
@@ -107,7 +123,9 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
           {
             "test_type": "SystemThreat",
             "string0": "Orbital",

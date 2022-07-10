@@ -21,7 +21,9 @@
             "compare0": ">",
             "value0": 2
           },
-          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Construction - Orbital - NukeDefense - Nuke - SelfDestruct",
@@ -34,7 +36,10 @@
             "compare0": "<",
             "value0": 5
           },
-          { "test_type": "CanAffordPotentialDrain", "string0": "OrbitalFabber" }
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "OrbitalFabber"
+          }
         ],
         [
           {
@@ -108,8 +113,13 @@
       "builders": ["BugOrbitalLauncher", "OrbitalFactory"],
       "build_conditions": [
         [
-          { "test_type": "PlanetIsGasGiant", "boolean": false },
-          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicRadarSattelite"
@@ -137,8 +147,13 @@
       "builders": ["BugOrbitalLauncher", "OrbitalFactory"],
       "build_conditions": [
         [
-          { "test_type": "PlanetIsGasGiant", "boolean": false },
-          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicRadarSattelite"
@@ -162,7 +177,9 @@
       "builders": ["BugOrbitalLauncher", "OrbitalFactory"],
       "build_conditions": [
         [
-          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicRadarSattelite"
@@ -173,7 +190,10 @@
             "compare0": ">",
             "value0": 2
           },
-          { "test_type": "OtherPlanetNeedsReconAssistance", "boolean": true }
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          }
         ]
       ]
     },
@@ -186,7 +206,9 @@
       "builders": ["BugOrbitalLauncher", "OrbitalFactory"],
       "build_conditions": [
         [
-          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
           {
             "test_type": "SystemThreat",
             "string0": "Orbital",
@@ -212,7 +234,9 @@
       "builders": ["BugOrbitalLauncher"],
       "build_conditions": [
         [
-          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
           {
             "test_type": "SystemThreat",
             "string0": "Orbital",
@@ -227,7 +251,9 @@
           }
         ],
         [
-          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
           {
             "test_type": "BaseThreat",
             "string0": "Orbital",
@@ -242,7 +268,9 @@
           }
         ],
         [
-          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
@@ -262,8 +290,13 @@
       "builders": ["BugOrbitalLauncher"],
       "build_conditions": [
         [
-          { "test_type": "CanAffordBuildDemand" },
-          { "test_type": "PlanetWithoutPresence", "boolean": true },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetWithoutPresence",
+            "boolean": true
+          },
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Orbital & Transport",
@@ -286,11 +319,17 @@
             "compare0": "<",
             "value0": 1.0
           },
-          { "test_type": "CanAffordBuildDemand" }
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
         ],
         [
-          { "test_type": "DesireEnergy" },
-          { "test_type": "CanAffordBuildDemand" }
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
         ]
       ]
     },
@@ -302,9 +341,17 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          { "test_type": "PlanetIsGasGiant", "boolean": false },
-          { "test_type": "AloneOnPlanet", "boolean": false },
-          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Orbital & LaserPlatform",
@@ -324,8 +371,13 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          { "test_type": "PlanetIsGasGiant", "boolean": false },
-          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedRadarSattelite"
@@ -338,8 +390,13 @@
           }
         ],
         [
-          { "test_type": "PlanetIsGasGiant", "boolean": false },
-          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedRadarSattelite"
@@ -350,7 +407,10 @@
             "compare0": ">",
             "value0": 2
           },
-          { "test_type": "OtherPlanetNeedsReconAssistance", "boolean": true }
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          }
         ]
       ]
     }
