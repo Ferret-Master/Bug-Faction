@@ -145,7 +145,7 @@
       "name": "Bugs - Harpy",
       "to_build": "Harpy",
       "instance_count": -1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 199,
       "builders": ["BasicAirHive"],
       "build_conditions": [
