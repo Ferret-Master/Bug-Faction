@@ -14,22 +14,11 @@
             "boolean": false
           },
           {
-            "test_type": "MetMinBasicFabberCount",
-            "boolean": false
-          }
-        ],
-        [
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -53,6 +42,9 @@
             "boolean": true
           },
           {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BugFab"
           },
@@ -62,6 +54,16 @@
             "unit_type_string1": "Factory & Basic & Land",
             "compare0": "<",
             "value0": 2
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
           }
         ]
       ]
@@ -744,8 +746,7 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -769,8 +770,7 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanAffordPotentialDrain",
