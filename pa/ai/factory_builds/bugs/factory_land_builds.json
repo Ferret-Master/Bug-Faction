@@ -505,6 +505,12 @@
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
             "compare0": "<",
             "value0": 0.5
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Basic & Heavy) - Mobile",
+            "compare0": "==",
+            "value0": 0
           }
         ],
         [
@@ -530,6 +536,12 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
             "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Basic & Heavy) - Mobile",
+            "compare0": "==",
             "value0": 0
           }
         ]
@@ -561,6 +573,12 @@
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
             "compare0": "<",
             "value0": 0.5
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Basic & Heavy) - Mobile",
+            "compare0": ">",
+            "value0": 0
           }
         ],
         [
@@ -585,6 +603,12 @@
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Basic & Heavy) - Mobile",
             "compare0": ">",
             "value0": 0
           }
