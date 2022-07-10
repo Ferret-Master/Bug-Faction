@@ -16,7 +16,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Factory & Construction & Basic) - Air - Bot - Tank - Naval - Orbital",
+            "unit_type_string0": "(Custom2 & Factory & Construction & Basic) - Air - Bot - Tank - Naval - Orbital",
             "compare0": "==",
             "value0": 0
           },
@@ -52,7 +52,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Factory & Construction & Advanced) - Air - Bot - Tank - Naval - Orbital",
+            "unit_type_string0": "(Custom2 & Factory & Construction & Advanced) - Air - Bot - Tank - Naval - Orbital",
             "compare0": "==",
             "value0": 0
           },

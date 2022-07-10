@@ -188,7 +188,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Bot & Basic) - Mobile - Construction - Structure",
+            "unit_type_string0": "(Custom2 & Bot & Basic) - Mobile - Construction - Structure",
             "compare0": "==",
             "value0": 0
           }
@@ -213,7 +213,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Bot & Basic) - Mobile - Construction - Structure",
+            "unit_type_string0": "(Custom2 & Bot & Basic) - Mobile - Construction - Structure",
             "compare0": "==",
             "value0": 0
           }
@@ -238,7 +238,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Bot & Basic) - Mobile - Construction - Structure",
+            "unit_type_string0": "(Custom2 & Bot & Basic) - Mobile - Construction - Structure",
             "compare0": ">",
             "value0": 0
           }
@@ -263,7 +263,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Bot & Basic) - Mobile - Construction - Structure",
+            "unit_type_string0": "(Custom2 & Bot & Basic) - Mobile - Construction - Structure",
             "compare0": ">",
             "value0": 0
           }
@@ -508,7 +508,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Bot & Basic & Heavy) - Mobile",
+            "unit_type_string0": "(Custom2 & Bot & Basic & Heavy) - Mobile",
             "compare0": "==",
             "value0": 0
           }
@@ -540,7 +540,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Bot & Basic & Heavy) - Mobile",
+            "unit_type_string0": "(Custom2 & Bot & Basic & Heavy) - Mobile",
             "compare0": "==",
             "value0": 0
           }
@@ -576,7 +576,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Bot & Basic & Heavy) - Mobile",
+            "unit_type_string0": "(Custom2 & Bot & Basic & Heavy) - Mobile",
             "compare0": ">",
             "value0": 0
           }
@@ -608,7 +608,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Bot & Basic & Heavy) - Mobile",
+            "unit_type_string0": "(Custom2 & Bot & Basic & Heavy) - Mobile",
             "compare0": ">",
             "value0": 0
           }
