@@ -156,7 +156,7 @@
       "UNITTYPE_Important",
       "UNITTYPE_FabOrbBuild",
       "UNITTYPE_Artillery",
-      "UNTITYPE_Custom2"
+      "UNITTYPE_Custom2"
     ],
     "wreckage_health_frac": 0.7,
     "wreckage_mesh_bounds": [
