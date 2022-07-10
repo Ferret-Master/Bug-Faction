@@ -6,13 +6,5 @@
         "max_count": 1
       }
     ]
-  },
-  "Bugs_Land_Scout": {
-    "units": [
-      {
-        "unit_types": "Land & Scout & Mobile",
-        "max_count": 1
-      }
-    ]
   }
 }
