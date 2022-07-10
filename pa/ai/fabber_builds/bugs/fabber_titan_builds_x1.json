@@ -156,11 +156,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
