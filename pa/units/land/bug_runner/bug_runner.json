@@ -125,8 +125,7 @@
   "unit_types": [
     "UNITTYPE_Bot",
     "UNITTYPE_Mobile",
-    "UNITTYPE_Heavy",
-    "UNITTYPE_Offense",
+    "UNITTYPE_Scout",
     "UNITTYPE_Land",
     "UNITTYPE_Basic",
     "UNITTYPE_Custom2"

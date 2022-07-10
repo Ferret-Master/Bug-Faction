@@ -112,7 +112,6 @@
       "UNITTYPE_Mobile",
       "UNITTYPE_Land",
       "UNITTYPE_Basic",
-      "UNITTYPE_CannonBuildable",
       "UNITTYPE_Offense",
       "UNITTYPE_SelfDestruct",
       "UNITTYPE_Custom2"
