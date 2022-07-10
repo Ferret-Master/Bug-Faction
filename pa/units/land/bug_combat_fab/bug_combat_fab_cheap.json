@@ -147,8 +147,6 @@
       "UNITTYPE_Offense",
       "UNITTYPE_Land",
       "UNITTYPE_Basic",
-      
-      "UNITTYPE_CannonBuildable",
       "UNITTYPE_Custom2"
     ]
   }
