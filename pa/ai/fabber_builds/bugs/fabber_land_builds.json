@@ -12,10 +12,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "MetMinBasicFabberCount",
-            "boolean": true
-          },
-          {
             "test_type": "HaveEcoForAdvanced",
             "boolean": false
           },
@@ -37,10 +33,6 @@
           }
         ],
         [
-          {
-            "test_type": "MetMinBasicFabberCount",
-            "boolean": true
-          },
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
@@ -83,6 +75,20 @@
       "max_num_assisters": 5,
       "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
       "build_conditions": [
+        [
+          {
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicHive"
+          }
+        ],
         [
           {
             "test_type": "HaveEcoForAdvanced",
@@ -226,10 +232,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "MetMinBasicFabberCount",
-            "boolean": true
-          },
-          {
             "test_type": "HaveEcoForAdvanced",
             "boolean": false
           },
@@ -271,10 +273,6 @@
           }
         ],
         [
-          {
-            "test_type": "MetMinBasicFabberCount",
-            "boolean": true
-          },
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
