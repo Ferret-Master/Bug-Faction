@@ -1,0 +1,10 @@
+{
+  "Bugs_Air_Scout": {
+    "units": [
+      {
+        "unit_types": "Air & Basic & Mobile & (Fighter | Gunship)",
+        "max_count": 1
+      }
+    ]
+  }
+}
