@@ -85,6 +85,12 @@
             "boolean": true
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Tank & Basic) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicHive"
           }
