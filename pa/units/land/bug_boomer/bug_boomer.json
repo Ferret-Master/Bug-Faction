@@ -95,7 +95,7 @@
     },
     "spawn_layers": "WL_LandHorizontal",
     "death_weapon": {
-      "ground_ammo_spec": "/pa/units/land/bug_boomer/bug_boomer_ammo.json"
+      "ground_ammo_spec": "/pa/units/land/bug_boomer/bug_boomer_death_explosion.json"
     },
     "tools": [
       {

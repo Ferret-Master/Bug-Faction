@@ -1,6 +1,6 @@
 {
     "ammo_type": "PBAOE",
-    "damage": 1,
+    "damage": 500,
     "damage_volume": {
       "initial_radius": 15.0
     },

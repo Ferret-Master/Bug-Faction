@@ -16,9 +16,9 @@
     "max_health": 100,
     "passive_health_regen": -20,
     "mesh_bounds": [
-      1.0,
-      1.0,
-      1.0
+      0.1,
+      0.1,
+      0.1
     ],
     "model": [
       {
@@ -30,7 +30,7 @@
       "type": "Structure",
       "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
       "shape": "Box",
-      "radius": 0.5,
+      "radius": 0.1,
       "allow_pushing": false,
       "push_sideways": false,
       "allow_underground": false,

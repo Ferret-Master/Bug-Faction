@@ -31,7 +31,7 @@
         "effect_scale": 0.8
       }
     },
-    "guard_layer": "WL_Anysurface",
+    "guard_layer": "WL_AnySurface",
     "max_health": 300,
     "mesh_bounds": [
       6.5,
