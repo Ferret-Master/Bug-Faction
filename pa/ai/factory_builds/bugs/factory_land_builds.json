@@ -203,6 +203,10 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
             "test_type": "UnitCount",
             "unit_type_string0": "(Custom2 & Bot & Basic) - Mobile - Heavy - Construction - Structure",
             "compare0": "==",
@@ -251,6 +255,10 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           },
           {
             "test_type": "UnitCount",
@@ -465,10 +473,6 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -972,10 +976,6 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
