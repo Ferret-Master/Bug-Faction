@@ -40,7 +40,8 @@
   },
   "dependencies": [
     "com.pa.ferretmaster.bugs-client",
-    "com.pa.ferretmaster.commander-merge"
+    "com.pa.ferretmaster.commander-merge",
+    "com.pa.quitch.qAIModCompatibilityPatch"
   ],
   "companions": [
     "com.pa.ferretmaster.bugs-client"
