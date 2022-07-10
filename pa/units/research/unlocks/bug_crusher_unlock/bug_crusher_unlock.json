@@ -27,6 +27,7 @@
         "UNITTYPE_Bot",
         "UNITTYPE_Heavy",
         "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild",
         "UNITTYPE_Custom2"
     
     ],

@@ -26,6 +26,7 @@
     
         "UNITTYPE_Tank",
         "UNITTYPE_Basic",
+        "UNITTYPE_FactoryBuild",
         "UNITTYPE_Custom2"    
 
     ],

@@ -27,6 +27,7 @@
         "UNITTYPE_Bot",
         "UNITTYPE_Basic",
         "UNITTYPE_SelfDestruct",
+        "UNITTYPE_FactoryBuild",
         "UNITTYPE_Custom2"
     
 
