@@ -150,7 +150,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Factory & Construction & Bot & Basic) - Orbital",
+            "unit_type_string0": "(Factory & Construction & Tank & Basic) - Orbital",
             "compare0": "<",
             "value0": 1
           },
