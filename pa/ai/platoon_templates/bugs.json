@@ -2,7 +2,7 @@
   "Bugs_Air_Scout": {
     "units": [
       {
-        "unit_types": "Custom2 & Air & Basic & Mobile & (Fighter | Gunship)",
+        "unit_types": "Air & Basic & Mobile & (Fighter | Gunship)",
         "max_count": 1
       }
     ]
@@ -10,7 +10,7 @@
   "Bugs_Land_Scout": {
     "units": [
       {
-        "unit_types": "Custom2 & Land & Scout & Mobile",
+        "unit_types": "Land & Scout & Mobile",
         "max_count": 1
       }
     ]

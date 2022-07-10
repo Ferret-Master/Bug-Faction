@@ -67,13 +67,9 @@
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Land & Scout",
+            "unit_type_string0": "Land & Scout & Mobile",
             "compare0": "<",
             "value0": 150
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
           },
           {
             "test_type": "HaveFullPlanetIntel",
@@ -87,17 +83,33 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Land & Scout",
+            "unit_type_string0": "Land & Scout & Mobile",
             "compare0": "<",
             "value0": 1
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Land & Scout & Mobile",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "HaveFullPlanetIntel",
-            "boolean": false
+            "boolean": true
           }
         ]
       ]
