@@ -14,46 +14,14 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "NeedBasicAirFabber"
           },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BugBasicAirFabber"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Basic & Air",
-            "unit_type_string1": "Factory & Basic & Air",
-            "compare0": "<",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BugBasicAirFabber"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Basic & Air",
-            "unit_type_string1": "Factory & Basic & Air",
-            "compare0": "<",
-            "value0": 2
           }
         ],
         [
@@ -221,46 +189,14 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "NeedAdvancedAirFabber"
           },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BugAdvancedAirFabber"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Advanced & Air",
-            "unit_type_string1": "Factory & Advanced & Air",
-            "compare0": "<",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BugAdvancedAirFabber"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Advanced & Air",
-            "unit_type_string1": "Factory & Advanced & Air",
-            "compare0": "<",
-            "value0": 2
           }
         ],
         [
