@@ -12,7 +12,7 @@
             "boolean": false
           },
           {
-            "test_type": "UnitCountOnPlanet",
+            "test_type": "UnitPoolCount",
             "unit_type_string0": "Custom2 & Air & Basic & Mobile & (Fighter | Gunship)",
             "compare0": ">=",
             "value0": 1
