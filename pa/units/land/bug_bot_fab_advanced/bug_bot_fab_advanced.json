@@ -26,6 +26,7 @@
         "UNITTYPE_Fabber",
         "UNITTYPE_Construction",
         "UNITTYPE_Bot",
+        "UNITTYPE_Tank",
         "UNITTYPE_Mobile",
         "UNITTYPE_Land",
         "UNITTYPE_Advanced",
