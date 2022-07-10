@@ -185,6 +185,12 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Basic) - Mobile - Construction",
+            "compare0": "==",
+            "value0": 0
           }
         ],
         [
@@ -203,6 +209,12 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
             "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Basic) - Mobile - Construction",
+            "compare0": "==",
             "value0": 0
           }
         ]
@@ -223,6 +235,12 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Basic) - FactoryBuild - Mobile",
+            "compare0": ">",
+            "value0": 0
           }
         ],
         [
@@ -240,6 +258,12 @@
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Basic) - FactoryBuild - Mobile",
             "compare0": ">",
             "value0": 0
           }
@@ -838,6 +862,12 @@
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
             "compare0": "<",
             "value0": 0.35
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Advanced & Artillery) - Mobile",
+            "compare0": ">",
+            "value0": 0
           }
         ],
         [
@@ -862,6 +892,12 @@
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Advanced & Artillery) - Mobile",
             "compare0": ">",
             "value0": 0
           }
@@ -936,6 +972,12 @@
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
             "compare0": "<",
             "value0": 0.5
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Advanced & Heavy) - Mobile",
+            "compare0": ">",
+            "value0": 0
           }
         ],
         [
@@ -960,6 +1002,12 @@
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Advanced & Heavy) - Mobile",
             "compare0": ">",
             "value0": 0
           }
