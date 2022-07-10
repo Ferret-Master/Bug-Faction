@@ -692,7 +692,7 @@
       }
     },
     {
-      "name": "Bugs - Energy Storage",
+      "name": "Bugs - Storage",
       "to_build": "BugStorage",
       "instance_count": 1,
       "priority": 140,
