@@ -24,12 +24,10 @@
 },
     "unit_types": [
     
+        "UNITTYPE_Tank",
         "UNITTYPE_Basic",
-        "UNITTYPE_Wall",
         "UNITTYPE_FactoryBuild",
-        "UNITTYPE_Mobile",
-        "UNITTYPE_Custom2"
-    
+        "UNITTYPE_Custom2"    
 
     ],
     "recon": {

@@ -23,15 +23,13 @@
 "radius":0.05
 },
     "unit_types": [
-    
-     
-        "UNITTYPE_Wall",
-        "UNITTYPE_FactoryBuild",
-        "UNITTYPE_Mobile",
+         
+        "UNITTYPE_Tank",
+        "UNITTYPE_Heavy",
         "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild",
         "UNITTYPE_Custom2"
     
-
     ],
     "recon": {
   
