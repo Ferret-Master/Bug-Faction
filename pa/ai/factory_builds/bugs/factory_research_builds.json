@@ -11,6 +11,12 @@
         [
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Basic) - Mobile - Construction",
+            "compare0": "==",
+            "value0": 0
           }
         ]
       ]
@@ -26,6 +32,12 @@
         [
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Basic & Heavy) - Mobile",
+            "compare0": "==",
+            "value0": 0
           }
         ]
       ]
@@ -41,6 +53,12 @@
         [
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Tank & Basic) - Mobile",
+            "compare0": "==",
+            "value0": 0
           }
         ]
       ]
@@ -56,6 +74,12 @@
         [
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Basic & Construction) - Mobile",
+            "compare0": "==",
+            "value0": 0
           }
         ]
       ]
@@ -71,6 +95,12 @@
         [
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Basic & SelfDestruct) - Mobile",
+            "compare0": "==",
+            "value0": 0
           }
         ]
       ]
@@ -86,6 +116,12 @@
         [
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Advanced & Heavy) - Mobile",
+            "compare0": "==",
+            "value0": 0
           }
         ]
       ]
@@ -101,6 +137,12 @@
         [
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Advanced & Artillery) - Mobile",
+            "compare0": "==",
+            "value0": 0
           }
         ]
       ]
