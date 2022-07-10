@@ -3,7 +3,7 @@
     {
       "name": "Bugs - Basic Bot Fabber",
       "to_build": "BugFab",
-      "instance_count": 1,
+      "instance_count": 2,
       "max_num_assisters": 10,
       "priority": 100,
       "builders": ["BasicHive"],
@@ -735,7 +735,7 @@
     {
       "name": "Bugs - Advanced Bot Fabber",
       "to_build": "BugAdvancedBotFabber",
-      "instance_count": 1,
+      "instance_count": 2,
       "max_num_assisters": 15,
       "priority": 200,
       "builders": ["AdvancedHive"],
