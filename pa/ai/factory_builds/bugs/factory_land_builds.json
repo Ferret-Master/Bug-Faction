@@ -24,14 +24,23 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
-            "test_type": "NeedBasicBotFabber"
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BugFab"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Basic & Land",
+            "unit_type_string1": "Factory & Basic & Land",
+            "compare0": "<",
+            "value0": 1
           }
         ],
         [
@@ -40,14 +49,19 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "NeedBasicVehicleFabber"
+            "test_type": "AloneOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BugFab"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Basic & Land",
+            "unit_type_string1": "Factory & Basic & Land",
+            "compare0": "<",
+            "value0": 2
           }
         ]
       ]
@@ -726,14 +740,23 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
-            "test_type": "NeedAdvancedBotFabber"
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BugAdvancedBotFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Land",
+            "unit_type_string1": "Factory & Advanced & Land",
+            "compare0": "<",
+            "value0": 1
           }
         ],
         [
@@ -742,14 +765,23 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "AloneOnPlanet",
+            "boolean": true
           },
           {
-            "test_type": "NeedAdvancedVehicleFabber"
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BugAdvancedBotFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Land",
+            "unit_type_string1": "Factory & Advanced & Land",
+            "compare0": "<",
+            "value0": 2
           }
         ],
         [
