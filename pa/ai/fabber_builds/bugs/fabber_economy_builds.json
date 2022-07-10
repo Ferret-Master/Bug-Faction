@@ -94,7 +94,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "BugCommander",
+            "unit_type_string0": "Commander",
             "compare0": ">",
             "value0": 0
           }
@@ -175,7 +175,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "BugCommander",
+            "unit_type_string0": "Commander",
             "compare0": ">",
             "value0": 0
           }
@@ -312,7 +312,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "BugCommander",
+            "unit_type_string0": "Commander",
             "compare0": ">",
             "value0": 0
           }
@@ -378,7 +378,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "BugCommander",
+            "unit_type_string0": "Commander",
             "compare0": ">",
             "value0": 0
           },
@@ -405,7 +405,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "BugCommander",
+            "unit_type_string0": "Commander",
             "compare0": "<",
             "value0": 1
           },
