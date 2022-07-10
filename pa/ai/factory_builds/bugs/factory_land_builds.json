@@ -188,7 +188,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Bot & Basic) - Mobile - Construction",
+            "unit_type_string0": "(Bot & Basic) - Mobile - Construction - Structure",
             "compare0": "==",
             "value0": 0
           }
@@ -213,7 +213,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Bot & Basic) - Mobile - Construction",
+            "unit_type_string0": "(Bot & Basic) - Mobile - Construction - Structure",
             "compare0": "==",
             "value0": 0
           }
@@ -238,7 +238,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Bot & Basic) - FactoryBuild - Mobile",
+            "unit_type_string0": "(Bot & Basic) - Mobile - Construction - Structure",
             "compare0": ">",
             "value0": 0
           }
@@ -263,7 +263,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Bot & Basic) - FactoryBuild - Mobile",
+            "unit_type_string0": "(Bot & Basic) - Mobile - Construction - Structure",
             "compare0": ">",
             "value0": 0
           }
