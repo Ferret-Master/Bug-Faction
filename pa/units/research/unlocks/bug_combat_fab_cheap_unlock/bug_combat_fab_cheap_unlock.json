@@ -27,7 +27,6 @@
         "UNITTYPE_Construction",
         "UNITTYPE_Bot",
         "UNITTYPE_Basic",
-        "UNITTYPE_FactoryBuild",
         "UNITTYPE_Custom2"    
 
     ],
