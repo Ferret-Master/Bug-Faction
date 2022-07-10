@@ -14,14 +14,8 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "NeedBasicBotFabber"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BugFab"
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
           }
         ],
         [
@@ -30,8 +24,14 @@
             "boolean": false
           },
           {
-            "test_type": "MetMinBasicFabberCount",
-            "boolean": false
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "NeedBasicBotFabber"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugFab"
           }
         ],
         [
