@@ -1,0 +1,1429 @@
+{
+  "build_list": [
+    {
+      "name": "Bugs - Basic Air Defense - Mex",
+      "to_build": "BugBasicAATurret",
+      "instance_count": 1,
+      "shared_instance_count": "BasicAATurret",
+      "priority": 261,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyBugFabberBasic"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "DistFromMainBase",
+            "compare0": ">=",
+            "value0": 150
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugBasicAATurret"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "DistFromNearestEnemyThreat",
+            "compare0": "<=",
+            "value0": 200
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugBasicAATurret"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & MetalProduction",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & AirDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 100,
+            "count": 1
+          }
+        ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 35,
+          "value": 5
+        }
+      }
+    },
+    {
+      "name": "Bugs - Needle Turret - Mex",
+      "to_build": "NeedleTurret",
+      "instance_count": 1,
+      "shared_instance_count": "BasicLandDefense",
+      "priority": 261,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyBugFabberBasic"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "DistFromMainBase",
+            "compare0": ">=",
+            "value0": 150
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "NeedleTurret"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "DistFromNearestEnemyThreat",
+            "compare0": "<=",
+            "value0": 200
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "NeedleTurret"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & MetalProduction",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 100,
+            "count": 1
+          }
+        ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 35,
+          "value": 5
+        }
+      }
+    },
+    {
+      "name": "Bugs - Basic Air Defense",
+      "to_build": "BugBasicAATurret",
+      "instance_count": 1,
+      "shared_instance_count": "BasicAATurret",
+      "priority": 85,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyBugFabberBasic"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugBasicAATurret"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugBasicAATurret"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & AirDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bugs - Basic Air Defense - Threat",
+      "to_build": "BugBasicAATurret",
+      "instance_count": 1,
+      "shared_instance_count": "BasicAATurret",
+      "priority": 262,
+      "base_sort": "FromPerimeter",
+      "builders": ["BugCommander", "AnyBugFabberBasic"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1.0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugBasicAATurret"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & AirDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bugs - Needle Turret",
+      "to_build": "NeedleTurret",
+      "instance_count": 1,
+      "shared_instance_count": "BasicLandDefense",
+      "priority": 85,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyBugFabberBasic"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": false
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "NeedleTurret"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": false
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "NeedleTurret"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bugs - Needle Turret - Threat",
+      "to_build": "NeedleTurret",
+      "instance_count": 1,
+      "shared_instance_count": "BasicLandDefense",
+      "priority": 262,
+      "base_sort": "FromPerimeter",
+      "builders": ["BugCommander"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1.0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": false
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "NeedleTurret"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bugs - Small Spitter Turret",
+      "to_build": "SmallSpitterTurret",
+      "instance_count": 1,
+      "priority": 85,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyBugFabberBasic"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "SmallSpitterTurret"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "SmallSpitterTurret"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bugs - Small Spitter Turret - Threat",
+      "to_build": "SmallSpitterTurret",
+      "instance_count": 1,
+      "priority": 262,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyBugFabberBasic"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1.0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "SmallSpitterTurret"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bugs - Basic Artillery",
+      "to_build": "BugBasicArtillery",
+      "instance_count": 1,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "priority": 245,
+      "builders": ["AnyBugFabberBasic"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & Artillery",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Structure",
+            "string0": "Enemy",
+            "value0": 350,
+            "compare0": ">=",
+            "value1": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugBasicArtillery"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & Basic & Artillery",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bugs - Advanced Air Defense",
+      "to_build": "BugAdvancedAATurret",
+      "instance_count": 1,
+      "priority": 255,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & AirDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Air & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugAdvancedAATurret"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & AirDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Air & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugAdvancedAATurret"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & AirDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bugs - Advanced Air Defense - Threat",
+      "to_build": "BugAdvancedAATurret",
+      "instance_count": 1,
+      "priority": 379,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & AirDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1.0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Air & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugAdvancedAATurret"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & AirDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bugs - Beam Turret",
+      "to_build": "BeamTurret",
+      "instance_count": 1,
+      "priority": 255,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BeamTurret"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BeamTurret"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bugs - Beam Turret - Threat",
+      "to_build": "BeamTurret",
+      "instance_count": 1,
+      "priority": 379,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1.0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BeamTurret"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bugs - Umbrella",
+      "to_build": "BugUmbrella",
+      "instance_count": 1,
+      "priority": 378,
+      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugUmbrella"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (BugHalley | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugUmbrella"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugUmbrella"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "(Structure & OrbitalDefense) - Orbital",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 150,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bugs - Umbrella - Rush",
+      "to_build": "BugUmbrella",
+      "instance_count": 1,
+      "priority": 386,
+      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugUmbrella"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (BugHalley | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugUmbrella"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugUmbrella"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "(Structure & OrbitalDefense) - Orbital",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 150,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bugs - Anti Nuke Silo",
+      "to_build": "BugAntiNuke",
+      "instance_count": 1,
+      "shared_instance_count": "AntiNuke",
+      "priority": 380,
+      "builders": ["AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugAntiNuke"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1.75
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugAntiNuke"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugAntiNuke"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1.75
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugAntiNuke"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugAntiNuke"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1.75
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (BugHalley | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugAntiNuke"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 150,
+            "count": 3
+          },
+          {
+            "unit_type_string": "Structure & NukeDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 150,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bugs - Anti Nuke Silo - Rush",
+      "to_build": "BugAntiNuke",
+      "instance_count": 1,
+      "shared_instance_count": "AntiNuke",
+      "priority": 386,
+      "min_num_assisters": 5,
+      "max_num_assisters": 12,
+      "builders": ["AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugAntiNuke"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1.75
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugAntiNuke"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugAntiNuke"
+          },
+          {
+            "test_type": "HaveHadANukeEvent",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugAntiNuke"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugAntiNuke"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1.75
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (BugHalley | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugAntiNuke"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugAntiNuke"
+          },
+          {
+            "test_type": "HaveHadANukeEvent",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (BugHalley | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugAntiNuke"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 150,
+            "count": 3
+          },
+          {
+            "unit_type_string": "Structure & NukeDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 150,
+            "count": 1
+          }
+        ]
+      }
+    }
+  ]
+}

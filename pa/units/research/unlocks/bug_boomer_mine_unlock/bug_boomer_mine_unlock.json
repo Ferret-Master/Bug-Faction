@@ -24,10 +24,10 @@
 },
     "unit_types": [
     
+        "UNITTYPE_Bot",
         "UNITTYPE_Basic",
-        "UNITTYPE_Wall",
+        "UNITTYPE_SelfDestruct",
         "UNITTYPE_FactoryBuild",
-        "UNITTYPE_Mobile",
         "UNITTYPE_Custom2"
     
 

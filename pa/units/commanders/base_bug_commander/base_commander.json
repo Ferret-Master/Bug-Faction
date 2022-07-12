@@ -37,7 +37,8 @@
         "UNITTYPE_Offense",
         "UNITTYPE_Land",
         "UNITTYPE_Amphibious",
-        "UNITTYPE_NoBuild"
+        "UNITTYPE_NoBuild",
+        "UNITTYPE_Custom2"
     ],
     "command_caps": [
         "ORDER_Move",

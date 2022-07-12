@@ -1,0 +1,148 @@
+{
+  "build_list": [
+    {
+      "name": "Bugs - Nuke Silo",
+      "to_build": "BugNuke",
+      "instance_count": 1,
+      "shared_instance_count": "NukeSilo",
+      "priority": 360,
+      "builders": ["AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugNuke"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Nuke",
+            "compare0": "<",
+            "value0": 5
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugNuke"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2
+      }
+    },
+    {
+      "name": "Bugs - Nuke Silo - Alone",
+      "to_build": "BugNuke",
+      "instance_count": 1,
+      "shared_instance_count": "NukeSilo",
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "priority": 505,
+      "builders": ["AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugNuke"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Nuke",
+            "compare0": "<",
+            "value0": 10
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Construction - Orbital - NukeDefense - Nuke - SelfDestruct",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugNuke"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2
+      }
+    },
+    {
+      "name": "Bugs - Nuke Silo - No Antis",
+      "to_build": "BugNuke",
+      "instance_count": 1,
+      "shared_instance_count": "NukeSilo",
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "priority": 478,
+      "builders": ["AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Nuke",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Construction & Advanced",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugNuke"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "AntiNuke",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugNuke"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2
+      }
+    }
+  ]
+}

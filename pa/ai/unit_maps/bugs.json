@@ -1,0 +1,265 @@
+{
+  "unit_map": {
+    "BugCommander": {
+      "unit_types": "Commander & Custom2"
+    },
+    "AnyBugFabberAdvanced": {
+      "unit_types": "(Fabber & (Advanced | Debug) & Custom2) - Orbital"
+    },
+    "AnyBugFabberBasic": {
+      "unit_types": "(Fabber & (Basic | Debug) & Custom2) - Orbital"
+    },
+    "AnyBugFactoryAdvanced": {
+      "unit_types": "(Factory & Advanced) & Custom2"
+    },
+    "AnyBugFactoryAir": {
+      "unit_types": "(Factory & Air) & Custom2"
+    },
+    "AnyBugFactoryBasic": {
+      "unit_types": "(Factory & Basic) & Custom2"
+    },
+    "AnyBugFactoryBot": {
+      "unit_types": "(Factory & Bot) & Custom2"
+    },
+    "AnyBugFactoryNaval": {
+      "unit_types": "(Factory & Naval) & Custom2"
+    },
+    "AnyBugFactoryOrbital": {
+      "unit_types": "(Factory & Orbital) & Custom2 - Artillery"
+    },
+    "AnyBugFactoryVehicle": {
+      "unit_types": "(Factory & Tank) & Custom2"
+    },
+    "BugCatalyst": {
+      "spec_id": "/pa/units/structure/bug_catalyst/bug_catalyst.json"
+    },
+    "BugHalley": {
+      "spec_id": "/pa/units/structure/bug_halley/bug_halley.json"
+    },
+    "BugRagnarok": {
+      "spec_id": "/pa/units/structure/bug_rag/bug_rag.json"
+    },
+    "BugNuke": {
+      "spec_id": "/pa/units/structure/bug_nuke/bug_nuke.json"
+    },
+    "BugAntiNuke": {
+      "spec_id": "/pa/units/structure/bug_anti_nuke/bug_anti_nuke.json"
+    },
+    "BoomerEgg": {
+      "spec_id": "/pa/units/structure/bug_mine/bug_mine.json"
+    },
+    "BigBoomerEgg": {
+      "spec_id": "/pa/units/structure/bug_mine_big/bug_mine_big.json"
+    },
+    "BugUmbrella": {
+      "spec_id": "/pa/units/structure/bug_anti_orbital/bug_anti_orbital.json"
+    },
+    "BugBasicAATurret": {
+      "spec_id": "/pa/units/structure/bug_aa_small/bug_aa_small.json"
+    },
+    "BugAdvancedAATurret": {
+      "spec_id": "/pa/units/structure/bug_aa_large/bug_aa_large.json"
+    },
+    "BugAdvancedRadar": {
+      "spec_id": "/pa/units/structure/bug_radar_advanced/bug_radar_advanced.json"
+    },
+    "BugBasicRadar": {
+      "spec_id": "/pa/units/structure/bug_radar/bug_radar.json"
+    },
+    "BugBasicEnergyPlant": {
+      "spec_id": "/pa/units/structure/bug_basic_energy/bug_basic_energy.json"
+    },
+    "BugAdvancedEnergyPlant": {
+      "spec_id": "/pa/units/structure/bug_advanced_energy/bug_advanced_energy.json"
+    },
+    "BugBasicMetalExtractor": {
+      "spec_id": "/pa/units/structure/bug_basic_extractor/bug_basic_extractor.json"
+    },
+    "BugAdvancedMetalExtractor": {
+      "spec_id": "/pa/units/structure/bug_advanced_extractor/bug_advanced_extractor.json"
+    },
+    "SmallSpitterTurret": {
+      "spec_id": "/pa/units/structure/bug_turret_small/bug_turret_small.json"
+    },
+    "LargeSpitterTurret": {
+      "spec_id": "/pa/units/structure/bug_turret_large/bug_turret_large.json"
+    },
+    "AcidTurret": {
+      "spec_id": "/pa/units/structure/bug_turret_acid/bug_turret_acid.json"
+    },
+    "NeedleTurret": {
+      "spec_id": "/pa/units/structure/bug_turret_needle/bug_turret_needle.json"
+    },
+    "BeamTurret": {
+      "spec_id": "/pa/units/structure/bug_turret_spray/bug_turret_spray.json"
+    },
+    "AdvancedHive": {
+      "spec_id": "/pa/units/structure/advanced_hive/advanced_hive.json"
+    },
+    "BasicHive": {
+      "spec_id": "/pa/units/structure/basic_hive/basic_hive.json"
+    },
+    "SwarmHive": {
+      "spec_id": "/pa/units/structure/bug_swarm_hive/bug_swarm_hive.json"
+    },
+    "BugOrbitalLauncher": {
+      "spec_id": "/pa/units/structure/bug_orbital_launcher/bug_orbital_launcher.json"
+    },
+    "BasicAirHive": {
+      "spec_id": "/pa/units/structure/basic_air_hive/basic_air_hive.json"
+    },
+    "AdvancedAirHive": {
+      "spec_id": "/pa/units/structure/advanced_air_hive/advanced_air_hive.json"
+    },
+    "BasicNavalHive": {
+      "spec_id": "/pa/units/structure/basic_naval_hive/basic_naval_hive.json"
+    },
+    "BugTeleporter": {
+      "spec_id": "/pa/units/structure/bug_teleporter/bug_teleporter.json"
+    },
+    "BugBasicArtillery": {
+      "spec_id": "/pa/units/structure/bug_arty_small/bug_arty_small.json"
+    },
+    "BugAdvancedArtillery": {
+      "spec_id": "/pa/units/structure/bug_arty_large/bug_arty_large.json"
+    },
+    "BugStorage": {
+      "spec_id": "/pa/units/structure/bug_combined_storage/bug_combined_storage.json"
+    },
+    "BugBasicEvolutionChamber": {
+      "spec_id": "/pa/units/research/basic_research_station/basic_research_station.json"
+    },
+    "BugAdvancedEvolutionChamber": {
+      "spec_id": "/pa/units/research/advanced_research_station/advanced_research_station.json"
+    },
+    "StealthRipperUnlock": {
+      "spec_id": "/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json"
+    },
+    "BoomerMineUnlock": {
+      "spec_id": "/pa/units/research/unlocks/bug_boomer_mine_unlock/bug_boomer_mine_unlock.json"
+    },
+    "WarriorGruntUnlock": {
+      "spec_id": "/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json"
+    },
+    "CrusherUnlock": {
+      "spec_id": "/pa/units/research/unlocks/bug_crusher_unlock/bug_crusher_unlock.json"
+    },
+    "HydraUnlock": {
+      "spec_id": "/pa/units/research/unlocks/bug_hydra_unlock/bug_hydra_unlock.json"
+    },
+    "CheapCombatFabUnlock": {
+      "spec_id": "/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/bug_combat_fab_cheap_unlock.json"
+    },
+    "FastNeedlerUnlock": {
+      "spec_id": "/pa/units/research/unlocks/bug_needler_fast_unlock/bug_needler_fast_unlock.json"
+    },
+    "BugBasicFighter": {
+      "spec_id": "/pa/units/air/bug_fighter/bug_fighter.json"
+    },
+    "BugAdvancedFighter": {
+      "spec_id": "/pa/units/air/bug_fighter_adv/bug_fighter_adv.json"
+    },
+    "Medusa": {
+      "spec_id": "/pa/units/air/bug_bomber/bug_bomber.json"
+    },
+    "Stheno": {
+      "spec_id": "/pa/units/air/bug_bomber_adv/bug_bomber_adv.json"
+    },
+    "BugBasicAirScout": {
+      "spec_id": "/pa/units/air/bug_air_scout/bug_air_scout.json"
+    },
+    "BugBasicAirFabber": {
+      "spec_id": "/pa/units/air/bug_air_fab/bug_air_fab.json"
+    },
+    "BugAdvancedAirFabber": {
+      "spec_id": "/pa/units/air/bug_air_fab_adv/bug_air_fab_adv.json"
+    },
+    "Harpy": {
+      "spec_id": "/pa/units/air/bug_harpy/bug_harpy.json"
+    },
+    "Basilisk": {
+      "spec_id": "/pa/units/air/bug_basilisk/bug_basilisk.json"
+    },
+    "BugAirTitan": {
+      "spec_id": "/pa/units/air/bug_air_titan/bug_air_titan.json"
+    },
+    "Forager": {
+      "spec_id": "/pa/units/land/bug_combat_fab/bug_combat_fab.json"
+    },
+    "CheapForager": {
+      "spec_id": "/pa/units/land/bug_combat_fab/bug_combat_fab_cheap.json"
+    },
+    "Crusher": {
+      "spec_id": "/pa/units/land/bug_crusher/bug_crusher.json"
+    },
+    "Hydra": {
+      "spec_id": "/pa/units/land/bug_hydra/bug_hydra.json"
+    },
+    "Bombardier": {
+      "spec_id": "/pa/units/land/bug_gren/bug_gren.json"
+    },
+    "BugFab": {
+      "spec_id": "/pa/units/land/bug_bot_fab/bug_bot_fab.json"
+    },
+    "Zapper": {
+      "spec_id": "/pa/units/land/bug_aa/bug_aa.json"
+    },
+    "Tempest": {
+      "spec_id": "/pa/units/land/bug_aa_big/bug_aa_big.json"
+    },
+    "BugAdvancedBotFabber": {
+      "spec_id": "/pa/units/land/bug_bot_fab_advanced/bug_bot_fab_advanced.json"
+    },
+    "Boomer": {
+      "spec_id": "/pa/units/land/bug_boomer/bug_boomer.json"
+    },
+    "MineBoomer": {
+      "spec_id": "/pa/units/land/bug_boomer/bug_boomer_r.json"
+    },
+    "AlphaBoomer": {
+      "spec_id": "/pa/units/land/bug_boomer_big/bug_boomer_big.json"
+    },
+    "Matriarch": {
+      "spec_id": "/pa/units/land/bug_matriarch/bug_matriarch.json"
+    },
+    "StealthRipper": {
+      "spec_id": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.json"
+    },
+    "Ripper": {
+      "spec_id": "/pa/units/land/bug_ripper/bug_ripper.json"
+    },
+    "Runner": {
+      "spec_id": "/pa/units/land/bug_runner/bug_runner.json"
+    },
+    "Leech": {
+      "spec_id": "/pa/units/land/bug_leech/bug_leech.json"
+    },
+    "Scorcher": {
+      "spec_id": "/pa/units/land/bug_scorcher/bug_scorcher.json"
+    },
+    "Nug": {
+      "spec_id": "/pa/units/land/bug_titan/bug_titan.json"
+    },
+    "Rak": {
+      "spec_id": "/pa/units/land/bug_laser_spider/bug_laser_spider.json"
+    },
+    "WarriorGrunt": {
+      "spec_id": "/pa/units/land/bug_grunt_big/bug_grunt_big.json"
+    },
+    "Needler": {
+      "spec_id": "/pa/units/land/bug_needler/bug_needler.json"
+    },
+    "FastNeedler": {
+      "spec_id": "/pa/units/land/bug_needler/bug_needler_fast.json"
+    },
+    "Manticore": {
+      "spec_id": "/pa/units/land/bug_manticore/bug_manticore.json"
+    },
+    "BugSniper": {
+      "spec_id": "/pa/units/land/bug_sniper/bug_sniper.json"
+    },
+    "Grunt": {
+      "spec_id": "/pa/units/land/bug_grunt/bug_grunt.json"
+    }
+  }
+}

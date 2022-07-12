@@ -231,7 +231,8 @@
     "unit_types": [
       "UNITTYPE_Factory",
       "UNITTYPE_Construction",
-      "UNITTYPE_Air",
+      "UNITTYPE_Bot",
+      "UNITTYPE_Tank",
       "UNITTYPE_Structure",
       "UNITTYPE_Advanced",
       "UNITTYPE_Important",

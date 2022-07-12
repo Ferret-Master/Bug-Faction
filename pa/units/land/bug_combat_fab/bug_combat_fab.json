@@ -143,12 +143,10 @@
     },
     "unit_types": [
       "UNITTYPE_Construction",
-      "UNITTYPE_Bot",
+      "UNITTYPE_Tank",
       "UNITTYPE_Mobile",
       "UNITTYPE_Land",
       "UNITTYPE_Basic",
-      
-      "UNITTYPE_CannonBuildable",
       "UNITTYPE_Custom2"
     ]
   }

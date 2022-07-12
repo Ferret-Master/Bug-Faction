@@ -1,0 +1,151 @@
+{
+  "build_list": [
+    {
+      "name": "Bugs - Stealth Ripper Unlock",
+      "to_build": "StealthRipperUnlock",
+      "instance_count": 1,
+      "priority": 97,
+      "max_num_assisters": 10,
+      "builders": ["BugBasicEvolutionChamber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic) - Mobile - Heavy - Construction - Structure",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Warrior Grunt Unlock",
+      "to_build": "WarriorGruntUnlock",
+      "instance_count": 1,
+      "priority": 97,
+      "max_num_assisters": 10,
+      "builders": ["BugBasicEvolutionChamber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic & Heavy) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Fast Needler Unlock",
+      "to_build": "FastNeedlerUnlock",
+      "instance_count": 1,
+      "priority": 97,
+      "max_num_assisters": 10,
+      "builders": ["BugBasicEvolutionChamber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Tank & Basic) - Mobile - Structure",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Cheap Combat Fabber Unlock",
+      "to_build": "CheapCombatFabUnlock",
+      "instance_count": 1,
+      "priority": 97,
+      "max_num_assisters": 10,
+      "builders": ["BugBasicEvolutionChamber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic & Construction) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Bug Boomer Mine Unlock",
+      "to_build": "BoomerMineUnlock",
+      "instance_count": 1,
+      "priority": 0,
+      "max_num_assisters": 10,
+      "builders": ["BugBasicEvolutionChamber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic & SelfDestruct) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Crusher Unlock",
+      "to_build": "CrusherUnlock",
+      "instance_count": 1,
+      "priority": 199,
+      "max_num_assisters": 15,
+      "builders": ["BugAdvancedEvolutionChamber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Advanced & Heavy) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Hydra Unlock",
+      "to_build": "HydraUnlock",
+      "instance_count": 1,
+      "priority": 199,
+      "max_num_assisters": 15,
+      "builders": ["BugAdvancedEvolutionChamber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Advanced & Artillery) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    }
+  ]
+}

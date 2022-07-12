@@ -137,7 +137,7 @@
     ],
     "spawn_unit_on_death": "/pa/units/land/bug_matriarch/bug_matriarch_death_unit.json",
     "unit_types": [
-      "UNITTYPE_Bot",
+      "UNITTYPE_Tank",
       "UNITTYPE_Mobile",
       "UNITTYPE_Offense",
       "UNITTYPE_Artillery",

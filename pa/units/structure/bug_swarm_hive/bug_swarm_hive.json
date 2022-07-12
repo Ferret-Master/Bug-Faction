@@ -166,7 +166,7 @@
       "UNITTYPE_Factory",
       "UNITTYPE_Construction",
       "UNITTYPE_Land",
-      "UNITTYPE_Air",
+      "UNITTYPE_Bot",
       "UNITTYPE_Structure",
       "UNITTYPE_Basic",
       "UNITTYPE_CmdBuild",

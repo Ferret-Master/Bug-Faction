@@ -99,13 +99,12 @@
       "size": 1
     },
     "unit_types": [
-      "UNITTYPE_Bot",
+      "UNITTYPE_Tank",
       "UNITTYPE_Mobile",
       "UNITTYPE_AirDefense",
       "UNITTYPE_Land",
       "UNITTYPE_Basic",
       "UNITTYPE_FactoryBuild",
-      "UNITTYPE_CannonBuildable",
       "UNITTYPE_Offense",
       "UNITTYPE_Custom2"
     ]

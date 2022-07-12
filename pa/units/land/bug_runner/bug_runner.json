@@ -123,10 +123,9 @@
     "size": 1
   },
   "unit_types": [
-    "UNITTYPE_Bot",
+    "UNITTYPE_Tank",
     "UNITTYPE_Mobile",
-    "UNITTYPE_Heavy",
-    "UNITTYPE_Offense",
+    "UNITTYPE_Scout",
     "UNITTYPE_Land",
     "UNITTYPE_Basic",
     "UNITTYPE_Custom2"

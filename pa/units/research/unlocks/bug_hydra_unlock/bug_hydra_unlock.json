@@ -24,12 +24,11 @@
 },
     "unit_types": [
     
+        "UNITTYPE_Bot",
+        "UNITTYPE_Artillery",
         "UNITTYPE_Advanced",
-        "UNITTYPE_Wall",
         "UNITTYPE_FactoryBuild",
-        "UNITTYPE_Mobile",
         "UNITTYPE_Custom2"
-    
 
     ],
     "recon": {

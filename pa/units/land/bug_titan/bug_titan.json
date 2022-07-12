@@ -111,7 +111,7 @@
         "size": 1
     },
     "unit_types": [
-        "UNITTYPE_Bot",
+        "UNITTYPE_Tank",
         "UNITTYPE_Mobile",
         "UNITTYPE_Heavy",
         "UNITTYPE_Offense",

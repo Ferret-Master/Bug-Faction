@@ -1,0 +1,330 @@
+{
+  "build_list": [
+    {
+      "name": "Bugs - Basic Radar",
+      "to_build": "BugBasicRadar",
+      "instance_count": 1,
+      "shared_instance_count": "BasicRadar",
+      "priority": 90,
+      "builders": ["AnyBugFabberBasic"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Recon & Advanced - (Orbital | Important)) | (Recon & (Orbital | Important) - Structure)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Land & Structure & Recon & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugBasicRadar"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Structure & Recon & (Orbital | Important)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Structure & Recon & Basic",
+            "string0": "Ally",
+            "value0": 200,
+            "compare0": "<",
+            "value1": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugBasicRadar"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bugs - Basic Radar - Need for Ranged",
+      "to_build": "BugBasicRadar",
+      "instance_count": 1,
+      "shared_instance_count": "BasicRadar",
+      "priority": 246,
+      "builders": ["AnyBugFabberBasic"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Recon & Advanced - (Orbital | Important)) | (Recon & (Orbital | Important) - Structure)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Land & Structure & Recon & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Artillery | Tactical)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugBasicRadar"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Structure & Recon & (Orbital | Important)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Structure & Recon & Basic",
+            "string0": "Ally",
+            "value0": 200,
+            "compare0": "<",
+            "value1": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugBasicRadar"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bugs - Basic Radar - Have none",
+      "to_build": "BugBasicRadar",
+      "instance_count": 1,
+      "shared_instance_count": "BasicRadar",
+      "priority": 605,
+      "builders": ["AnyBugFabberBasic"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction) - (Orbital | Important) - NukeDefense - Nuke - SelfDestruct",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Recon & Structure - (Orbital | Important)) | (Recon & (Orbital | Important) - Structure)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugBasicRadar"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Structure & Recon & (Orbital | Important)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugBasicRadar"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bugs - Advanced Radar",
+      "to_build": "BugAdvancedRadar",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedRadar",
+      "priority": 91,
+      "builders": ["AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugAdvancedRadar"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Structure & Recon & (Orbital | Important)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "string0": "Ally",
+            "value0": 350,
+            "compare0": "<",
+            "value1": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugAdvancedRadar"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bugs - Advanced Radar - Need for Ranged",
+      "to_build": "BugAdvancedRadar",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedRadar",
+      "priority": 247,
+      "builders": ["AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugAdvancedRadar"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Artillery | Tactical)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Structure & Recon & (Orbital | Important)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "string0": "Ally",
+            "value0": 350,
+            "compare0": "<",
+            "value1": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugAdvancedRadar"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bugs - Advanced Radar - Have none",
+      "to_build": "BugAdvancedRadar",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedRadar",
+      "priority": 265,
+      "builders": ["AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Recon & Structure - (Orbital | Important)) | (Recon & (Orbital | Important) - Structure)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugAdvancedRadar"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Structure & Recon & (Orbital | Important)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugAdvancedRadar"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    }
+  ]
+}

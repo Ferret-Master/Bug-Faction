@@ -1,0 +1,1098 @@
+{
+  "build_list": [
+    {
+      "name": "Bugs - Basic Bot Fabber",
+      "to_build": "BugFab",
+      "instance_count": 2,
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": ["BasicHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "NeedBasicBotFabber"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugFab"
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "NeedBasicVehicleFabber"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicVehicleFabber"
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Runner - Intel",
+      "to_build": "Runner",
+      "instance_count": 1,
+      "shared_instance_count": "LandScout",
+      "priority": 98,
+      "builders": ["SwarmHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Land & Scout & Mobile",
+            "compare0": "<",
+            "value0": 150
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Land & Scout & Mobile",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Land & Scout & Mobile",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Runner",
+      "to_build": "Runner",
+      "instance_count": 1,
+      "shared_instance_count": "LandScout",
+      "priority": 97,
+      "builders": ["SwarmHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Scout & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.05
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Scout & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.05
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Ripper",
+      "to_build": "Ripper",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["SwarmHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic) - Mobile - Heavy - Construction - Structure",
+            "compare0": "==",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic) - Mobile - Heavy - Construction - Structure",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Stealth Ripper",
+      "to_build": "StealthRipper",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["SwarmHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic) - Mobile - Heavy - Construction - Structure",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic) - Mobile - Heavy - Construction - Structure",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Boomer",
+      "to_build": "Boomer",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["SwarmHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & SelfDestruct & Mobile",
+            "unit_type_string1": "((Tank | Bot) & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & SelfDestruct & Mobil",
+            "unit_type_string1": "((Tank | Bot) & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Forager",
+      "to_build": "Forager",
+      "instance_count": 1,
+      "priority": 97,
+      "builders": ["SwarmHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "((Tank | Bot) & Mobile & Construction) - Fabber",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "((Tank | Bot) & Mobile & Construction) - Fabber",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Bombardier",
+      "to_build": "Bombardier",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["BasicHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical) & Offense & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.35
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical) & Offense & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.35
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Needler",
+      "to_build": "Needler",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["BasicHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Grunt",
+      "to_build": "Grunt",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["BasicHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Heavy & Offense & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.5
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic & Heavy) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Heavy & Offense & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.5
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic & Heavy) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Warrior Grunt",
+      "to_build": "WarriorGrunt",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["BasicHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Heavy & Offense & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.5
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic & Heavy) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Heavy & Offense & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.5
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic & Heavy) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Zapper",
+      "to_build": "Zapper",
+      "instance_count": 1,
+      "priority": 97,
+      "builders": ["BasicHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & AirDefense & Offense & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1.0
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & AirDefense & Offense & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.25
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1.0
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & AirDefense & Offense & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Advanced Bot Fabber",
+      "to_build": "BugAdvancedBotFabber",
+      "instance_count": 2,
+      "max_num_assisters": 15,
+      "priority": 200,
+      "builders": ["AdvancedHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "NeedAdvancedBotFabber"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedBotFabber"
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "NeedAdvancedVehicleFabber"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedVehicleFabber"
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Advanced - Orbital",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Manticore",
+      "to_build": "Manticore",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": ["AdvancedHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Bug Sniper",
+      "to_build": "BugSniper",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": ["AdvancedHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical) & Offense & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.35
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical) & Offense & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.35
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Hydra",
+      "to_build": "Hydra",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": ["AdvancedHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical) & Offense & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.35
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Advanced & Artillery) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical) & Offense & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.35
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Advanced & Artillery) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Scorcher",
+      "to_build": "Scorcher",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": ["AdvancedHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Crusher",
+      "to_build": "Crusher",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": ["AdvancedHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Heavy & Offense & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.5
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Advanced & Heavy) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Heavy & Offense & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.5
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Advanced & Heavy) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Alpha Boomer",
+      "to_build": "AlphaBoomer",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["AdvancedHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & SelfDestruct & Offense & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & SelfDestruct & Offense & Mobile",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    }
+  ]
+}
