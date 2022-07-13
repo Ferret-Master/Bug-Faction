@@ -3,7 +3,30 @@
     {
       "name": "Bugs - Air Scout Platoon",
       "to_build": "Bugs_Air_Scout",
+      "shared_instance_count": "AirScout",
       "instance_count": 1,
+      "priority": 200,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Basic & Mobile & (Fighter | Gunship)",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ]
+      ],
+      "task_type": "Scout"
+    },
+    {
+      "name": "Bugs - Air Scout Platoon - Additional",
+      "to_build": "Bugs_Air_Scout",
+      "shared_instance_count": "AirScout",
+      "instance_count": 2,
       "priority": 100,
       "build_conditions": [
         [
