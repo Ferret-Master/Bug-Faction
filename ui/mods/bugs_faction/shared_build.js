@@ -2,7 +2,7 @@ var newBuildScenario = {
 
      //factorys
      "/pa/units/structure/basic_hive/basic_hive.json": ["bug_factory", 16, {row: 2, column: 4}],
-     "/pa/units/structure/bug_swarm_hive/bug_swarm_hive.json": ["bug_factory", 16, {row: 2, column: 5}],
+     "/pa/units/structure/bug_swarm_hive/bug_swarm_hive.json": ["bug_factory", 16, {row: 2, column: 3}],
      "/pa/units/structure/advanced_hive/advanced_hive.json": ["bug_factory", 10, {row: 1, column: 4}],
      "/pa/units/research/basic_research_station/basic_research_station.json": ["bug_factory", 0, {row: 0, column: 0}],
      "/pa/units/research/advanced_research_station/advanced_research_station.json": ["bug_factory", 0, {row: 0, column: 1}],
@@ -24,7 +24,13 @@ var newBuildScenario = {
     "/pa/units/structure/bug_rag/bug_rag.json": ["bug_utility", 0, {row: 0, column: 0}],
     "/pa/units/structure/bug_catalyst/bug_catalyst.json": ["bug_utility", 1, {row: 0, column: 1}],
     
+    //mines
+    "/pa/units/structure/bug_mine/bug_mine.json": ["bug_utility", 14, {row: 2, column: 0}],
+    "/pa/units/structure/bug_mine_big/bug_mine_big.json": ["bug_utility", 15, {row: 1, column: 0}],
+
     //defenses
+    "/pa/units/structure/bug_basic_torp/bug_basic_torp.json": ["bug_combat", 6, {row: 2, column: 3}],
+    "/pa/units/structure/bug_advanced_torp/bug_advanced_torp.json": ["bug_combat", 6, {row: 1, column: 3}],
     "/pa/units/structure/bug_turret_small/bug_turret_small.json": ["bug_combat", 6, {row: 1, column: 0}],
     //"/pa/units/structure/bug_turret_large/bug_turret_large.json": ["bug_combat", 6, {row: 0, column: 0}],
     "/pa/units/structure/bug_turret_spray/bug_turret_spray.json": ["bug_combat", 6, {row: 0, column: 1}],
@@ -95,9 +101,7 @@ var newBuildScenario = {
     "/pa/units/air/bug_air_titan/bug_air_titan.json": ["bug_factory", 2, {row: 0, column: 2}],
     "/pa/units/land/bug_matriarch/bug_matriarch.json": ["bug_factory", 3, {row: 1, column: 1}],
     "/pa/units/land/bug_laser_spider/bug_laser_spider.json": ["bug_factory", 3, {row: 1, column:0}],
-    //ammo
-    "/pa/units/structure/bug_mine/bug_mine.json": ["bug_ammo", 14, {row: 2, column: 2}],
-    "/pa/units/structure/bug_mine_big/bug_mine_big.json": ["bug_ammo", 15, {row: 2, column: 3}],
+  
 }
 if (Build && Build.HotkeyModel && Build.HotkeyModel.SpecIdToGridMap) {
     _.extend(Build.HotkeyModel.SpecIdToGridMap, newBuildScenario);

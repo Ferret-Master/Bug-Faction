@@ -11,7 +11,7 @@ model.unitsToLock = ["/pa/units/land/bug_grunt_big/bug_grunt_big.json",
                     "/pa/units/land/bug_crusher/bug_crusher.json",
                     "/pa/units/land/bug_hydra/bug_hydra.json",
                     "/pa/units/land/bug_boomer/bug_boomer_r.json",
-                    "/pa/units/structures/bug_mine/bug_mine.json"
+                    "/pa/units/structure/bug_mine/bug_mine.json"
                     ];
 
 //tracks locked units
@@ -147,7 +147,10 @@ researchLoop = function(){
                         else{
                             console.log("replacing units")
                             for(var i = 0; i< pair[2].length;i++){
-                                if(pair[1][i] !== undefined){//matching replace
+                                if(pair[1][i] == pair[2][i] && pair[1][i] !== undefined){//needed for more unlocks combined with replace
+                                    api.Panel.message("build_bar", 'unlockUnit',pair[1][i])
+                                }
+                                else if(pair[1][i] !== undefined){//matching replace
                                  
                                     api.Panel.message("build_bar", 'replaceUnit',[[pair[2][i]],[pair[1][i]], pair[3]])
                                 }
