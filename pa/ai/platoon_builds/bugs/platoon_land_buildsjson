@@ -1,28 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Bugs - Air Scout Platoon",
-      "to_build": "Bugs_Air_Scout",
-      "instance_count": 1,
-      "priority": 100,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Basic & Mobile & (Fighter | Gunship)",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ]
-      ],
-      "task_type": "Scout"
-    },
-    {
-      "name": "Bugs - Land Scout Platoon - Constant Scouting",
+      "name": "Bugs - Land Scout Platoon",
       "to_build": "Vehicle_Scout",
       "instance_count": 1,
       "shared_instance_count": "VehicleScout",
@@ -40,11 +19,11 @@
       "task_type": "Scout"
     },
     {
-      "name": "Bugs - Land Scout Platoon",
+      "name": "Bugs - Land Scout Platoon - Additional",
       "to_build": "Vehicle_Scout",
       "instance_count": 5,
       "shared_instance_count": "VehicleScout",
-      "priority": 200,
+      "priority": 100,
       "build_conditions": [
         [
           {
