@@ -30,7 +30,7 @@
       "type": "Structure",
       "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
       "shape": "Box",
-      "radius": 0.1,
+      "radius": 0,
       "allow_pushing": false,
       "push_sideways": false,
       "allow_underground": false,

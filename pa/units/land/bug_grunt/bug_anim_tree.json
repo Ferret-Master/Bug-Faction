@@ -54,6 +54,19 @@
                                     "target": "firing",
                                     "duration": 0.5
                                 }
+                            },
+                            {
+                                "transition_forward": {
+                                    "func": "not_moving",
+                                    "target": "idle",
+                                    "anim_complete": true,
+                                    "duration": 0.2
+                                },
+                                "transition_reverse": {
+                                    "func": "not_moving",
+                                    "target": "idle",
+                                    "duration": 0.2
+                                }
                             }
                         ],
                         "reset": "playback_reset"
@@ -119,3 +132,4 @@
         }
     ]
 }
+

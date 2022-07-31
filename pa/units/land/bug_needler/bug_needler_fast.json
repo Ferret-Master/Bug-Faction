@@ -66,7 +66,7 @@
         "effect_scale": 0.6
       }
     },
-    "max_health": 90,
+    "max_health": 80,
     "mesh_bounds": [
       5,
       5,
@@ -74,8 +74,14 @@
     ],
     "model": {
       "filename": "/pa/units/land/bug_needler/bug_needler.papa",
-  
-      "walk_speed": 2
+      "animations": {
+      
+        "walk": "/pa/units/land/bug_needler/bug_needler_anim_walk.papa",
+        "idle": "/pa/units/land/bug_needler/bug_needler_anim_idle.papa"
+       
+      },
+      "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json",
+      "walk_speed": 16
     },
     "navigation": {
       "type": "amphibious",

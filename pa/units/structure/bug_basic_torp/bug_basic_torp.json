@@ -1,12 +1,13 @@
 {
-    "display_name": "Bug Torpedo Launcher",
-    "description": "Bug Torpedo Launcher - Basic anti-ship defense.",
+    "display_name": "!LOC:Bug Torpedo Launcher",
+    "description": "!LOC:Bug Torpedo Launcher - Basic anti-ship defense.",
     "TEMP_texelinfo": 10.4007,
     "area_build_separation": 18,
     "atrophy_cool_down": 15.0,
     "atrophy_rate": 10.0,
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "build_metal_cost": 350,
+    "si_name":"torpedo_launcher",
     "command_caps": [
       "ORDER_Attack"
     ],
@@ -95,11 +96,11 @@
     "unit_types": [
       "UNITTYPE_Structure",
       "UNITTYPE_Basic",
+      "UNITTYPE_Custom2",
       "UNITTYPE_Naval",
       "UNITTYPE_Defense",
       "UNITTYPE_CmdBuild",
       "UNITTYPE_FabBuild",
-      "UNITTYPE_CombatFabAdvBuild",
-      "UNITTYPE_Custom2"
+      "UNITTYPE_CombatFabAdvBuild"
     ]
   }
