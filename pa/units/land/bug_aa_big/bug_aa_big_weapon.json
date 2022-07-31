@@ -7,7 +7,7 @@
     "max_range": 100,
     "pitch_range": 60,
     "pitch_rate": 360,
-    "rate_of_fire": 4.0,
+    "rate_of_fire": 3.0,
     "spread_fire": true,
     "target_layers": [
       "WL_Air"
