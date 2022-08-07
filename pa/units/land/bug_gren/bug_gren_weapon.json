@@ -6,7 +6,7 @@
   
     "idle_aim_delay": 1.0,
     "max_firing_velocity": 200,
-    "max_range": 145,
+    "max_range": 135,
     "min_firing_velocity": 100,
     "pitch_range": 90,
     "pitch_rate": 360,
