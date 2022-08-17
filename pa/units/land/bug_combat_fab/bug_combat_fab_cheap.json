@@ -1,6 +1,6 @@
 {
     "display_name": "Forager",
-    "description": "Combat Fabricator - Repairs damaged units. Can detect mines. Can build teleporters. Can't help build other structures.",
+    "description": "Reclaim Fabricator, can only reclaim and has hover.",
     "TEMP_texelinfo": 5.11028,
     "si_name":"fabrication_bot_combat",
     "attachable": {
@@ -73,15 +73,15 @@
       }
     ],
     "guard_layer": "WL_LandHorizontal",
-    "max_health": 50,
+    "max_health": 30,
     "mesh_bounds": [
-      3.7,
-      4.5,
-      7
+      2.7,
+      3.5,
+      5
     ],
     "model": {
     
-      "filename": "/pa/units/land/bug_combat_fab/bug_fabricator_combat.papa"
+      "filename": "/pa/units/land/bug_combat_fab/bug_combat_fab_cheap.papa"
       
     },
     "navigation": {
@@ -90,7 +90,7 @@
       "group_preference": "back",
       "move_speed": 12,
       "turn_speed": 720,
-      "type": "land-small"
+      "type": "hover"
     },
     "physics": {
       "allow_pushing": true,
