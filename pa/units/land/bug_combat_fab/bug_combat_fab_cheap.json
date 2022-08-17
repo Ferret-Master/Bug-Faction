@@ -143,6 +143,7 @@
       "UNITTYPE_Construction",
       "UNITTYPE_Tank",
       "UNITTYPE_Mobile",
+      "UNITTYPE_Fabber",
       "UNITTYPE_Offense",
       "UNITTYPE_Land",
       "UNITTYPE_Basic",
