@@ -1,0 +1,33 @@
+{
+  "ammo_capacity": 3000,
+  "ammo_demand": 3000,
+  "ammo_id": "/pa/units/structure/bug_arty_large/bug_arty_large_ammo.json",
+  "ammo_per_shot": 3000,
+  "ammo_source": "energy",
+  "arc_type": "ARC_high",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_artillery_turret/base_artillery_turret.json",
+  "firing_arc_pitch": 2,
+  "firing_arc_yaw": 2,
+  "firing_standard_deviation": 6,
+  "max_firing_velocity": 10000,
+  "max_range": 500,
+  "min_firing_velocity": 10,
+  "pitch_range": 89,
+  "pitch_rate": 10,
+  "rate_of_fire": 1,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface",
+    "WL_Underwater"
+  ],
+  "target_priorities": [
+    "Commander",
+    "Titan & ( Land | Naval )",
+    "Artillery & Advanced & ( Land | Naval )",
+    "Nuke | NukeDefense"
+  ],
+  "yaw_range": 180,
+  "yaw_rate": 10
+}

@@ -1,6 +1,6 @@
 {
     "display_name": "Forager",
-    "description": "Combat Fabricator - Repairs damaged units. Can detect mines. Can build teleporters. Can't help build other structures.",
+    "description": "Reclaim Fabricator, can only reclaim and has hover.",
     "TEMP_texelinfo": 5.11028,
     "si_name":"fabrication_bot_combat",
     "attachable": {
@@ -38,7 +38,6 @@
     },
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "build_metal_cost": 100,
-    "buildable_types": "(CombatFabBuild & Custom2) - Custom1 - Custom3 - Custom4",
     "command_caps": [
       "ORDER_Move",
       "ORDER_Patrol",
@@ -58,7 +57,7 @@
     },
     "fx_offsets": [
       {
-        "bone": "socket_muzzle",
+        "bone": "bone_turret",
         "filename": "/pa/effects/specs/fab_combat_spray.pfx",
         "offset": [
           0,
@@ -71,18 +70,49 @@
           0
         ],
         "type": "build"
+      },
+      {
+        "bone": "bone_turret",
+        "filename": "/pa/units/land/bug_combat_fab/forager_hover.pfx",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "orientation": [
+          0,
+          0,
+          0
+        ],
+        "type": "idle"
+      },
+      {
+        "bone": "bone_turret",
+        "filename": "/pa/units/land/bug_combat_fab/forager_trail.pfx",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "orientation": [
+          0,
+          0,
+          0
+        ],
+        "type": "moving"
       }
     ],
     "guard_layer": "WL_LandHorizontal",
-    "max_health": 50,
+    "max_health": 30,
     "mesh_bounds": [
-      3.7,
-      4.5,
-      7
+      2.7,
+      3.5,
+      5
     ],
     "model": {
     
-      "filename": "/pa/units/land/bug_combat_fab/bug_fabricator_combat.papa"
+      "filename": "/pa/units/land/bug_combat_fab/bug_combat_fab_cheap.papa",
+      "animtree": "/pa/units/land/bug_combat_fab/bug_combat_fab_anim_tree.json"
       
     },
     "navigation": {
@@ -144,6 +174,7 @@
       "UNITTYPE_Construction",
       "UNITTYPE_Tank",
       "UNITTYPE_Mobile",
+      "UNITTYPE_Fabber",
       "UNITTYPE_Offense",
       "UNITTYPE_Land",
       "UNITTYPE_Basic",

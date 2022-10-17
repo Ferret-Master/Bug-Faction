@@ -27,6 +27,7 @@
       "UNITTYPE_Bot",
       "UNITTYPE_Basic",
       "UNITTYPE_FactoryBuild",
+      "UNITTYPE_RadarJammer",
       "UNITTYPE_Custom2"    
 
     ],

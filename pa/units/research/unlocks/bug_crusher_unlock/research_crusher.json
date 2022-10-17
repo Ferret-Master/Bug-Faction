@@ -1,8 +1,8 @@
 {
-    "display_name": "Boomer Unlock",
-    "si_name":"bug_evo_chamber",
-    "description": "Allows boomers to alt fire and make mines where they stand and vise versa",
-    "TEMP_texelinfo": 38.3936,
+  "display_name":"Crusher Unlock",
+  "description":"Unlocks the crusher, a durable aoe bug",
+  "si_name": "crusher_unlock",
+  "TEMP_texelinfo": 38.3936,
     "area_build_separation": 4,
     "atrophy_cool_down": 15.0,
     "atrophy_rate": 10.0,
@@ -18,7 +18,7 @@
     },
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "build_metal_cost": 1000,
-    "buildable_types": "(Basic & FactoryBuild & Wall & Custom2) - Custom1 - Custom3 - Custom4",
+    "buildable_types": "(Bot & Heavy & Advanced & FactoryBuild & Custom2) - Mobile- Custom1 - Custom3 - Custom4",
     "command_caps": [
     
     "ORDER_Move",
@@ -31,7 +31,7 @@
     
     ],
     "factory": {
-        "initial_build_spec": "/pa/units/land/nuke_launcher/nuke_launcher_ammo.json"
+        "initial_build_spec": "/pa/units/research/unlocks/bug_crusher_unlock/bug_crusher_unlock.json"
       },
     "death": {
       "decals": [
@@ -43,7 +43,7 @@
         "effect_scale": 1.0
       }
     },
-    "factory_cooldown_time": 5,
+    "factory_cooldown_time": 10000,
     "max_health": 6000,
     "mesh_bounds": [
       25.5,
@@ -53,7 +53,7 @@
     "model": {
      
     
-      "filename": "/pa/units/research/basic_research_station/research_station.papa"
+      "filename": "/pa/units/research/unlocks/base_unlock/big_research_bulb.papa"
      
     },
     "physics": {
@@ -102,10 +102,8 @@
       "UNITTYPE_Factory",
       "UNITTYPE_Construction",
       "UNITTYPE_Land",
-      "UNITTYPE_Bot",
       "UNITTYPE_Structure",
-      "UNITTYPE_Basic",
-      "UNITTYPE_FabBuild",
+      "UNITTYPE_Advanced",
       "UNITTYPE_FabAdvBuild",
       "UNITTYPE_Important",
       "UNITTYPE_Custom2"

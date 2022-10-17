@@ -4,8 +4,8 @@ var newBuildScenario = {
      "/pa/units/structure/basic_hive/basic_hive.json": ["bug_factory", 16, {row: 2, column: 4}],
      "/pa/units/structure/bug_swarm_hive/bug_swarm_hive.json": ["bug_factory", 16, {row: 2, column: 3}],
      "/pa/units/structure/advanced_hive/advanced_hive.json": ["bug_factory", 10, {row: 1, column: 4}],
-     "/pa/units/research/basic_research_station/basic_research_station.json": ["bug_factory", 0, {row: 0, column: 0}],
-     "/pa/units/research/advanced_research_station/advanced_research_station.json": ["bug_factory", 0, {row: 0, column: 1}],
+     //"/pa/units/research/basic_research_station/basic_research_station.json": ["bug_factory", 0, {row: 0, column: 0}],
+     //"/pa/units/research/advanced_research_station/advanced_research_station.json": ["bug_factory", 0, {row: 0, column: 1}],
      "/pa/units/structure/bug_orbital_launcher/bug_orbital_launcher.json": ["bug_factory", 12, {row: 2, column: 0}],
      "/pa/units/structure/basic_air_hive/basic_air_hive.json": ["bug_factory", 14, {row: 2, column: 2}],
      "/pa/units/structure/advanced_air_hive/advanced_air_hive.json": ["bug_factory", 14, {row: 1, column: 2}],
@@ -53,6 +53,17 @@ var newBuildScenario = {
     "/pa/units/research/unlocks/bug_needler_fast_unlock/bug_needler_fast_unlock.json":["bug_research",2,{row:2,column:2}],
     "/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/bug_combat_fab_cheap_unlock.json":["bug_research",2,{row:2,column:3}],
     "/pa/units/research/unlocks/bug_boomer_mine_unlock/bug_boomer_mine_unlock.json":["bug_research",2,{row:2,column:4}],
+
+    //researches
+    "/pa/units/research/unlocks/bug_ripper_stealth_unlock/research_ripper.json":["bug_research_2",2,{row:2,column:0}],
+    "/pa/units/research/unlocks/bug_grunt_big_unlock/research_grunt.json":["bug_research_2",2,{row:2,column:1}],
+    "/pa/units/research/unlocks/bug_needler_fast_unlock/research_needler.json":["bug_research_2",2,{row:2,column:2}],
+    "/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/research_combat_fab.json":["bug_research_2",2,{row:2,column:3}],
+    "/pa/units/research/unlocks/bug_boomer_mine_unlock/research_boomer_mine.json":["bug_research_2",2,{row:2,column:4}],
+
+    //t2 research
+    "/pa/units/research/unlocks/bug_crusher_unlock/research_crusher.json":["bug_research_2",2,{row:1,column:0}],
+    "/pa/units/research/unlocks/bug_hydra_unlock/research_hydra.json":["bug_research_2",2,{row:1,column:1}],
 
     //t2 unlocks
     "/pa/units/research/unlocks/bug_crusher_unlock/bug_crusher_unlock.json":["bug_adv_research",2,{row:2,column:0}],
