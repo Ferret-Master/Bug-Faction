@@ -44,6 +44,6 @@
     "com.pa.quitch.qAIModCompatibilityPatch"
   ],
   "companions": [
-    "com.pa.ferretmaster.bugs-client-dev"
+    "com.pa.ferretmaster.bugs-client"
   ]
 }
