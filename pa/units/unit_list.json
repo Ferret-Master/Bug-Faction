@@ -34,9 +34,19 @@
         "/pa/units/structure/bug_arty_small/bug_arty_small.json",
         "/pa/units/structure/bug_arty_large/bug_arty_large.json",
         "/pa/units/structure/bug_combined_storage/bug_combined_storage.json",
+        
+        "/pa/units/research/unlocks/base_unlock/base_research.json",
+        "/pa/units/research/unlocks/base_unlock/base_adv_research.json",
+        "/pa/units/research/unlocks/base_unlock/base_unlock.json",
 
-        "/pa/units/research/basic_research_station/basic_research_station.json",
-        "/pa/units/research/advanced_research_station/advanced_research_station.json",
+        "/pa/units/research/unlocks/bug_boomer_mine_unlock/research_boomer_mine.json",
+        "/pa/units/research/unlocks/bug_grunt_big_unlock/research_grunt.json",
+        "/pa/units/research/unlocks/bug_ripper_stealth_unlock/research_ripper.json",
+        "/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/research_combat_fab.json",
+        "/pa/units/research/unlocks/bug_needler_fast_unlock/research_needler.json",
+
+        "/pa/units/research/unlocks/bug_crusher_unlock/research_crusher.json",
+        "/pa/units/research/unlocks/bug_hydra_unlock/research_hydra.json",
 
         "/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json",
         "/pa/units/research/unlocks/bug_boomer_mine_unlock/bug_boomer_mine_unlock.json",

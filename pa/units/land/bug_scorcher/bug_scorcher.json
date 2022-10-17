@@ -77,7 +77,8 @@
     "filename": "/pa/units/land/bug_scorcher/scorcher.papa",
     "animations": {
         "walk": "/pa/units/land/bug_scorcher/scorcher_walk.papa",
-        "idle": "/pa/units/land/bug_scorcher/scorcher_idle.papa"
+        "idle": "/pa/units/land/bug_scorcher/scorcher_idle.papa",
+		"dead": "/pa/units/land/bug_scorcher/scorcher_dead.papa"
       },
       "animtree": "/pa/anim/anim_trees/bot_tesla_anim_tree.json",
       "walk_speed": 0.09

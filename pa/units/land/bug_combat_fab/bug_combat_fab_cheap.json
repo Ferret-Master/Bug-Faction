@@ -57,7 +57,7 @@
     },
     "fx_offsets": [
       {
-        "bone": "socket_muzzle",
+        "bone": "bone_turret",
         "filename": "/pa/effects/specs/fab_combat_spray.pfx",
         "offset": [
           0,
@@ -70,6 +70,36 @@
           0
         ],
         "type": "build"
+      },
+      {
+        "bone": "bone_turret",
+        "filename": "/pa/units/land/bug_combat_fab/forager_hover.pfx",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "orientation": [
+          0,
+          0,
+          0
+        ],
+        "type": "idle"
+      },
+      {
+        "bone": "bone_turret",
+        "filename": "/pa/units/land/bug_combat_fab/forager_trail.pfx",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "orientation": [
+          0,
+          0,
+          0
+        ],
+        "type": "moving"
       }
     ],
     "guard_layer": "WL_LandHorizontal",
@@ -81,7 +111,8 @@
     ],
     "model": {
     
-      "filename": "/pa/units/land/bug_combat_fab/bug_combat_fab_cheap.papa"
+      "filename": "/pa/units/land/bug_combat_fab/bug_combat_fab_cheap.papa",
+      "animtree": "/pa/units/land/bug_combat_fab/bug_combat_fab_anim_tree.json"
       
     },
     "navigation": {
@@ -90,7 +121,7 @@
       "group_preference": "back",
       "move_speed": 12,
       "turn_speed": 720,
-      "type": "hover"
+      "type": "land-small"
     },
     "physics": {
       "allow_pushing": true,

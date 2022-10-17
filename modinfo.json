@@ -4,9 +4,9 @@
   "display_name": "Bug Faction[WIP]",
   "description": "Adds a biological bugs faction",
   "author": "Ferretmaster, BillTheBlueBot, Anonemous2, Taiga, Quitch",
-  "version": "1.05",
-  "build": "115872",
-  "date": "2022-08-01",
+  "version": "1.06",
+  "build": "116400",
+  "date": "2022-10-17",
   "signature": "not yet implemented",
   "forum": "https://steamcommunity.com/app/386070/discussions/0/3413181885098188214/",
   "icon": "https://github.com/Ferret-Master/Bug-Faction/blob/main/bugs_icon.png?raw=true",
@@ -44,6 +44,6 @@
     "com.pa.quitch.qAIModCompatibilityPatch"
   ],
   "companions": [
-    "com.pa.ferretmaster.bugs-client"
+    "com.pa.ferretmaster.bugs-client-dev"
   ]
 }
