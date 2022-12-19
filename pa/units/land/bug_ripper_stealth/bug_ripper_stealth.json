@@ -58,6 +58,10 @@
       3
     ],
     "recon": {
+      "observable": {
+        "layer": "surface_and_air",
+        "ignore_radar": true
+      },
       "observer": {
         "items": [
           {
@@ -68,6 +72,7 @@
           }
         ]
       }
+    
     },
     "model": {
       "filename": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.papa",

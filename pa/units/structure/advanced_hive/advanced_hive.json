@@ -2,7 +2,7 @@
     "display_name": "Advanced Hive",
     "description": "Builds advanced bug units.",
     "TEMP_texelinfo": 62.1789,
-    "area_build_separation": 2,
+    "area_build_separation": 3,
     "atrophy_cool_down": 15.0,
     "atrophy_rate": 80.0,
     "audio": {
