@@ -1,0 +1,128 @@
+{
+    "Advanced Hive": {
+        "message": "Продвинутый Улей"
+    },
+    "Builds advanced bug units.": {
+        "message": "Выращивает продвинутых ходячих жуков."
+    },
+    "Basic Air Hive": {
+        "message": "Базовое Гнездо"
+    },
+    "Basic Manufacturing - Builds basic air units.": {
+        "message": "Высиживает базовых летающих жуков."
+    },
+    "Basic Hive": {
+        "message": "Базовый Улей"
+    },
+    "Builds basic bug units.": {
+        "message": "Выращивает базовых ходячих жуков"
+    },
+    "Bug Flak Cannon": {
+        "message": "Жучья Противоздушная Установка"
+    },
+    "Bug Galata Turret": {
+        "message": "Жучья Противовоздушная Турель"
+    },
+    "Advanced Energy Plant": {
+        "message": "Продвинутый Роевый Генератор"
+    },
+    "Bug Advanced Metal Extractor": {
+        "message": "Продвинутый Расщепитель Металла"
+    },
+    "Bug Advanced Torpedo Launcher": {
+        "message": "Жучья Продвинутая Торпедная Установка"
+    },
+    "Bug Torpedo Launcher - Advanced anti-ship defense.": {
+        "message": "Продвинутая система защиты от кораблей и подводных лодок."
+    },
+    "Bug Anti-Nuke Launcher": {
+        "message": "Жучья Противоядерная Установка"
+    },
+    "Bug Anti-Nuke - Builds advanced anti-nuclear missiles.": {
+        "message": "Строит продвинутые противоядерные ракеты."
+    },
+    "Bug Umbrella": {
+        "message": "Жучья Амбрелла"
+    },
+    "Bug Holkins": {
+        "message": "Жучий Холкинс"
+    },
+    "Bug Pelter": {
+        "message": "Жучий Пелтер"
+    },
+    "Bug Energy Plant": {
+        "message": "Роевый Генератор"
+    },
+    "Bug Metal Extractor": {
+        "message": "Расщепитель Металла"
+    },
+    "Bug Torpedo Launcher": {
+        "message": "Жучья Торпедная Установка"
+    },
+    "Bug Torpedo Launcher - Basic anti-ship defense.": {
+        "message": "Система защиты от кораблей и подводных лодок."
+    },
+    "Bug Storage": {
+        "message": "Жучье Хранилище"
+    },
+    "Bug Storage - Increases maximum metal and energy storage capacity.": {
+        "message": "Увеличивает максимальную вместимость металла и энергии."
+    },
+    "Boomer Egg": {
+        "message": "Яйцо Бумера"
+    },
+    "Boomer Egg - Detonates when enemy units are in proximity.": {
+        "message": "Взрывается при обнаружении врага в радиусе действия."
+    },
+    "Big Boomer Egg": {
+        "message": "Большое Яйцо Бумера"
+    },
+    "Bug Radar": {
+        "message": "Жучий Радар"
+    },
+    "Bug Advanced Radar": {
+        "message": "Продвинутый Жучий Радар"
+    },
+    "Swarm Hive": {
+        "message": "Кладка Роя"
+    },
+    "Builds basic cheap bug units, DOES NOT have a fabricator.": {
+        "message": "Выращивает дешевых и слабых жуков. Не имеет фабрикатора."
+    },
+    "Bug t3 Metal Extractor": {
+        "message": "Жучий Т3 Расщепитель Металла"
+    },
+    "Advanced Economy - Can be attached to existing extractors for a small amount of extra income.": {
+        "message": "Может присоединятся к установленным добытчикам металла для дополнительного прироста добычи."
+    },
+    "Bug Teleporter": {
+        "message": "Жучий Телепорт"
+    },
+    "Acid Turret": {
+        "message": "Кислотник"
+    },
+    "Acid Turret, shots leave behind acid puddles": {
+        "message": "Стреляет кислотными лужами."
+    },
+    "Large Spitter Turret": {
+        "message": "Большой Плеватель"
+    },
+    "Advanced anti land turret.": {
+        "message": "Продвинутая противоназемная турель."
+    },
+    "Needle Turret": {
+        "message": "Игла"
+    },
+    "Low range, high damage defense": {
+        "message": "Наносит высокий урон на небольшом расстоянии."
+    },
+    "Small Spitter Turret": {
+        "message": "Малый Плеватель"
+    },
+    "Basic anti land turret.": {
+        "message": "Базовая противоназемная турель."
+    },
+    "Beam Turret": {
+        "message": "Лучевик"
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "Advanced Evolution Chamber": {
+        "message": "Продвинутая Эволюционная Камера"
+    },
+    "Researches new high tier technology.": {
+        "message": "Вырабатывает новые продвинутые виды."
+    },
+    "Basic Evolution Chamber": {
+        "message": "Базовая Эволюционная Камера"
+    },
+    "Researches new technology.": {
+        "message": "Вырабатывает новые виды."
+    },
+    "Base adv research": {
+        "message": "Базовое Продвинутое Исследование"
+    },
+    "Base research": {
+        "message": "Базовое Исследование"
+    },
+
+
+    
+    "base unit unlock": {
+        "message": "базовая разблокировка юнита"
+    },
+    "unlocks a unit": {
+        "message": "разблокирует юнита"
+    },
+
+
+
+
+    "bug boomer mine unlock": {
+        "message": "Яйцо Бумера"
+    },
+    "Allows boomers to alt fire and make mines where they stand and vise versa": {
+        "message": "Позволяет Бумерам превращаться во взрывные яйца. Способность используется альтернативным огнем."
+    },
+    "Allows boomers to alt fire and make mines where they stand and vise versa In addition to unlocking mines for general use": {
+        "message": "Позволяет Бумерам превращаться во взрывные яйца. Способность используется альтернативным огнем."
+    },
+    "Cheap Combat Fab Unlock": {
+        "message": "Дешевый Боевой Фабрикатор"
+    },
+    "Makes the forager cost 50 less metal, is also smaller and has less hp": {
+        "message": "Снижает стоимость Фуражира на 50 металла. Снижает количество здоровья и уменьшает размер тела."
+    },
+    "Crusher Unlock": {
+        "message": "Крашер"
+    },
+    "Unlocks the crusher, a durable aoe bug": {
+        "message": "Позволяет выращивать Крушителя - крепкого жука с уроном по площади."
+    },
+    "Warrior Grunt Unlock": {
+        "message": "Боец Грунт"
+    },
+    "Replaces the the grunt with the warrior grunt, which has 100 more hp": {
+        "message": "Увеличивает количество здоровья Грунта на 100 единиц."
+    },
+    "Hydra Unlock": {
+        "message": "Гидра"
+    },
+    "Unlocks the hydra, a mobile artillery bug": {
+        "message": "Позволяет выращивать Гидру - мобильную артиллерию."
+    },
+    "Fast Needler Unlock": {
+        "message": "Резвый Нидлер"
+    },
+    "Raises the needler speed from 14 to 16": {
+        "message": "Увеличивает скорость Нидлера на 2 единицы."
+    },
+    "Stealth Ripper Unlock": {
+        "message": "Скрытный Рипер"
+    },
+    "Replaces the ripper with the stealth ripper, which is faster, has radar stealth, and more dps": {
+        "message": "Увеличивает скорость и урон, а также добавляет скрытность от радара Риперу."
+    }
+}
+    

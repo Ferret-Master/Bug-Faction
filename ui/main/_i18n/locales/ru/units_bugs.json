@@ -1,0 +1,159 @@
+{
+    "Basilisk": {
+        "message": "Басилиск"
+    },
+    "Medusa": {
+        "message": "Медуза"
+    },
+    "Acid Bomber - High damage over a wide area, leaves an acid puddle. Fragile and slow. Attacks land, sea and undersea targets.": {
+        "message": "Кислотный бомбардировщик. Наносит высокий урон по площади своим кислотным плевком. Медленный. Атакует наземные, морские и подводные цели."
+    },
+    "Stheno": {
+        "message": "Стено"
+    },
+    "Bug Fighter": {
+        "message": "Жучий Исстребитель"
+    },
+    "Bug Phoenix": {
+        "message": "Жучий Феникс"
+    },
+    "Bug Advanced Interplanetary Fighter - Stronger fighter. Can move between planets. Can only attack air targets.": {
+        "message": "Продвинутый межпланетный исстребитель. Атакует воздушные цели."
+    },
+    "Harpy": {
+        "message": "Гарпия"
+    },
+
+
+
+
+    "Zapper": {
+        "message": "Заппер"
+    },
+    "Tempest": {
+        "message": "Темпест"
+    },
+    "Flak Bug - Damage over a wide area. Only attacks air targets.": {
+        "message": "Противовоздушный жук большого радиуса поражения. Атакует только воздух."
+    },
+    "Boomer": {
+        "message": "Бумер"
+    },
+    "Bomb Bot - Self destructs to deal very heavy damage over a nearby area. Extremely fast.": {
+        "message": "Взрывается, нанося очень много урона по площади. Невероятно быстрый."
+    },
+    "Alpha Boomer": {
+        "message": "Альфа Бумер"
+    },
+    "Advanced self destruct bug - Self destructs to deal very heavy damage over a nearby area, also leaves behind a damaging puddle.Fast.": {
+        "message": "Взрывается, нанося очень много урона по площади и оставляя кислотную лужу. Достаточно быстрый."
+    },
+    "Bug Fab": {
+        "message": "Трутень"
+    },
+    "Basic fabricator, builds bug structures": {
+        "message": "Возводит базовые структуры жуков."
+    },
+    "Forager": {
+        "message": "Фуражир"
+    },
+    "Reclaim Fabricator, can only reclaim and has hover.": {
+        "message": "Умеет только собирать ресурсы. Парит."
+    },
+    "Crusher": {
+        "message": "Крашер"
+    },
+    "Seismic Bug - Heavily armored. Short range. Huge splash damage. Attacks land and sea targets.": {
+        "message": "Использует широкие сейсмические атаки с огромным уроном. Тяжело бронирован."
+    },
+    "Bombardier": {
+        "message": "Бомбардир"
+    },
+    "Fire Support - Medium range. Can fire over walls. Attacks land and sea targets.": {
+        "message": "Огневая поддержка. Может атаковать через препятствия."
+    },
+    "Grunt": {
+        "message": "Грунт"
+    },
+    "Armored Bug - Melee, heavily armored, expendable.": {
+        "message": "Бронированый жук. Наносит урон своей конечностью вблизи. Отличный юнит в роли пушечного мяса."
+    },
+    "Warrior Grunt": {
+        "message": "Боец Грунт"
+    },
+    "An an upgraded basic melee bug unit, tanky with aoe swipes": {
+        "message": "Улучшенная версия Грунта. Имеет урон по области."
+    },
+    "Hydra": {
+        "message": "Гидра"
+    },
+    "large burst fire artilllery bug - Fires in bursts at long range.": {
+        "message": "Стреляет большими залпами на далекое расстояние."
+    },
+    "Rak": {
+        "message": "Рэк"
+    },
+    "Demi Titan - long range beam weapon.": {
+        "message": "Полу-Титан с лучевым оружием дальнего действия."
+    },
+    "Manticore": {
+        "message": "Мантикора"
+    },
+    "High damage And Low Fire Rate Core Army Unit": {
+        "message": "Имеет высокий урон и низкую скорость стрельбы."
+    },
+    "Matriarch": {
+        "message": "Матриарх"
+    },
+    "Demi titan - Spawns waves of boomers. leaves acid and a boomer wave on death.": {
+        "message": "Полу-Титан. Создает полчища Бумеров при виде противника. После смерти оставляет кислотную лужу и кладку Бумеров."
+    },
+    "Needler": {
+        "message": "Нидлер"
+    },
+    "Short ranged, high damage": {
+        "message": "Стреляет на малом расстоянии, однако имеет высокий урон."
+    },
+    "Ripper": {
+        "message": "Рипер"
+    },
+    "Basic Bug -  Melee raider, fast, extremely cheap.": {
+        "message": "Примитивный жук. Атакует своими клешнями. Очень быстрый и невероятно дешевый."
+    },
+    "Stealth Ripper": {
+        "message": "Скрытный Рипер"
+    },
+    "stealth core melee unit": {
+        "message": "Улучшенный Рипер. Атакует своими клешнями. Очень быстрый и невероятно дешевый. Генерирует помехи своими новыми конечностями."
+    },
+    "Runner": {
+        "message": "Раннер"
+    },
+    "A speedy scout": {
+        "message": "Скоростной разведчик. Имеет большой радиус обзора."
+    },
+    "Scorcher": {
+        "message": "Скорчер"
+    },
+    "A strong bug that attacks with fire at mid range.": {
+        "message": "Сильный жук, атакующий огнем на среднем расстоянии."
+    },
+    "Bug Sniper": {
+        "message": "Жук Снайпер"
+    },
+    "bug sniper - Long range. medium damage. moderate rate of fire. Intercepts missiles. Attacks land, air and sea targets.": {
+        "message": "Использует удлиненную конечность как дальнобойное оружие. Устраняет ракеты. Атакует наземные, воздушные и морские цели."
+    },
+    "Nug": {
+        "message": "Наг"
+    },
+    "An Titan class melee bug unit, tanky with aoe stomps": {
+        "message": "Колоссальный Титан. Бъет по земле своими массивными конечностями, создавая мощную ударную волну вокруг себя. Очень живучий."
+    },
+    "Warrior": {
+        "message": "Варриор"
+    },
+    "An advanced melee bug unit, tanky with aoe swipes": {
+        "message": "Улучшенный жук ближнего боя с атаками по площади."
+    }
+}
