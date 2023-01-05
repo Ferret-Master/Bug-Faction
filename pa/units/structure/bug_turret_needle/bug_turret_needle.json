@@ -1,9 +1,9 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "unit_name": "Needle Turret",
-    "display_name": "Needle Turret",
+    "display_name": "!LOC:Needle Turret",
     "si_name": "laser_defense_single",
-    "description": "Low range, high damage defense",
+    "description": "!LOC:Low range, high damage defense",
     "max_health": 2000,
     "build_metal_cost": 250,
     "atrophy_rate": 7.5,

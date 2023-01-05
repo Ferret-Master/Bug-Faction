@@ -1,6 +1,6 @@
 {
-    "display_name": "Bug Storage",
-    "description": "Bug Storage - Increases maximum metal and energy storage capacity.",
+    "display_name": "!LOC:Bug Storage",
+    "description": "!LOC:Bug Storage - Increases maximum metal and energy storage capacity.",
     "TEMP_texelinfo": 21.4256,
     "area_build_type": "Line",
     "si_name":"bug_storage",

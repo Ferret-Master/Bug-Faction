@@ -1,5 +1,5 @@
 {
-    "display_name": "Boomer",
+    "display_name": "!LOC:Boomer",
     "description": "!LOC:Bomb Bot - Self destructs to deal very heavy damage over a nearby area. Extremely fast.",
     "si_name":"boomer",
     "TEMP_texelinfo": 6.38702,

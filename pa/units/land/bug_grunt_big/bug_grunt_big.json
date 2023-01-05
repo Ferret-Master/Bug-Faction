@@ -1,7 +1,7 @@
 
 {
-  "display_name": "Warrior Grunt",
-  "description": "An an upgraded basic melee bug unit, tanky with aoe swipes",
+  "display_name": "!LOC:Warrior Grunt",
+  "description": "!LOC:An an upgraded basic melee bug unit, tanky with aoe swipes",
   "si_name": "big_grunt",
   "TEMP_texelinfo": 4.07719,
   "attachable": {

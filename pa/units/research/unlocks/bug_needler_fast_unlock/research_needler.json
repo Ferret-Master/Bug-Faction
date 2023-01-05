@@ -1,6 +1,6 @@
 {
-  "display_name":"Fast Needler Unlock",
-    "description":"Raises the needler speed from 14 to 16",
+  "display_name":"!LOC:Fast Needler Unlock",
+    "description":"!LOC:Raises the needler speed from 14 to 16",
     "si_name":"bug_needler_unlock",
     "TEMP_texelinfo": 38.3936,
     "area_build_separation": 4,

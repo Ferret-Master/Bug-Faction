@@ -1,6 +1,6 @@
 {
-    "display_name": "Bug Fab",
-    "description": "Basic fabricator, builds bug structures",
+    "display_name": "!LOC:Bug Fab",
+    "description": "!LOC:Basic fabricator, builds bug structures",
     "TEMP_texelinfo": 5.11028,
     "si_name":"bug_fab",
     "attachable": {

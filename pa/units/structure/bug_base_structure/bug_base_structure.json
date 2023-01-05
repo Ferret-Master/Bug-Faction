@@ -1,6 +1,6 @@
 {
-    "display_name": "Base Bug Structure",
-    "description": "Base Bug Structure Description - If you're seeing this, something is wrong in your bot.",
+    "display_name": "!LOC:Base Bug Structure",
+    "description": "!LOC:Base Bug Structure Description - If you're seeing this, something is wrong in your bot.",
     "TEMP_texelinfo": 1.0,
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "unit_types": [

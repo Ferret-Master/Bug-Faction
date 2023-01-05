@@ -1,7 +1,7 @@
 
 {
-    "display_name": "Warrior",
-    "description": "An advanced melee bug unit, tanky with aoe swipes",
+    "display_name": "!LOC:Warrior",
+    "description": "!LOC:An advanced melee bug unit, tanky with aoe swipes",
     "si_name": "warrior",
     "TEMP_texelinfo": 4.07719,
     "attachable": {

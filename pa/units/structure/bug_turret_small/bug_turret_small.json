@@ -1,9 +1,9 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "unit_name": "Small spitter turret",
-    "display_name": "Small Spitter Turret",
+    "display_name": "!LOC:Small Spitter Turret",
     "si_name": "laser_defense",
-    "description": "Basic anti land turret.",
+    "description": "!LOC:Basic anti land turret.",
     "max_health": 2000,
     "build_metal_cost": 350,
     "atrophy_rate": 7.5,

@@ -1,5 +1,5 @@
 {
-    "display_name": "Advanced Air Hive",
+    "display_name": "!LOC:Advanced Air Hive",
     "description": "!LOC:Advanced Manufacturing - Builds basic and advanced air units.",
     "si_name":"air_factory_adv",
     "TEMP_texelinfo": 65.6074,

@@ -1,6 +1,6 @@
 {
-    "display_name": "Tempest",
-    "description": "Flak Bug - Damage over a wide area. Only attacks air targets.",
+    "display_name": "!LOC:Tempest",
+    "description": "!LOC:Flak Bug - Damage over a wide area. Only attacks air targets.",
     "si_name":"bug_adv_aa",
     "TEMP_texelinfo": 9.31488,
     "attachable": {

@@ -1,8 +1,8 @@
 {
     "unit_name": "Boomer Egg",
-    "display_name": "Boomer Egg",
+    "display_name": "!LOC:Boomer Egg",
     "si_name":"bug_boomer_egg",
-    "description": "Boomer Egg - Detonates when enemy units are in proximity.",
+    "description": "!LOC:Boomer Egg - Detonates when enemy units are in proximity.",
     "strategic_icon_priority": 3,
     "max_health": 5,
     "build_metal_cost": 45,

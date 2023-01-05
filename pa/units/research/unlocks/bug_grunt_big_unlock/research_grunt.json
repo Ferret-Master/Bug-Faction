@@ -1,6 +1,6 @@
 {
-  "display_name": "Warrior Grunt Unlock",
-  "description": "Replaces the the grunt with the warrior grunt, which has 100 more hp",
+  "display_name": "!LOC:Warrior Grunt Unlock",
+  "description": "!LOC:Replaces the the grunt with the warrior grunt, which has 100 more hp",
   "si_name": "grunt_unlock",
   "TEMP_texelinfo": 38.3936,
   "area_build_separation": 4,
