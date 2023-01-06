@@ -2,8 +2,8 @@
 
   {
     "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name":"Warrior Grunt Unlock",
-    "description":"Replaces the the grunt with the warrior grunt, which has 100 more hp",
+    "display_name":"!LOC:Warrior Grunt Unlock",
+    "description":"!LOC:Replaces the the grunt with the warrior grunt, which has 100 more hp",
     "si_name": "blank_blip",
     "build_metal_cost": 1000,
     "add_to_spatial_db": false,

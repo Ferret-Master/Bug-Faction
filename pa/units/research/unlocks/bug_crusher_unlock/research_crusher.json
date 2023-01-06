@@ -1,6 +1,6 @@
 {
-  "display_name":"Crusher Unlock",
-  "description":"Unlocks the crusher, a durable aoe bug",
+  "display_name":"!LOC:Crusher Unlock",
+  "description":"!LOC:Unlocks the crusher, a durable aoe bug",
   "si_name": "crusher_unlock",
   "TEMP_texelinfo": 38.3936,
     "area_build_separation": 4,

@@ -1,5 +1,5 @@
 {
-    "display_name": "Basic Air Hive",
+    "display_name": "!LOC:Basic Air Hive",
     "description": "!LOC:Basic Manufacturing - Builds basic air units.",
     "si_name":"air_factory",
     "TEMP_texelinfo": 37.6046,

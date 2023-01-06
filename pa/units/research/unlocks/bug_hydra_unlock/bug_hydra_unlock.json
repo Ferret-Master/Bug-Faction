@@ -2,8 +2,8 @@
 
   {
     "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name":"Hydra Unlock",
-    "description":"Unlocks the hydra, a mobile artillery bug",
+    "display_name":"!LOC:Hydra Unlock",
+    "description":"!LOC:Unlocks the hydra, a mobile artillery bug",
     "si_name": "blank_blip",
     "build_metal_cost": 2000,
     "add_to_spatial_db": false,
