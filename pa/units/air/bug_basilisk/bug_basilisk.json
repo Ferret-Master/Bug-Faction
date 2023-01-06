@@ -1,7 +1,7 @@
 {
-    "display_name": "Basilisk",
+    "display_name": "!LOC:Basilisk",
     "si_name":"bug_gunship_adv",
-    "description": "Gunship - Salvo Fire. Attacks land and sea targets.",
+    "description": "!LOC:Gunship - Salvo Fire. Attacks land and sea targets.",
     "audio": {
       "loops": {
         "move": {

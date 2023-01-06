@@ -1,6 +1,6 @@
 {
-  "display_name": "Cheap Combat Fab Unlock",
-  "description": "Makes the forager cost 50 less metal, is also smaller and has less hp",
+  "display_name": "!LOC:Cheap Combat Fab Unlock",
+  "description": "!LOC:Makes the forager cost 50 less metal, is also smaller and has less hp",
   "si_name": "bug_combat_fab_unlock",
   "TEMP_texelinfo": 38.3936,
   "area_build_separation": 4,

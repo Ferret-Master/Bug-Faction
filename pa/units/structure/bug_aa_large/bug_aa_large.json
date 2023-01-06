@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "display_name": "Bug Flak Cannon",
+    "display_name": "!LOC:Bug Flak Cannon",
     "description": "!LOC:Advanced Anti-Air - Overhead heavy damage. Only attacks air.",
     "si_name":"air_defense_adv",
     "max_health": 2000,

@@ -1,7 +1,7 @@
 {
-    "display_name": "Stheno",
+    "display_name": "!LOC:Stheno",
     "si_name": "bug_bomber_adv",
-    "description": "Acid Bomber - High damage over a wide area, leaves an acid puddle. Fragile and slow. Attacks land, sea and undersea targets.",
+    "description": "!LOC:Acid Bomber - High damage over a wide area, leaves an acid puddle. Fragile and slow. Attacks land, sea and undersea targets.",
     "TEMP_texelinfo": 10.4258,
     "audio": {
         "loops": {

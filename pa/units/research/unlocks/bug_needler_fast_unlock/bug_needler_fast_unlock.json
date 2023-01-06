@@ -2,8 +2,8 @@
 
   {
     "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name":"Fast Needler Unlock",
-    "description":"Raises the needler speed from 14 to 16",
+    "display_name":"!LOC:Fast Needler Unlock",
+    "description":"!LOC:Raises the needler speed from 14 to 16",
     "si_name": "blank_blip",
     "build_metal_cost": 1000,
     "add_to_spatial_db": false,

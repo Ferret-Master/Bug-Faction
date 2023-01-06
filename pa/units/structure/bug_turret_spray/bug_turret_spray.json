@@ -1,9 +1,9 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "unit_name": "Beam Turret",
-    "display_name": "Beam Turret",
+    "display_name": "!LOC:Beam Turret",
     "si_name": "laser_defense_adv",
-    "description": "Beam Turret",
+    "description": "!LOC:Beam Turret",
     "max_health": 5000,
     "build_metal_cost": 1800,
     "atrophy_rate": 7.5,

@@ -2,8 +2,8 @@
 
   {
     "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name":"base unit unlock",
-    "description":"unlocks a unit",
+    "display_name":"!LOC:base unit unlock",
+    "description":"!LOC:unlocks a unit",
     "si_name": "blank_blip",
     "build_metal_cost": 200,
     "add_to_spatial_db": false,

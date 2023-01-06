@@ -1,6 +1,6 @@
 {
-    "display_name": "Runner",
-    "description": "A speedy scout",
+    "display_name": "!LOC:Runner",
+    "description": "!LOC:A speedy scout",
     "si_name": "runner",
     "TEMP_texelinfo": 4.07719,
     "attachable": {

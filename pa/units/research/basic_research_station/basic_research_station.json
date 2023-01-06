@@ -1,7 +1,7 @@
 {
-    "display_name": "Basic Evolution Chamber",
+    "display_name": "!LOC:Basic Evolution Chamber",
     "si_name":"bug_evo_chamber",
-    "description": "Researches new technology.",
+    "description": "!LOC:Researches new technology.",
     "TEMP_texelinfo": 38.3936,
     "area_build_separation": 4,
     "atrophy_cool_down": 15.0,

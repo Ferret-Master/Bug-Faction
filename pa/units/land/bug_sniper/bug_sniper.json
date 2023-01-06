@@ -1,6 +1,6 @@
 {
-    "display_name": "Bug Sniper",
-    "description": "bug sniper - Long range. medium damage. moderate rate of fire. Intercepts missiles. Attacks land, air and sea targets.",
+    "display_name": "!LOC:Bug Sniper",
+    "description": "!LOC:bug sniper - Long range. medium damage. moderate rate of fire. Intercepts missiles. Attacks land, air and sea targets.",
     "TEMP_texelinfo": 5.32966,
     "attachable": {
       "offsets": {

@@ -1,7 +1,7 @@
 
 {
-  "display_name": "Grunt",
-  "description": "Armored Bug - Melee, heavily armored, expendable.",
+  "display_name": "!LOC:Grunt",
+  "description": "!LOC:Armored Bug - Melee, heavily armored, expendable.",
   "si_name": "grunt",
   "TEMP_texelinfo": 4.07719,
   "attachable": {
