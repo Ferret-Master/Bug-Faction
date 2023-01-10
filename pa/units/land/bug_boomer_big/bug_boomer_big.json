@@ -1,7 +1,7 @@
 {
-    "display_name": "Alpha Boomer",
+    "display_name": "!LOC:Alpha Boomer",
     "si_name":"adv_boomer",
-    "description": "Advanced self destruct bug - Self destructs to deal very heavy damage over a nearby area, also leaves behind a damaging puddle.Fast.",
+    "description": "!LOC:Advanced self destruct bug - Self destructs to deal very heavy damage over a nearby area, also leaves behind a damaging puddle.Fast.",
     "TEMP_texelinfo": 6.38702,
     "attachable": {
       "offsets": {

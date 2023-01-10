@@ -1,6 +1,6 @@
 {
-    "display_name": "Hydra",
-    "description": "large burst fire artilllery bug - Fires in bursts at long range.",
+    "display_name": "!LOC:Hydra",
+    "description": "!LOC:large burst fire artilllery bug - Fires in bursts at long range.",
     "si_name":"hydra",
     "TEMP_texelinfo": 9.31488,
     "attachable": {

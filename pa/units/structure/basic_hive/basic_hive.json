@@ -1,6 +1,6 @@
 {
-    "display_name": "Basic Hive",
-    "description": "Builds basic bug units.",
+    "display_name": "!LOC:Basic Hive",
+    "description": "!LOC:Builds basic bug units.",
     "TEMP_texelinfo": 39.6154,
     "area_build_separation": 2,
     "atrophy_cool_down": 15.0,

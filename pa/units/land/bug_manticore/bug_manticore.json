@@ -1,6 +1,6 @@
 {
-    "display_name": "Manticore",
-    "description": "High damage And Low Fire Rate Core Army Unit",
+    "display_name": "!LOC:Manticore",
+    "description": "!LOC:High damage And Low Fire Rate Core Army Unit",
     "si_name":"manticore",
     "TEMP_texelinfo": 6.39639,
     "attachable": {

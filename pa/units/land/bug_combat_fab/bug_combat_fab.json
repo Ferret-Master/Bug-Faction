@@ -1,6 +1,6 @@
 {
-    "display_name": "Forager",
-    "description": "Reclaim Fabricator, can only reclaim and has hover.",
+    "display_name": "!LOC:Forager",
+    "description": "!LOC:Reclaim Fabricator, can only reclaim and has hover.",
     "TEMP_texelinfo": 5.11028,
     "si_name":"fabrication_bot_combat",
     "attachable": {

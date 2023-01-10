@@ -1,6 +1,6 @@
 {
-  "display_name":"Stealth Ripper Unlock",
-    "description":"Replaces the ripper with the stealth ripper, which is faster, has radar stealth, and more dps",
+  "display_name":"!LOC:Stealth Ripper Unlock",
+  "description":"!LOC:Replaces the ripper with the stealth ripper, which is faster, has radar stealth, and more dps",
   "si_name": "ripper_stealth_unlock",
   "TEMP_texelinfo": 38.3936,
   "area_build_separation": 4,

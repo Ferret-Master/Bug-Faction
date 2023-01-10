@@ -1,6 +1,6 @@
 {
-  "display_name":"Hydra Unlock",
-  "description":"Unlocks the hydra, a mobile artillery bug",
+  "display_name":"!LOC:Hydra Unlock",
+  "description":"!LOC:Unlocks the hydra, a mobile artillery bug",
   "si_name": "hydra_unlock",
   "TEMP_texelinfo": 38.3936,
     "area_build_separation": 4,

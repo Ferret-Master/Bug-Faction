@@ -1,5 +1,5 @@
 {
-    "display_name": "Bombardier",
+    "display_name": "!LOC:Bombardier",
     "description": "!LOC:Fire Support - Medium range. Can fire over walls. Attacks land and sea targets.",
     "si_name":"bombardier",
     "TEMP_texelinfo": 4.07719,

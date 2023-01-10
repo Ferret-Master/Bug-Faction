@@ -1,6 +1,6 @@
 {
-    "display_name": "Nug",
-    "description": "An Titan class melee bug unit, tanky with aoe stomps",
+    "display_name": "!LOC:Nug",
+    "description": "!LOC:An Titan class melee bug unit, tanky with aoe stomps",
     "si_name": "bug_titan",
     "TEMP_texelinfo": 4.07719,
     "atrophy_cool_down": 15.0,

@@ -1,6 +1,6 @@
 {
-    "display_name": "Advanced Hive",
-    "description": "Builds advanced bug units.",
+    "display_name": "!LOC:Advanced Hive",
+    "description": "!LOC:Builds advanced bug units.",
     "TEMP_texelinfo": 62.1789,
     "area_build_separation": 3,
     "atrophy_cool_down": 15.0,

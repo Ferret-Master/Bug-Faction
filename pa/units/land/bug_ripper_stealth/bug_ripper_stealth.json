@@ -1,6 +1,6 @@
 {
-    "display_name": "Stealth Ripper",
-    "description": "stealth core melee unit",
+    "display_name": "!LOC:Stealth Ripper",
+    "description": "!LOC:stealth core melee unit",
     "si_name": "ripper_stealth",
     "TEMP_texelinfo": 4.07719,
     "attachable": {

@@ -1,6 +1,6 @@
 {
-  "display_name": "Scorcher",
-  "description": "A strong bug that attacks with fire at mid range.",
+  "display_name": "!LOC:Scorcher",
+  "description": "!LOC:A strong bug that attacks with fire at mid range.",
   "TEMP_texelinfo": 8.06901,
   "si_name": "scorcher",
   "attachable": {
