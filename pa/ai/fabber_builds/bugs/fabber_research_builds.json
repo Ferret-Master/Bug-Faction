@@ -161,49 +161,6 @@
       }
     },
     {
-      "name": "Bugs - Bug Boomer Mine Unlock",
-      "to_build": "BoomerMineUnlock",
-      "instance_count": 1,
-      "shared_instance_count": "BasicResearchFactory",
-      "priority": 0,
-      "min_num_assisters": 2,
-      "max_num_assisters": 5,
-      "builders": ["AnyBugFabberBasic", "AnyBugFabberAdvanced"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BoomerMineUnlock"
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "(Custom2 & Factory & Construction & Basic) - Air - Bot - Tank - Naval - Orbital - Structure",
-            "compare0": "==",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "(Factory & Construction & Bot & Basic) - Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BoomerMineUnlock"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
       "name": "Bugs - Crusher Unlock",
       "to_build": "CrusherUnlock",
       "instance_count": 1,
