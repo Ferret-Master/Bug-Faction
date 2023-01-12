@@ -371,6 +371,12 @@
             "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
             "compare0": "<",
             "value0": 0.1
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic & Construction) - Mobile",
+            "compare0": "==",
+            "value0": 0
           }
         ],
         [
@@ -395,6 +401,79 @@
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic & Construction) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Cheap Forager",
+      "to_build": "CheapForager",
+      "instance_count": 1,
+      "priority": 97,
+      "builders": ["SwarmHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "((Tank | Bot) & Mobile & Construction) - Fabber",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic & Construction) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "((Tank | Bot) & Mobile & Construction) - Fabber",
+            "unit_type_string1": "(Tank & Offense & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic & Construction) - Mobile",
             "compare0": ">",
             "value0": 0
           }
