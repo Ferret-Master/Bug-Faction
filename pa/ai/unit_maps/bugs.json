@@ -148,7 +148,7 @@
       "spec_id": "/pa/units/research/unlocks/bug_hydra_unlock/bug_hydra_unlock.json"
     },
     "CheapCombatFabUnlock": {
-      "spec_id": "/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/bug_combat_fab_cheap_unlock.json"
+      "spec_id": "/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/research_combat_fab.json"
     },
     "FastNeedlerUnlock": {
       "spec_id": "/pa/units/research/unlocks/bug_needler_fast_unlock/bug_needler_fast_unlock.json"
