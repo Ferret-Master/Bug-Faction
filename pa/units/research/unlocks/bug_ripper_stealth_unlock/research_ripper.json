@@ -102,7 +102,8 @@
     "UNITTYPE_FabBuild",
     "UNITTYPE_FabAdvBuild",
     "UNITTYPE_Important",
-    "UNITTYPE_Custom2"
+    "UNITTYPE_Custom2",
+    "UNITTYPE_Bot"
   ],
   "wait_to_rolloff_time": 0
 }

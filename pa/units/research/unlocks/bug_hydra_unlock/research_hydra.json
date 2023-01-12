@@ -107,7 +107,8 @@
       "UNITTYPE_Advanced",
       "UNITTYPE_FabAdvBuild",
       "UNITTYPE_Important",
-      "UNITTYPE_Custom2"
+      "UNITTYPE_Custom2",
+      "UNITTYPE_Tank"
     ],
     "wait_to_rolloff_time": 0
   }
