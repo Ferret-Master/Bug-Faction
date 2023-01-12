@@ -17,7 +17,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Custom2 & Factory & Construction & Basic & Bot) - Structure",
+            "unit_type_string0": "Custom2 & Factory & Construction & Basic & Bot & Important",
             "compare0": "==",
             "value0": 0
           },
@@ -60,7 +60,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Custom2 & Factory & Construction & Basic & Tank) - Structure",
+            "unit_type_string0": "Custom2 & Factory & Construction & Basic & Tank & Important",
             "compare0": "==",
             "value0": 0
           },
@@ -97,7 +97,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Custom2 & Factory & Construction & Basic & Air) - Structure",
+            "unit_type_string0": "Custom2 & Factory & Construction & Basic & Air & Important",
             "compare0": "==",
             "value0": 0
           },
@@ -134,7 +134,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Custom2 & Factory & Construction & Basic & Naval) - Structure",
+            "unit_type_string0": "Custom2 & Factory & Construction & Basic & Naval & Important",
             "compare0": "==",
             "value0": 0
           },
@@ -220,7 +220,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Custom2 & Factory & Construction & Advanced & Bot) - Structure",
+            "unit_type_string0": "Custom2 & Factory & Construction & Advanced & Bot & Important",
             "compare0": "==",
             "value0": 0
           },
@@ -257,7 +257,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Custom2 & Factory & Construction & Advanced & Tank) - Structure",
+            "unit_type_string0": "Custom2 & Factory & Construction & Advanced & Tank & Important",
             "compare0": "==",
             "value0": 0
           },
