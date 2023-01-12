@@ -133,25 +133,25 @@
       "spec_id": "/pa/units/research/advanced_research_station/advanced_research_station.json"
     },
     "StealthRipperUnlock": {
-      "spec_id": "/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json"
+      "spec_id": "/pa/units/research/unlocks/bug_ripper_stealth_unlock/research_ripper.json"
     },
     "BoomerMineUnlock": {
-      "spec_id": "/pa/units/research/unlocks/bug_boomer_mine_unlock/bug_boomer_mine_unlock.json"
+      "spec_id": "/pa/units/research/unlocks/bug_boomer_mine_unlock/research_boomer_mine.json"
     },
     "WarriorGruntUnlock": {
-      "spec_id": "/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json"
+      "spec_id": "/pa/units/research/unlocks/bug_grunt_big_unlock/research_grunt.json"
     },
     "CrusherUnlock": {
-      "spec_id": "/pa/units/research/unlocks/bug_crusher_unlock/bug_crusher_unlock.json"
+      "spec_id": "/pa/units/research/unlocks/bug_crusher_unlock/research_crusher.json"
     },
     "HydraUnlock": {
-      "spec_id": "/pa/units/research/unlocks/bug_hydra_unlock/bug_hydra_unlock.json"
+      "spec_id": "/pa/units/research/unlocks/bug_hydra_unlock/research_hydra.json"
     },
     "CheapCombatFabUnlock": {
       "spec_id": "/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/research_combat_fab.json"
     },
     "FastNeedlerUnlock": {
-      "spec_id": "/pa/units/research/unlocks/bug_needler_fast_unlock/bug_needler_fast_unlock.json"
+      "spec_id": "/pa/units/research/unlocks/bug_needler_fast_unlock/research_needler.json"
     },
     "BugBasicFighter": {
       "spec_id": "/pa/units/air/bug_fighter/bug_fighter.json"
