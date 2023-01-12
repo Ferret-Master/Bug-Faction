@@ -23,8 +23,14 @@
           },
           {
             "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic) - Mobile - Heavy - Construction - Structure",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
             "unit_type_string0": "(Factory & Construction & Bot & Basic) - Orbital",
-            "compare0": ">",
+            "compare0": "==",
             "value0": 0
           },
           {
@@ -65,6 +71,12 @@
             "value0": 0
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic & Heavy) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "WarriorGruntUnlock"
           }
@@ -98,6 +110,12 @@
           {
             "test_type": "UnitCount",
             "unit_type_string0": "Custom2 & Factory & Construction & Basic & Air & Important",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Tank & Basic) - Mobile - Structure",
             "compare0": "==",
             "value0": 0
           },
@@ -140,8 +158,8 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Factory & Construction & Bot & Basic) - Orbital",
-            "compare0": ">",
+            "unit_type_string0": "(Custom2 & Bot & Basic & Construction) - Mobile",
+            "compare0": "==",
             "value0": 0
           },
           {
@@ -182,6 +200,12 @@
             "value0": 0
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Advanced & Heavy) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "CrusherUnlock"
           }
@@ -215,6 +239,12 @@
           {
             "test_type": "UnitCount",
             "unit_type_string0": "Custom2 & Factory & Construction & Advanced & Tank & Important",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Advanced & Artillery) - Mobile",
             "compare0": "==",
             "value0": 0
           },
