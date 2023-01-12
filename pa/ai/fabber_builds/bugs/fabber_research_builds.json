@@ -17,7 +17,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "Custom2 & Factory & Construction & Basic & Bot & Important",
+            "unit_type_string0": "(Custom2 & Factory & Basic & Bot & Important) - Construction",
             "compare0": "==",
             "value0": 0
           },
@@ -29,7 +29,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Factory & Construction & Bot & Basic) - Orbital",
+            "unit_type_string0": "(Factory & Bot & Basic) - Orbital",
             "compare0": "==",
             "value0": 0
           },
@@ -66,7 +66,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "Custom2 & Factory & Construction & Basic & Tank & Important",
+            "unit_type_string0": "(Custom2 & Factory & Basic & Tank & Important) - Construction",
             "compare0": "==",
             "value0": 0
           },
@@ -109,7 +109,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "Custom2 & Factory & Construction & Basic & Air & Important",
+            "unit_type_string0": "(Custom2 & Factory & Basic & Air & Important) - Construction",
             "compare0": "==",
             "value0": 0
           },
@@ -152,7 +152,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "Custom2 & Factory & Construction & Basic & Naval & Important",
+            "unit_type_string0": "(Custom2 & Factory & Basic & Naval & Important) - Construction",
             "compare0": "==",
             "value0": 0
           },
@@ -195,7 +195,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "Custom2 & Factory & Construction & Advanced & Bot & Important",
+            "unit_type_string0": "(Custom2 & Factory & Advanced & Bot & Important) - Construction",
             "compare0": "==",
             "value0": 0
           },
@@ -238,7 +238,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "Custom2 & Factory & Construction & Advanced & Tank & Important",
+            "unit_type_string0": "(Custom2 & Factory & Advanced & Tank & Important) - Construction",
             "compare0": "==",
             "value0": 0
           },

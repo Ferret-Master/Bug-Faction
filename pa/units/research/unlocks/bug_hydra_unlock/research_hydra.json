@@ -100,7 +100,6 @@
     ],
     "unit_types": [
       "UNITTYPE_Factory",
-      "UNITTYPE_Construction",
       "UNITTYPE_Land",
       "UNITTYPE_Structure",
       "UNITTYPE_Artillery",
