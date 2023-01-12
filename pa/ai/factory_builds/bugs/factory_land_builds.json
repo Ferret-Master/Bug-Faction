@@ -472,6 +472,12 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Tank & Basic) - Mobile - Structure",
+            "compare0": "==",
+            "value0": 0
           }
         ],
         [
@@ -489,6 +495,62 @@
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Tank & Basic) - Mobile - Structure",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Fast Needler",
+      "to_build": "FastNeedler",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["BasicHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Tank & Basic) - Mobile - Structure",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Tank & Basic) - Mobile - Structure",
             "compare0": ">",
             "value0": 0
           }
