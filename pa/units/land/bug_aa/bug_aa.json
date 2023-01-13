@@ -92,8 +92,8 @@
     "tools": [
       {
         "spec_id": "/pa/units/land/bug_aa/bug_aa_weapon.json",
-        "aim_bone": "bone_pivot",
-        "muzzle_bone": "bone_pivot"
+        "aim_bone": "bone_butt",
+        "muzzle_bone": "socket_muzzle"
       }
     ],
     "transportable": {
