@@ -91,14 +91,7 @@
         "muzzle_bone": [
           "socket_muzzle"
         ]
-      },
-    {
-      "spec_id": "/pa/units/land/bug_aa_big/bug_aa_big_beam_weapon.json",
-      "aim_bone": "bone_butt",
-      "record_index": 1,
-      "fire_event": "fired1",
-      "muzzle_bone": "socket_muzzle"
-    }
+      }
     ],
     "transportable": {
       "size": 1
