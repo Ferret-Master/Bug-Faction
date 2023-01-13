@@ -108,11 +108,9 @@
     "tools": [
         {
           "spec_id": "/pa/units/structure/bug_radar_advanced/bug_radar_advanced_dummy_weapon.json",
-          "aim_bone": "bone_turret",
-          "record_index": 0,
-          "fire_event": "fired0",
+          "aim_bone": "bone_root",
           "muzzle_bone": [
-            "socket_muzzle01"
+            "bone_root"
           ]
         }
       ],

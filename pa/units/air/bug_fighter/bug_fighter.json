@@ -69,7 +69,7 @@
     "navigation": {
       "type": "air",
       "acceleration": 100,
-      "brake": 30,
+      "brake": 35,
       "move_speed": 100,
       "turn_speed": 270,
       "aggressive_distance": 50.0,

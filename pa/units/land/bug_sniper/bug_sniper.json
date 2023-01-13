@@ -156,14 +156,14 @@
         "aim_bone": "bone_turret",
         "record_index": 0,
         "fire_event": "fired0",
-        "muzzle_bone": "socket_muzzle"
+        "muzzle_bone": "bone_spike_tips"
       },
       {
         "spec_id": "/pa/units/land/bug_sniper/bug_sniper_weapon_beam.json",
         "aim_bone": "bone_turret",
         "record_index": 1,
         "fire_event": "fired1",
-        "muzzle_bone": "socket_muzzle"
+        "muzzle_bone": "bone_spike_tips"
       }
     ],
     "transportable": {
