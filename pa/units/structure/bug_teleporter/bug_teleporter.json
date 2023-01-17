@@ -1,5 +1,5 @@
 {
-    "display_name": "Bug Teleporter",
+    "display_name": "!LOC:Bug Teleporter",
     "description": "!LOC:Interplanetary Teleporter: Teleports units between linked Teleporters.",
     "si_name":"teleporter",
     "TEMP_texelinfo": 55.7884,

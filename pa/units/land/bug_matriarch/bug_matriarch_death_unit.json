@@ -50,13 +50,13 @@
             "layer": "surface_and_air",
             "channel": "sight",
             "shape": "sphere",
-            "radius": 2
+            "radius": 80
           },
           {
             "layer": "underwater",
             "channel": "sight",
             "shape": "sphere",
-            "radius": 2
+            "radius": 80
           }
         ]
       }
@@ -83,7 +83,7 @@
         
         ],
         "projectiles_per_fire": 4,
-        "spec_id": "/pa/units/land/bug_matriarch/bug_matriarch_spawner.json"
+        "spec_id": "/pa/units/land/bug_matriarch/bug_matriarch_death_spawner.json"
       }
     ],
     

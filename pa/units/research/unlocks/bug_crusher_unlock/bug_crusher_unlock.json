@@ -2,8 +2,8 @@
 
   {
     "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name":"Crusher Unlock",
-    "description":"Unlocks the crusher, a durable aoe bug",
+    "display_name":"!LOC:Crusher Unlock",
+    "description":"!LOC:Unlocks the crusher, a durable aoe bug",
     "si_name": "blank_blip",
     "build_metal_cost": 2000,
     "add_to_spatial_db": false,

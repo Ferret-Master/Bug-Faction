@@ -16,7 +16,7 @@
     "model": {
       "filename": ""
     },
-    "spawn_unit_on_death": "/pa/units/land/bug_boomer/bug_boomer.json",
+    "spawn_unit_on_death": "/pa/units/land/bug_boomer/bug_boomer_r.json",
     "spawn_unit_on_death_with_velocity": false,
     "splash_damage": 0,
     "splash_radius": 0

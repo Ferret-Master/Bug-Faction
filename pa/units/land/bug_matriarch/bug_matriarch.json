@@ -1,6 +1,6 @@
 {
-    "display_name": "Matriarch",
-    "description": "Demi titan - Spawns waves of boomers. leaves acid and a boomer wave on death.",
+    "display_name": "!LOC:Matriarch",
+    "description": "!LOC:Demi titan - Spawns waves of boomers. leaves acid and a boomer wave on death.",
     "TEMP_texelinfo": 10,
     "si_name":"bug_matriarch",
     "audio": {
@@ -117,7 +117,7 @@
       }
     },
     "selection_icon": {
-      "diameter": 20
+      "diameter": 30
     },
     "tools": [
       {

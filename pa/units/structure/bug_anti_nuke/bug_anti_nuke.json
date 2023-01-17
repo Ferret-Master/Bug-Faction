@@ -1,6 +1,6 @@
 {
-    "display_name": "Bug Anti-Nuke Launcher",
-    "description": "Bug Anti-Nuke - Builds advanced anti-nuclear missiles.",
+    "display_name": "!LOC:Bug Anti-Nuke Launcher",
+    "description": "!LOC:Bug Anti-Nuke - Builds advanced anti-nuclear missiles.",
     "si_name":"anti_nuke_launcher",
     "TEMP_texelinfo": 21.7597,
     "alt_area_build_separation": 80,

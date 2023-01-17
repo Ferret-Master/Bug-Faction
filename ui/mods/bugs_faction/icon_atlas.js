@@ -1,5 +1,15 @@
   
 var paeiouIcons = [
+
+	//unlock icons
+	"bug_needler_unlock",
+	"boomer_unlock",
+	"hydra_unlock",
+	"crusher_unlock",
+	"ripper_stealth_unlock",
+	"grunt_unlock",
+	"bug_combat_fab_unlock",
+	//other units
 	"bug_fab",
 	"bug_fab_adv",
 	"bug_laser_spider",

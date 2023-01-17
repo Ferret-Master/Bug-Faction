@@ -1,9 +1,10 @@
 {
   "build_list": [
     {
-      "name": "Bugs - Basic Evolution Chamber",
-      "to_build": "BugBasicEvolutionChamber",
+      "name": "Bugs - Stealth Ripper Unlock",
+      "to_build": "StealthRipperUnlock",
       "instance_count": 1,
+      "shared_instance_count": "BasicResearchFactory",
       "priority": 360,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
@@ -12,17 +13,29 @@
         [
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BugBasicEvolutionChamber"
+            "string0": "StealthRipperUnlock"
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Custom2 & Factory & Construction & Basic) - Air - Bot - Tank - Naval - Orbital",
+            "unit_type_string0": "(Custom2 & Factory & Basic & Bot & Important) - Construction",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic) - Mobile - Heavy - Construction - Structure",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Factory & Bot & Basic) - Orbital",
             "compare0": "==",
             "value0": 0
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BugBasicEvolutionChamber"
+            "string0": "StealthRipperUnlock"
           }
         ]
       ],
@@ -37,10 +50,140 @@
       }
     },
     {
-      "name": "Bugs - Advanced Evolution Chamber",
-      "to_build": "BugAdvancedEvolutionChamber",
+      "name": "Bugs - Warrior Grunt Unlock",
+      "to_build": "WarriorGruntUnlock",
       "instance_count": 1,
+      "shared_instance_count": "BasicResearchFactory",
       "priority": 360,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["AnyBugFabberBasic", "AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "WarriorGruntUnlock"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Factory & Basic & Tank & Important) - Construction",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic & Heavy) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "WarriorGruntUnlock"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bugs - Fast Needler Unlock",
+      "to_build": "FastNeedlerUnlock",
+      "instance_count": 1,
+      "shared_instance_count": "BasicResearchFactory",
+      "priority": 360,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["AnyBugFabberBasic", "AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "FastNeedlerUnlock"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Factory & Basic & Air & Important) - Construction",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Tank & Basic) - Mobile - Structure",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "FastNeedlerUnlock"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bugs - Cheap Combat Fab Unlock",
+      "to_build": "CheapCombatFabUnlock",
+      "instance_count": 1,
+      "shared_instance_count": "BasicResearchFactory",
+      "priority": 360,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["AnyBugFabberBasic", "AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "CheapCombatFabUnlock"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Factory & Basic & Naval & Important) - Construction",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic & Construction) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "CheapCombatFabUnlock"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bugs - Crusher Unlock",
+      "to_build": "CrusherUnlock",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedBasicResearchFactory",
+      "priority": 460,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
       "builders": ["AnyBugFabberAdvanced"],
@@ -48,17 +191,66 @@
         [
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BugAdvancedEvolutionChamber"
+            "string0": "CrusherUnlock"
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Custom2 & Factory & Construction & Advanced) - Air - Bot - Tank - Naval - Orbital",
+            "unit_type_string0": "(Custom2 & Factory & Advanced & Bot & Important) - Construction",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Advanced & Heavy) - Mobile",
             "compare0": "==",
             "value0": 0
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BugAdvancedEvolutionChamber"
+            "string0": "CrusherUnlock"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bugs - Hydra Unlock",
+      "to_build": "HydraUnlock",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedBasicResearchFactory",
+      "priority": 460,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "HydraUnlock"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Factory & Advanced & Tank & Important) - Construction",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Bot & Advanced & Artillery) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "HydraUnlock"
           }
         ]
       ],

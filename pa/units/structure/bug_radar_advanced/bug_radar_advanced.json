@@ -1,7 +1,7 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "unit_name": "Advanced Radar",
-    "display_name": "Bug Advanced Radar",
+    "display_name": "!LOC:Bug Advanced Radar",
     "si_name":"bug_radar_adv",
     "description": "!LOC:Advanced Radar - Detects nearby enemy land, sea, and air units.",
     "max_health": 1500,
@@ -108,11 +108,9 @@
     "tools": [
         {
           "spec_id": "/pa/units/structure/bug_radar_advanced/bug_radar_advanced_dummy_weapon.json",
-          "aim_bone": "bone_turret",
-          "record_index": 0,
-          "fire_event": "fired0",
+          "aim_bone": "bone_root",
           "muzzle_bone": [
-            "socket_muzzle01"
+            "bone_root"
           ]
         }
       ],

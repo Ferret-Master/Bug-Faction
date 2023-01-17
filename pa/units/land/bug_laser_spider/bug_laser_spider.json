@@ -1,9 +1,9 @@
 {
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
     "si_name": "bug_laser_spider",
-    "display_name": "Rak",
-    "description": "Demi Titan - long range beam weapon.",
-    "max_health": 40000,
+    "display_name": "!LOC:Rak",
+    "description": "!LOC:Demi Titan - long range beam weapon.",
+    "max_health": 30000,
     "build_metal_cost": 15000,
     "influence_radius": 400,
     "attachable": {
@@ -39,7 +39,7 @@
         "type": "land-small",
         "acceleration": 100,
         "brake": 100,
-        "move_speed": 12,
+        "move_speed": 11,
         "turn_speed": 25,
         "group_preference": "back"
     },

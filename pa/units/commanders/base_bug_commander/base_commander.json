@@ -58,7 +58,7 @@
         "type": "amphibious",
         "acceleration": 60,
         "brake": -1,
-        "move_speed": 6,
+        "move_speed": 8,
         "turn_speed": 90,
         "turn_in_place": false,
         "park_stamp": {

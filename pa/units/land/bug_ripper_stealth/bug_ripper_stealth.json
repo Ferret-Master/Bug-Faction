@@ -1,6 +1,6 @@
 {
-    "display_name": "Stealth Ripper",
-    "description": "stealth core melee unit",
+    "display_name": "!LOC:Stealth Ripper",
+    "description": "!LOC:stealth core melee unit",
     "si_name": "ripper_stealth",
     "TEMP_texelinfo": 4.07719,
     "attachable": {
@@ -58,6 +58,10 @@
       3
     ],
     "recon": {
+      "observable": {
+        "layer": "surface_and_air",
+        "ignore_radar": true
+      },
       "observer": {
         "items": [
           {
@@ -68,6 +72,7 @@
           }
         ]
       }
+    
     },
     "model": {
       "filename": "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.papa",

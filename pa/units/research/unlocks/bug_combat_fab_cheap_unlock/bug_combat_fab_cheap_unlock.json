@@ -2,8 +2,8 @@
 
   {
     "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name":"Cheap Combat Fab Unlock",
-    "description":"Makes the combat fab cost 50 less metal",
+    "display_name":"!LOC:Cheap Combat Fab Unlock",
+    "description":"!LOC:Makes the forager cost 50 less metal, is also smaller and has less hp",
     "si_name": "blank_blip",
     "build_metal_cost": 200,
     "add_to_spatial_db": false,

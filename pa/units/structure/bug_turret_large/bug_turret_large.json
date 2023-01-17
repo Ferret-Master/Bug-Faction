@@ -1,9 +1,9 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "unit_name": "large spitter turret",
-    "display_name": "Large Spitter Turret",
+    "display_name": "!LOC:Large Spitter Turret",
     "si_name": "laser_defense",
-    "description": "Advanced anti land turret.",
+    "description": "!LOC:Advanced anti land turret.",
     "max_health": 4000,
     "build_metal_cost": 900,
     "atrophy_rate": 7.5,

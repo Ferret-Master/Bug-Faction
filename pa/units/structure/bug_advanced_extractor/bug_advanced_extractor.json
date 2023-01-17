@@ -1,7 +1,7 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "unit_name": "Bug Advanced Metal Extractor",
-    "display_name": "Bug Advanced Metal Extractor",
+    "display_name": "!LOC:Bug Advanced Metal Extractor",
     "si_name":"metal_extractor_adv",
     "description": "!LOC:Advanced Economy - Produces metal, can only be placed on metal deposits.",
     "strategic_icon_priority": 5,

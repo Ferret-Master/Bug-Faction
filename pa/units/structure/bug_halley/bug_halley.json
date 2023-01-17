@@ -1,5 +1,5 @@
 {
-    "display_name": "Halley",
+    "display_name": "!LOC:Halley",
     "description": "!LOC:Delta V Engine - Used to move small to medium celestial bodies.",
     "TEMP_texelinfo": 77.8386,
     "atrophy_cool_down": 15.0,

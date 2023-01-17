@@ -1,6 +1,6 @@
 {
-    "display_name": "Forager",
-    "description": "Combat Fabricator - Repairs damaged units. Can detect mines. Can build teleporters. Can't help build other structures.",
+    "display_name": "!LOC:Forager",
+    "description": "!LOC:Reclaim Fabricator, can only reclaim and has hover.",
     "TEMP_texelinfo": 5.11028,
     "si_name":"fabrication_bot_combat",
     "attachable": {
@@ -38,7 +38,6 @@
     },
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "build_metal_cost": 150,
-    "buildable_types": "(CombatFabBuild & Custom2) - Custom1 - Custom3 - Custom4",
     "command_caps": [
       "ORDER_Move",
       "ORDER_Patrol",
@@ -59,7 +58,7 @@
     },
     "fx_offsets": [
       {
-        "bone": "socket_muzzle",
+        "bone": "bone_turret",
         "filename": "/pa/effects/specs/fab_combat_spray.pfx",
         "offset": [
           0,
@@ -72,6 +71,36 @@
           0
         ],
         "type": "build"
+      },
+      {
+        "bone": "bone_turret",
+        "filename": "/pa/units/land/bug_combat_fab/forager_hover.pfx",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "orientation": [
+          0,
+          0,
+          0
+        ],
+       "type": "idle"
+      },
+      {
+        "bone": "bone_turret",
+        "filename": "/pa/units/land/bug_combat_fab/forager_trail.pfx",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "orientation": [
+          0,
+          0,
+          0
+        ],
+        "type": "moving"
       }
     ],
     "guard_layer": "WL_LandHorizontal",
@@ -83,7 +112,8 @@
     ],
     "model": {
     
-      "filename": "/pa/units/land/bug_combat_fab/bug_fabricator_combat.papa"
+      "filename": "/pa/units/land/bug_combat_fab/bug_combat_fab.papa",
+      "animtree": "/pa/units/land/bug_combat_fab/bug_combat_fab_anim_tree.json"
       
     },
     "navigation": {
@@ -134,7 +164,7 @@
     },
     "tools": [
       {
-        "aim_bone": "bone_turret",
+        "aim_bone": "bone_root",
         "spec_id": "/pa/units/land/bug_combat_fab/bug_combat_fab_build_arm.json"
       }
     ],
@@ -143,7 +173,7 @@
     },
     "unit_types": [
       "UNITTYPE_Construction",
-      "UNITTYPE_Tank",
+      "UNITTYPE_Bot",
       "UNITTYPE_Mobile",
       "UNITTYPE_Land",
       "UNITTYPE_Basic",

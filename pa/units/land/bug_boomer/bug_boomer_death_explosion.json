@@ -13,6 +13,6 @@
       },
     "sim_fire_effect": "/pa/units/land/bug_boomer/bug_boomer_explosion_ent.json",
     "splash_damages_allies": false,
-    "full_damage_splash_radius": 10,
+    "full_damage_splash_radius": 15,
     "splash_radius": 15
   }

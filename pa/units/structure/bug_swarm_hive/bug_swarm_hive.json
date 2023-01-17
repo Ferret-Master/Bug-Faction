@@ -1,6 +1,6 @@
 {
-    "display_name": "Swarm Hive",
-    "description": "Builds basic cheap bug units, DOES NOT have a fabricator.",
+    "display_name": "!LOC:Swarm Hive",
+    "description": "!LOC:Builds basic cheap bug units, DOES NOT have a fabricator.",
     "TEMP_texelinfo": 39.6154,
     "area_build_separation": 2,
     "atrophy_cool_down": 15.0,
@@ -119,8 +119,8 @@
       "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
     },
     "placement_size": [
-      40,
-      55
+      30,
+      30
     ],
     "recon": {
       "observer": {

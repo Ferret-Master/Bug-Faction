@@ -1,6 +1,6 @@
 {
-    "display_name": "Tempest",
-    "description": "Flak Bug - Damage over a wide area. Only attacks air targets.",
+    "display_name": "!LOC:Tempest",
+    "description": "!LOC:Flak Bug - Damage over a wide area. Only attacks air targets.",
     "si_name":"bug_adv_aa",
     "TEMP_texelinfo": 9.31488,
     "attachable": {
@@ -86,19 +86,12 @@
     "tools": [
       {
         "spec_id": "/pa/units/land/bug_aa_big/bug_aa_big_weapon.json",
-        "aim_bone": "socket_aim",
+        "aim_bone": "bone_butt",
         "projectiles_per_fire": 1,
         "muzzle_bone": [
-          "socket_muzzle01"
+          "socket_muzzle"
         ]
-      },
-    {
-      "spec_id": "/pa/units/land/bug_aa_big/bug_aa_big_beam_weapon.json",
-      "aim_bone": "bone_turret",
-      "record_index": 1,
-      "fire_event": "fired1",
-      "muzzle_bone": "socket_muzzle02"
-    }
+      }
     ],
     "transportable": {
       "size": 1

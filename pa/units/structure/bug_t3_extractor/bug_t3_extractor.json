@@ -1,9 +1,9 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "unit_name": "Bug t3 Metal Extractor",
-    "display_name": "Bug t3 Metal Extractor",
+    "display_name": "!LOC:Bug t3 Metal Extractor",
     "si_name":"metal_extractor_t3",
-    "description": "Advanced Economy - Can be attached to existing extractors for a small amount of extra income.",
+    "description": "!LOC:Advanced Economy - Can be attached to existing extractors for a small amount of extra income.",
     "strategic_icon_priority": 5,
     "max_health": 2000,
     "build_metal_cost": 1000,

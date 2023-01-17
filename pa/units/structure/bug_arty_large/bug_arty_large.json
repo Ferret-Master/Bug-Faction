@@ -1,5 +1,5 @@
 {
-    "display_name": "Bug Holkins",
+    "display_name": "!LOC:Bug Holkins",
     "description": "!LOC:Advanced Artillery - Extremely long range heavy damage. Can lay siege from very far away. Attacks land and sea targets.",
     "TEMP_texelinfo": 26.6522,
     "si_name":"artillery_long",
@@ -63,6 +63,14 @@
         0
       ]
     ],
+    "command_caps": [
+      "ORDER_Move",
+      "ORDER_Patrol",
+      "ORDER_Attack",
+      "ORDER_Assist",
+      "ORDER_Use",
+      "ORDER_FireSecondaryWeapon"
+    ],
     "alt_area_build_type": "Sphere",
     "atrophy_cool_down": 15.0,
     "atrophy_rate": 240.0,
@@ -71,11 +79,9 @@
         "cue": "/SE/Selection/structure/artillery"
       }
     },
-    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
     "build_metal_cost": 10000,
-    "command_caps": [
-      "ORDER_Attack"
-    ],
+  
     "events": {
       "build_complete": {
         "audio_cue": "/SE/Build_Complete/structure_small"
@@ -107,23 +113,33 @@
         "bone": "bone_pitch"
       }
     ],
-    "max_health": 5000,
+    "max_health": 12000,
     "mesh_bounds": [
       15,
       25,
       15.0376
     ],
+    "navigation": {
+      "type": "land-small",
+      "acceleration": 20,
+      "brake": 20,
+      "move_speed": 10,
+      "turn_speed": 60,
+      "group_preference": "back"
+    },
+    "physics": {
+      "radius": 10
+    },
     "model": [
       {
         "layer": "WL_LandHorizontal",
-        "filename": "/pa/units/land/artillery_long/artillery_long.papa",
-        "animtree": "/pa/anim/anim_trees/artillery_building_long_anim_tree.json",
-        "skirt_decal": "/pa/effects/specs/skirt_artillery_long.json"
+        "filename": "/pa/units/structure/bug_arty_large/bug_holkins.papa",
+        "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json"
       },
       {
         "layer": "WL_WaterSurface",
-        "filename": "/pa/units/sea/artillery_long/artillery_long.papa",
-        "animtree": "/pa/anim/anim_trees/artillery_building_long_anim_tree.json"
+        "filename": "/pa/units/structure/bug_arty_large/bug_holkins.papa",
+        "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json"
       }
     ],
     "nearby_target_tick_update_interval": 30,
@@ -155,14 +171,20 @@
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
     "tools": [
       {
-        "spec_id": "/pa/units/land/artillery_long/artillery_long_tool_weapon.json",
-        "aim_bone": "socket_aim",
+        "spec_id": "/pa/units/structure/bug_arty_large/bug_arty_large_weapon.json",
+        "aim_bone": "bone_pitch",
         "muzzle_bone": "socket_muzzle"
+      },
+      {
+        "spec_id": "/pa/units/structure/bug_arty_large/bug_arty_large_weapon.json",
+        "aim_bone": "bone_pitch",
+        "muzzle_bone": "socket_muzzle",
+        "secondary_weapon": true
       }
     ],
     "unit_types": [
       "UNITTYPE_Land",
-      "UNITTYPE_Structure",
+      "UNITTYPE_Mobile",
       "UNITTYPE_Defense",
       "UNITTYPE_Artillery",
       "UNITTYPE_Advanced",

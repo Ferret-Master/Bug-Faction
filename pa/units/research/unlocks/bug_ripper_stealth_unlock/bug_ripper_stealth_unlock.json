@@ -2,8 +2,8 @@
 
   {
     "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name":"Stealth Ripper Unlock",
-    "description":"Replaces the ripper with the stealth ripper, which is faster, has radar stealth, and more dps",
+    "display_name":"!LOC:Stealth Ripper Unlock",
+    "description":"!LOC:Replaces the ripper with the stealth ripper, which is faster, has radar stealth, and more dps",
     "si_name": "blank_blip",
     "build_metal_cost": 1000,
     "add_to_spatial_db": false,
@@ -27,6 +27,7 @@
       "UNITTYPE_Bot",
       "UNITTYPE_Basic",
       "UNITTYPE_FactoryBuild",
+      "UNITTYPE_RadarJammer",
       "UNITTYPE_Custom2"    
 
     ],
