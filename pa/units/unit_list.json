@@ -111,6 +111,7 @@
         "/pa/units/air/transport/transport.json",
         "/pa/units/commanders/avatar/avatar.json",
         "/pa/units/commanders/base_commander/base_commander.json",
+	"/pa/units/commanders/base_bug_commander/base_commander.json",
         "/pa/units/commanders/bug_commander/bug_commander.json",
         "/pa/units/commanders/imperial_able/imperial_able.json",
         "/pa/units/commanders/imperial_aceal/imperial_aceal.json",
