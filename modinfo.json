@@ -3,10 +3,10 @@
   "identifier": "com.pa.ferretmaster.bugs",
   "display_name": "Bug Faction[WIP]",
   "description": "Adds a biological bugs faction",
-  "author": "Ferretmaster, BillTheBlueBot, Anonemous2, Taiga, Quitch",
-  "version": "1.11",
+  "author": "Ferretmaster, BillTheBlueBot, Anonemous2, Taiga, Quitch, Quildtide",
+  "version": "1.12",
   "build": "116400",
-  "date": "2023-01-17",
+  "date": "2023-01-31",
   "signature": "not yet implemented",
   "forum": "https://steamcommunity.com/app/386070/discussions/0/3413181885098188214/",
   "icon": "https://github.com/Ferret-Master/Bug-Faction/blob/main/bugs_icon.png?raw=true",
@@ -28,7 +28,8 @@
       "coui://ui/mods/bugs_faction/shared_build.js"
     ],
     "live_game_build_bar": [
-      "coui://ui/mods/bugs_faction/live_build_bar.js"
+      "coui://ui/mods/bugs_faction/live_build_bar.js",
+      "coui://ui/mods/bugs_faction/live_build_bar2.js"
     ],
     "live_game": [
       "coui://ui/mods/bugs_faction/research.js",
