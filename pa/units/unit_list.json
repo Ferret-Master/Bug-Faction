@@ -80,6 +80,7 @@
         "/pa/units/land/bug_boomer/bug_boomer_r.json",
         "/pa/units/land/bug_boomer_big/bug_boomer_big.json",
         "/pa/units/land/bug_matriarch/bug_matriarch.json",
+	"/pa/units/land/bug_matriarch/bug_matriarch_death_spawner.json"
         "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.json",
         "/pa/units/land/bug_ripper/bug_ripper.json",
         "/pa/units/land/bug_runner/bug_runner.json",
