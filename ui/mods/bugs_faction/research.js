@@ -30,43 +30,43 @@ model.unlockPairs = [
     //alpha grunt
     ["/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json",//trigger unit
     ["/pa/units/land/bug_grunt_big/bug_grunt_big.json"],//units added
-    ["/pa/units/land/bug_grunt/bug_grunt.json","/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json"],//units replaced/locked
+    ["/pa/units/land/bug_grunt/bug_grunt.json","/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json","/pa/units/research/unlocks/bug_grunt_big_unlock/research_grunt.json"],//units replaced/locked
     true],//is a replace rather than just locks
 
     //stealth ripper
     ["/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json",
     ["/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.json"],
-    ["/pa/units/land/bug_ripper/bug_ripper.json","/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json"],
+    ["/pa/units/land/bug_ripper/bug_ripper.json","/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json","/pa/units/research/unlocks/bug_ripper_stealth_unlock/research_ripper.json"],
     true],
 
     //cheap combat fabs
     ["/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/bug_combat_fab_cheap_unlock.json",
     ["/pa/units/land/bug_combat_fab/bug_combat_fab_cheap.json"],
-    ["/pa/units/land/bug_combat_fab/bug_combat_fab.json","/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/bug_combat_fab_cheap_unlock.json"],
+    ["/pa/units/land/bug_combat_fab/bug_combat_fab.json","/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/bug_combat_fab_cheap_unlock.json", "/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/research_combat_fab.json"],
     true],
 
     //fast needler
     ["/pa/units/research/unlocks/bug_needler_fast_unlock/bug_needler_fast_unlock.json",
     ["/pa/units/land/bug_needler/bug_needler_fast.json"],
-    ["/pa/units/land/bug_needler/bug_needler.json","/pa/units/research/unlocks/bug_needler_fast_unlock/bug_needler_fast_unlock.json"],
+    ["/pa/units/land/bug_needler/bug_needler.json","/pa/units/research/unlocks/bug_needler_fast_unlock/bug_needler_fast_unlock.json","/pa/units/research/unlocks/bug_needler_fast_unlock/research_needler.json"],
      true],
 
      //boomer mine transform unlock
     ["/pa/units/research/unlocks/bug_boomer_mine_unlock/bug_boomer_mine_unlock.json",
     ["/pa/units/land/bug_boomer/bug_boomer_r.json","/pa/units/structure/bug_mine/bug_mine.json"],
-    ["/pa/units/land/bug_boomer/bug_boomer.json","/pa/units/structure/bug_mine/bug_mine.json", "/pa/units/research/unlocks/bug_boomer_mine_unlock/bug_boomer_mine_unlock.json"],
+    ["/pa/units/land/bug_boomer/bug_boomer.json","/pa/units/structure/bug_mine/bug_mine.json", "/pa/units/research/unlocks/bug_boomer_mine_unlock/bug_boomer_mine_unlock.json", "/pa/units/research/unlocks/bug_boomer_mine_unlock/research_boomer_mine.json"],
      true],
      
      //crusher unlock
     ["/pa/units/research/unlocks/bug_crusher_unlock/bug_crusher_unlock.json",
     ["/pa/units/land/bug_crusher/bug_crusher.json"],
-    ["/pa/units/research/unlocks/bug_crusher_unlock/bug_crusher_unlock.json"],
+    ["/pa/units/research/unlocks/bug_crusher_unlock/bug_crusher_unlock.json", "/pa/units/research/unlocks/bug_crusher_unlock/research_crusher.json"],
     false],
 
     //hydra unlock
     ["/pa/units/research/unlocks/bug_hydra_unlock/bug_hydra_unlock.json",
     ["/pa/units/land/bug_hydra/bug_hydra.json"],
-    ["/pa/units/research/unlocks/bug_hydra_unlock/bug_hydra_unlock.json"],
+    ["/pa/units/research/unlocks/bug_hydra_unlock/bug_hydra_unlock.json","/pa/units/research/unlocks/bug_hydra_unlock/research_hydra.json"],
     false],
  
 

@@ -1,0 +1,151 @@
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "display_name": "Pike",
+    "si_name": "bug_missile_defence_basic",
+    "description": "!LOC:Basic Missile Launcher - Attacks land, sea, and orbital targets.",
+    "max_health": 500,
+    "build_metal_cost": 300,
+    "atrophy_rate": 30,
+    "atrophy_cool_down": 15,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "alt_area_build_type": "Sphere",
+    "alt_area_build_pattern": [
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    ],
+    "unit_types": [
+        "UNITTYPE_Land",
+        "UNITTYPE_Structure",
+        "UNITTYPE_Tactical",
+        "UNITTYPE_Defense",
+        "UNITTYPE_SurfaceDefense",
+        "UNITTYPE_Basic",
+        "UNITTYPE_CmdBuild",
+        "UNITTYPE_FabBuild",
+        "UNITTYPE_Custom2"
+    ],
+    "command_caps": [
+        "ORDER_Attack"
+    ],
+    "guard_layer": "WL_AnySurface",
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 80
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 80
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/structure/bug_missile_defence_basic/bug_missile_defence_basic.papa"
+        
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/structure/bug_missile_defence_basic/bug_missile_defence_basic_weapon.json",
+            "aim_bone": "socket_muzzle",
+            "muzzle_bone": "socket_muzzle"
+        },
+        {
+            "spec_id": "/pa/units/structure/bug_missile_defence_basic/bug_missile_defence_basic_antidrop.json",
+            "aim_bone": "socket_muzzle",
+            "muzzle_bone": "socket_muzzle"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/factory"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Factory",
+            "effect_scale": 0.5
+        }
+    },
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/structure/artillery"
+        }
+    },
+    "selection_icon": {
+        "diameter": 14
+    },
+    "TEMP_texelinfo": 15.8261,
+    "mesh_bounds": [
+        6,
+        6,
+        7
+    ],
+    "placement_size": [
+        10,
+        10
+    ]
+}

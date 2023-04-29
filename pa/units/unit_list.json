@@ -22,7 +22,7 @@
         "/pa/units/structure/bug_turret_large/bug_turret_large.json",
         "/pa/units/structure/bug_turret_acid/bug_turret_acid.json",
         "/pa/units/structure/bug_turret_needle/bug_turret_needle.json",
-        "/pa/units/structure/bug_turret_spray/bug_turret_spray.json",
+      
         "/pa/units/structure/advanced_hive/advanced_hive.json",
         "/pa/units/structure/basic_hive/basic_hive.json",
         "/pa/units/structure/bug_swarm_hive/bug_swarm_hive.json",
@@ -34,6 +34,11 @@
         "/pa/units/structure/bug_arty_small/bug_arty_small.json",
         "/pa/units/structure/bug_arty_large/bug_arty_large.json",
         "/pa/units/structure/bug_combined_storage/bug_combined_storage.json",
+
+        "/pa/units/structure/bug_missile_defence_basic/bug_missile_defence_basic.json",
+        "/pa/units/structure/bug_air_drone_launcher/bug_air_drone_launcher.json",
+        "/pa/units/structure/bug_air_drone_launcher/bug_air_drone/bug_air_drone.json",
+        "/pa/units/structure/bug_stealth_turret/bug_stealth_turret.json",
         
         "/pa/units/research/unlocks/base_unlock/base_research.json",
         "/pa/units/research/unlocks/base_unlock/base_adv_research.json",
