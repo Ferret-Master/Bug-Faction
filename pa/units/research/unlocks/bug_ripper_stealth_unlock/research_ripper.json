@@ -95,14 +95,14 @@
   ],
   "unit_types": [
     "UNITTYPE_Factory",
-    "UNITTYPE_Construction",
     "UNITTYPE_Land",
     "UNITTYPE_Structure",
     "UNITTYPE_Basic",
     "UNITTYPE_FabBuild",
     "UNITTYPE_FabAdvBuild",
     "UNITTYPE_Important",
-    "UNITTYPE_Custom2"
+    "UNITTYPE_Custom2",
+    "UNITTYPE_Bot"
   ],
   "wait_to_rolloff_time": 0
 }
