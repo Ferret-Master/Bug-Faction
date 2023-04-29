@@ -1,0 +1,97 @@
+{
+ 
+    "unit_name": "Stealth Turret",
+    "display_name": "!LOC:Stealth Turret",
+    "si_name": "bug_stealth_turret",
+    "description": "!LOC:Stealth turret, invisible to normal units, attacks at mid range with a infrequent high damage aoe",
+    "max_health": 2000,
+    "build_metal_cost": 2000,
+    "atrophy_rate": 7.5,
+    "atrophy_cool_down": 15.0,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "unit_types": [
+        "UNITTYPE_Structure",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Land",
+        "UNITTYPE_SurfaceDefense",
+        "UNITTYPE_Defense",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Custom2"
+    ],
+    "command_caps": [
+        "ORDER_Attack"
+    ],
+    "guard_layer": "WL_AnyLayer",
+    "physics": {
+        "type": "Structure",
+        "shape": "Box",
+        "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+        "radius": 6,
+        "air_friction": 1.0,
+        "allow_pushing": false,
+        "push_sideways": false,
+        "allow_underground": false
+      },
+    "recon": {
+        "observable": {
+            "ignore_sight": true,
+            "layer": "surface_and_air"
+          },
+          
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 130
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 130
+                }
+            ]
+        }
+    },
+    "model": [
+        {
+            "layer": "WL_LandHorizontal",
+            "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json",
+            "filename": "/pa/units/structure/bug_stealth_turret/bug_stealth_turret.papa"
+           
+        }
+    ],
+    "tools": [
+        {
+            "spec_id": "/pa/units/structure/bug_stealth_turret/bug_stealth_turret_weapon.json",
+            "aim_bone": "socket_muzzle",
+            "muzzle_bone": [
+                "socket_muzzle"
+            ]
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/structure_small"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/bot/assault_fire"
+          },
+        "died": {
+            "audio_cue": "/SE/Death/structure_small",
+            "effect_scale": 0.6
+        }
+    },
+    "selection_icon": {
+        "diameter": 12.0
+    },
+    "mesh_bounds": [
+        10,
+        10,
+        12.2
+    ],
+    "TEMP_texelinfo": 10.2184,
+    "area_build_separation": 18
+}

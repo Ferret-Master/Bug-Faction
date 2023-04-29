@@ -45,7 +45,7 @@
         {
             "layer": "WL_LandHorizontal",
             "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json",
-            "filename": "/pa/units/structure/bug_turret_needle/bug_turret_needle.papa"
+            "filename": "/pa/units/structure/bug_turret_needle/needle_turret.papa"
            
         }
     ],

@@ -5,7 +5,7 @@
     "display_name":"!LOC:Fast Needler Unlock",
     "description":"!LOC:Raises the needler speed from 14 to 16",
     "si_name": "blank_blip",
-    "build_metal_cost": 1000,
+    "build_metal_cost": 400,
     "add_to_spatial_db": false,
     "model": {
       "filename": "/pa/units/misc/empty_unit.papa"

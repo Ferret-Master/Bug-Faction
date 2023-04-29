@@ -1,7 +1,7 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "display_name": "!LOC:Bug Flak Cannon",
-    "description": "!LOC:Advanced Anti-Air - Overhead heavy damage. Only attacks air.",
+    "display_name": "!LOC:Bug Heavy AA Turret",
+    "description": "!LOC:Advanced Anti-Air -  Equipped with lightning beams,fast aoe damage. Only attacks air.",
     "si_name":"air_defense_adv",
     "max_health": 2000,
     "build_metal_cost": 900,
@@ -104,27 +104,22 @@
     "model": [
         {
             "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/land/air_defense_adv/air_defense_adv.papa",
-            "animtree": "/pa/anim/anim_trees/air_defense_adv_anim_tree.json",
-            "skirt_decal": "/pa/effects/specs/skirt_air_defense_adv.json"
+            "filename": "/pa/units/structure/bug_aa_large/bug_aa_adv.papa",
+            "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json"
+          
         },
         {
             "layer": "WL_WaterSurface",
-            "filename": "/pa/units/sea/air_defense_adv/air_defense_adv.papa",
+            "filename": "/pa/units/structure/bug_aa_large/bug_aa_adv.papa",
             "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json"
         }
     ],
     "nearby_target_tick_update_interval": 3,
     "tools": [
         {
-            "spec_id": "/pa/units/land/air_defense_adv/air_defense_adv_tool_weapon.json",
-            "aim_bone": "bone_pitch",
-            "muzzle_bone": [
-                "socket_rightMuzzle01",
-                "socket_leftMuzzle01",
-                "socket_rightMuzzle02",
-                "socket_leftMuzzle02"
-            ]
+            "spec_id": "/pa/units/structure/bug_aa_large/bug_aa_large_weapon.json",
+            "aim_bone": "socket_muzzle",
+            "muzzle_bone": "socket_muzzle"
         }
     ],
     "events": {

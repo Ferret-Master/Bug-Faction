@@ -10,6 +10,11 @@ var paeiouIcons = [
 	"grunt_unlock",
 	"bug_combat_fab_unlock",
 	//other units
+	"bug_air_drone_launcher",
+	"bug_stealth_turret",
+	"bug_missile_defence_basic",
+	"bug_air_drone",
+	"bug_air_drone_launcher",
 	"bug_fab",
 	"bug_fab_adv",
 	"bug_laser_spider",

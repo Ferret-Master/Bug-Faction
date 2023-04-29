@@ -1,0 +1,9 @@
+{
+    "display_name": "bug aa Anti-Air Beam",
+    "base_spec": "/pa/ammo/base_beam/base_beam.json",
+    "damage": 40,
+    "fx_beam_spec": "/pa/effects/specs/testing/aa_beam.pfx",
+    "fx_collision_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_hit.pfx",
+    "splash_damage": 0,
+    "splash_radius": 0
+  }

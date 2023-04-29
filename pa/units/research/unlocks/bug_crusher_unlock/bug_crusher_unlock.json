@@ -5,7 +5,7 @@
     "display_name":"!LOC:Crusher Unlock",
     "description":"!LOC:Unlocks the crusher, a durable aoe bug",
     "si_name": "blank_blip",
-    "build_metal_cost": 2000,
+    "build_metal_cost": 1500,
     "add_to_spatial_db": false,
     "model": {
       "filename": "/pa/units/misc/empty_unit.papa"

@@ -33,7 +33,7 @@ var newBuildScenario = {
     "/pa/units/structure/bug_advanced_torp/bug_advanced_torp.json": ["bug_combat", 6, {row: 1, column: 3}],
     "/pa/units/structure/bug_turret_small/bug_turret_small.json": ["bug_combat", 6, {row: 1, column: 0}],
     //"/pa/units/structure/bug_turret_large/bug_turret_large.json": ["bug_combat", 6, {row: 0, column: 0}],
-    "/pa/units/structure/bug_turret_spray/bug_turret_spray.json": ["bug_combat", 6, {row: 0, column: 1}],
+    "/pa/units/structure/bug_stealth_turret/bug_stealth_turret.json": ["bug_combat", 6, {row: 0, column: 1}],
     "/pa/units/structure/bug_turret_needle/bug_turret_needle.json": ["bug_combat", 6, {row: 2, column: 0}],
    // "/pa/units/structure/bug_turret_acid/bug_turret_acid.json": ["bug_combat", 6, {row: 2, column: 3}],
     "/pa/units/structure/bug_aa_small/bug_aa_small.json": ["bug_combat", 13, {row: 2, column: 1}],
@@ -41,6 +41,8 @@ var newBuildScenario = {
      "/pa/units/structure/bug_anti_orbital/bug_anti_orbital.json": ["bug_combat", 16, {row: 2, column: 4}],
      "/pa/units/structure/bug_arty_small/bug_arty_small.json": ["bug_combat", 14, {row: 2, column: 2}],
      "/pa/units/structure/bug_arty_large/bug_arty_large.json": ["bug_combat", 2, {row: 0, column: 2}],
+     "/pa/units/structure/bug_missile_defence_basic/bug_missile_defence_basic.json": ["bug_combat", 7, {row: 1, column: 2}],
+     "/pa/units/structure/bug_air_drone_launcher/bug_air_drone_launcher.json": ["bug_combat", 7, {row: 0, column: 3}],
 
      "/pa/units/structure/bug_nuke/bug_nuke.json": ["bug_combat", 4, {row: 0, column: 4}],
      "/pa/units/structure/bug_anti_nuke/bug_anti_nuke.json": ["bug_combat", 10, {row: 1, column: 4}],
