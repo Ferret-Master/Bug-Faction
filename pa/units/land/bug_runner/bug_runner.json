@@ -127,6 +127,7 @@
     "UNITTYPE_Mobile",
     "UNITTYPE_Scout",
     "UNITTYPE_Land",
+    "UNITTYPE_Offense",
     "UNITTYPE_Basic",
     "UNITTYPE_Custom2"
   ],

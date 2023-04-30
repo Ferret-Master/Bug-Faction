@@ -15,8 +15,11 @@
     "WL_WaterSurface"
   ],
   "target_priorities": [
-    "Shield|Mobile|Structure"
-
+    "Mobile - Air",
+    "Naval",
+    "Structure - Wall",
+    "Wall",
+    "Air"
   ],
   "yaw_range": 180,
   "yaw_rate": 360

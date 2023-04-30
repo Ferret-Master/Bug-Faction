@@ -1,6 +1,8 @@
 
 {
-  
+  "ammo_type": "AMMO_Projectile",
+  "flight_layer": "Air",
+  "flight_type": "Ballistic",
     "damage": 1500,
     "events": {
       "died": {
@@ -17,8 +19,18 @@
     "max_velocity": 500.0,
     "model": null,
     "physics": {
-      "add_to_spatial_db": false
+      "radius": 1,
+      "gravity_scalar": 3,
+      "add_to_spatial_db": false,
+      "allow_underground": true
     },
+    "recon": {
+      "observable": {
+        "ignore_radar": true
+      }
+    },
+    "turn_rate": 0,
+    "spawn_layers": "WL_Air",
     "splash_damage": 1500,
     "full_damage_splash_radius":0.5,
     "splash_radius": 15
