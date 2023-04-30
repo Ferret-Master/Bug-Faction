@@ -175,6 +175,7 @@
       "UNITTYPE_Construction",
       "UNITTYPE_Bot",
       "UNITTYPE_Mobile",
+      "UNITTYPE_Fabber",
       "UNITTYPE_Land",
       "UNITTYPE_Basic",
       "UNITTYPE_Custom2"

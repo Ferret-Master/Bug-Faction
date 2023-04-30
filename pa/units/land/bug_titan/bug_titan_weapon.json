@@ -12,9 +12,11 @@
     "WL_Seafloor"
   ],
   "target_priorities": [
-    "Shield",
-    "Titan & ( Land | Naval )",
-    "Nuke | NukeDefense"
+    "Mobile - Air",
+    "Naval",
+    "Structure - Wall",
+    "Wall",
+    "Air"
   ],
   "yaw_range": 360,
   "yaw_rate": 720
