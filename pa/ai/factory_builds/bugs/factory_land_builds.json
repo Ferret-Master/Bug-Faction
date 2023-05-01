@@ -350,7 +350,7 @@
       "name": "Bugs - Forager",
       "to_build": "Forager",
       "instance_count": 1,
-      "priority": 97,
+      "priority": 0,
       "builders": ["SwarmHive"],
       "build_conditions": [
         [
@@ -417,7 +417,7 @@
       "name": "Bugs - Cheap Forager",
       "to_build": "CheapForager",
       "instance_count": 1,
-      "priority": 97,
+      "priority": 0,
       "builders": ["SwarmHive"],
       "build_conditions": [
         [
