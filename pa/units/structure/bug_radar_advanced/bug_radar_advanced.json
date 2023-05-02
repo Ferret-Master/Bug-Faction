@@ -3,11 +3,11 @@
     "unit_name": "Advanced Radar",
     "display_name": "!LOC:Bug Advanced Radar",
     "si_name":"bug_radar_adv",
-    "description": "!LOC:Advanced Radar - Detects nearby enemy land, sea, and air units.",
+    "description": "!LOC:Advanced Radar - Detects nearby enemy land, sea, and air units, has a stealth field",
     "max_health": 1500,
     "build_metal_cost": 2400,
     "consumption": {
-        "energy": 4000
+        "energy": 6000
     },
     "energy_efficiency_requirement": 0.9,
     "atrophy_rate": 80.0,
