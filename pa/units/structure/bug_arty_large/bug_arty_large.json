@@ -174,12 +174,6 @@
         "spec_id": "/pa/units/structure/bug_arty_large/bug_arty_large_weapon.json",
         "aim_bone": "bone_pitch",
         "muzzle_bone": "socket_muzzle"
-      },
-      {
-        "spec_id": "/pa/units/structure/bug_arty_large/bug_arty_large_weapon.json",
-        "aim_bone": "bone_pitch",
-        "muzzle_bone": "socket_muzzle",
-        "secondary_weapon": true
       }
     ],
     "unit_types": [

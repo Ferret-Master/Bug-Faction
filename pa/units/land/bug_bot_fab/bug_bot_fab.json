@@ -99,7 +99,7 @@
       "acceleration": 160,
       "brake": -1,
       "group_preference": "back",
-      "move_speed": 16,
+      "move_speed": 14,
       "turn_speed": 360,
       "type": "land-small"
     },

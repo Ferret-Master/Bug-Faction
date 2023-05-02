@@ -13,9 +13,9 @@
     ],
     "target_priorities": [
       "Commander",
-      "Air",
-      "Mobile",
-      "Structure - Wall",
-      "Wall"
+      "AirDefense & ( Land | Naval )",
+      "Titan & ( Land | Naval )",
+      "Artillery & Advanced & ( Land | Naval )",
+      "Nuke | NukeDefense"
     ]
   }
