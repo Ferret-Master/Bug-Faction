@@ -1,6 +1,6 @@
 {
     "display_name": "!LOC:Zapper",
-    "description": "!LOC:Mobile Anti-Air - Equipped with homing missiles. Only attacks air.",
+    "description": "!LOC:Mobile Anti-Air - Equipped with lightning beams. Only attacks air.",
     "si_name":"bug_aa",
     "TEMP_texelinfo": 6.12932,
     "attachable": {

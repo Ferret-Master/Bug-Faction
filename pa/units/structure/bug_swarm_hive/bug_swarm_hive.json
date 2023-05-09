@@ -119,7 +119,7 @@
       "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
     },
     "placement_size": [
-      40,
+      30,
       55
     ],
     "recon": {
