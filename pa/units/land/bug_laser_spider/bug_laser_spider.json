@@ -44,7 +44,10 @@
         "group_preference": "back"
     },
     "physics": {
-        "radius": 6
+        "radius": 6,
+        "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+        "allow_pushing": false,
+        "push_sideways": false
     },
     "recon": {
         "observer": {

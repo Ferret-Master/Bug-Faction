@@ -1,8 +1,8 @@
 {
-    "ammo_capacity": 150,
-    "ammo_demand": 15,
+    "ammo_capacity": 300,
+    "ammo_demand": 30,
     "ammo_id": "/pa/units/structure/bug_air_drone_launcher/bug_air_drone_launcher_ammo.json",
-    "ammo_per_shot": 15,
+    "ammo_per_shot": 30,
     "ammo_source": "metal",
     "auto_attack": true,
     "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",

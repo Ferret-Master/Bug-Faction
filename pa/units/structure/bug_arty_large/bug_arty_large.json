@@ -128,7 +128,10 @@
       "group_preference": "back"
     },
     "physics": {
-      "radius": 10
+      "radius": 10,
+      "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+      "allow_pushing": false,
+      "push_sideways": false
     },
     "model": [
       {
