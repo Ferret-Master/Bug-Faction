@@ -14,7 +14,6 @@
       }
     },
     "max_health": 100,
-    "passive_health_regen": -20,
     "mesh_bounds": [
       0.1,
       0.1,
@@ -69,6 +68,11 @@
     "tools": [
       {
         "spec_id": "/pa/units/air/bug_bomber/bug_bomber_dot_weapon.json",
+        "aim_bone": "bone_root",
+        "muzzle_bone": "bone_root"
+      },
+      {
+        "spec_id": "/pa/units/air/bug_bomber/bug_bomber_dot_death_weapon.json",
         "aim_bone": "bone_root",
         "muzzle_bone": "bone_root"
       }

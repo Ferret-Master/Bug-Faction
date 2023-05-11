@@ -13,9 +13,9 @@
         0.42
       ]
     },
-    "initial_velocity": 60.0,
+    "initial_velocity": 80.0,
     "lifetime": 4,
-    "max_velocity": 60.0,
+    "max_velocity": 80.0,
     "model": {
       "filename": "/pa/units/structure/bug_air_drone_launcher/bug_air_drone/bug_air_drone.papa"
     },
@@ -39,7 +39,7 @@
       {
         "ignores_gravity": true,
         "ignores_LOS": true,
-        "stage_duration": 10,
+        "stage_duration": 1,
         "stage_turn_rate": 0,
         "rotates_to_velocity": true
       },
@@ -48,8 +48,8 @@
         "apply_thrust": true,
         "ignores_LOS": true,
         "stage_turn_rate": 270,
-        "stage_change_height": 100,
-        "stage_change_range": 50,
+        "stage_change_height": 50,
+        "stage_change_range": 25,
         "rotates_to_velocity": true
       },
       {

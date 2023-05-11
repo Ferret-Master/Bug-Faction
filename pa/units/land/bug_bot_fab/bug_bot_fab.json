@@ -131,7 +131,7 @@
     "tools": [
       {
         "aim_bone": "bone_root",
-        "spec_id": "/pa/units/land/fabrication_bot/fabrication_bot_build_arm.json"
+        "spec_id": "/pa/units/land/bug_bot_fab/bug_bot_fab_build_arm.json"
       }
     ],
     "transportable": {
