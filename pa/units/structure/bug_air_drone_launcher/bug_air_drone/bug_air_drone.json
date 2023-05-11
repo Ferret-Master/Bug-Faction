@@ -43,7 +43,7 @@
       }
     ],
     "guard_layer": "WL_AnyLayer",
-    "guard_radius": 250,
+    "guard_radius": 200,
     "max_health": 40,
     "mesh_bounds": [
       4,
@@ -56,9 +56,9 @@
     },
     "navigation": {
       "type": "air",
-      "acceleration": 80,
+      "acceleration": 60,
       "brake": 30,
-      "move_speed": 80,
+      "move_speed": 60,
       "turn_speed": 300,
       "aggressive_behavior": "line",
       "aggressive_distance": 60.0,
@@ -66,8 +66,6 @@
       "bank_factor": 50,
       "vertical_speed": 200
     },
-    "nearby_target_tick_update_interval": 3,
-    "passive_health_regen": -3,
     "physics": {
       "radius": 6,
       "gravity_scalar": 1
@@ -79,13 +77,13 @@
             "layer": "surface_and_air",
             "channel": "sight",
             "shape": "capsule",
-            "radius": 150
+            "radius": 80
           },
           {
             "layer": "underwater",
             "channel": "sight",
             "shape": "capsule",
-            "radius": 150
+            "radius": 80
           }
         ]
       }
@@ -93,9 +91,15 @@
     "selection_icon": {
       "diameter": 11.0
     },
+    "wreckage_health_frac": 0.0,
     "tools": [
       {
         "spec_id": "/pa/units/structure/bug_air_drone_launcher/bug_air_drone/bug_air_drone_weapon.json",
+        "aim_bone": "bone_root",
+        "record_index": 0
+      },
+      {
+        "spec_id": "/pa/units/structure/bug_air_drone_launcher/bug_air_drone/bug_air_drone_death_weapon.json",
         "aim_bone": "bone_root",
         "record_index": 0
       }
