@@ -34,8 +34,7 @@
       },
     "recon": {
         "observable": {
-            "ignore_sight": true,
-            "layer": "surface_and_air"
+            "layer": "mine"
           },
           
         "observer": {
@@ -77,7 +76,8 @@
             "audio_cue": "/SE/Build_Complete/structure_small"
         },
         "fired": {
-            "audio_cue": "/SE/Weapons/bot/assault_fire"
+            "audio_cue": "/SE/Weapons/bot/assault_fire",
+            "effect_spec": "/pa/units/structure/bug_stealth_turret/stealth_turret_muzzle.pfx"
           },
         "died": {
             "audio_cue": "/SE/Death/structure_small",
