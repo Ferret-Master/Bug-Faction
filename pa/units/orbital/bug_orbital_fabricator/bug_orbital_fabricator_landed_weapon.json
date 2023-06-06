@@ -1,0 +1,26 @@
+{
+    "ammo_id": "/pa/units/land/bot_support_commander/bot_support_commander_ammo.json",
+    "auto_attack": true,
+    "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+    "idle_aim_delay": 1.0,
+    "max_range": 100,
+    "pitch_range": 90,
+    "pitch_rate": 360,
+    "rate_of_fire": 2.0,
+    "target_layers": [
+      "WL_LandHorizontal",
+      "WL_Seafloor",
+      "WL_WaterSurface",
+      "WL_Air",
+      "WL_Underwater"
+    ],
+    "target_priorities": [
+      "Mobile - Air",
+      "Air & ( EnergyProduction | Transport | Bomber | Gunship | Titan )",
+      "Structure - Wall",
+      "Mobile & Air",
+      "Wall"
+    ],
+    "yaw_range": 180,
+    "yaw_rate": 360
+  }

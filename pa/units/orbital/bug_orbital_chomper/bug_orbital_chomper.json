@@ -1,0 +1,98 @@
+{
+    "display_name": "Artemis",
+    "description": "!LOC:Railgun Platform - Long range with high damage. Very low rate of fire. Uses energy. Attacks orbital.",
+    "TEMP_texelinfo": 17.7177,
+    "attachable": {
+      "offsets": {
+        "root": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
+    "build_metal_cost": 2000,
+    "command_caps": [
+      "ORDER_Move",
+      "ORDER_Patrol",
+      "ORDER_Attack",
+      "ORDER_Assist"
+    ],
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/orbital"
+      },
+      "fired": {
+        "audio_cue": "/SE/Weapons/orb/orb_railgun_fire",
+        "effect_spec": "/pa/effects/specs/orbital_railgun_muzzle_flash.pfx socket_muzzle"
+      },
+      "died": {
+        "audio_cue": "/SE/Death/orbital",
+        "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx",
+        "effect_scale": 1.0
+      }
+    },
+    "guard_layer": "WL_Orbital",
+    "max_health": 350,
+    "mesh_bounds": [
+      17,
+      17,
+      7
+    ],
+    "model": [
+      {
+        "filename": "/pa/units/orbital/orbital_railgun/orbital_railgun.papa",
+        "animtree": "/pa/anim/anim_trees/orbital_railgun_anim_tree.json"
+      }
+    ],
+    "navigation": {
+      "type": "orbital",
+      "acceleration": 10,
+      "brake": 10,
+      "move_speed": 30,
+      "turn_speed": 30,
+      "circle_min_time": 2,
+      "circle_max_time": 4,
+      "hover_time": -1.0,
+      "bank_factor": 1,
+      "turn_in_place": true
+    },
+    "physics": {
+      "radius": 5,
+      "gravity_scalar": 0.001
+    },
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "layer": "orbital",
+            "channel": "sight",
+            "shape": "sphere",
+            "radius": 650
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 30.0
+    },
+    "spawn_layers": "WL_Orbital",
+    "tools": [
+      {
+        "spec_id": "/pa/units/orbital/orbital_railgun/orbital_railgun_tool_weapon.json",
+        "aim_bone": "bone_root",
+        "muzzle_bone": "socket_muzzle"
+      }
+    ],
+    "unit_types": [
+      "UNITTYPE_Mobile",
+      "UNITTYPE_Offense",
+      "UNITTYPE_Orbital",
+      "UNITTYPE_Fighter",
+      "UNITTYPE_Advanced",
+      "UNITTYPE_FactoryBuild",
+      "UNITTYPE_Interplanetary"
+    ],
+    "wreckage_health_frac": 0.0
+  }
