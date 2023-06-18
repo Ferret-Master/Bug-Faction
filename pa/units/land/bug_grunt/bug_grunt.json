@@ -50,7 +50,7 @@
   "attack_range_frac": 0.7,
   "guard_layer": "WL_AnySurface",
   "guard_radius":80,
-  "max_health": 600,
+  "max_health": 540,
   "mesh_bounds": [
     6,
     6,

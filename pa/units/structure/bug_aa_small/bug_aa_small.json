@@ -1,8 +1,8 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "display_name": "!LOC:Bug Galata Turret",
+    "display_name": "!LOC:Bug Light AA Turret",
     "si_name":"air_defense",
-    "description": "!LOC:Anti-Air Defense - Equipped with homing missiles. Only attacks air.",
+    "description": "!LOC:Anti-Air Defense - Equipped with lightning beams. Only attacks air.",
     "max_health": 1000,
     "build_metal_cost": 225,
     "atrophy_rate": 5,
@@ -107,25 +107,22 @@
     "model": [
         {
             "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/land/air_defense/air_defense.papa",
+            "filename": "/pa/units/structure/bug_aa_small/bug_aa.papa",
             "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
             "skirt_decal": "/pa/effects/specs/skirt_defense.json"
         },
         {
             "layer": "WL_WaterSurface",
-            "filename": "/pa/units/sea/air_defense/air_defense.papa",
+            "filename": "/pa/units/structure/bug_aa_small/bug_aa.papa",
             "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json"
         }
     ],
     "nearby_target_tick_update_interval": 2,
     "tools": [
         {
-            "spec_id": "/pa/units/land/air_defense/air_defense_tool_weapon.json",
-            "aim_bone": "bone_pitch",
-            "muzzle_bone": [
-                "socket_rightMuzzle",
-                "socket_leftMuzzle"
-            ]
+            "spec_id": "/pa/units/structure/bug_aa_small/bug_aa_small_weapon.json",
+            "aim_bone": "socket_muzzle",
+            "muzzle_bone": "socket_muzzle"
         }
     ],
     "events": {

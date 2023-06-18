@@ -1,0 +1,32 @@
+{
+    "ammo_capacity": 260,
+    "ammo_demand": 30,
+    "ammo_id": "/pa/units/structure/bug_air_drone_launcher/bug_air_drone_launcher_ammo.json",
+    "ammo_per_shot": 30,
+    "ammo_source": "metal",
+    "auto_attack": true,
+    "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+    "firing_arc_pitch": 360,
+    "firing_arc_yaw": 360,
+    "max_range": 240,
+    "pitch_range": 180,
+    "pitch_rate": 180,
+    "rate_of_fire": 6.0,
+    "carpet_wait_for_full_ammo": true,
+    "spread_fire": true,
+    "carpet_fire":true,
+    "target_layers": [
+      "WL_LandHorizontal",
+      "WL_WaterSurface",
+      "WL_Air"
+    ],
+    "target_priorities": [
+      "Commander",
+      "AirDefense & ( Land | Naval )",
+      "Titan & ( Land | Naval )",
+      "Artillery & Advanced & ( Land | Naval )",
+      "Nuke | NukeDefense"
+    ],
+    "yaw_range": 360,
+    "yaw_rate": 180
+  }

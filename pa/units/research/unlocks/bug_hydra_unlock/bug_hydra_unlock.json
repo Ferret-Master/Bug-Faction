@@ -5,7 +5,7 @@
     "display_name":"!LOC:Hydra Unlock",
     "description":"!LOC:Unlocks the hydra, a mobile artillery bug",
     "si_name": "blank_blip",
-    "build_metal_cost": 2000,
+    "build_metal_cost": 1000,
     "add_to_spatial_db": false,
     "model": {
       "filename": "/pa/units/misc/empty_unit.papa"

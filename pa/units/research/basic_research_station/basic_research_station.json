@@ -41,7 +41,7 @@
       }
     },
     "factory_cooldown_time": 5,
-    "max_health": 6000,
+    "max_health": 4000,
     "mesh_bounds": [
       25.5,
       25.5,
@@ -92,7 +92,7 @@
     "tools": [
       {
         "aim_bone": "bone_root",
-        "spec_id": "/pa/units/land/bot_factory/bot_factory_build_arm.json"
+        "spec_id": "/pa/units/research/basic_research_station/basic_research_station_build_arm.json"
       }
     ],
     "unit_types": [

@@ -27,6 +27,23 @@
     "physics": {
         "collision_layers": "WL_AnySurface"
     },
+    "fx_offsets": [
+        {
+          "type": "energy",
+          "filename": "/pa/units/structure/bug_radar/bug_radar_small.pfx",
+          "bone": "bone_root",
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "orientation": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
     "recon": {
         "observer": {
             "items": [
@@ -85,24 +102,12 @@
     "model": [
         {
             "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/land/radar/radar.papa",
-            "animations": {
-                "start": "/pa/units/land/radar/radar_anim_start.papa",
-                "loop": "/pa/units/land/radar/radar_anim_loop.papa",
-                "end": "/pa/units/land/radar/radar_anim_end.papa"
-            },
-            "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json",
-            "skirt_decal": "/pa/effects/specs/skirt_radar.json"
+            "filename": "/pa/units/structure/bug_radar/bugdar_basic.papa"
         },
         {
             "layer": "WL_WaterSurface",
-            "filename": "/pa/units/sea/radar/radar.papa",
-            "animations": {
-                "start": "/pa/units/land/radar/radar_anim_start.papa",
-                "loop": "/pa/units/land/radar/radar_anim_loop.papa",
-                "end": "/pa/units/land/radar/radar_anim_end.papa"
-            },
-            "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json"
+            "filename": "/pa/units/structure/bug_radar/bugdar_basic.papa"
+          
         }
     ],
     "tools": [
@@ -115,22 +120,6 @@
           ]
         }
       ],
-    "lamps": [
-        {
-            "offset": [
-                0.0,
-                3.68,
-                5.53
-            ],
-            "radius": 3.0,
-            "color": [
-                1.0,
-                1.0,
-                1.0
-            ],
-            "intensity": 2.0
-        }
-    ],
     "events": {
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/radar"
@@ -140,23 +129,7 @@
             "effect_scale": 0.5
         }
     },
-    "fx_offsets": [
-        {
-            "type": "energy",
-            "filename": "/pa/units/land/radar/radar_on.pfx",
-            "bone": "bone_rotator",
-            "offset": [
-                0,
-                0.145,
-                1.425
-            ],
-            "orientation": [
-                0,
-                -45,
-                0
-            ]
-        }
-    ],
+   
     "audio": {
         "selection_response": {
             "cue": "/SE/Selection/structure/radar"

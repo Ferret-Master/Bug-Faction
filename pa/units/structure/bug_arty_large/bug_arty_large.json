@@ -124,11 +124,14 @@
       "acceleration": 20,
       "brake": 20,
       "move_speed": 10,
-      "turn_speed": 60,
+      "turn_speed": 30,
       "group_preference": "back"
     },
     "physics": {
-      "radius": 10
+      "radius": 10,
+      "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+      "allow_pushing": false,
+      "push_sideways": false
     },
     "model": [
       {
@@ -174,12 +177,6 @@
         "spec_id": "/pa/units/structure/bug_arty_large/bug_arty_large_weapon.json",
         "aim_bone": "bone_pitch",
         "muzzle_bone": "socket_muzzle"
-      },
-      {
-        "spec_id": "/pa/units/structure/bug_arty_large/bug_arty_large_weapon.json",
-        "aim_bone": "bone_pitch",
-        "muzzle_bone": "socket_muzzle",
-        "secondary_weapon": true
       }
     ],
     "unit_types": [

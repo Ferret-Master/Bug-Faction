@@ -4,7 +4,7 @@
     "si_name":"bug_fab_adv",
     "display_name": "!LOC:Advanced Fabrication Bot",
     "description": "!LOC:Advanced Fabricator - Build basic and advanced structures.",
-    "max_health": 150,
+    "max_health": 300,
     "spawn_layers": "WL_LandHorizontal",
     "build_metal_cost": 2100,
     "attachable": {
@@ -49,7 +49,7 @@
         "type": "land-small",
         "acceleration": 120,
         "brake": -1,
-        "move_speed": 12,
+        "move_speed": 14,
         "turn_speed": 720,
         "group_preference": "back"
     },
@@ -87,7 +87,7 @@
       },
     "tools": [
         {
-            "spec_id": "/pa/units/land/fabrication_bot_adv/fabrication_bot_adv_build_arm.json",
+            "spec_id": "/pa/units/land/bug_bot_fab_advanced/bug_bot_fab_advanced_build_arm.json",
             "aim_bone": "bone_root"
         }
     ],

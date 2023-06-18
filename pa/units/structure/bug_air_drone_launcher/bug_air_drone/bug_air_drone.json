@@ -1,0 +1,112 @@
+{
+    "display_name": "Lilu",
+    "description": "!LOC:Missile Drone - Fast, fragile, attacks land, sea and air.",
+    "TEMP_texelinfo": 5.39039,
+    "audio": {
+      "loops": {
+        "move": {
+          "cue": "/SE/Movement/air/carrier_drone_loop",
+          "flag": "vel_changed",
+          "should_start_func": "is_moving",
+          "should_stop_func": "is_not_moving"
+        }
+      },
+      "selection_response": {
+        "cue": "/SE/Selection/air/air"
+      }
+    },
+    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+    "build_metal_cost": 90,
+    "command_caps": [],
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/air"
+      },
+      "fired": {
+        "audio_cue": "/SE/Weapons/air/carrier_drone_fire"
+      },
+      "died": {
+        "audio_cue": "/SE/Death/Air",
+        "effect_spec": "/pa/units/air/base_flyer/base_flyer_death.pfx",
+        "effect_scale": 0.4
+      }
+    },
+    "fx_offsets": [
+      {
+        "type": "moving_forward",
+        "filename": "/pa/units/sea/drone_carrier/drone/drone_jets.pfx",
+        "offset": [
+          0,
+          0.727,
+          0.42
+        ]
+      }
+    ],
+    "guard_layer": "WL_AnyLayer",
+    "guard_radius": 200,
+    "max_health": 40,
+    "mesh_bounds": [
+      4,
+      4,
+      2
+    ],
+    "model": {
+        "filename": "/pa/units/structure/bug_air_drone_launcher/bug_air_drone/bug_air_drone.papa",
+        "animtree": "/pa/anim/anim_trees/drone_anim_tree.json"
+    },
+    "navigation": {
+      "type": "air",
+      "acceleration": 30,
+      "brake": 20,
+      "move_speed": 50,
+      "turn_speed": 150,
+      "aggressive_behavior": "line",
+      "aggressive_distance": 60.0,
+      "aggressive_height": 60.0,
+      "bank_factor": 50,
+      "vertical_speed": 200
+    },
+    "physics": {
+      "radius": 6,
+      "gravity_scalar": 1
+    },
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 60
+          },
+          {
+            "layer": "underwater",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 60
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 11.0
+    },
+    "wreckage_health_frac": 0.0,
+    "tools": [
+      {
+        "spec_id": "/pa/units/structure/bug_air_drone_launcher/bug_air_drone/bug_air_drone_weapon.json",
+        "aim_bone": "bone_root",
+        "record_index": 0
+      },
+      {
+        "spec_id": "/pa/units/structure/bug_air_drone_launcher/bug_air_drone/bug_air_drone_death_weapon.json",
+        "aim_bone": "bone_root",
+        "record_index": 0
+      }
+    ],
+    "unit_types": [
+      "UNITTYPE_Mobile",
+      "UNITTYPE_Air",
+      "UNITTYPE_Basic"
+    ]
+  }

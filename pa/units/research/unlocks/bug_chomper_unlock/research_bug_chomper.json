@@ -1,0 +1,114 @@
+{
+  "display_name":"!LOC:Bug Chomper Unlock",
+  "description":"!LOC:Unlocks the bug chomper, a tanky melee anti orbital unit",
+  "si_name": "bug_chomper_unlock", 
+  "TEMP_texelinfo": 38.3936,
+    "area_build_separation": 4,
+    "atrophy_cool_down": 15.0,
+    "atrophy_rate": 10.0,
+    "audio": {
+      "loops": {
+        "build": {
+          "cue": "/SE/Construction/Factory_contruction_loop_bot",
+          "flag": "build_target_changed",
+          "should_start_func": "has_build_target",
+          "should_stop_func": "no_build_target"
+        }
+      }
+    },
+    "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
+    "build_metal_cost": 500,
+    "buildable_types": "(Custom2 & FactoryBuild & Basic & Orbital & Heavy) - Mobile- Custom1 - Custom3 - Custom4",
+    "command_caps": [
+    
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_FactoryBuild",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Attack",
+    "ORDER_Assist"
+    
+    ],
+    "factory": {
+        "initial_build_spec": "/pa/units/research/unlocks/bug_chomper_unlock/bug_chomper_unlock.json"
+      },
+    "death": {
+      "decals": [
+        "/pa/effects/specs/scorch_c_01.json"
+      ]
+    },
+    "events": {
+      "died": {
+        "effect_scale": 1.0
+      }
+    },
+    "factory_cooldown_time": 10000,
+    "max_health": 6000,
+    "mesh_bounds": [
+      25.5,
+      25.5,
+      25.2
+    ],
+    "model": {
+     
+    
+      "filename": "/pa/units/research/unlocks/base_unlock/big_research_bulb.papa"
+     
+    },
+    "physics": {
+      "type": "Structure",
+      "shape": "Box",
+      "collision_layers": "WL_Orbital",
+      "radius": 1,
+      "air_friction": 1.0,
+      "ignore_gravity": true,
+      "allow_pushing": false,
+      "push_sideways": false,
+      "allow_underground": false
+    },
+    "spawn_layers": "WL_Orbital",
+    "placement_size": [
+      40,
+      55
+    ],
+
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "layer": "orbital",
+            "channel": "sight",
+            "shape": "sphere",
+            "radius": 250
+          }
+        ]
+      }
+    },
+    "rolloff_dirs": [
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "selection_icon": {
+      "diameter": 49.5
+    },
+    "tools": [
+      {
+        "aim_bone": "bone_root",
+        "spec_id": "/pa/units/research/advanced_research_station/advanced_research_station_build_arm.json"
+      }
+    ],
+    "unit_types": [
+      "UNITTYPE_Factory",
+      "UNITTYPE_Orbital",
+      "UNITTYPE_Structure",
+      "UNITTYPE_Advanced",
+      "UNITTYPE_FabOrbBuild",
+      "UNITTYPE_Important",
+      "UNITTYPE_Custom2"
+    ],
+    "wait_to_rolloff_time": 0
+  }

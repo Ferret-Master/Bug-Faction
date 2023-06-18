@@ -16,7 +16,6 @@
       }
     },
     "max_health": 100,
-    "passive_health_regen": -20,
     "mesh_bounds": [
       4.0,
       4.0,
@@ -75,6 +74,11 @@
     "tools": [
       {
         "spec_id": "/pa/units/land/bug_boomer_big/bug_boomer_big_dot_weapon.json",
+        "aim_bone": "bone_root",
+        "muzzle_bone": "bone_root"
+      },
+      {
+        "spec_id": "/pa/units/land/bug_boomer_big/bug_boomer_big_dot_death_weapon.json",
         "aim_bone": "bone_root",
         "muzzle_bone": "bone_root"
       }
