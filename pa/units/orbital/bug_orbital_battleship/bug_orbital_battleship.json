@@ -1,0 +1,101 @@
+{
+    "display_name": "!LOC:Tyrant",
+    "description": "!LOC:Bug Orbital Carrier - Launches ground based drones at planetary enemies. Heavily armored. Attacks land targets.",
+    "TEMP_texelinfo": 31.6199,
+    "si_name":"bug_orbital_battleship",
+    "attachable": {
+      "offsets": {
+        "root": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "attack_range_frac": 0.6,
+    "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
+    "build_metal_cost": 15000,
+    "command_caps": [
+      "ORDER_Move",
+      "ORDER_Patrol",
+      "ORDER_Attack",
+      "ORDER_Assist"
+    ],
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/sea"
+      },
+      "died": {
+        "audio_cue": "/SE/Death/orbital",
+        "effect_scale": 2.5,
+        "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx"
+      },
+      "fired": {
+        "audio_cue": "/SE/Weapons/sea/drone_carrier_fire",
+        "effect_scale": 5,
+        "effect_spec": "/pa/units/sea/drone_carrier/carrier/carrier_drone_launch.pfx bone_root"
+      }
+    },
+    "guard_layer": "WL_AnySurface",
+    "max_health": 8000,
+    "mesh_bounds": [
+      50,
+      80,
+      16
+    ],
+    "model": {
+      "filename": "/pa/units/orbital/bug_orbital_battleship/bug_orbital_battleship.papa"
+    },
+    "navigation": {
+      "acceleration": 30,
+      "bank_factor": 0.5,
+      "brake": 80,
+      "move_speed": 20,
+      "turn_accel": 20,
+      "turn_speed": 30
+    },
+    "physics": {
+      "radius": 10
+    },
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "channel": "sight",
+            "layer": "orbital",
+            "radius": 400,
+            "shape": "sphere"
+          },
+          {
+            "channel": "sight",
+            "layer": "surface_and_air",
+            "radius": 200,
+            "shape": "capsule"
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": -72
+    },
+    "spawn_layers": "WL_Orbital",
+    "tools": [
+      {
+        "aim_bone": "bone_root",
+        "muzzle_bone": "bone_root",
+        "spec_id": "/pa/units/orbital/bug_orbital_battleship/bug_orbital_battleship_weapon.json"
+      }
+    ],
+    "unit_types": [
+      "UNITTYPE_Mobile",
+      "UNITTYPE_Offense",
+      "UNITTYPE_Custom2",
+      "UNITTYPE_Orbital",
+      "UNITTYPE_Fighter",
+      "UNITTYPE_Heavy",
+      "UNITTYPE_Advanced",
+      "UNITTYPE_FactoryBuild",
+      "UNITTYPE_Interplanetary"
+    ],
+    "wreckage_health_frac": 0.0
+  }

@@ -1,0 +1,61 @@
+{
+    "ammo_type": "Projectile",
+    "flight_type": "Staged",
+    "damage": 0,
+    "splash_damage": 0,
+    "splash_radius": 0,
+    "initial_velocity": 10,
+    "max_velocity": 10,
+    "turn_rate": 90,
+    "lifetime": 0,
+    "build_metal_cost": 1,
+    "splash_damages_allies": "false",
+    "cruise_height": 1000,
+    "influence_radius": 400,
+    "attachable": {
+        "default_attach_bone": "socket_payload",
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/structure/bug_mine/bug_mine.papa"
+    },
+    "physics": {
+        "layer": "air",
+        "radius": 10,
+        "gravity_scalar": 3,
+        "ignore_gravity": true,
+        "add_to_spatial_db": false,
+        "allow_underground": true
+    },
+    "stages": [
+      
+        {
+            "apply_thrust": true,
+            "ignores_gravity": true,
+            "ignores_LOS": false,
+            "stage_duration": 1000,
+            "climb_angle": 270,
+            "rotates_to_velocity": false
+        },
+        {
+            "release_payload": true,
+            "apply_thrust": false,
+            "ignores_gravity": false,
+            "ignores_LOS": false,
+            "stage_duration": 0,
+            "rotates_to_velocity": false,
+            "die_here": true
+        }
+    ],
+    "recon": {
+        "observable": {
+            "ignore_radar": true
+        }
+    }
+}

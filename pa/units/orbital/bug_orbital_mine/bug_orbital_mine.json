@@ -1,0 +1,113 @@
+{
+    "display_name": "Bug Orbital Mine",
+    "description": "!LOC:Orbital Mine - Self destructs to deal very heavy damage over a nearby area. will move towards nearby targets.",
+    "TEMP_texelinfo": 6.38702,
+    "si_name":"bug_orbital_mine",
+    "attachable": {
+      "offsets": {
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "head": [
+          0,
+          0,
+          1.8
+        ]
+      }
+    },
+    "audio": {
+      "loops": {
+        "move": {
+          "cue": "/SE/Movement/bot/T2_bot_bomb_loop",
+          "flag": "vel_changed",
+          "should_start_func": "is_moving",
+          "should_stop_func": "is_not_moving"
+        }
+      },
+      "selection_response": {
+        "cue": "/SE/Selection/bot/bot_bomb"
+      }
+    },
+    "command_caps": [],
+    "guard_layer": "WL_Orbital",
+    "guard_radius": 100,
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "build_metal_cost": 300,
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/bot"
+      },
+      "fired": {
+        "audio_cue": "",
+        "effect_spec": ""
+      },
+      "died": {
+        "audio_cue": "/SE/Death/Bot_bomb",
+        "effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx",
+        "effect_scale": 1.0
+      }
+    },
+    "guard_layer": "WL_Orbital",
+    "max_health": 100,
+    "mesh_bounds": [
+      5,
+      5,
+      5
+    ],
+    "model": {
+      "filename": "/pa/units/orbital/bug_orbital_mine/bug_orbital_mine.papa"
+     
+    },
+    "navigation": {
+      "type": "orbital",
+      "acceleration": 65,
+      "brake": 20,
+      "move_speed": 100,
+      "turn_speed": 120,
+      "aggressive_behavior": "line",
+      "aggressive_distance": 50,
+      "bank_factor": 5
+    },
+    "physics": {
+      "radius": 5,
+      "gravity_scalar": 0.001
+    },
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "layer": "orbital",
+            "channel": "sight",
+            "shape": "sphere",
+            "radius": 400
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 9.0
+    },
+    "spawn_layers": "WL_Orbital",
+    "tools": [
+      {
+        "spec_id": "/pa/units/orbital/bug_orbital_mine/bug_orbital_mine_weapon.json",
+        "aim_bone": "bone_root",
+        "muzzle_bone": "bone_root"
+      }
+    ],
+    "transportable": {
+      "size": 1
+    },
+    "unit_types": [
+      "UNITTYPE_Structure",
+      "UNITTYPE_Custom2",
+      "UNITTYPE_Orbital",
+      "UNITTYPE_Defense",
+      "UNITTYPE_OrbitalDefense",
+      "UNITTYPE_Advanced",
+      "UNITTYPE_FabOrbBuild"
+    ],
+    "wreckage_health_frac": 0.0
+  }

@@ -1,0 +1,207 @@
+{
+    "display_name": "!LOC:Gas Hive",
+    "description": "!LOC:Advanced Manufacturing - Builds orbital units, can only make on gas planets.",
+    "TEMP_texelinfo": 65.6074,
+    "si_name":"bug_gas_hive",
+    "area_build_separation": 7,
+    "atrophy_cool_down": 15.0,
+    "atrophy_rate": 90.0,
+    "audio": {
+      "loops": {
+        "build": {
+          "cue": "/SE/Construction/Factory_contruction_loop_orbital",
+          "flag": "build_target_changed",
+          "should_start_func": "has_build_target",
+          "should_stop_func": "no_build_target"
+        }
+      }
+    },
+    "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
+    "build_metal_cost": 600,
+    "buildable_types": "Orbital & FactoryBuild & Mobile & Custom2",
+    "factory": {
+      "deploy_projectile": "/pa/units/structure/bug_orbital_launcher/bug_orbital_launcher_deploy.json",
+      "spawn_points": [
+        "bone_nozzle"
+      ]
+    },
+    "command_caps": [
+      "ORDER_Move",
+      "ORDER_Patrol",
+      "ORDER_FactoryBuild",
+      "ORDER_Reclaim",
+      "ORDER_Repair",
+      "ORDER_Attack",
+      "ORDER_Assist"
+    ],
+    "enable_orbital_shell": true,
+    "events": {
+      "died": {
+        "audio_cue": "/SE/Death/orbital",
+        "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx",
+        "effect_scale": 1.0
+      }
+    },
+    "build_restrictions": "Terrainless",
+    "factory_cooldown_time": 4,
+    "fx_offsets": [
+      {
+        "type": "build",
+        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "bone": "bone_nozzle",
+        "offset": [
+          17,
+          0,
+          0
+        ],
+        "orientation": [
+          0,
+          0,
+          90
+        ]
+      },
+      {
+        "type": "build",
+        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "bone": "bone_nozzle",
+        "offset": [
+          -17,
+          0,
+          0
+        ],
+        "orientation": [
+          0,
+          0,
+          -90
+        ]
+      },
+      {
+        "type": "build",
+        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "bone": "bone_nozzle",
+        "offset": [
+          9.5,
+          0,
+          9.5
+        ],
+        "orientation": [
+          0,
+          0,
+          135
+        ]
+      },
+      {
+        "type": "build",
+        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "bone": "bone_nozzle",
+        "offset": [
+          -9.5,
+          0,
+          -9.5
+        ],
+        "orientation": [
+          0,
+          0,
+          -135
+        ]
+      },
+      {
+        "type": "build",
+        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "bone": "bone_nozzle",
+        "offset": [
+          9.5,
+          0,
+          9.5
+        ],
+        "orientation": [
+          0,
+          0,
+          135
+        ]
+      },
+      {
+        "type": "build",
+        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "bone": "bone_nozzle",
+        "offset": [
+          -9.5,
+          0,
+          -9.5
+        ],
+        "orientation": [
+          0,
+          0,
+          -135
+        ]
+      }
+    ],
+    "max_health": 6000,
+    "mesh_bounds": [
+      65,
+      65,
+      58
+    ],
+    "model": [
+      {
+        "filename": "/pa/units/structure/bug_gas_hive/bug_orbital_launcher_gas.papa"
+      }
+    
+    ],
+    "physics": {
+      "radius": 20,
+      "collision_layers": "WL_Orbital",
+      "ignore_gravity": true
+    },
+    "placement_size": [
+      100,
+      100
+    ],
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "layer": "orbital",
+            "channel": "sight",
+            "shape": "sphere",
+            "radius": 250
+          }
+        ]
+      }
+    },
+    "rolloff_dirs": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "selection_icon": {
+      "diameter": 73.0
+    },
+    "spawn_layers": "WL_Orbital",
+    "tools": [
+      {
+        "aim_bone": "bone_nozzle",
+        "spec_id": "/pa/units/orbital/orbital_launcher/orbital_launcher_build_arm.json"
+      }
+    ],
+    "unit_name": "!Orbital Factory",
+    "unit_types": [
+      "UNITTYPE_Factory",
+      "UNITTYPE_Custom2",
+      "UNITTYPE_Construction",
+      "UNITTYPE_Orbital",
+      "UNITTYPE_FabOrbBuild",
+      "UNITTYPE_Structure",
+      "UNITTYPE_Advanced",
+      "UNITTYPE_Important"
+    ],
+    "wait_to_rolloff_time": 3,
+    "wreckage_health_frac": 0.0
+  }

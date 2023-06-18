@@ -1,7 +1,8 @@
 {
-    "display_name": "Avenger",
+    "display_name": "Seeker",
     "description": "!LOC:Orbital Fighter - Fast moving orbital fighter for offense and defense.",
     "TEMP_texelinfo": 17.7177,
+    "si_name":"bug_orbital_fighter",
     "attachable": {
       "offsets": {
         "root": [
@@ -25,7 +26,7 @@
       },
       "fired": {
         "audio_cue": "/SE/Weapons/orb/orb_fighter_fire",
-        "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle"
+        "effect_spec": "/pa/units/orbital/bug_orbital_fighter/bug_orb_fighter_charge.pfx bone_root"
       },
       "died": {
         "audio_cue": "/SE/Death/orbital"
@@ -34,11 +35,11 @@
     "fx_offsets": [
       {
         "type": "moving",
-        "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-        "bone": "bone_body",
+        "filename": "/pa/units/orbital/bug_orbital_fighter/bug_orb_fighter_idle.pfx",
+        "bone": "bone_root",
         "offset": [
           0,
-          8.9,
+          0,
           0
         ],
         "orientation": [
@@ -57,29 +58,24 @@
       1.3
     ],
     "model": {
-      "filename": "/pa/units/orbital/orbital_fighter/orbital_fighter.papa",
-      "animations": {
-        "deploy": "/pa/units/orbital/orbital_fighter/orbital_fighter_anim_deploy.papa",
-        "closed": "/pa/units/orbital/orbital_fighter/orbital_fighter_anim_closed.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/orbital_fighter_anim_tree.json"
+      "filename": "/pa/units/orbital/bug_orbital_fighter/bug_orbital_fighter.papa"
     },
     "navigation": {
       "type": "orbital",
       "acceleration": 65,
-      "brake": 20,
+      "brake": 65,
       "move_speed": 65,
       "turn_speed": 120,
       "circle_min_time": 2,
       "circle_max_time": 4,
       "hover_time": -1.0,
-      "aggressive_behavior": "line",
-      "aggressive_distance": 50,
+      "aggressive_behavior": "circle",
+      "aggressive_distance": 80,
       "bank_factor": 5
     },
     "physics": {
       "radius": 5,
-      "gravity_scalar": 0.001
+      "gravity_scalar": 0
     },
     "recon": {
       "observer": {
@@ -99,13 +95,14 @@
     "spawn_layers": "WL_Orbital",
     "tools": [
       {
-        "spec_id": "/pa/units/orbital/orbital_fighter/orbital_fighter_tool_weapon.json",
-        "aim_bone": "bone_body",
-        "muzzle_bone": "bone_recoil01"
+        "spec_id": "/pa/units/orbital/bug_orbital_fighter/bug_orbital_fighter_weapon.json",
+        "aim_bone": "bone_root",
+        "muzzle_bone": "bone_root"
       }
     ],
     "unit_types": [
       "UNITTYPE_Mobile",
+      "UNITTYPE_Custom2",
       "UNITTYPE_Offense",
       "UNITTYPE_Orbital",
       "UNITTYPE_Fighter",

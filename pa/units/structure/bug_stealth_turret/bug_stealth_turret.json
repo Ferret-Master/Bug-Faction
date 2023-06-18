@@ -9,6 +9,7 @@
     "atrophy_rate": 7.5,
     "atrophy_cool_down": 15.0,
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "strategic_icon_priority": 4,
     "unit_types": [
         "UNITTYPE_Structure",
         "UNITTYPE_Advanced",

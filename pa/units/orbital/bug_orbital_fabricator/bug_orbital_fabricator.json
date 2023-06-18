@@ -1,7 +1,8 @@
 {
-    "display_name": "Orbital Fabrication Bot",
-    "description": "!LOC:Orbital Fabricator - Builds orbital satellites, spaceships and TITANS.",
+    "display_name": "Bug Orbital Fab",
+    "description": "!LOC:Orbital Fabricator - Builds orbital satellites, spaceships, TITANS and can land on the ground.",
     "TEMP_texelinfo": 7.54279,
+    "si_name":"bug_orbital_fabricator",
     "attachable": {
       "offsets": {
         "root": [
@@ -28,14 +29,15 @@
       }
     },
     "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
-    "build_metal_cost": 1300,
-    "buildable_types": "FabOrbBuild",
+    "build_metal_cost": 800,
+    "buildable_types": "FabOrbBuild & Custom2",
     "command_caps": [
       "ORDER_Move",
       "ORDER_Patrol",
       "ORDER_Build",
       "ORDER_Reclaim",
       "ORDER_Repair",
+      "ORDER_FireSecondaryWeapon",
       "ORDER_Assist",
       "ORDER_Use"
     ],
@@ -73,19 +75,13 @@
       21
     ],
     "model": {
-      "filename": "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot.papa",
-      "animations": {
-        "open": "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot_anim_open.papa",
-        "deploy": "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot_anim_deploy.papa",
-        "closed": "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot_anim_closed.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/orbital_fabrication_bot_anim_tree.json"
+      "filename": "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator.papa"
     },
     "navigation": {
       "type": "orbital",
       "acceleration": 10,
       "brake": 10,
-      "move_speed": 20,
+      "move_speed": 25,
       "turn_speed": 75,
       "hover_time": -1.0,
       "aggressive_behavior": "circle",
@@ -125,12 +121,23 @@
     "spawn_layers": "WL_Orbital",
     "tools": [
       {
-        "spec_id": "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot_build_arm.json",
-        "aim_bone": "bone_shoulder"
+        "spec_id": "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator_build_arm.json",
+        "aim_bone": "bone_root"
+      },
+      {
+        "spec_id": "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator_transform_range.json",
+        "aim_bone": "bone_root"
+      },
+      {
+        "spec_id": "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator_transform.json",
+        "aim_bone": "bone_root",
+        "muzzle_bone": "bone_root",
+        "secondary_weapon": true
       }
     ],
     "unit_types": [
       "UNITTYPE_Orbital",
+      "UNITTYPE_Custom2",
       "UNITTYPE_Fabber",
       "UNITTYPE_Construction",
       "UNITTYPE_Mobile",

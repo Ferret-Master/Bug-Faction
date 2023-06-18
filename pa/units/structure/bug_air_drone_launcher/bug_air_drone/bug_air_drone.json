@@ -56,10 +56,10 @@
     },
     "navigation": {
       "type": "air",
-      "acceleration": 60,
-      "brake": 30,
-      "move_speed": 60,
-      "turn_speed": 300,
+      "acceleration": 30,
+      "brake": 20,
+      "move_speed": 50,
+      "turn_speed": 150,
       "aggressive_behavior": "line",
       "aggressive_distance": 60.0,
       "aggressive_height": 60.0,
@@ -77,13 +77,13 @@
             "layer": "surface_and_air",
             "channel": "sight",
             "shape": "capsule",
-            "radius": 80
+            "radius": 60
           },
           {
             "layer": "underwater",
             "channel": "sight",
             "shape": "capsule",
-            "radius": 80
+            "radius": 60
           }
         ]
       }

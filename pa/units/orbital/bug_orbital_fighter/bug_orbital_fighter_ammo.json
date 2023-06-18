@@ -1,12 +1,8 @@
 {
-    "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
-    "damage": 40,
-    "fx_trail": {
-      "filename": "/pa/units/land/laser_defense_adv/laser_defense_adv_ammo_trail.pfx"
-    },
-    "initial_velocity": 300.0,
-    "lifetime": 1.0,
-    "max_velocity": 300.0,
-    "splash_damage": 0,
-    "splash_radius": 0
-  }
+  "base_spec": "/pa/ammo/base_beam/base_beam.json",
+  "collision_check": "enemies",
+  "damage": 40,
+  "fx_beam_spec": "/pa/units/orbital/bug_orbital_fighter/bug_orb_fighter_beam.pfx",
+  "splash_damage": 0,
+  "splash_radius": 0
+}

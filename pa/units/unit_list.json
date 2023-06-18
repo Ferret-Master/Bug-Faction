@@ -27,6 +27,9 @@
         "/pa/units/structure/basic_hive/basic_hive.json",
         "/pa/units/structure/bug_swarm_hive/bug_swarm_hive.json",
         "/pa/units/structure/bug_orbital_launcher/bug_orbital_launcher.json",
+        "/pa/units/structure/bug_jig/bug_jig.json",
+        "/pa/units/structure/bug_gas_hive/bug_gas_hive.json",
+        "/pa/units/structure/bug_anchor/bug_anchor.json",
         "/pa/units/structure/basic_air_hive/basic_air_hive.json",
         "/pa/units/structure/advanced_air_hive/advanced_air_hive.json",
         "/pa/units/structure/basic_naval_hive/basic_naval_hive.json",
@@ -60,6 +63,33 @@
         "/pa/units/research/unlocks/bug_hydra_unlock/bug_hydra_unlock.json",
         "/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/bug_combat_fab_cheap_unlock.json",
         "/pa/units/research/unlocks/bug_needler_fast_unlock/bug_needler_fast_unlock.json",
+
+        "/pa/units/research/unlocks/bug_orbital_fighter_vision_unlock/research_bug_orbital_fighter_vision.json",
+
+        "/pa/units/research/unlocks/bug_orbital_battleship_unlock/research_bug_orbital_battleship.json",
+        "/pa/units/research/unlocks/bug_chomper_unlock/research_bug_chomper.json",
+        "/pa/units/research/unlocks/bug_orbital_laser_unlock/research_bug_orbital_laser.json",
+        "/pa/units/research/unlocks/bug_advanced_orbital_radar_unlock/research_bug_advanced_orbital_radar.json",
+
+        "/pa/units/research/unlocks/bug_orbital_fighter_vision_unlock/bug_orbital_fighter_vision_unlock.json",
+
+        "/pa/units/research/unlocks/bug_orbital_battleship_unlock/bug_orbital_battleship_unlock.json",
+        "/pa/units/research/unlocks/bug_chomper_unlock/bug_chomper_unlock.json",
+        "/pa/units/research/unlocks/bug_orbital_laser_unlock/bug_orbital_laser_unlock.json",
+        "/pa/units/research/unlocks/bug_advanced_orbital_radar_unlock/bug_advanced_orbital_radar_unlock.json",
+
+        "/pa/units/orbital/bug_lander/bug_lander.json",
+        "/pa/units/orbital/bug_orbital_mine/bug_orbital_mine.json",
+        "/pa/units/orbital/bug_orbital_battleship/bug_orbital_battleship.json",
+        "/pa/units/orbital/bug_orbital_battleship/bug_land_drone/bug_land_drone.json",
+        "/pa/units/orbital/bug_orbital_chomper/bug_orbital_chomper.json",
+        "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator.json",
+        "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator_landed.json",
+        "/pa/units/orbital/bug_orbital_fighter/bug_orbital_fighter.json",
+        "/pa/units/orbital/bug_orbital_fighter/bug_orbital_fighter_vision.json",
+        "/pa/units/orbital/bug_orbital_laser/bug_orbital_laser.json",
+        "/pa/units/orbital/bug_orbital_radar/bug_orbital_radar.json",
+        "/pa/units/orbital/bug_advanced_orbital_radar/bug_advanced_orbital_radar.json",
 
         "/pa/units/air/bug_fighter/bug_fighter.json",
         "/pa/units/air/bug_fighter_adv/bug_fighter_adv.json",

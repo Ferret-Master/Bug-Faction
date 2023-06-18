@@ -1,7 +1,8 @@
 {
-    "display_name": "Artemis",
-    "description": "!LOC:Railgun Platform - Long range with high damage. Very low rate of fire. Uses energy. Attacks orbital.",
+    "display_name": "Chomper",
+    "description": "!LOC:melee siege unit - short range with high damage. Heavily armored. Attacks orbital.",
     "TEMP_texelinfo": 17.7177,
+    "si_name":"bug_chomper",
     "attachable": {
       "offsets": {
         "root": [
@@ -34,7 +35,7 @@
       }
     },
     "guard_layer": "WL_Orbital",
-    "max_health": 350,
+    "max_health": 1000,
     "mesh_bounds": [
       17,
       17,
@@ -42,16 +43,20 @@
     ],
     "model": [
       {
-        "filename": "/pa/units/orbital/orbital_railgun/orbital_railgun.papa",
-        "animtree": "/pa/anim/anim_trees/orbital_railgun_anim_tree.json"
+        "filename": "/pa/units/orbital/bug_orbital_chomper/bug_orbital_chomper.papa",
+        "animations": {
+          "walk": "/pa/units/orbital/bug_orbital_chomper/bug_orbital_chomper_move.papa",
+          "firing": "/pa/units/orbital/bug_orbital_chomper/bug_orbital_chomper_chomp.papa"
+        },
+        "animtree": "/pa/units/orbital/bug_orbital_chomper/bug_chomper_anim_tree.json"
       }
     ],
     "navigation": {
       "type": "orbital",
       "acceleration": 10,
-      "brake": 10,
-      "move_speed": 30,
-      "turn_speed": 30,
+      "brake": 20,
+      "move_speed": 55,
+      "turn_speed": 55,
       "circle_min_time": 2,
       "circle_max_time": 4,
       "hover_time": -1.0,
@@ -80,13 +85,14 @@
     "spawn_layers": "WL_Orbital",
     "tools": [
       {
-        "spec_id": "/pa/units/orbital/orbital_railgun/orbital_railgun_tool_weapon.json",
+        "spec_id": "/pa/units/orbital/bug_orbital_chomper/bug_orbital_chomper_weapon.json",
         "aim_bone": "bone_root",
         "muzzle_bone": "socket_muzzle"
       }
     ],
     "unit_types": [
       "UNITTYPE_Mobile",
+      "UNITTYPE_Custom2",
       "UNITTYPE_Offense",
       "UNITTYPE_Orbital",
       "UNITTYPE_Fighter",

@@ -1,7 +1,8 @@
 {
-    "display_name": "!LOC:SXX-1304 Laser Platform",
+    "display_name": "!LOC:Bug Laser Platform",
     "description": "!LOC:Orbital Laser Platform - Rains death from above.",
     "TEMP_texelinfo": 31.6199,
+    "si_name":"bug_orbital_laser",
     "attachable": {
       "offsets": {
         "root": [
@@ -41,19 +42,14 @@
       40
     ],
     "model": {
-      "filename": "/pa/units/orbital/orbital_laser/orbital_laser.papa",
-      "animations": {
-        "open": "/pa/units/orbital/orbital_laser/orbital_laser_anim_open.papa",
-        "closed": "/pa/units/orbital/orbital_laser/orbital_laser_anim_closed.papa",
-        "deploy": "/pa/units/orbital/orbital_laser/orbital_laser_anim_deploy.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/orbital_laser_anim_tree.json"
+      "filename": "/pa/units/orbital/bug_orbital_laser/bug_orbital_laser.papa",
+      "animtree": "/pa/anim/anim_trees/orbital_railgun_anim_tree.json"
     },
     "navigation": {
       "type": "orbital",
       "acceleration": 25,
       "brake": 25,
-      "move_speed": 25,
+      "move_speed": 20,
       "turn_speed": 90,
       "hover_time": -1.0
     },
@@ -85,8 +81,8 @@
     "spawn_layers": "WL_Orbital",
     "tools": [
       {
-        "spec_id": "/pa/units/orbital/orbital_laser/orbital_laser_tool_weapon.json",
-        "aim_bone": "bone_recoil",
+        "spec_id": "/pa/units/orbital/bug_orbital_laser/bug_orbital_laser_weapon.json",
+        "aim_bone": "bone_pitch",
         "muzzle_bone": "socket_muzzle"
       }
     ],
@@ -94,6 +90,7 @@
     "unit_types": [
       "UNITTYPE_Mobile",
       "UNITTYPE_Offense",
+      "UNITTYPE_Custom2",
       "UNITTYPE_Orbital",
       "UNITTYPE_LaserPlatform",
       "UNITTYPE_Advanced",
