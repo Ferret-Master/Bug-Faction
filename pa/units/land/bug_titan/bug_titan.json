@@ -51,7 +51,7 @@
           }
     },
     "attack_range_frac": 0.2,
-    "max_health": 120000,
+    "max_health": 140000,
     "mesh_bounds": [
         65,
         65,
@@ -119,6 +119,7 @@
         "UNITTYPE_Advanced",
         "UNITTYPE_FabAdvBuild",
         "UNITTYPE_Titan",
+        "UNITTYPE_FabOrbBuild",
         "UNITTYPE_Custom2"
     ],
     "death": {

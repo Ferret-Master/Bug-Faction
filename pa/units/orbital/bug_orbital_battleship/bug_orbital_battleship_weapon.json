@@ -1,0 +1,26 @@
+{
+    "ammo_capacity": 300,
+    "ammo_demand": 10,
+    "ammo_id": "/pa/units/orbital/bug_orbital_battleship/bug_orbital_battleship_ammo.json",
+    "ammo_per_shot": 10,
+    "ammo_source": "metal",
+    "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+    "carpet_fire": true,
+    "carpet_wait_for_full_ammo": true,
+    "charge_ammo_when_targeting": false,
+    "firing_arc_pitch": 0,
+    "firing_arc_yaw": 0,
+    "firing_standard_deviation": 20,
+    "max_range": 200,
+    "pitch_range": 180,
+    "pitch_rate": 720,
+    "rate_of_fire": 10,
+    "spread_fire": true,
+    "start_fully_charged": true,
+    "yaw_range": 360,
+    "yaw_rate": 720,
+    "target_layers": [
+      "WL_LandHorizontal",
+      "WL_Seafloor"
+    ]
+  }

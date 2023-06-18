@@ -231,9 +231,6 @@
     "Runner": {
       "spec_id": "/pa/units/land/bug_runner/bug_runner.json"
     },
-    "Leech": {
-      "spec_id": "/pa/units/land/bug_leech/bug_leech.json"
-    },
     "Scorcher": {
       "spec_id": "/pa/units/land/bug_scorcher/bug_scorcher.json"
     },

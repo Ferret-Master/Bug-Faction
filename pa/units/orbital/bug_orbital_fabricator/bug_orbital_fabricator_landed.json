@@ -1,0 +1,145 @@
+{
+    "display_name": "Landed Bug Orbital Fabricator",
+    "description": "!LOC:Proxy Orbital Fab - Builds basic structures. Has a minor ability to defend itself.",
+    "armor_type": "AT_Orbital",
+    "si_name":"bug_orbital_fabricator_landed",
+    "attachable": {
+      "offsets": {
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "head": [
+          0,
+          0,
+          10
+        ]
+      }
+    },
+    "audio": {
+      "loops": {
+        "build": {
+          "cue": "/SE/Construction/Commander_contruction_beam_loop",
+          "flag": "build_target_changed",
+          "should_start_func": "has_build_target",
+          "should_stop_func": "no_build_target"
+        },
+        "move": {
+          "cue": "/SE/Movement/bot/Sub_Commander_move_loop",
+          "flag": "vel_changed",
+          "should_start_func": "is_moving",
+          "should_stop_func": "is_not_moving"
+        }
+      },
+      "selection_response": {
+        "cue": "/SE/Selection/bot/sub_commander"
+      }
+    },
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "build_metal_cost": 800,
+    "buildable_types": "(CmdBuild & Custom2)",
+    "command_caps": [
+      "ORDER_Move",
+      "ORDER_Patrol",
+      "ORDER_Build",
+      "ORDER_Attack",
+      "ORDER_Reclaim",
+      "ORDER_Repair",
+      "ORDER_Assist",
+      "ORDER_Use"
+    ],
+    "events": {
+      "fired": {
+        "audio_cue": "/SE/Weapons/air/gunship_fire",
+        "effect_spec": "/pa/units/air/bug_harpy/harpy_muzzle.pfx socket_muzzle01 /pa/units/air/bug_harpy/harpy_muzzle.pfx socket_muzzle02 /pa/units/air/bug_harpy/harpy_muzzle.pfx socket_muzzle03"
+      },
+      "died": {
+        "audio_cue": "/SE/Death/Bot",
+        "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
+        "effect_scale": 1.7
+      }
+    },
+    "fx_offsets": [
+      {
+        "type": "build",
+        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "bone": "socket_muzzle02"
+      }
+    ],
+    "max_health": 300,
+    "mesh_bounds": [
+      15,
+      15,
+      21
+    ],
+    "model": {
+      "filename": "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator_landed.papa"
+    },
+    "navigation": {
+      "type": "amphibious",
+      "acceleration": 120,
+      "brake": 120,
+      "move_speed": 10,
+      "turn_speed": 180,
+      "turn_in_place": true
+    },
+    "physics": {
+      "radius": 9,
+      "sync_radius_to_extents": true
+    },
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 150
+          },
+          {
+            "layer": "underwater",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 150
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 15.0
+    },
+    "teleportable": {},
+    "tools": [
+      {
+        "spec_id": "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator_build_arm.json",
+        "aim_bone": "bone_root"
+
+      },
+      {
+        "spec_id": "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator_landed_weapon.json",
+        "aim_bone": "bone_turret",
+        "projectiles_per_fire": 3,
+        "muzzle_bone": [
+          "socket_muzzle01",
+          "socket_muzzle02",
+          "socket_muzzle03"
+        ],
+        "primary_weapon": true
+      }
+    ],
+    "transportable": {
+      "size": 1
+    },
+    "unit_types": [
+      "UNITTYPE_Bot",
+      "UNITTYPE_Custom2",
+      "UNITTYPE_Fabber",
+      "UNITTYPE_Construction",
+      "UNITTYPE_Mobile",
+      "UNITTYPE_Land",
+      "UNITTYPE_Advanced",
+      "UNITTYPE_Amphibious"
+    ],
+    "wreckage_health_frac": 0.5
+  }

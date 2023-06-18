@@ -1,0 +1,210 @@
+{
+    "display_name": "Astraeus",
+    "description": "!LOC:Orbital Lander - Load it up and transport a unit to other planets.",
+    "TEMP_texelinfo": 23.9658,
+    "si_name":"orbital_lander",
+    "attachable": {
+      "offsets": {
+        "root": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "audio": {
+      "loops": {
+        "move": {
+          "cue": "/SE/Movement/orbital/orbital_transport_loop",
+          "flag": "vel_changed",
+          "should_start_func": "is_moving",
+          "should_stop_func": "is_not_moving"
+        }
+      }
+    },
+    "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
+    "build_metal_cost": 200,
+    "command_caps": [
+      "ORDER_Move",
+      "ORDER_Patrol",
+      "ORDER_Assist",
+      "ORDER_Load",
+      "ORDER_Unload",
+      "ORDER_SpecialMove"
+    ],
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/orbital"
+      },
+      "died": {
+        "audio_cue": "/SE/Death/orbital"
+      }
+    },
+    "fx_offsets": [
+      {
+        "type": "moving",
+        "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+        "bone": "bone_leftThruster",
+        "offset": [
+          0,
+          -3.793,
+          0
+        ],
+        "orientation": [
+          0,
+          180,
+          0
+        ]
+      },
+      {
+        "type": "moving",
+        "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+        "bone": "bone_rightThruster",
+        "offset": [
+          0,
+          -3.793,
+          0
+        ],
+        "orientation": [
+          0,
+          180,
+          0
+        ]
+      },
+      {
+        "type": "moving",
+        "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+        "bone": "bone_jet01",
+        "offset": [
+          0,
+          -2.694,
+          0
+        ],
+        "orientation": [
+          0,
+          180,
+          0
+        ]
+      },
+      {
+        "type": "moving",
+        "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+        "bone": "bone_jet02",
+        "offset": [
+          0,
+          -2.694,
+          0
+        ],
+        "orientation": [
+          0,
+          180,
+          0
+        ]
+      },
+      {
+        "type": "moving",
+        "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+        "bone": "bone_jet03",
+        "offset": [
+          0,
+          -2.694,
+          0
+        ],
+        "orientation": [
+          0,
+          180,
+          0
+        ]
+      },
+      {
+        "type": "moving",
+        "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+        "bone": "bone_jet04",
+        "offset": [
+          0,
+          -2.694,
+          0
+        ],
+        "orientation": [
+          0,
+          180,
+          0
+        ]
+      }
+    ],
+    "max_health": 150,
+    "mesh_bounds": [
+      30,
+      20,
+      10
+    ],
+    "model": {
+      "filename": "/pa/units/orbital/orbital_lander/orbital_lander.papa",
+      "animations": {
+        "open": "/pa/units/orbital/orbital_lander/orbital_lander_anim_open.papa",
+        "deploy": "/pa/units/orbital/orbital_lander/orbital_lander_anim_deploy.papa",
+        "closed": "/pa/units/orbital/orbital_lander/orbital_lander_anim_closed.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/satellite_launched_anim_tree.json"
+    },
+    "navigation": {
+      "type": "orbital",
+      "acceleration": 25,
+      "brake": 30,
+      "move_speed": 50,
+      "turn_speed": 360,
+      "hover_time": -1.0,
+      "vertical_speed": 200
+    },
+    "physics": {
+      "radius": 8,
+      "gravity_scalar": 0.001
+    },
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 100
+          },
+          {
+            "layer": "orbital",
+            "channel": "sight",
+            "shape": "sphere",
+            "radius": 300
+          },
+          {
+            "layer": "underwater",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 100
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 28.0
+    },
+    "transporter": {
+      "capacity": 1,
+      "transportable_unit_types": "(Mobile & Land) | (Fabber & (Air | Naval))",
+      "transporter_attach_bone": "bone_payload",
+      "transportable_attach_offset": "head"
+    },
+    "unit_types": [
+      "UNITTYPE_Orbital",
+      "UNITTYPE_Mobile",
+      "UNITTYPE_Custom2",
+      "UNITTYPE_Transport",
+      "UNITTYPE_Basic",
+      "UNITTYPE_FactoryBuild",
+      "UNITTYPE_Interplanetary"
+    ],
+    "usable": true,
+    "useable": {
+      "type": "transport",
+      "range": 4084
+    }
+  }

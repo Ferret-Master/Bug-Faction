@@ -47,7 +47,9 @@
       "animtree": "/pa/anim/anim_trees/bot_bomb_anim_tree.json"
     },
     "navigation": {
-      "type": "land-small",
+      "type": "amphibious-large",
+      "allow_pushing": false,
+      "push_sideways": false,
       "acceleration": 100,
       "brake": 100,
       "move_speed": 13,

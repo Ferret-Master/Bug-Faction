@@ -1,0 +1,148 @@
+{
+    "display_name": "Bug Orbital Fab",
+    "description": "!LOC:Orbital Fabricator - Builds orbital satellites, spaceships, TITANS and can land on the ground.",
+    "TEMP_texelinfo": 7.54279,
+    "si_name":"bug_orbital_fabricator",
+    "attachable": {
+      "offsets": {
+        "root": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "audio": {
+      "loops": {
+        "build": {
+          "cue": "/SE/Construction/Fab_contruction_beam_loop_orbital",
+          "flag": "build_target_changed",
+          "should_start_func": "has_build_target",
+          "should_stop_func": "no_build_target"
+        },
+        "move": {
+          "cue": "/SE/Movement/air/fab_air_loop",
+          "flag": "vel_changed",
+          "should_start_func": "is_moving",
+          "should_stop_func": "is_not_moving"
+        }
+      }
+    },
+    "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
+    "build_metal_cost": 800,
+    "buildable_types": "FabOrbBuild & Custom2",
+    "command_caps": [
+      "ORDER_Move",
+      "ORDER_Patrol",
+      "ORDER_Build",
+      "ORDER_Reclaim",
+      "ORDER_Repair",
+      "ORDER_FireSecondaryWeapon",
+      "ORDER_Assist",
+      "ORDER_Use"
+    ],
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/fab_orbital"
+      },
+      "died": {
+        "audio_cue": "/SE/Death/orbital"
+      }
+    },
+    "fx_offsets": [
+      {
+        "type": "build",
+        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "bone": "bone_nozzle",
+        "offset": [
+          1.755,
+          0,
+          0
+        ],
+        "orientation": [
+          0,
+          0,
+          -90
+        ]
+      }
+    ],
+    "guard_layer": "WL_Orbital",
+    "localised_display_name": "!LOC:Orbital Fabrication Bot",
+    "max_health": 100,
+    "mesh_bounds": [
+      20,
+      10,
+      21
+    ],
+    "model": {
+      "filename": "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator.papa"
+    },
+    "navigation": {
+      "type": "orbital",
+      "acceleration": 10,
+      "brake": 10,
+      "move_speed": 25,
+      "turn_speed": 75,
+      "hover_time": -1.0,
+      "aggressive_behavior": "circle",
+      "aggressive_distance": 120,
+      "bank_factor": 10
+    },
+    "physics": {
+      "radius": 5
+    },
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 100
+          },
+          {
+            "layer": "orbital",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 250
+          },
+          {
+            "layer": "underwater",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 100
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 32.0
+    },
+    "spawn_layers": "WL_Orbital",
+    "tools": [
+      {
+        "spec_id": "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator_build_arm.json",
+        "aim_bone": "bone_root"
+      },
+      {
+        "spec_id": "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator_transform_range.json",
+        "aim_bone": "bone_root"
+      },
+      {
+        "spec_id": "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator_transform.json",
+        "aim_bone": "bone_root",
+        "muzzle_bone": "bone_root",
+        "secondary_weapon": true
+      }
+    ],
+    "unit_types": [
+      "UNITTYPE_Orbital",
+      "UNITTYPE_Custom2",
+      "UNITTYPE_Fabber",
+      "UNITTYPE_Construction",
+      "UNITTYPE_Mobile",
+      "UNITTYPE_Basic",
+      "UNITTYPE_FactoryBuild",
+      "UNITTYPE_Interplanetary"
+    ]
+  }
