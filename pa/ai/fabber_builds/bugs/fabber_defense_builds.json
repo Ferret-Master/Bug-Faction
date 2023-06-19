@@ -105,7 +105,7 @@
       "name": "Bugs - Needle Turret - Mex",
       "to_build": "NeedleTurret",
       "instance_count": 1,
-      "shared_instance_count": "BasicLandDefense",
+      "shared_instance_count": "Pike",
       "priority": 261,
       "base_sort": "FromPerimeter",
       "builders": ["AnyBugFabberBasic"],
@@ -338,7 +338,7 @@
       "name": "Bugs - Needle Turret",
       "to_build": "NeedleTurret",
       "instance_count": 1,
-      "shared_instance_count": "BasicLandDefense",
+      "shared_instance_count": "Pike",
       "priority": 85,
       "base_sort": "FromPerimeter",
       "builders": ["AnyBugFabberBasic"],
@@ -421,7 +421,7 @@
       "name": "Bugs - Needle Turret - Threat",
       "to_build": "NeedleTurret",
       "instance_count": 1,
-      "shared_instance_count": "BasicLandDefense",
+      "shared_instance_count": "Pike",
       "priority": 262,
       "base_sort": "FromPerimeter",
       "builders": ["BugCommander"],
@@ -607,6 +607,342 @@
             "compare_type": "<",
             "range": 75,
             "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bugs - Pike",
+      "to_build": "Pike",
+      "instance_count": 1,
+      "priority": 85,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyBasicFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Pike"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Pike"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bugs - Pike - Threat",
+      "to_build": "Pike",
+      "instance_count": 1,
+      "priority": 262,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyBasicFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1.0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Pike"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bugs - Pike - Anti-Orbital",
+      "to_build": "Pike",
+      "instance_count": 1,
+      "priority": 378,
+      "builders": ["Commander", "AnyBasicFabber", "AnyAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(OrbitalDefense | Tactical) & Structure - Orbital",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Pike"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(OrbitalDefense | Tactical) & Structure - Orbital",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Pike"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(OrbitalDefense | Tactical) & Structure - Orbital",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Pike"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "(OrbitalDefense | Tactical) & Structure - Orbital",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 150,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bugs - Pike - Anti-Orbital Rush",
+      "to_build": "Pike",
+      "instance_count": 1,
+      "priority": 386,
+      "builders": ["Commander", "AnyBasicFabber", "AnyAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(OrbitalDefense | Tactical) & Structure - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Pike"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(OrbitalDefense | Tactical) & Structure - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Pike"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(OrbitalDefense | Tactical) & Structure - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Pike"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "(OrbitalDefense | Tactical) & Structure - Orbital",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 150,
+            "count": 1
           }
         ]
       }
@@ -979,7 +1315,7 @@
       }
     },
     {
-      "name": "Bugs - Umbrella",
+      "name": "Bugs - Pike",
       "to_build": "BugUmbrella",
       "instance_count": 1,
       "priority": 378,
@@ -997,7 +1333,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "unit_type_string0": "(OrbitalDefense | Tactical) & Structure - Orbital",
             "compare0": "<",
             "value0": 3
           },
@@ -1009,7 +1345,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BugUmbrella"
+            "string0": "BugPike"
           }
         ],
         [
@@ -1024,7 +1360,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "unit_type_string0": "(OrbitalDefense | Tactical) & Structure - Orbital",
             "compare0": "<",
             "value0": 3
           },
@@ -1036,7 +1372,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BugUmbrella"
+            "string0": "BugPike"
           }
         ],
         [
@@ -1051,7 +1387,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "unit_type_string0": "(OrbitalDefense | Tactical) & Structure - Orbital",
             "compare0": "<",
             "value0": 3
           },
@@ -1063,7 +1399,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BugUmbrella"
+            "string0": "BugPike"
           }
         ]
       ],
@@ -1072,7 +1408,7 @@
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "(Structure & OrbitalDefense) - Orbital",
+            "unit_type_string": "(OrbitalDefense | Tactical) & Structure - Orbital",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 150,
@@ -1082,7 +1418,7 @@
       }
     },
     {
-      "name": "Bugs - Umbrella - Rush",
+      "name": "Bugs - Pike - Rush",
       "to_build": "BugUmbrella",
       "instance_count": 1,
       "priority": 386,
@@ -1100,7 +1436,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "unit_type_string0": "(OrbitalDefense | Tactical) & Structure - Orbital",
             "compare0": "<",
             "value0": 1
           },
@@ -1112,7 +1448,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BugUmbrella"
+            "string0": "BugPike"
           }
         ],
         [
@@ -1127,7 +1463,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "unit_type_string0": "(OrbitalDefense | Tactical) & Structure - Orbital",
             "compare0": "<",
             "value0": 1
           },
@@ -1139,7 +1475,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BugUmbrella"
+            "string0": "BugPike"
           }
         ],
         [
@@ -1154,7 +1490,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "unit_type_string0": "(OrbitalDefense | Tactical) & Structure - Orbital",
             "compare0": "<",
             "value0": 1
           },
@@ -1166,7 +1502,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BugUmbrella"
+            "string0": "BugPike"
           }
         ]
       ],
@@ -1175,7 +1511,7 @@
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "(Structure & OrbitalDefense) - Orbital",
+            "unit_type_string": "(OrbitalDefense | Tactical) & Structure - Orbital",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 150,
