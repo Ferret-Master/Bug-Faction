@@ -11,7 +11,7 @@
 "ammo_source": "time",
 "auto_fire_when_charged": true,
 "start_fully_charged": true,
-"fire_delay": 10,
+"fire_delay": 15,
 "pitch_range": 0,
 "pitch_rate": 0,
 "rate_of_fire": 1,

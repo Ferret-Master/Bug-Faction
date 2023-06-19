@@ -83,13 +83,6 @@
           "layer": "mine",
           "radius": 160,
           "shape": "capsule"
-        },
-        {
-          "channel": "radar",
-          "layer": "surface_and_air",
-          "radius": 160,
-          "shape": "capsule",
-          "uses_energy": true
         }
       ]
     }

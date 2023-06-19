@@ -12,6 +12,7 @@ model.unitsToLock = ["/pa/units/land/bug_grunt_big/bug_grunt_big.json",
                     "/pa/units/land/bug_hydra/bug_hydra.json",
                     "/pa/units/land/bug_boomer/bug_boomer_r.json",
                     "/pa/units/structure/bug_mine/bug_mine.json",
+                    "/pa/units/orbital/bug_orbital_fighter/bug_orbital_fighter_vision.json",
                     "/pa/units/orbital/bug_orbital_battleship/bug_orbital_battleship.json",
                     "/pa/units/orbital/bug_orbital_chomper/bug_orbital_chomper.json",
                     "/pa/units/orbital/bug_orbital_laser/bug_orbital_laser.json",
@@ -101,20 +102,8 @@ model.unlockPairs = [
     ["/pa/units/research/unlocks/bug_orbital_fighter_vision_unlock/bug_orbital_fighter_vision_unlock.json",
     ["/pa/units/orbital/bug_orbital_fighter/bug_orbital_fighter_vision.json"],
     ["/pa/units/orbital/bug_orbital_fighter/bug_orbital_fighter.json","/pa/units/research/unlocks/bug_orbital_fighter_vision_unlock/bug_orbital_fighter_vision_unlock.json","/pa/units/research/unlocks/bug_orbital_fighter_vision_unlock/research_bug_orbital_fighter_vision.json"],
-    true],
- 
+    true]
 
-    
-
-//   ["/pa/units/research/unlocks/bug_ripper_normal_unlock/bug_ripper_normal_unlock.json",
-//   ["/pa/units/land/bug_ripper/bug_ripper.json","/pa/units/research/unlocks/bug_ripper_stealth_return_unlock/bug_ripper_stealth_return_unlock.json"],
-//   ["/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.json","/pa/units/research/unlocks/bug_ripper_normal_unlock/bug_ripper_normal_unlock.json"],
-//   true],
-
-//   ["/pa/units/research/unlocks/bug_ripper_stealth_return_unlock/bug_ripper_stealth_return_unlock.json",
-//   ["/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.json","/pa/units/research/unlocks/bug_ripper_normal_unlock/bug_ripper_normal_unlock.json"],
-//   ["/pa/units/land/bug_ripper/bug_ripper.json","/pa/units/research/unlocks/bug_ripper_stealth_return_unlock/bug_ripper_stealth_return_unlock.json"],
-//   true]
 ]
 
 //for circular research the older ones need to be deleted if a newer research is done.

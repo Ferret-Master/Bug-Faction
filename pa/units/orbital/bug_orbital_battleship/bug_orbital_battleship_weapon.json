@@ -1,6 +1,6 @@
 {
-    "ammo_capacity": 300,
-    "ammo_demand": 10,
+    "ammo_capacity": 400,
+    "ammo_demand": 14,
     "ammo_id": "/pa/units/orbital/bug_orbital_battleship/bug_orbital_battleship_ammo.json",
     "ammo_per_shot": 10,
     "ammo_source": "metal",
