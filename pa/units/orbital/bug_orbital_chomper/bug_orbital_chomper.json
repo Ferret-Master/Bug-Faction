@@ -53,13 +53,14 @@
     ],
     "navigation": {
       "type": "orbital",
-      "acceleration": 10,
+      "acceleration": 20,
       "brake": 20,
       "move_speed": 55,
-      "turn_speed": 55,
+      "turn_speed": 80,
       "circle_min_time": 2,
       "circle_max_time": 4,
       "hover_time": -1.0,
+      "aggressive_distance": 15,
       "bank_factor": 1,
       "turn_in_place": true
     },

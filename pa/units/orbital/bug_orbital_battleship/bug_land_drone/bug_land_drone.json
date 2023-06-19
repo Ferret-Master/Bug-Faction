@@ -66,11 +66,13 @@
       "animtree": "/pa/units/land/bug_runner/runner_anim_tree.json",
       "walk_speed": 0.35
     },
+    "attack_range_frac": 2.0,
     "navigation": {
       "type": "amphibious",
-      "acceleration": 50,
+      "acceleration": 100,
       "brake": -1,
-      "move_speed": 40,
+      "move_speed": 50,
+      "aggressive_distance":2,
       "turn_speed": 500,
       "group_preference": "front"
     },
