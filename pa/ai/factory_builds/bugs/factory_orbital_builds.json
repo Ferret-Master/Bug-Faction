@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Bug Orbital Fabber",
+      "name": "Bugs - Orbital Fabber",
       "to_build": "BugOrbitalFab",
       "instance_count": 1,
       "max_num_assisters": 5,
@@ -106,7 +106,7 @@
       ]
     },
     {
-      "name": "Bug Orbital Radar",
+      "name": "Bugs - Orbital Radar",
       "to_build": "BugOrbitalRadar",
       "instance_count": 1,
       "priority": 100,
@@ -140,7 +140,7 @@
       ]
     },
     {
-      "name": "Bug Orbital Radar - Pri",
+      "name": "Bugs - Orbital Radar - Pri",
       "to_build": "BugOrbitalRadar",
       "instance_count": 1,
       "priority": 102,
@@ -168,7 +168,7 @@
       ]
     },
     {
-      "name": "Bug Orbital Radar - Other planet",
+      "name": "Bugs - Orbital Radar - Other planet",
       "to_build": "BugOrbitalRadar",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
@@ -198,7 +198,7 @@
       ]
     },
     {
-      "name": "Seeker",
+      "name": "Bugs - Seeker",
       "to_build": "Seeker",
       "instance_count": 1,
       "max_num_assisters": 5,
@@ -225,7 +225,7 @@
       ]
     },
     {
-      "name": "Seeker - Threat",
+      "name": "Bugs - Seeker - Threat",
       "to_build": "Seeker",
       "instance_count": 1,
       "min_num_assisters": 2,
@@ -282,7 +282,7 @@
       ]
     },
     {
-      "name": "Bug Orbital Lander",
+      "name": "Bugs - Orbital Lander",
       "to_build": "BugOrbitalLander",
       "instance_count": 1,
       "max_num_assisters": 5,
