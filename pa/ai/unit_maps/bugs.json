@@ -257,6 +257,57 @@
     },
     "Grunt": {
       "spec_id": "/pa/units/land/bug_grunt/bug_grunt.json"
+    },
+    "BugAdvancedOrbitalRadar": {
+      "spec_id": "/pa/units/orbital/bug_advanced_orbital_radar/bug_advanced_orbital_radar.json"
+    },
+    "BugOrbitalLander": {
+      "spec_id": "/pa/units/orbital/bug_lander/bug_lander.json"
+    },
+    "Tyrant": {
+      "spec_id": "/pa/units/orbital/bug_orbital_battleship/bug_orbital_battleship.json"
+    },
+    "Chomper": {
+      "spec_id": "/pa/units/orbital/bug_orbital_chomper/bug_orbital_chomper.json"
+    },
+    "BugOrbitalFab": {
+      "spec_id": "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator.json"
+    },
+    "Seeker": {
+      "spec_id": "/pa/units/orbital/bug_orbital_fighter/bug_orbital_fighter.json"
+    },
+    "BugLaserPlatform": {
+      "spec_id": "/pa/units/orbital/bug_orbital_laser/bug_orbital_laser.json"
+    },
+    "BugOrbitalMine": {
+      "spec_id": "/pa/units/orbital/bug_orbital_mine/bug_orbital_mine.json"
+    },
+    "BugOrbitalRadar": {
+      "spec_id": "/pa/units/orbital/bug_orbital_radar/bug_orbital_radar.json"
+    },
+    "Pike": {
+      "spec_id": "/pa/units/structure/bug_missile_defence_basic/bug_missile_defence_basic.json"
+    },
+    "LiluNest": {
+      "spec_id": "/pa/units/structure/bug_air_drone_launcher/bug_air_drone_launcher.json"
+    },
+    "StealthTurret": {
+      "spec_id": "/pa/units/structure/bug_stealth_turret/bug_stealth_turret.json"
+    },
+    "AdvancedOrbitalRadarUnlock": {
+      "spec_id": "/pa/units/research/unlocks/research_bug_advanced_orbital_radar/research_bug_advanced_orbital_radar.json"
+    },
+    "BugChomperUnlock": {
+      "spec_id": "/pa/units/research/unlocks/research_bug_chomper/research_bug_chomper.json"
+    },
+    "BugOrbitalCarrierUnlock": {
+      "spec_id": "/pa/units/research/unlocks/research_bug_orbital_battleship/research_bug_orbital_battleship.json"
+    },
+    "BugOrbitalFighterVisionUnlock": {
+      "spec_id": "/pa/units/research/unlocks/research_bug_orbital_fighter_vision/research_bug_orbital_fighter_vision.json"
+    },
+    "BugOrbitalLaserUnlock": {
+      "spec_id": "/pa/units/research/unlocks/research_bug_orbital_laser/research_bug_orbital_laser.json"
     }
   }
 }
