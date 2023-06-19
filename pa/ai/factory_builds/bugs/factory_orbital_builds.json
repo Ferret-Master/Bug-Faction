@@ -198,8 +198,8 @@
       ]
     },
     {
-      "name": "Orbital Fighter",
-      "to_build": "OrbitalFighter",
+      "name": "Seeker",
+      "to_build": "Seeker",
       "instance_count": 1,
       "max_num_assisters": 5,
       "priority": 100,
@@ -225,8 +225,8 @@
       ]
     },
     {
-      "name": "Orbital Fighter - Threat",
-      "to_build": "OrbitalFighter",
+      "name": "Seeker - Threat",
+      "to_build": "Seeker",
       "instance_count": 1,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
