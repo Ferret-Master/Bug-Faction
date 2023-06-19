@@ -282,8 +282,8 @@
       ]
     },
     {
-      "name": "Orbital Lander",
-      "to_build": "OrbitalLander",
+      "name": "Bug Orbital Lander",
+      "to_build": "BugOrbitalLander",
       "instance_count": 1,
       "max_num_assisters": 5,
       "priority": 111,
