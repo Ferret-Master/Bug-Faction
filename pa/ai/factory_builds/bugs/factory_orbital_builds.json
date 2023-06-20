@@ -424,6 +424,34 @@
       ]
     },
     {
+      "name": "Bugs - Laser Platform",
+      "to_build": "BugLaserPlatform",
+      "instance_count": 1,
+      "priority": 195,
+      "builders": ["BugOrbitalLauncher"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & LaserPlatform",
+            "compare0": "<",
+            "value0": 4
+          }
+        ]
+      ]
+    },
+    {
       "name": "Bugs - Orbital Lander",
       "to_build": "BugOrbitalLander",
       "instance_count": 1,
