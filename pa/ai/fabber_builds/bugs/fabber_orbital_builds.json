@@ -445,7 +445,7 @@
           },
           {
             "test_type": "AlliedUnitCountOnPlanet",
-            "unit_type_string0": "BugHalley",
+            "unit_type_string0": "PlanetEngine",
             "compare0": "<=",
             "boolean": true,
             "value0": 0
