@@ -1,34 +1,3 @@
 {
-  "build_list": [
-    {
-      "name": "Bugs - Probe - Other planet",
-      "to_build": "OrbitalProbe",
-      "instance_count": 1,
-      "shared_instance_count": "ReconAssistance",
-      "cross_planet_shared_count": true,
-      "priority": 200,
-      "builders": ["BugOrbitalLauncher", "OrbitalFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalProbe"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Fighter",
-            "compare0": ">",
-            "value0": 2
-          },
-          {
-            "test_type": "OtherPlanetNeedsReconAssistance",
-            "boolean": true
-          }
-        ]
-      ]
-    }
-  ]
+  "build_list": []
 }
