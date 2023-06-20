@@ -288,7 +288,7 @@
     "Pike": {
       "spec_id": "/pa/units/structure/bug_missile_defence_basic/bug_missile_defence_basic.json"
     },
-    "LiluNest": {
+    "BugsAirDroneLauncher": {
       "spec_id": "/pa/units/structure/bug_air_drone_launcher/bug_air_drone_launcher.json"
     },
     "StealthTurret": {
