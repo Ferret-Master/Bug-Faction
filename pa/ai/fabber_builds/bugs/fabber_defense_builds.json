@@ -282,7 +282,7 @@
       "shared_instance_count": "BasicAATurret",
       "priority": 262,
       "base_sort": "FromPerimeter",
-      "builders": ["BugCommander", "AnyBugFabberBasic"],
+      "builders": ["AnyBugFabberBasic"],
       "build_conditions": [
         [
           {
