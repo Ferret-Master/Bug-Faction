@@ -35,6 +35,12 @@
             "value0": 0
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Custom2 & Bot & Factory & Construction",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "StealthRipperUnlock"
           }
@@ -76,6 +82,12 @@
             "test_type": "UnitCount",
             "unit_type_string0": "(Custom2 & Bot & Basic & Heavy) - Mobile",
             "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Custom2 & Tank & Factory & Construction",
+            "compare0": ">",
             "value0": 0
           },
           {
@@ -123,6 +135,12 @@
             "value0": 0
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Custom2 & Tank & Factory & Construction",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "FastNeedlerUnlock"
           }
@@ -164,6 +182,12 @@
             "test_type": "UnitCount",
             "unit_type_string0": "(Custom2 & Bot & Basic & Construction) - Mobile",
             "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Custom2 & Bot & Factory & Construction",
+            "compare0": ">",
             "value0": 0
           },
           {
@@ -211,6 +235,12 @@
             "value0": 0
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Custom2 & Advanced & Land & Factory & Construction",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "CrusherUnlock"
           }
@@ -252,6 +282,12 @@
             "test_type": "UnitCount",
             "unit_type_string0": "(Bot & Advanced & Artillery) - Mobile",
             "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Custom2 & Advanced & Land & Factory & Construction",
+            "compare0": ">",
             "value0": 0
           },
           {
