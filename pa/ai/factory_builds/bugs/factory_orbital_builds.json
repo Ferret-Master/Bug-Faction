@@ -390,6 +390,40 @@
       ]
     },
     {
+      "name": "Tyrant",
+      "to_build": "Tyrant",
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "priority": 195,
+      "builders": ["BugOrbitalLauncher"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Orbital & Fighter & Heavy",
+            "unit_type_string1": "Orbital & Fighter",
+            "compare0": "<",
+            "value0": 0.2
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & Heavy) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
       "name": "Bugs - Orbital Lander",
       "to_build": "BugOrbitalLander",
       "instance_count": 1,
