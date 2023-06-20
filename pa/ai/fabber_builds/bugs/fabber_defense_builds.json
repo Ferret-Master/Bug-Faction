@@ -1674,7 +1674,7 @@
       }
     },
     {
-      "name": "Bugs - Pike",
+      "name": "Bugs - Umbrella",
       "to_build": "BugUmbrella",
       "instance_count": 1,
       "priority": 378,
@@ -1704,7 +1704,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BugPike"
+            "string0": "BugUmbrella"
           }
         ],
         [
@@ -1731,7 +1731,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BugPike"
+            "string0": "BugUmbrella"
           }
         ],
         [
@@ -1758,7 +1758,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BugPike"
+            "string0": "BugUmbrella"
           }
         ]
       ],
@@ -1777,7 +1777,7 @@
       }
     },
     {
-      "name": "Bugs - Pike - Rush",
+      "name": "Bugs - Umbrella - Rush",
       "to_build": "BugUmbrella",
       "instance_count": 1,
       "priority": 386,
@@ -1807,7 +1807,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BugPike"
+            "string0": "BugUmbrella"
           }
         ],
         [
@@ -1834,7 +1834,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BugPike"
+            "string0": "BugUmbrella"
           }
         ],
         [
@@ -1861,7 +1861,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BugPike"
+            "string0": "BugUmbrella"
           }
         ]
       ],
