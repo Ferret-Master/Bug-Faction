@@ -300,6 +300,43 @@
       "placement_rules": {
         "buffer": 5
       }
+    },
+    {
+      "name": "Bugs - Bug Chomper - Unlock",
+      "to_build": "BugChomperUnlock",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalResearchFactory",
+      "priority": 460,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["BugOrbitalFab"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugChomperUnlock"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Factory & Advanced & Orbital & Important & Fighter) - Construction",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & Fighter) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugChomperUnlock"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 5
+      }
     }
   ]
 }
