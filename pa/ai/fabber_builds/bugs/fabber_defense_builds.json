@@ -617,7 +617,7 @@
       "instance_count": 1,
       "priority": 85,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyBasicFabber"],
+      "builders": ["AnyBugFabberBasic"],
       "build_conditions": [
         [
           {
@@ -689,7 +689,7 @@
       "instance_count": 1,
       "priority": 262,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyBasicFabber"],
+      "builders": ["AnyBugFabberBasic"],
       "build_conditions": [
         [
           {
@@ -748,7 +748,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 5,
       "priority": 245,
-      "builders": ["AnyBasicFabber"],
+      "builders": ["AnyBugFabberBasic"],
       "build_conditions": [
         [
           {
@@ -806,7 +806,7 @@
       "instance_count": 1,
       "priority": 255,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -893,7 +893,7 @@
       "instance_count": 1,
       "priority": 379,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -961,7 +961,7 @@
       "instance_count": 1,
       "priority": 255,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -1043,7 +1043,7 @@
       "instance_count": 1,
       "priority": 379,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -1105,7 +1105,7 @@
       "to_build": "Pike",
       "instance_count": 1,
       "priority": 378,
-      "builders": ["Commander", "AnyBasicFabber", "AnyAdvancedFabber"],
+      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -1208,7 +1208,7 @@
       "to_build": "Pike",
       "instance_count": 1,
       "priority": 386,
-      "builders": ["Commander", "AnyBasicFabber", "AnyAdvancedFabber"],
+      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
