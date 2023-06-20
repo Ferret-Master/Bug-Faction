@@ -99,6 +99,7 @@
       "UNITTYPE_Structure",
       "UNITTYPE_Artillery",
       "UNITTYPE_Defense",
+      "UNITTYPE_AirDefense",
       "UNITTYPE_FabAdvBuild",
       "UNITTYPE_Basic",
       "UNITTYPE_Custom2"
