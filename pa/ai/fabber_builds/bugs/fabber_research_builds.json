@@ -411,6 +411,43 @@
       "placement_rules": {
         "buffer": 5
       }
+    },
+    {
+      "name": "Bugs - Orbital Laser - Unlock",
+      "to_build": "BugOrbitalFighterVisionUnlock",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalResearchFactory",
+      "priority": 460,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["BugOrbitalFab"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugOrbitalFighterVisionUnlock"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Factory & Advanced & Orbital & Important & LaserPlatform) - Construction",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & LaserPlatform) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugOrbitalFighterVisionUnlock"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 5
+      }
     }
   ]
 }
