@@ -1,6 +1,60 @@
 {
   "build_list": [
     {
+      "name": "Bugs - Pike",
+      "to_build": "Pike",
+      "instance_count": 1,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "priority": 350,
+      "builders": ["AnyBugFabberBasic"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Tactical",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Structure",
+            "string0": "Enemy",
+            "value0": 500,
+            "compare0": ">=",
+            "value1": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Pike"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
       "name": "Bugs - Nuke Silo",
       "to_build": "BugNuke",
       "instance_count": 1,
