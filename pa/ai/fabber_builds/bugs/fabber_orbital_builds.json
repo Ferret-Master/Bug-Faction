@@ -471,6 +471,10 @@
       "build_conditions": [
         [
           {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
             "test_type": "PotentialMetalEfficiency",
             "compare0": "<",
             "value0": 1.0
@@ -482,6 +486,10 @@
         ],
         [
           {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
             "test_type": "DesireMetal"
           },
           {
@@ -490,6 +498,10 @@
           }
         ],
         [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
           {
             "test_type": "PotentialEnergyEfficiency",
             "compare0": "<",
@@ -501,6 +513,10 @@
           }
         ],
         [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
           {
             "test_type": "DesireEnergy"
           },
