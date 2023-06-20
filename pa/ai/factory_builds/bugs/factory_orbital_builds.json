@@ -220,6 +220,12 @@
             "unit_type_string0": "Orbital & Fighter",
             "compare0": "<",
             "value0": 15
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Basic & Fighter) - Mobile",
+            "compare0": "==",
+            "value0": 0
           }
         ]
       ]
@@ -248,6 +254,12 @@
             "unit_type_string0": "Orbital & Fighter",
             "compare0": "<",
             "value0": 3
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Basic & Fighter) - Mobile",
+            "compare0": "==",
+            "value0": 0
           }
         ],
         [
@@ -265,6 +277,12 @@
             "unit_type_string0": "Orbital & Fighter",
             "compare0": "<",
             "value0": 3
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Basic & Fighter) - Mobile",
+            "compare0": "==",
+            "value0": 0
           }
         ],
         [
@@ -277,6 +295,120 @@
             "string1": "AntiOrbital",
             "compare0": ">",
             "value0": 1.0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Basic & Fighter) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Seeker w/ Vision",
+      "to_build": "SeekerVision",
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "priority": 100,
+      "builders": ["AnyBugFactoryOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": "<",
+            "value0": 15
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Basic & Fighter) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Seeker w/ Vision - Threat",
+      "to_build": "SeekerVision",
+      "instance_count": 1,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "priority": 200,
+      "builders": ["AnyBugFactoryOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Basic & Fighter) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Basic & Fighter) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1.0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Basic & Fighter) - Mobile",
+            "compare0": "==",
+            "value0": 0
           }
         ]
       ]

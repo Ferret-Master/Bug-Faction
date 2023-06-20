@@ -276,6 +276,9 @@
     "Seeker": {
       "spec_id": "/pa/units/orbital/bug_orbital_fighter/bug_orbital_fighter.json"
     },
+    "SeekerVision": {
+      "spec_id": "/pa/units/orbital/bug_orbital_fighter/bug_orbital_fighter_vision.json"
+    },
     "BugLaserPlatform": {
       "spec_id": "/pa/units/orbital/bug_orbital_laser/bug_orbital_laser.json"
     },
