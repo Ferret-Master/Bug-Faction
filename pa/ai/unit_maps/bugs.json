@@ -285,6 +285,15 @@
     "BugOrbitalRadar": {
       "spec_id": "/pa/units/orbital/bug_orbital_radar/bug_orbital_radar.json"
     },
+    "BugAnchor": {
+      "spec_id": "/pa/units/structure/bug_anchor/bug_anchor.json"
+    },
+    "BugGasHive": {
+      "spec_id": "/pa/units/structure/bug_gas_hive/bug_gas_hive.json"
+    },
+    "BugJig": {
+      "spec_id": "/pa/units/structure/bug_jig/bug_jig.json"
+    },
     "Pike": {
       "spec_id": "/pa/units/structure/bug_missile_defence_basic/bug_missile_defence_basic.json"
     },
