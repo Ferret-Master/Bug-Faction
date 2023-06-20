@@ -561,6 +561,48 @@
         ]
       ],
       "task_type": "TransportToPlanet"
+    },
+    {
+      "name": "Move Orbital Fabber To Planet",
+      "instance_count": 1,
+      "priority": 800,
+      "builders": ["BugOrbitalFab"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetOrGasGiantWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fabber",
+            "compare0": ">=",
+            "value0": 2
+          }
+        ]
+      ],
+      "task_type": "OrbitalFabberMoveToPlanet"
+    },
+    {
+      "name": "Move Orbital Fabber To Safe Planet",
+      "instance_count": 1,
+      "priority": 800,
+      "builders": ["BugOrbitalFab"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "SafePlanetOrGasGiantWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Factory",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ]
+      ],
+      "task_type": "OrbitalFabberMoveToSafePlanet"
     }
   ]
 }
