@@ -461,6 +461,60 @@
       }
     },
     {
+      "name": "Bugs - Jig",
+      "to_build": "BugJig",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "priority": 360,
+      "builders": ["BugOrbitalFab"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PotentialMetalEfficiency",
+            "compare0": "<",
+            "value0": 1.0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugJig"
+          }
+        ],
+        [
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugJig"
+          }
+        ],
+        [
+          {
+            "test_type": "PotentialEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1.0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugJig"
+          }
+        ],
+        [
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugJig"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 15
+      }
+    },
+    {
       "name": "Bugs - Move Fabber To Planet",
       "instance_count": 1,
       "priority": 800,
