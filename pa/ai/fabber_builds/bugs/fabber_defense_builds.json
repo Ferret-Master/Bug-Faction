@@ -1035,13 +1035,13 @@
       }
     },
     {
-      "name": "Bugs - Basic Artillery",
-      "to_build": "BugBugsAirDroneLauncher",
+      "name": "Bugs - Lilu Nest",
+      "to_build": "BugsAirDroneLauncher",
       "instance_count": 1,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
       "priority": 245,
-      "builders": ["AnyBugFabberBasic"],
+      "builders": ["AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -1049,7 +1049,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & Artillery",
+            "unit_type_string0": "Structure & Advanced & Artillery",
             "compare0": "<",
             "value0": 2
           },
@@ -1069,7 +1069,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BugBugsAirDroneLauncher"
+            "string0": "BugsAirDroneLauncher"
           }
         ]
       ],
@@ -1094,7 +1094,7 @@
       }
     },
     {
-      "name": "Bugs - Lilu Nest",
+      "name": "Bugs - Bug Heavy AA Turret",
       "to_build": "BugAdvancedAATurret",
       "instance_count": 1,
       "priority": 255,
@@ -1188,7 +1188,7 @@
       }
     },
     {
-      "name": "Bugs - Lilu Nest - Threat",
+      "name": "Bugs - Bug Heavy AA Turret - Threat",
       "to_build": "BugAdvancedAATurret",
       "instance_count": 1,
       "priority": 379,
