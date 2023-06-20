@@ -424,7 +424,7 @@
     },
     {
       "name": "Bugs - Orbital Laser - Unlock",
-      "to_build": "BugOrbitalFighterVisionUnlock",
+      "to_build": "BugOrbitalLaserUnlock",
       "instance_count": 1,
       "shared_instance_count": "OrbitalResearchFactory",
       "cross_planet_shared_count": true,
@@ -436,7 +436,7 @@
         [
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BugOrbitalFighterVisionUnlock"
+            "string0": "BugOrbitalLaserUnlock"
           },
           {
             "test_type": "UnitCount",
@@ -452,7 +452,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BugOrbitalFighterVisionUnlock"
+            "string0": "BugOrbitalLaserUnlock"
           }
         ]
       ],
