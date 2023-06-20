@@ -302,7 +302,7 @@
       }
     },
     {
-      "name": "Bugs - Bug Chomper - Unlock",
+      "name": "Bugs - Chomper - Unlock",
       "to_build": "BugChomperUnlock",
       "instance_count": 1,
       "shared_instance_count": "OrbitalResearchFactory",
