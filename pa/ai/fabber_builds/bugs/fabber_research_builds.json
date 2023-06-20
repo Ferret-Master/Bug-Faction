@@ -263,6 +263,43 @@
           "value": 50
         }
       }
+    },
+    {
+      "name": "Bugs - Advanced Orbital Radar - Unlock",
+      "to_build": "AdvancedOrbitalRadarUnlock",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalResearchFactory",
+      "priority": 460,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["BugOrbitalFab"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedOrbitalRadarUnlock"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Factory & Advanced & Orbital & Important) - Construction",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & Radar) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedOrbitalRadarUnlock"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 5
+      }
     }
   ]
 }
