@@ -320,6 +320,12 @@
     },
     "BugOrbitalLaserUnlock": {
       "spec_id": "/pa/units/research/unlocks/bug_orbital_laser_unlock/research_bug_orbital_laser.json"
+    },
+    "BugBugBasicNavalFabber": {
+      "spec_id": "/pa/units/sea/bug_ship_fab/bug_ship_fab.json"
+    },
+    "BugBugAdvancedNavalFabber": {
+      "spec_id": "/pa/units/sea/bug_ship_fab_adv/bug_ship_fab_adv.json"
     }
   }
 }
