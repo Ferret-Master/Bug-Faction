@@ -251,6 +251,52 @@
           "value": 50
         }
       }
+    },
+    {
+      "name": "Bugs - Catalyst",
+      "to_build": "BugCatalyst",
+      "instance_count": 1,
+      "min_num_assisters": 8,
+      "max_num_assisters": 45,
+      "priority": 612,
+      "builders": ["AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetHasUseablePlanetWeapon",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "ControlModule",
+            "compare0": "<=",
+            "boolean": true,
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindControlPointToBuild",
+            "boolean": true
+          }
+        ]
+      ]
     }
   ]
 }
