@@ -27,7 +27,7 @@
     "unit_types": [
          
         "UNITTYPE_Orbital",
-        "UNITTYPE_Basic",
+        "UNITTYPE_Advanced",
         "UNITTYPE_FactoryBuild",
         "UNITTYPE_LaserPlatform",
         "UNITTYPE_Custom2"   

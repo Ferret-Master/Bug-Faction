@@ -281,7 +281,7 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Custom2 & Factory & Advanced & Orbital & Important) - Construction",
+            "unit_type_string0": "(Custom2 & Factory & Advanced & Orbital & Important & Radar) - Construction",
             "compare0": "==",
             "value0": 0
           },
