@@ -6,7 +6,7 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "priority": 199,
-      "builders": ["BugOrbitalLauncher", "BugOrbitalLauncher"],
+      "builders": ["AnyBugFactoryOrbital"],
       "build_conditions": [
         [
           {
@@ -110,7 +110,7 @@
       "to_build": "BugOrbitalRadar",
       "instance_count": 1,
       "priority": 100,
-      "builders": ["BugOrbitalLauncher", "BugOrbitalLauncher"],
+      "builders": ["AnyBugFactoryOrbital"],
       "build_conditions": [
         [
           {
@@ -144,7 +144,7 @@
       "to_build": "BugOrbitalRadar",
       "instance_count": 1,
       "priority": 102,
-      "builders": ["BugOrbitalLauncher", "BugOrbitalLauncher"],
+      "builders": ["AnyBugFactoryOrbital"],
       "build_conditions": [
         [
           {
@@ -174,7 +174,7 @@
       "shared_instance_count": "ReconAssistance",
       "cross_planet_shared_count": true,
       "priority": 199,
-      "builders": ["BugOrbitalLauncher", "BugOrbitalLauncher"],
+      "builders": ["AnyBugFactoryOrbital"],
       "build_conditions": [
         [
           {
@@ -203,7 +203,7 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "priority": 100,
-      "builders": ["BugOrbitalLauncher", "BugOrbitalLauncher"],
+      "builders": ["AnyBugFactoryOrbital"],
       "build_conditions": [
         [
           {
@@ -231,7 +231,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 5,
       "priority": 200,
-      "builders": ["BugOrbitalLauncher"],
+      "builders": ["AnyBugFactoryOrbital"],
       "build_conditions": [
         [
           {
@@ -287,7 +287,7 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "priority": 195,
-      "builders": ["BugOrbitalLauncher"],
+      "builders": ["AnyBugFactoryOrbital"],
       "build_conditions": [
         [
           {
@@ -321,7 +321,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 5,
       "priority": 205,
-      "builders": ["BugOrbitalLauncher"],
+      "builders": ["AnyBugFactoryOrbital"],
       "build_conditions": [
         [
           {
@@ -395,7 +395,7 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "priority": 195,
-      "builders": ["BugOrbitalLauncher"],
+      "builders": ["AnyBugFactoryOrbital"],
       "build_conditions": [
         [
           {
@@ -428,7 +428,7 @@
       "to_build": "BugLaserPlatform",
       "instance_count": 1,
       "priority": 195,
-      "builders": ["BugOrbitalLauncher"],
+      "builders": ["AnyBugFactoryOrbital"],
       "build_conditions": [
         [
           {
@@ -457,7 +457,7 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "priority": 111,
-      "builders": ["BugOrbitalLauncher"],
+      "builders": ["AnyBugFactoryOrbital"],
       "build_conditions": [
         [
           {
@@ -483,7 +483,7 @@
       "shared_instance_count": "ReconAssistance",
       "cross_planet_shared_count": true,
       "priority": 196,
-      "builders": ["BugOrbitalLauncher"],
+      "builders": ["AnyBugFactoryOrbital"],
       "build_conditions": [
         [
           {
