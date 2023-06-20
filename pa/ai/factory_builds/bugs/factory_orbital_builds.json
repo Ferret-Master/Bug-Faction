@@ -447,6 +447,12 @@
             "unit_type_string0": "Orbital & LaserPlatform",
             "compare0": "<",
             "value0": 4
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & LaserPlatform) - Mobile",
+            "compare0": ">",
+            "value0": 0
           }
         ]
       ]
