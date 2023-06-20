@@ -337,6 +337,43 @@
       "placement_rules": {
         "buffer": 5
       }
+    },
+    {
+      "name": "Bugs - Orbital Carrier - Unlock",
+      "to_build": "BugOrbitalCarrierUnlock",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalResearchFactory",
+      "priority": 460,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["BugOrbitalFab"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugOrbitalCarrierUnlock"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Factory & Advanced & Orbital & Important & Heavy) - Construction",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & Heavy) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugOrbitalCarrierUnlock"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 5
+      }
     }
   ]
 }
