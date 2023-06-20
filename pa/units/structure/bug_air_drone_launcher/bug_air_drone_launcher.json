@@ -101,7 +101,7 @@
       "UNITTYPE_AirDefense",
       "UNITTYPE_Defense",
       "UNITTYPE_FabAdvBuild",
-      "UNITTYPE_Basic",
+      "UNITTYPE_Advanced",
       "UNITTYPE_Custom2"
     ]
   }
