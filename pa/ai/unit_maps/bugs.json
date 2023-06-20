@@ -10,25 +10,25 @@
       "unit_types": "(Fabber & (Basic | Debug) & Custom2) - Orbital"
     },
     "AnyBugFactoryAdvanced": {
-      "unit_types": "(Factory & Advanced) & Custom2"
+      "unit_types": "(Factory & Advanced & Construction) & Custom2"
     },
     "AnyBugFactoryAir": {
-      "unit_types": "(Factory & Air) & Custom2"
+      "unit_types": "(Factory & Air & Construction) & Custom2"
     },
     "AnyBugFactoryBasic": {
-      "unit_types": "(Factory & Basic) & Custom2"
+      "unit_types": "(Factory & Basic & Construction) & Custom2"
     },
     "AnyBugFactoryBot": {
-      "unit_types": "(Factory & Bot) & Custom2"
+      "unit_types": "(Factory & Bot & Construction) & Custom2"
     },
     "AnyBugFactoryNaval": {
-      "unit_types": "(Factory & Naval) & Custom2"
+      "unit_types": "(Factory & Naval & Construction) & Custom2"
     },
     "AnyBugFactoryOrbital": {
-      "unit_types": "(Factory & Orbital) & Custom2 - Artillery"
+      "unit_types": "(Factory & Orbital & Construction) & Custom2 - Artillery"
     },
     "AnyBugFactoryVehicle": {
-      "unit_types": "(Factory & Tank) & Custom2"
+      "unit_types": "(Factory & Tank & Construction) & Custom2"
     },
     "BugCatalyst": {
       "spec_id": "/pa/units/structure/bug_catalyst/bug_catalyst.json"
