@@ -531,6 +531,10 @@
       "build_conditions": [
         [
           {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
