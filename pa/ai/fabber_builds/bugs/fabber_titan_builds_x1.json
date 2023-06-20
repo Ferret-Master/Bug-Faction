@@ -8,7 +8,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 480,
-      "builders": ["BugAdvancedBotFabber", "BugOrbitalFab"],
+      "builders": ["BugAdvancedBotFabber"],
       "build_conditions": [
         [
           {
@@ -152,7 +152,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 480,
-      "builders": ["BugAdvancedAirFabber", "BugOrbitalFab"],
+      "builders": ["BugAdvancedAirFabber"],
       "build_conditions": [
         [
           {
