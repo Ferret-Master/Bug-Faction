@@ -1105,7 +1105,7 @@
       "to_build": "Pike",
       "instance_count": 1,
       "priority": 378,
-      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
+      "builders": ["AnyBugFabberBasic", "AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -1208,7 +1208,7 @@
       "to_build": "Pike",
       "instance_count": 1,
       "priority": 386,
-      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
+      "builders": ["AnyBugFabberBasic", "AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -1678,7 +1678,7 @@
       "to_build": "BugUmbrella",
       "instance_count": 1,
       "priority": 378,
-      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
+      "builders": ["AnyBugFabberBasic", "AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -1781,7 +1781,7 @@
       "to_build": "BugUmbrella",
       "instance_count": 1,
       "priority": 386,
-      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
+      "builders": ["AnyBugFabberBasic", "AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
