@@ -742,6 +742,70 @@
       }
     },
     {
+      "name": "Bugs - Pelter",
+      "to_build": "BugBasicArtillery",
+      "instance_count": 1,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "priority": 245,
+      "builders": ["AnyBugFabberBasic"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & Artillery",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Structure",
+            "string0": "Enemy",
+            "value0": 350,
+            "compare0": ">=",
+            "value1": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugBasicArtillery"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & Basic & Artillery",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
       "name": "Bugs - Lilu Nest - Artillery",
       "to_build": "BugsAirDroneLauncher",
       "instance_count": 1,
