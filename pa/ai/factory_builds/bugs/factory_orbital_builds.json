@@ -282,7 +282,7 @@
       ]
     },
     {
-      "name": "Chomper",
+      "name": "Bugs - Chomper",
       "to_build": "Chomper",
       "instance_count": 1,
       "max_num_assisters": 5,
@@ -315,7 +315,7 @@
       ]
     },
     {
-      "name": "Chomper - Threat",
+      "name": "Bugs - Chomper - Threat",
       "to_build": "Chomper",
       "instance_count": 1,
       "min_num_assisters": 2,
@@ -390,7 +390,7 @@
       ]
     },
     {
-      "name": "Tyrant",
+      "name": "Bugs - Tyrant",
       "to_build": "Tyrant",
       "instance_count": 1,
       "max_num_assisters": 5,

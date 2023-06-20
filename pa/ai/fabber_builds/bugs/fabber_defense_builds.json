@@ -801,7 +801,7 @@
       }
     },
     {
-      "name": "Lilu Nest - AA",
+      "name": "Bugs - Lilu Nest - AA",
       "to_build": "BugsAirDroneLauncher",
       "instance_count": 1,
       "priority": 255,
@@ -888,7 +888,7 @@
       }
     },
     {
-      "name": "Lilu Nest - AA - Threat",
+      "name": "Bugs - Lilu Nest - AA - Threat",
       "to_build": "BugsAirDroneLauncher",
       "instance_count": 1,
       "priority": 379,
