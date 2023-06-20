@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Bugs - Orbital Launcher",
+      "name": "Bugs - Spire",
       "to_build": "BugOrbitalLauncher",
       "instance_count": 1,
       "shared_instance_count": "OrbitalLauncher",
@@ -67,7 +67,7 @@
       }
     },
     {
-      "name": "Bugs - Orbital Launcher - Rush",
+      "name": "Bugs - Spire - Rush",
       "to_build": "BugOrbitalLauncher",
       "instance_count": 1,
       "shared_instance_count": "OrbitalLauncher",
