@@ -6,7 +6,7 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "priority": 199,
-      "builders": ["BugOrbitalLauncher", "OrbitalFactory"],
+      "builders": ["BugOrbitalLauncher", "BugOrbitalLauncher"],
       "build_conditions": [
         [
           {
@@ -110,7 +110,7 @@
       "to_build": "BugOrbitalRadar",
       "instance_count": 1,
       "priority": 100,
-      "builders": ["BugOrbitalLauncher", "OrbitalFactory"],
+      "builders": ["BugOrbitalLauncher", "BugOrbitalLauncher"],
       "build_conditions": [
         [
           {
@@ -144,7 +144,7 @@
       "to_build": "BugOrbitalRadar",
       "instance_count": 1,
       "priority": 102,
-      "builders": ["BugOrbitalLauncher", "OrbitalFactory"],
+      "builders": ["BugOrbitalLauncher", "BugOrbitalLauncher"],
       "build_conditions": [
         [
           {
@@ -174,7 +174,7 @@
       "shared_instance_count": "ReconAssistance",
       "cross_planet_shared_count": true,
       "priority": 199,
-      "builders": ["BugOrbitalLauncher", "OrbitalFactory"],
+      "builders": ["BugOrbitalLauncher", "BugOrbitalLauncher"],
       "build_conditions": [
         [
           {
@@ -203,7 +203,7 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "priority": 100,
-      "builders": ["BugOrbitalLauncher", "OrbitalFactory"],
+      "builders": ["BugOrbitalLauncher", "BugOrbitalLauncher"],
       "build_conditions": [
         [
           {
@@ -277,6 +277,114 @@
             "string1": "AntiOrbital",
             "compare0": ">",
             "value0": 1.0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Chomper",
+      "to_build": "Chomper",
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "priority": 195,
+      "builders": ["BugOrbitalLauncher"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital & Fighter & Advanced & Mobile",
+            "compare0": "<",
+            "value0": 15
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & Fighter) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Chomper - Threat",
+      "to_build": "Chomper",
+      "instance_count": 1,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "priority": 205,
+      "builders": ["BugOrbitalLauncher"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter & Advanced & Mobile",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & Fighter) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Orbital & Fighter & Advanced & Mobile",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & Fighter) - Mobile",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1.0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & Fighter) - Mobile",
+            "compare0": ">",
+            "value0": 0
           }
         ]
       ]
