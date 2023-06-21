@@ -57,7 +57,7 @@
 ],
   "tools": [
     {
-      "spec_id": "/pa/tools/commander_build_arm/commander_build_arm.json",
+      "spec_id": "/pa/units/commanders/base_bug_commander/base_commander_build_arm.json",
       "aim_bone": "bone_turret"
     },
     {
