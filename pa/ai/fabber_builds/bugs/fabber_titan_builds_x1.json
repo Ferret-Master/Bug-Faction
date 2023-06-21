@@ -8,7 +8,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 480,
-      "builders": ["AdvancedBotFabber"],
+      "builders": ["BugAdvancedBotFabber"],
       "build_conditions": [
         [
           {
@@ -20,11 +20,13 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "PlanetThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 5000
           },
           {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "Nug"
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -56,7 +58,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 480,
-      "builders": ["AdvancedVehicleFabber"],
+      "builders": ["BugAdvancedBotFabber"],
       "build_conditions": [
         [
           {
@@ -68,11 +70,13 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "PlanetThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 5000
           },
           {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "Rak"
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -104,7 +108,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 480,
-      "builders": ["AdvancedVehicleFabber"],
+      "builders": ["BugAdvancedBotFabber"],
       "build_conditions": [
         [
           {
@@ -116,11 +120,13 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "PlanetThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 5000
           },
           {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "Matriarch"
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -164,11 +170,13 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "PlanetThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 5000
           },
           {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BugAirTitan"
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -184,6 +192,89 @@
       ],
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bugs - Cataclysm",
+      "to_build": "Cataclysm",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 15,
+      "shared_instance_count": "Titan",
+      "priority": 480,
+      "builders": [
+        "AnyAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 5000
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "Cataclysm"
+          },
+          {
+            "test_type": "PlanetHasUseablePlanetWeapon",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Advanced & SelfDestruct",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "Structure & Advanced & SelfDestruct",
+            "compare0": "<=",
+            "boolean": true,
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Cataclysm"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "buffer": 5,
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

@@ -30,7 +30,8 @@
         "UNITTYPE_Offense",
         "UNITTYPE_Basic",
         "UNITTYPE_FactoryBuild",
-        "UNITTYPE_Custom2"
+        "UNITTYPE_Custom2",
+        "UNITTYPE_Fighter"
 
     
     ],

@@ -5,6 +5,7 @@
       "to_build": "StealthRipperUnlock",
       "instance_count": 1,
       "shared_instance_count": "BasicResearchFactory",
+      "cross_planet_shared_count": true,
       "priority": 360,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
@@ -34,6 +35,12 @@
             "value0": 0
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Custom2 & Bot & Factory & Construction",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "StealthRipperUnlock"
           }
@@ -54,6 +61,7 @@
       "to_build": "WarriorGruntUnlock",
       "instance_count": 1,
       "shared_instance_count": "BasicResearchFactory",
+      "cross_planet_shared_count": true,
       "priority": 360,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
@@ -77,6 +85,12 @@
             "value0": 0
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Custom2 & Tank & Factory & Construction",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "WarriorGruntUnlock"
           }
@@ -97,6 +111,7 @@
       "to_build": "FastNeedlerUnlock",
       "instance_count": 1,
       "shared_instance_count": "BasicResearchFactory",
+      "cross_planet_shared_count": true,
       "priority": 360,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
@@ -120,6 +135,12 @@
             "value0": 0
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Custom2 & Tank & Factory & Construction",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "FastNeedlerUnlock"
           }
@@ -140,6 +161,7 @@
       "to_build": "CheapCombatFabUnlock",
       "instance_count": 1,
       "shared_instance_count": "BasicResearchFactory",
+      "cross_planet_shared_count": true,
       "priority": 0,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
@@ -163,6 +185,12 @@
             "value0": 0
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Custom2 & Bot & Factory & Construction",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "CheapCombatFabUnlock"
           }
@@ -182,7 +210,8 @@
       "name": "Bugs - Crusher Unlock",
       "to_build": "CrusherUnlock",
       "instance_count": 1,
-      "shared_instance_count": "AdvancedBasicResearchFactory",
+      "shared_instance_count": "AdvancedResearchFactory",
+      "cross_planet_shared_count": true,
       "priority": 460,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
@@ -206,6 +235,12 @@
             "value0": 0
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Custom2 & Advanced & Land & Factory & Construction",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "CrusherUnlock"
           }
@@ -225,7 +260,8 @@
       "name": "Bugs - Hydra Unlock",
       "to_build": "HydraUnlock",
       "instance_count": 1,
-      "shared_instance_count": "AdvancedBasicResearchFactory",
+      "shared_instance_count": "AdvancedResearchFactory",
+      "cross_planet_shared_count": true,
       "priority": 460,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
@@ -249,6 +285,12 @@
             "value0": 0
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Custom2 & Advanced & Land & Factory & Construction",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "HydraUnlock"
           }
@@ -262,6 +304,196 @@
           "radius": 10,
           "value": 50
         }
+      }
+    },
+    {
+      "name": "Bugs - Advanced Orbital Radar - Unlock",
+      "to_build": "AdvancedOrbitalRadarUnlock",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalResearchFactory",
+      "cross_planet_shared_count": true,
+      "priority": 460,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["BugOrbitalFab"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedOrbitalRadarUnlock"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Factory & Advanced & Orbital & Important & Radar) - Construction",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & Radar) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedOrbitalRadarUnlock"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 5
+      }
+    },
+    {
+      "name": "Bugs - Chomper - Unlock",
+      "to_build": "BugChomperUnlock",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalResearchFactory",
+      "cross_planet_shared_count": true,
+      "priority": 460,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["BugOrbitalFab"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugChomperUnlock"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Factory & Advanced & Orbital & Important & Fighter) - Construction",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & Fighter) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugChomperUnlock"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 5
+      }
+    },
+    {
+      "name": "Bugs - Orbital Carrier - Unlock",
+      "to_build": "BugOrbitalCarrierUnlock",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalResearchFactory",
+      "cross_planet_shared_count": true,
+      "priority": 460,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["BugOrbitalFab"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugOrbitalCarrierUnlock"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Factory & Advanced & Orbital & Important & Heavy) - Construction",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & Heavy) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugOrbitalCarrierUnlock"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 5
+      }
+    },
+    {
+      "name": "Bugs - Orbital Fighter Vision - Unlock",
+      "to_build": "BugOrbitalFighterVisionUnlock",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalResearchFactory",
+      "cross_planet_shared_count": true,
+      "priority": 460,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["BugOrbitalFab"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugOrbitalFighterVisionUnlock"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Factory & Basic & Orbital & Important & Fighter) - Construction",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Basic & Fighter) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugOrbitalFighterVisionUnlock"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 5
+      }
+    },
+    {
+      "name": "Bugs - Orbital Laser - Unlock",
+      "to_build": "BugOrbitalLaserUnlock",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalResearchFactory",
+      "cross_planet_shared_count": true,
+      "priority": 460,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["BugOrbitalFab"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BugOrbitalLaserUnlock"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Factory & Advanced & Orbital & Important & LaserPlatform) - Construction",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Orbital & Advanced & LaserPlatform) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugOrbitalLaserUnlock"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 5
       }
     }
   ]

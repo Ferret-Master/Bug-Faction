@@ -10,25 +10,25 @@
       "unit_types": "(Fabber & (Basic | Debug) & Custom2) - Orbital"
     },
     "AnyBugFactoryAdvanced": {
-      "unit_types": "(Factory & Advanced) & Custom2"
+      "unit_types": "(Factory & Advanced & Construction) & Custom2"
     },
     "AnyBugFactoryAir": {
-      "unit_types": "(Factory & Air) & Custom2"
+      "unit_types": "(Factory & Air & Construction) & Custom2"
     },
     "AnyBugFactoryBasic": {
-      "unit_types": "(Factory & Basic) & Custom2"
+      "unit_types": "(Factory & Basic & Construction) & Custom2"
     },
     "AnyBugFactoryBot": {
-      "unit_types": "(Factory & Bot) & Custom2"
+      "unit_types": "(Factory & Bot & Construction) & Custom2"
     },
     "AnyBugFactoryNaval": {
-      "unit_types": "(Factory & Naval) & Custom2"
+      "unit_types": "(Factory & Naval & Construction) & Custom2"
     },
     "AnyBugFactoryOrbital": {
-      "unit_types": "(Factory & Orbital) & Custom2 - Artillery"
+      "unit_types": "(Factory & Orbital & Construction) & Custom2 - Artillery"
     },
     "AnyBugFactoryVehicle": {
-      "unit_types": "(Factory & Tank) & Custom2"
+      "unit_types": "(Factory & Tank & Construction) & Custom2"
     },
     "BugCatalyst": {
       "spec_id": "/pa/units/structure/bug_catalyst/bug_catalyst.json"
@@ -36,7 +36,7 @@
     "BugHalley": {
       "spec_id": "/pa/units/structure/bug_halley/bug_halley.json"
     },
-    "BugRagnarok": {
+    "Cataclysm": {
       "spec_id": "/pa/units/structure/bug_rag/bug_rag.json"
     },
     "BugNuke": {
@@ -257,6 +257,75 @@
     },
     "Grunt": {
       "spec_id": "/pa/units/land/bug_grunt/bug_grunt.json"
+    },
+    "BugAdvancedOrbitalRadar": {
+      "spec_id": "/pa/units/orbital/bug_advanced_orbital_radar/bug_advanced_orbital_radar.json"
+    },
+    "BugOrbitalLander": {
+      "spec_id": "/pa/units/orbital/bug_lander/bug_lander.json"
+    },
+    "Tyrant": {
+      "spec_id": "/pa/units/orbital/bug_orbital_battleship/bug_orbital_battleship.json"
+    },
+    "Chomper": {
+      "spec_id": "/pa/units/orbital/bug_orbital_chomper/bug_orbital_chomper.json"
+    },
+    "BugOrbitalFab": {
+      "spec_id": "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator.json"
+    },
+    "Seeker": {
+      "spec_id": "/pa/units/orbital/bug_orbital_fighter/bug_orbital_fighter.json"
+    },
+    "SeekerVision": {
+      "spec_id": "/pa/units/orbital/bug_orbital_fighter/bug_orbital_fighter_vision.json"
+    },
+    "BugLaserPlatform": {
+      "spec_id": "/pa/units/orbital/bug_orbital_laser/bug_orbital_laser.json"
+    },
+    "BugOrbitalMine": {
+      "spec_id": "/pa/units/orbital/bug_orbital_mine/bug_orbital_mine.json"
+    },
+    "BugOrbitalRadar": {
+      "spec_id": "/pa/units/orbital/bug_orbital_radar/bug_orbital_radar.json"
+    },
+    "BugAnchor": {
+      "spec_id": "/pa/units/structure/bug_anchor/bug_anchor.json"
+    },
+    "BugGasHive": {
+      "spec_id": "/pa/units/structure/bug_gas_hive/bug_gas_hive.json"
+    },
+    "BugJig": {
+      "spec_id": "/pa/units/structure/bug_jig/bug_jig.json"
+    },
+    "Pike": {
+      "spec_id": "/pa/units/structure/bug_missile_defence_basic/bug_missile_defence_basic.json"
+    },
+    "BugsAirDroneLauncher": {
+      "spec_id": "/pa/units/structure/bug_air_drone_launcher/bug_air_drone_launcher.json"
+    },
+    "StealthTurret": {
+      "spec_id": "/pa/units/structure/bug_stealth_turret/bug_stealth_turret.json"
+    },
+    "AdvancedOrbitalRadarUnlock": {
+      "spec_id": "/pa/units/research/unlocks/bug_advanced_orbital_radar_unlock/research_bug_advanced_orbital_radar.json"
+    },
+    "BugChomperUnlock": {
+      "spec_id": "/pa/units/research/unlocks/bug_chomper_unlock/research_bug_chomper.json"
+    },
+    "BugOrbitalCarrierUnlock": {
+      "spec_id": "/pa/units/research/unlocks/bug_orbital_battleship_unlock/research_bug_orbital_battleship.json"
+    },
+    "BugOrbitalFighterVisionUnlock": {
+      "spec_id": "/pa/units/research/unlocks/bug_orbital_fighter_vision_unlock/research_bug_orbital_fighter_vision.json"
+    },
+    "BugOrbitalLaserUnlock": {
+      "spec_id": "/pa/units/research/unlocks/bug_orbital_laser_unlock/research_bug_orbital_laser.json"
+    },
+    "BugBugBasicNavalFabber": {
+      "spec_id": "/pa/units/sea/bug_ship_fab/bug_ship_fab.json"
+    },
+    "BugBugAdvancedNavalFabber": {
+      "spec_id": "/pa/units/sea/bug_ship_fab_adv/bug_ship_fab_adv.json"
     }
   }
 }

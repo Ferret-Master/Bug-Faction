@@ -8,7 +8,7 @@
         "BugCommander",
         "AnyBugFabberBasic",
         "AnyBugFabberAdvanced",
-        "OrbitalFabber"
+        "BugOrbitalFab"
       ],
       "build_conditions": [
         [
@@ -48,7 +48,7 @@
         "BugCommander",
         "AnyBugFabberBasic",
         "AnyBugFabberAdvanced",
-        "OrbitalFabber"
+        "BugOrbitalFab"
       ],
       "build_conditions": [
         [
@@ -131,7 +131,7 @@
       "priority": 615,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "builders": ["OrbitalFabber"],
+      "builders": ["BugOrbitalFab"],
       "build_conditions": [
         [
           {
@@ -174,7 +174,7 @@
         "BugCommander",
         "AnyBugFabberBasic",
         "AnyBugFabberAdvanced",
-        "OrbitalFabber"
+        "BugOrbitalFab"
       ],
       "build_conditions": [
         [
@@ -220,7 +220,7 @@
         "BugCommander",
         "AnyBugFabberBasic",
         "AnyBugFabberAdvanced",
-        "OrbitalFabber"
+        "BugOrbitalFab"
       ],
       "build_conditions": [
         [
@@ -260,7 +260,7 @@
         "BugCommander",
         "AnyBugFabberBasic",
         "AnyBugFabberAdvanced",
-        "OrbitalFabber"
+        "BugOrbitalFab"
       ],
       "build_conditions": [
         [
