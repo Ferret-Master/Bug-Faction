@@ -3,9 +3,10 @@
     "auto_attack": true,
     "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
     "idle_aim_delay": 5,
+    "fire_delay":60,
     "max_range": 250,
-    "pitch_range": 1,
-    "pitch_rate": 0,
+    "pitch_range": 360,
+    "pitch_rate": 1,
     "rate_of_fire": 0,
     "target_layers": [
       "WL_Air"
@@ -13,6 +14,6 @@
     "target_priorities": [
       "Air"
     ],
-    "yaw_range": 1,
-    "yaw_rate": 0
+    "yaw_range": 360,
+    "yaw_rate": 1
   }
