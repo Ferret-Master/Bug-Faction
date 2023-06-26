@@ -1,6 +1,60 @@
 {
   "build_list": [
     {
+      "name": "Bugs - Pike",
+      "to_build": "Pike",
+      "instance_count": 1,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "priority": 350,
+      "builders": ["AnyBugFabberBasic"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Tactical",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Structure",
+            "string0": "Enemy",
+            "value0": 500,
+            "compare0": ">=",
+            "value1": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Pike"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
       "name": "Bugs - Nuke Silo",
       "to_build": "BugNuke",
       "instance_count": 1,
@@ -143,6 +197,100 @@
       "placement_rules": {
         "buffer": 2
       }
+    },
+    {
+      "name": "Bugs - Holkins",
+      "to_build": "BugAdvancedArtillery",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 6,
+      "priority": 360,
+      "builders": ["AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Structure",
+            "string0": "Enemy",
+            "value0": 600,
+            "compare0": ">=",
+            "value1": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BugAdvancedArtillery"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bugs - Catalyst",
+      "to_build": "BugCatalyst",
+      "instance_count": 1,
+      "min_num_assisters": 8,
+      "max_num_assisters": 45,
+      "priority": 612,
+      "builders": ["AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetHasUseablePlanetWeapon",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "ControlModule",
+            "compare0": "<=",
+            "boolean": true,
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindControlPointToBuild",
+            "boolean": true
+          }
+        ]
+      ]
     }
   ]
 }

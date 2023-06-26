@@ -27,8 +27,8 @@
     "unit_types": [
          
         "UNITTYPE_Orbital",
-        "UNITTYPE_Basic",
-        "UNITTYPE_Heavy",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Fighter",
         "UNITTYPE_FactoryBuild",
         "UNITTYPE_Custom2"    
     

@@ -108,7 +108,8 @@
       "UNITTYPE_Advanced",
       "UNITTYPE_FabOrbBuild",
       "UNITTYPE_Important",
-      "UNITTYPE_Custom2"
+      "UNITTYPE_Custom2",
+      "UNITTYPE_Heavy"
     ],
     "wait_to_rolloff_time": 0
   }
