@@ -1,6 +1,6 @@
 {
     "display_name": "!LOC:Spire",
-    "description": "!LOC:Basic Manufacturing - Builds and launches basic orbital units.",
+    "description": "!LOC:Basic Manufacturing - Builds and launches basic orbital units. Only assistable with orbital fabs",
     "si_name":"bug_orbital_launcher",
     "TEMP_texelinfo": 63.4807,
     "atrophy_cool_down": 15.0,
