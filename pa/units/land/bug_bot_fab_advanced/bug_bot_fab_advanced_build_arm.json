@@ -1,5 +1,8 @@
 {
     "base_spec": "/pa/tools/engineer_build_arm/engineer_build_arm.json",
+    "assist_layers": [
+      "WL_Orbital"
+    ],
     "construction_demand": {
       "energy": 1900,
       "metal": 50

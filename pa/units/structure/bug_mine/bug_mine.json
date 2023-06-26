@@ -108,7 +108,7 @@
                     "layer": "surface_and_air",
                     "channel": "radar",
                     "shape": "sphere",
-                    "radius": 20
+                    "radius": 30
                 }
             ]
         }
