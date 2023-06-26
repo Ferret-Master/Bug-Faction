@@ -21,7 +21,7 @@
             ]
         }
     },
-    "buildable_types": "((Land & Structure & Advanced - Factory| Factory & Advanced & Bot & Land | FabAdvBuild | FabBuild) & Custom2) - Custom1 - Custom3 - Custom4",
+    "buildable_types": "((Land & Structure & Advanced - Factory| Factory & Advanced & Bot & Land | FabAdvBuild | FabBuild) & Custom2) ",
     "unit_types": [
         "UNITTYPE_Fabber",
         "UNITTYPE_Construction",
