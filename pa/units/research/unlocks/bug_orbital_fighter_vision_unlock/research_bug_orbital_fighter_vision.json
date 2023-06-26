@@ -102,10 +102,11 @@
       "UNITTYPE_Factory",
       "UNITTYPE_Orbital",
       "UNITTYPE_Structure",
-      "UNITTYPE_Advanced",
+      "UNITTYPE_Basic",
       "UNITTYPE_FabOrbBuild",
       "UNITTYPE_Important",
-      "UNITTYPE_Custom2"
+      "UNITTYPE_Custom2",
+      "UNITTYPE_Fighter"
     ],
     "wait_to_rolloff_time": 0
   }

@@ -12,8 +12,8 @@
         "BugCommander",
         "BugBasicAirFabber",
         "BugAdvancedAirFabber",
-        "BasicNavalFabber",
-        "AdvancedNavalFabber"
+        "BugBasicNavalFabber",
+        "BugAdvancedNavalFabber"
       ],
       "build_conditions": [
         [
@@ -131,8 +131,8 @@
         "BugCommander",
         "BugBasicAirFabber",
         "BugAdvancedAirFabber",
-        "BasicNavalFabber",
-        "AdvancedNavalFabber"
+        "BugBasicNavalFabber",
+        "BugAdvancedNavalFabber"
       ],
       "build_conditions": [
         [

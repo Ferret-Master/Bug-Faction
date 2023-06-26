@@ -180,7 +180,7 @@
         12
     ],
     "ai_metal_extractor_names": {
-        "basic": "BugBasicMetalExtractor",
-        "advanced": "BugAdvancedMetalExtractor"
-      }
+      "basic": "BugBasicMetalExtractor",
+      "advanced": "BugAdvancedMetalExtractor"
+    }
 }
