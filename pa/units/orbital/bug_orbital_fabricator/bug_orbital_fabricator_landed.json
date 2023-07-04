@@ -112,7 +112,7 @@
     "teleportable": {},
     "tools": [
       {
-        "spec_id": "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator_build_arm.json",
+        "spec_id": "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator_build_arm_landed.json",
         "aim_bone": "bone_root"
 
       },
