@@ -8,7 +8,7 @@
       "add_to_spatial_db": true
   },
   "model": {
-      "filename": "/pa/units/orbital/bug_orbital_battleship/bug_land_drone/bug_ripper.papa"
+      "filename": "/pa/units/orbital/bug_orbital_battleship/bug_land_drone/bug_drop_pod.papa"
   },
   "spawn_unit_on_death": "/pa/units/orbital/bug_orbital_battleship/bug_land_drone/bug_land_drone.json"
 }

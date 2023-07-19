@@ -2,16 +2,17 @@
     "ammo_id": [
       {
         "layer": "WL_AnyLand",
-        "id": "/pa/units/land/bug_needler/bug_needler_ammo.json"
+        "id": "/pa/units/land/bug_belcher/bug_belcher_ammo.json"
       }
     ],
     "auto_attack": true,
     "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
-    "max_range": 90,
+    "max_range": 65,
     "idle_aim_delay": 1.0,
     "pitch_range": 180,
     "pitch_rate": 360,
-    "rate_of_fire": 0.3,
+    "arc_type": "ARC_Low",
+    "rate_of_fire": 1,
     "target_layers": [
       "WL_LandHorizontal",
       "WL_WaterSurface"

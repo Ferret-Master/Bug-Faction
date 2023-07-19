@@ -41,6 +41,23 @@
       50,
       25
     ],
+    "fx_offsets": [
+      {
+        "bone": "bone_root",
+        "filename": "/pa/units/structure/advanced_air_hive/advanced_air_hive_pool.pfx",
+        "offset": [
+          0,
+          0,
+          19.8
+        ],
+        "orientation": [
+          0,
+          0,
+         0
+        ],
+        "type": "energy"
+      }
+    ],
     "model": [
       {
         "filename": "/pa/units/structure/advanced_air_hive/advanced_air_hive.papa",

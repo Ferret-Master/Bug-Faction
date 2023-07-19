@@ -52,9 +52,9 @@
   "guard_radius":80,
   "max_health": 540,
   "mesh_bounds": [
-    6,
-    6,
-    10
+    5.5,
+    5.5,
+    7
   ],
   "recon": {
     "observer": {
@@ -93,7 +93,7 @@
     "group_preference": "front"
   },
   "physics": {
-    "radius": 1.5
+    "radius": 1.0
   },
   "selection_icon": {
     "diameter": 11.0

@@ -1,5 +1,6 @@
 {
     "units": [  
+
         "/pa/units/structure/bug_basic_torp/bug_basic_torp.json",
         "/pa/units/structure/bug_advanced_torp/bug_advanced_torp.json",
         "/pa/units/structure/bug_catalyst/bug_catalyst.json",
@@ -21,6 +22,7 @@
         "/pa/units/structure/bug_turret_small/bug_turret_small.json",
         "/pa/units/structure/bug_turret_large/bug_turret_large.json",
         "/pa/units/structure/bug_turret_acid/bug_turret_acid.json",
+        "/pa/units/structure/bug_wall/bug_wall.json",
         "/pa/units/structure/bug_turret_needle/bug_turret_needle.json",
       
         "/pa/units/structure/advanced_hive/advanced_hive.json",
@@ -126,6 +128,8 @@
 		
 	    "/pa/units/land/bug_grunt_big/bug_grunt_big.json",
    
+        "/pa/units/land/bug_belcher/bug_belcher.json",
+
         "/pa/units/land/bug_needler/bug_needler.json",
         "/pa/units/land/bug_needler/bug_needler_fast.json",
         "/pa/units/land/bug_manticore/bug_manticore.json",

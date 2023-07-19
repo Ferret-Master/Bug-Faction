@@ -1,13 +1,13 @@
 {
-    "display_name": "!LOC:tumor",
-    "description": "!LOC:bug wall.",
+    "display_name": "!LOC:Urchin",
+    "description": "!LOC:Bug Wall - Blocks units and protects from incoming fire.",
     "TEMP_texelinfo": 7.58193,
     "area_build_separation": 0.5,
     "si_name":"land_barrier",
     "atrophy_cool_down": 0.5,
     "atrophy_rate": 20.0,
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "build_metal_cost": 200,
+    "build_metal_cost": 50,
     "events": {
       "build_complete": {
         "audio_cue": "/SE/Build_Complete/barrier"
@@ -19,16 +19,16 @@
       }
     },
   
-    "max_health": 5000,
+    "max_health": 2000,
     "mesh_bounds": [
       7,
       7,
-      20
+      15
     ],
     "model": [
       {
         "layer": "WL_LandHorizontal",
-        "filename": "/pa/units/structure/bug_wall/tentacle_wall.papa"
+        "filename": "/pa/units/structure/bug_wall/bug_land_barrier.papa"
       }
     ],
     "physics": {

@@ -16,16 +16,17 @@
         0.0
       ]
     },
-    "initial_velocity": 100.0,
+    "initial_velocity": 50.0,
     "lifetime": 10,
-    "max_velocity": 200.0,
+    "max_velocity": 120.0,
     "model": {
       "filename": ""
     },
     "physics": {
+      "gravity_scalar":12,
       "add_to_spatial_db": true
     },
     "splash_damage": 100,
     "splash_damages_allies": false,
-    "splash_radius": 0.75
+    "splash_radius": 1.5
   }
