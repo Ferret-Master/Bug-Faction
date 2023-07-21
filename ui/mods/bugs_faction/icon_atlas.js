@@ -69,6 +69,7 @@ var paeiouIcons = [
 	"small_turret",
 	"acid_launcher",
 	"big_runner",
+	"bug_barrier",
 	"runner",
 	"asteroid",
 	"bug_swarm_hive",

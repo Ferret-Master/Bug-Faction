@@ -51,10 +51,11 @@
         "animtree": "/pa/units/orbital/bug_orbital_chomper/bug_chomper_anim_tree.json"
       }
     ],
+    "attack_range_frac": 0.5,
     "navigation": {
       "type": "orbital",
-      "acceleration": 20,
-      "brake": 20,
+      "acceleration": 40,
+      "brake": 40,
       "move_speed": 55,
       "turn_speed": 80,
       "circle_min_time": 2,

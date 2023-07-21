@@ -12,7 +12,7 @@
         ]
       }
     },
-    "attack_range_frac": 0.6,
+    "attack_range_frac": 1.8,
     "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
     "build_metal_cost": 15000,
     "command_caps": [
