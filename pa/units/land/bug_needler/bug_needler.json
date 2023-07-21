@@ -68,9 +68,9 @@
     },
     "max_health": 80,
     "mesh_bounds": [
-      5,
-      5,
-      4.7
+      4.8,
+      4.8,
+      5.5
     ],
     "model": {
       "filename": "/pa/units/land/bug_needler/bug_needler.papa",
@@ -92,7 +92,7 @@
       "group_preference": "back"
     },
     "physics": {
-      "radius": 2.0
+      "radius": 1.0
     },
     "selection_icon": {
       "diameter": 9.0

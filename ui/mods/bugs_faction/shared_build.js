@@ -20,6 +20,7 @@ var newBuildScenario = {
     "/pa/units/structure/bug_radar_advanced/bug_radar_advanced.json": ["bug_utility", 8, {row: 1, column: 2}],
     "/pa/units/structure/bug_combined_storage/bug_combined_storage.json": ["bug_utility", 15, {row: 2, column: 3}],
     "/pa/units/structure/bug_teleporter/bug_teleporter.json": ["bug_utility", 13, {row: 2, column: 1}],
+    "/pa/units/structure/bug_wall/bug_wall.json": ["bug_utility", 14, {row: 2, column: 4}],
     "/pa/units/structure/bug_halley/bug_halley.json": ["bug_utility", 7, {row: 1, column: 1}],
     "/pa/units/structure/bug_rag/bug_rag.json": ["bug_utility", 0, {row: 0, column: 0}],
     "/pa/units/structure/bug_catalyst/bug_catalyst.json": ["bug_utility", 1, {row: 0, column: 1}],
@@ -35,13 +36,12 @@ var newBuildScenario = {
     //"/pa/units/structure/bug_turret_large/bug_turret_large.json": ["bug_combat", 6, {row: 0, column: 0}],
     "/pa/units/structure/bug_stealth_turret/bug_stealth_turret.json": ["bug_combat", 6, {row: 0, column: 1}],
     "/pa/units/structure/bug_turret_needle/bug_turret_needle.json": ["bug_combat", 6, {row: 2, column: 0}],
-    //"/pa/units/structure/bug_turret_acid/bug_turret_acid.json": ["bug_combat", 6, {row: 2, column: 3}],
+    "/pa/units/structure/bug_turret_acid/bug_turret_acid.json": ["bug_combat", 6, {row: 2, column: 3}],
     "/pa/units/structure/bug_aa_small/bug_aa_small.json": ["bug_combat", 13, {row: 2, column: 1}],
     "/pa/units/structure/bug_aa_large/bug_aa_large.json": ["bug_combat", 7, {row: 1, column: 1}],
     "/pa/units/structure/bug_anti_orbital/bug_anti_orbital.json": ["bug_combat", 16, {row: 2, column: 4}],
-    "/pa/units/structure/bug_arty_small/bug_arty_small.json": ["bug_combat", 14, {row: 2, column: 2}],
     "/pa/units/structure/bug_arty_large/bug_arty_large.json": ["bug_combat", 2, {row: 0, column: 2}],
-    "/pa/units/structure/bug_missile_defence_basic/bug_missile_defence_basic.json": ["bug_combat", 7, {row: 1, column: 2}],
+    //"/pa/units/structure/bug_missile_defence_basic/bug_missile_defence_basic.json": ["bug_combat", 7, {row: 1, column: 2}],
     "/pa/units/structure/bug_air_drone_launcher/bug_air_drone_launcher.json": ["bug_combat", 7, {row: 0, column: 3}],
 
     "/pa/units/structure/bug_nuke/bug_nuke.json": ["bug_combat", 4, {row: 0, column: 4}],
@@ -128,6 +128,7 @@ var newBuildScenario = {
     "/pa/units/land/bug_boomer/bug_boomer.json": ["bug_ground_2", 17, {row: 2, column: 1}],
     "/pa/units/land/bug_ripper/bug_ripper.json": ["bug_ground_2", 14, {row: 2, column: 2}],
     "/pa/units/land/bug_runner/bug_runner.json": ["bug_ground_2", 16, {row: 2, column: 3}],
+    "/pa/units/land/bug_belcher/bug_belcher.json": ["bug_ground_2", 16, {row: 2, column: 4}],
 
     //t1 air hive
     "/pa/units/air/bug_fighter/bug_fighter.json": ["bug_air", 13, {row: 2, column: 1}],

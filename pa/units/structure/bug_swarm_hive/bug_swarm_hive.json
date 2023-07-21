@@ -42,64 +42,19 @@
     "factory_cooldown_time": 1,
     "fx_offsets": [
       {
-        "bone": "bone_bar001",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "bone": "bone_root",
+        "filename": "/pa/units/structure/bug_swarm_hive/swarm_hive_pool.pfx",
         "offset": [
-          5.509,
-          2.718,
-          0
+          0,
+          0,
+          4.4
         ],
         "orientation": [
           0,
           0,
-          135
+         0
         ],
-        "type": "build"
-      },
-      {
-        "bone": "bone_bar001",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "offset": [
-          -5.51,
-          2.718,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          -135
-        ],
-        "type": "build"
-      },
-      {
-        "bone": "bone_bar002",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "offset": [
-          5.509,
-          2.718,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          135
-        ],
-        "type": "build"
-      },
-      {
-        "bone": "bone_bar002",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "offset": [
-          -5.51,
-          2.718,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          -135
-        ],
-        "type": "build"
+        "type": "energy"
       }
     ],
     "max_health": 6000,

@@ -1,34 +1,97 @@
 {
-    "display_name": "!LOC:tumor",
-    "description": "!LOC:bug wall.",
+    "display_name": "!LOC:Urchin",
+    "description": "!LOC:Barrier - Blocks units and protects from incoming fire. Expels Acid on death.",
     "TEMP_texelinfo": 7.58193,
-    "area_build_separation": 0.5,
-    "si_name":"land_barrier",
+    "alt_area_build_pattern": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "alt_area_build_separation": 1,
+    "alt_area_build_type": "Sphere",
+    "alt_area_max_radius": 200.0,
+    "area_build_separation": 1,
+    "si_name":"bug_barrier",
     "atrophy_cool_down": 0.5,
     "atrophy_rate": 20.0,
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "build_metal_cost": 200,
+    "build_metal_cost": 100,
     "events": {
       "build_complete": {
         "audio_cue": "/SE/Build_Complete/barrier"
       },
       "died": {
         "audio_cue": "/SE/Death/barrier",
-        "effect_spec": "/pa/effects/specs/default_explosion.pfx",
-        "effect_scale": 1.25
+        "effect_spec": "/pa/units/air/bug_bomber/acid_puddle.pfx",
+        "effect_scale": 1.00
       }
     },
   
-    "max_health": 5000,
+    "max_health": 1000,
     "mesh_bounds": [
       7,
       7,
-      20
+      15
     ],
     "model": [
       {
         "layer": "WL_LandHorizontal",
-        "filename": "/pa/units/structure/bug_wall/tentacle_wall.papa"
+        "filename": "/pa/units/structure/bug_wall/bug_land_barrier.papa"
       }
     ],
     "physics": {
@@ -60,6 +123,16 @@
     "selection_icon": {
       "diameter": 6.0
     },
+    "tools": [
+      {
+        "aim_bone": "bone_root",
+        "muzzle_bone": [
+          "bone_root"
+        ],
+        "spec_id": "/pa/units/structure/bug_wall/bug_wall_melee_weapon.json"
+      }
+    ],
+    "spawn_unit_on_death": "/pa/units/structure/bug_wall/bug_wall_acid.json",
     "spawn_layers": "WL_LandHorizontal",
     "structure": {
       "cost_stamp": {
@@ -100,7 +173,6 @@
         ]
       }
     },
-    "unit_name": "Wall",
     "unit_types": [
       "UNITTYPE_Structure",
       "UNITTYPE_Basic",

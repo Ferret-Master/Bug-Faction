@@ -1,0 +1,22 @@
+{
+    "ammo_id": "/pa/units/land/bug_matriarch/bug_matriarch_projectile_ammo.json",
+    "auto_attack": true,
+    "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
+    "max_range": 180,
+    "pitch_range": 90,
+    "pitch_rate": 180,
+    "arc_type": "ARC_Low",
+ 
+    "force_fire_from_muzzle":true,
+    "firing_standard_deviation": 3,
+    "spread_fire": true,
+    "rate_of_fire": 0.25,
+    "target_layers": [
+      "WL_LandHorizontal",
+      "WL_Seafloor",
+      "WL_WaterSurface"
+ 
+    ],
+    "yaw_range": 180,
+    "yaw_rate": 180
+  }

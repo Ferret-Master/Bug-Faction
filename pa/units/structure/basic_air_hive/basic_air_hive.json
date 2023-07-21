@@ -46,6 +46,23 @@
       30,
       15
     ],
+    "fx_offsets": [
+      {
+        "bone": "bone_root",
+        "filename": "/pa/units/structure/basic_air_hive/air_hive_pool.pfx",
+        "offset": [
+          0,
+          0,
+          12.2
+        ],
+        "orientation": [
+          0,
+          0,
+         0
+        ],
+        "type": "energy"
+      }
+    ],
     "model": [
       {
         "filename": "/pa/units/structure/basic_air_hive/basic_air_hive.papa",

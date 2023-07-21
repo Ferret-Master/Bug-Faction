@@ -1,17 +1,16 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "unit_name": "Acid Turret",
+    "unit_name": "Acid Launcher",
     "display_name": "!LOC:Acid Turret",
-    "si_name": "laser_defense",
-    "description": "!LOC:Acid Turret, shots leave behind acid puddles",
-    "max_health": 2000,
-    "build_metal_cost": 600,
+    "si_name": "acid_launcher",
+    "description": "!LOC:Acid Artillery - Medium range for area denial. Attacks surface targets.",
+    "max_health": 1200,
+    "build_metal_cost": 800,
     "atrophy_rate": 7.5,
     "atrophy_cool_down": 15.0,
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
     "unit_types": [
         "UNITTYPE_Structure",
-        "UNITTYPE_NoBuild",
         "UNITTYPE_Basic",
         "UNITTYPE_Land",
         "UNITTYPE_SurfaceDefense",
@@ -44,18 +43,16 @@
     "model": [
         {
             "layer": "WL_LandHorizontal",
-            "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json",
-            "filename": "/pa/units/structure/bug_turret_acid/bug_turret_acid.papa"
+            "animtree": "/pa/anim/anim_trees/artillery_building_anim_tree.json",
+            "filename": "/pa/units/structure/bug_turret_acid/bug_acid_turret.papa"
            
         }
     ],
     "tools": [
         {
             "spec_id": "/pa/units/structure/bug_turret_acid/bug_turret_acid_weapon.json",
-            "aim_bone": "socket_muzzle",
-            "muzzle_bone": [
-                "socket_muzzle"
-            ]
+            "aim_bone": "bone_turret",
+            "muzzle_bone":"socket_muzzle"
         }
     ],
     "events": {

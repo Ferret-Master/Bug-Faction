@@ -122,7 +122,7 @@
       "group_preference": "back",
       "move_speed": 12,
       "turn_speed": 720,
-      "type": "land-small"
+      "type": "hover"
     },
     "physics": {
       "allow_pushing": true,

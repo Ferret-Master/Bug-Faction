@@ -51,9 +51,9 @@
   
   "max_health": 700,
   "mesh_bounds": [
-    9,
-    9,
-    12
+    7,
+    7,
+    10
   ],
   "guard_layer": "WL_AnySurface",
   "guard_radius":80,
@@ -79,7 +79,7 @@
     "radius": 2.0
   },
   "selection_icon": {
-    "diameter": 11.0
+    "diameter": 13.0
   },
   "tools": [
     {

@@ -32,7 +32,7 @@
       }
     },
     "guard_layer": "WL_AnySurface",
-    "guard_radius":200,
+    "guard_radius":300,
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "build_metal_cost": 10,
     "events": {
@@ -66,7 +66,7 @@
       "animtree": "/pa/units/land/bug_runner/runner_anim_tree.json",
       "walk_speed": 0.35
     },
-    "attack_range_frac": 2.0,
+    "attack_range_frac": 0.5,
     "navigation": {
       "type": "amphibious",
       "acceleration": 100,

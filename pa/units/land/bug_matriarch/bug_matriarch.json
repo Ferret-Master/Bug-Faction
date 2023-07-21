@@ -119,7 +119,7 @@
       }
     },
     "selection_icon": {
-      "diameter": 30
+      "diameter": 50
     },
     "tools": [
       {
@@ -135,6 +135,16 @@
         ],
         "projectiles_per_fire": 5,
         "spec_id": "/pa/units/land/bug_matriarch/bug_matriarch_weapon.json"
+      },
+      {
+        "aim_bone": "bone_root",
+        "muzzle_bone": [
+          "socket_muzzle_1",
+          "socket_muzzle_1",
+          "socket_muzzle_1"
+        ],
+        "projectiles_per_fire": 3,
+        "spec_id": "/pa/units/land/bug_matriarch/bug_matriarch_projectile_weapon.json"
       }
     ],
     "spawn_unit_on_death": "/pa/units/land/bug_matriarch/bug_matriarch_death_unit.json",

@@ -20,9 +20,7 @@ model.lockUnit = function(unitName){//units are locked by adding _disabled to th
         var unitId = units[unitName].id 
         if(unitId.endsWith("_disabled")){return}
         units[unitName].id = unitId + "_disabled"
-    
     }
-
 }
 
 model.unlockUnit = function(unitName){//units are unlocked by removing the _disabled for units that otherwise match the id

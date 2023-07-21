@@ -92,7 +92,7 @@
     "tools": [
       {
         "spec_id": "/pa/units/land/bug_gren/bug_gren_weapon.json",
-        "aim_bone": "bone_turret",
+        "aim_bone": "bone_pitch",
         "muzzle_bone": "socket_muzzle"
       }
     
