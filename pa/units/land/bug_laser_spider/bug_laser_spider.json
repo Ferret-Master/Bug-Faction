@@ -110,9 +110,9 @@
     },
     "TEMP_texelinfo": 9.31488,
     "mesh_bounds": [
-        50,
-        50,
-        50
+        40,
+        40,
+        40
     ],
     "headlights": [],
     "lamps": []

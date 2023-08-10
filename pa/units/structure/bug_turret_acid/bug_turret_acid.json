@@ -5,7 +5,7 @@
     "si_name": "acid_launcher",
     "description": "!LOC:Acid Artillery - Medium range for area denial. Attacks surface targets.",
     "max_health": 1200,
-    "build_metal_cost": 800,
+    "build_metal_cost": 900,
     "atrophy_rate": 7.5,
     "atrophy_cool_down": 15.0,
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
