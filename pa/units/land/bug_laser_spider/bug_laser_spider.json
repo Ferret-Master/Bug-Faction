@@ -28,6 +28,7 @@
         "UNITTYPE_Advanced",
         "UNITTYPE_Titan",
         "UNITTYPE_Important",
+        "UNITTYPE_FabOrbBuild",
         "UNITTYPE_FabAdvBuild",
         "UNITTYPE_Custom2"
     ],

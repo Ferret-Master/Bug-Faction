@@ -156,6 +156,7 @@
       "UNITTYPE_Land",
       "UNITTYPE_Advanced",
       "UNITTYPE_FabAdvBuild",
+      "UNITTYPE_FabOrbBuild",
       "UNITTYPE_Titan",
       "UNITTYPE_Custom2"
     ]
