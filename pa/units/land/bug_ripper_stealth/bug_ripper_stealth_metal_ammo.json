@@ -1,7 +1,7 @@
 
 {
     "ammo_type": "AMMO_Beam",
-    "damage": 5,
+    "damage": 2.5,
     "damage_target": "Metal",
     "splash_damage": 0,
     "splash_damages_allies": false,

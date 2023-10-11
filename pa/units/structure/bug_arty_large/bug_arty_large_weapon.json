@@ -12,7 +12,7 @@
   "firing_standard_deviation": 6,
   "max_firing_velocity": 10000,
   "max_range": 500,
-  "min_firing_velocity": 10,
+  "min_firing_velocity": 60,
   "pitch_range": 89,
   "pitch_rate": 10,
   "rate_of_fire": 2,

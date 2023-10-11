@@ -80,7 +80,7 @@
       }
     },
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-    "build_metal_cost": 10000,
+    "build_metal_cost": 8000,
   
     "events": {
       "build_complete": {
@@ -181,7 +181,7 @@
     ],
     "unit_types": [
       "UNITTYPE_Land",
-      "UNITTYPE_Mobile",
+      "UNITTYPE_Structure",
       "UNITTYPE_Defense",
       "UNITTYPE_Artillery",
       "UNITTYPE_Advanced",
