@@ -76,7 +76,11 @@
     "model": {
       "filename": "/pa/units/land/bug_belcher/bug_belcher.papa",
       "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json",
-      "walk_speed": 16
+      "animations": {
+        "walk": "/pa/units/land/bug_belcher/bug_belcher_run.papa",
+        "idle":"/pa/units/land/bug_belcher/bug_belcher_idle.papa"
+      },
+      "walk_speed": 14
     },
     "navigation": {
       "type": "amphibious",
