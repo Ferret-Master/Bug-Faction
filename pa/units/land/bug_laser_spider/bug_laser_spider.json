@@ -71,7 +71,14 @@
         }
     },
     "model": {
-        "filename": "/pa/units/land/bug_laser_spider/bug_laser_spider.papa"
+        "filename": "/pa/units/land/bug_laser_spider/bug_laser_spider.papa",
+        "animations": {
+        
+            "idle": "/pa/units/land/bug_laser_spider/bug_laser_spider_idle.papa",
+            "walk": "/pa/units/land/bug_laser_spider/bug_laser_spider_walk.papa"
+          },
+          "animtree": "/pa/anim/anim_trees/bot_bomb_anim_tree.json",
+          "walk_speed": 20
         
     },
     "tools": [
