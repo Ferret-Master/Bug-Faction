@@ -74,7 +74,13 @@
       21
     ],
     "model": {
-      "filename": "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator_landed.papa"
+      "filename": "/pa/units/orbital/bug_orbital_fabricator/bug_orbital_fabricator_landed.papa",
+      "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json",
+      "animations": {
+        "walk": "/pa/units/orbital/bug_orbital_fabricator/orb_fabricator_land_walk.papa",
+        "idle":"/pa/units/orbital/bug_orbital_fabricator/orb_fabricator_land_idle.papa"
+      },
+      "walk_speed": 10
     },
     "navigation": {
       "type": "amphibious",

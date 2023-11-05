@@ -40,14 +40,14 @@
         "type": "amphibious-large",
         "allow_pushing": false,
         "push_sideways": false,
-        "acceleration": 100,
-        "brake": 100,
+        "acceleration": 120,
+        "brake": 120,
         "move_speed": 11,
-        "turn_speed": 25,
+        "turn_speed": 50,
         "group_preference": "back"
     },
     "physics": {
-        "radius": 6,
+        "radius": 4,
         "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
         "allow_pushing": false,
         "push_sideways": false
@@ -77,7 +77,7 @@
             "idle": "/pa/units/land/bug_laser_spider/bug_laser_spider_idle.papa",
             "walk": "/pa/units/land/bug_laser_spider/bug_laser_spider_walk.papa"
           },
-          "animtree": "/pa/anim/anim_trees/bot_bomb_anim_tree.json",
+          "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json",
           "walk_speed": 20
         
     },

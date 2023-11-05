@@ -1,15 +1,18 @@
 var newBuildScenario = {
 
-     //factorys
-     "/pa/units/structure/basic_hive/basic_hive.json": ["bug_factory", 16, {row: 2, column: 4}],
-     "/pa/units/structure/bug_swarm_hive/bug_swarm_hive.json": ["bug_factory", 16, {row: 2, column: 3}],
-     "/pa/units/structure/advanced_hive/advanced_hive.json": ["bug_factory", 10, {row: 1, column: 4}],
-     //"/pa/units/research/basic_research_station/basic_research_station.json": ["bug_factory", 0, {row: 0, column: 0}],
-     //"/pa/units/research/advanced_research_station/advanced_research_station.json": ["bug_factory", 0, {row: 0, column: 1}],
-     "/pa/units/structure/bug_orbital_launcher/bug_orbital_launcher.json": ["bug_factory", 12, {row: 2, column: 0}],
-     "/pa/units/structure/basic_air_hive/basic_air_hive.json": ["bug_factory", 14, {row: 2, column: 2}],
-     "/pa/units/structure/advanced_air_hive/advanced_air_hive.json": ["bug_factory", 14, {row: 1, column: 2}],
-     "/pa/units/structure/basic_naval_hive/basic_naval_hive.json": ["bug_factory", 13, {row: 2, column: 1}],
+
+
+
+    //factorys
+    "/pa/units/structure/basic_hive/basic_hive.json": ["bug_factory", 16, {row: 2, column: 4}],
+    "/pa/units/structure/bug_swarm_hive/bug_swarm_hive.json": ["bug_factory", 16, {row: 2, column: 3}],
+    "/pa/units/structure/advanced_hive/advanced_hive.json": ["bug_factory", 10, {row: 1, column: 4}],
+    //"/pa/units/research/basic_research_station/basic_research_station.json": ["bug_factory", 0, {row: 0, column: 0}],
+    //"/pa/units/research/advanced_research_station/advanced_research_station.json": ["bug_factory", 0, {row: 0, column: 1}],
+    "/pa/units/structure/bug_orbital_launcher/bug_orbital_launcher.json": ["bug_factory", 12, {row: 2, column: 0}],
+    "/pa/units/structure/basic_air_hive/basic_air_hive.json": ["bug_factory", 14, {row: 2, column: 2}],
+    "/pa/units/structure/advanced_air_hive/advanced_air_hive.json": ["bug_factory", 14, {row: 1, column: 2}],
+    "/pa/units/structure/basic_naval_hive/basic_naval_hive.json": ["bug_factory", 13, {row: 2, column: 1}],
 
     //utility
     "/pa/units/structure/bug_basic_energy/bug_basic_energy.json": ["bug_utility", 9, {row: 1, column: 3}],
@@ -36,7 +39,7 @@ var newBuildScenario = {
     //"/pa/units/structure/bug_turret_large/bug_turret_large.json": ["bug_combat", 6, {row: 0, column: 0}],
     "/pa/units/structure/bug_stealth_turret/bug_stealth_turret.json": ["bug_combat", 6, {row: 0, column: 1}],
     "/pa/units/structure/bug_turret_needle/bug_turret_needle.json": ["bug_combat", 6, {row: 2, column: 0}],
-    "/pa/units/structure/bug_turret_acid/bug_turret_acid.json": ["bug_combat", 6, {row: 2, column: 3}],
+    "/pa/units/structure/bug_turret_acid/bug_turret_acid.json": ["bug_combat", 6, {row: 2, column: 2}],
     "/pa/units/structure/bug_aa_small/bug_aa_small.json": ["bug_combat", 13, {row: 2, column: 1}],
     "/pa/units/structure/bug_aa_large/bug_aa_large.json": ["bug_combat", 7, {row: 1, column: 1}],
     "/pa/units/structure/bug_anti_orbital/bug_anti_orbital.json": ["bug_combat", 16, {row: 2, column: 4}],

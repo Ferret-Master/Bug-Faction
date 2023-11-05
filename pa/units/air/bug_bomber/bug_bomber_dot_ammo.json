@@ -5,7 +5,7 @@
       "AT_Orbital": 0.0,
       "AT_Commander": 0.5
     },
-    "damage": 5,
+    "damage": 6,
     "damage_volume": {
       "burnable_remove_radius": 20,
       "delay": 1,
