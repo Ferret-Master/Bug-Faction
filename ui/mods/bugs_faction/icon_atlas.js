@@ -15,6 +15,10 @@ var paeiouIcons = [
 	"bug_orbital_fighter_unlock",
 	"bug_orbital_laser_unlock",
 	//other units
+	"portal_ammo",
+	"control_node",
+	"bug_teleporter",
+	"bug_teleporter_charging",
 	"bug_orbital_mine",
 	"bug_orbital_fabricator",
 	"bug_orbital_fabricator_landed",

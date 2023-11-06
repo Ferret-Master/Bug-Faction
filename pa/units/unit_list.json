@@ -1,6 +1,11 @@
 {
     "units": [  
 
+        "/pa/units/structure/control_node/portal/portal.json",
+        "/pa/units/structure/control_node/portal/portal_charging.json",
+        "/pa/units/structure/control_node/control_node.json",
+        "/pa/units/structure/control_node/portal/portal_ammo.json",
+
         "/pa/units/structure/bug_basic_torp/bug_basic_torp.json",
         "/pa/units/structure/bug_advanced_torp/bug_advanced_torp.json",
         "/pa/units/structure/bug_catalyst/bug_catalyst.json",
