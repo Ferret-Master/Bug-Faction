@@ -1,6 +1,8 @@
 var newBuildScenario = {
 
-
+    //pariah control node
+    "/pa/units/structure/control_node/portal/portal_ammo.json": ["bug_ammo", 4, {row: 2, column: 0}],
+    "/pa/units/structure/control_node/control_node.json": ["bug_combat", 4, {row: 0, column: 5}],
 
 
     //factorys

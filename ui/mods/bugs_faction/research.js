@@ -2,6 +2,9 @@
  * This file controls locking/unlocking units even when a scenario is not picked
  */
 
+
+model.unitsToCommand = [["/pa/units/structure/control_node/portal/portal_charging.json", "altFireSelf"]]
+
 //hardcoded locks, research packs can add to this by appending to it, units that have been locked will be removed, ensures units stay locked on resets
 
 model.unitsToLock = ["/pa/units/land/bug_grunt_big/bug_grunt_big.json",
@@ -119,6 +122,25 @@ model.reLockUnits = function(){
 
     })
 }
+var hasPrinted = false;
+
+model.unitCommand = function(unitId, unitState, commandType){
+    if(hasPrinted == false){console.log(unitId,unitState,commandType);hasPrinted = true}
+    if(commandType == "altFireSelf"){
+        order = {
+            units: [unitId],
+            command: 'fire_secondary_weapon',
+            location: {      
+                planet: unitState.planet,
+                multi_pos: [unitState.pos,unitState.pos]
+            },                       
+            queue: true
+        }
+        api.getWorldView(0).sendOrder(order);
+    }
+    else{return}
+}
+
 researchLoop = function(){
    
     model.unitsToLock.forEach(function(unit){
@@ -134,9 +156,20 @@ researchLoop = function(){
         var armyPromise = model.allPlayerArmy(model.armyIndex())
         
         armyPromise.then(function(result){
-
+            
             var armyKeys = _.keys(result)
-           
+            model.unitsToCommand.forEach(function(unitCommandArray){
+                var unitSpec = unitCommandArray[0]
+                var unitCommand = unitCommandArray[1]
+                var unitDataPromise = api.getWorldView(0).getUnitState(result[unitSpec])
+                unitDataPromise.then(function(ready){
+     
+                    for(var i = 0; i<ready.length;i++){
+                        model.unitCommand(result[unitSpec][i],ready[i],unitCommand)
+                    }
+
+                })
+            })
             model.unlockPairs.forEach(function(pair){
               
                 
