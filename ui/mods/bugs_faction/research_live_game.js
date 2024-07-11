@@ -179,5 +179,53 @@ handlers.replaceQueue = function(unitPair){
     model.replaceUnitQueue(facsToQueue,oldUnit,newUnit,maxAmount);
 }
 
+var noSelect = []
+var avoidSelectWithFabsAndCombat = ["/pa/units/land/bug_combat_fab/bug_combat_fab_cheap.json","/pa/units/land/bug_combat_fab/bug_combat_fab.json"]
+var bugSelectionChecker = ko.computed(function(){
+    var selectionCount = 0;
+    var avoidSelectWithFabsAndCombatId = [];
+    if(model.selection() == undefined || model.selection() == null){return}
+    var selectionId = model.selection().spec_ids;
+  
 
+    
+    for(var i = 0;i<avoidSelectWithFabsAndCombat.length;i++){
+        if(selectionId[avoidSelectWithFabsAndCombat[i]] !== undefined){
+            avoidSelectWithFabsAndCombatId =  _.union(avoidSelectWithFabsAndCombatId, selectionId[avoidSelectWithFabsAndCombat[i]])
+        } 
+    }
+    console.log(avoidSelectWithFabsAndCombatId)
+  
+    var wantedId = [];
+  
+    var selectedKeys = _.keys(selectionId)
+  
+    for(var i = 0;i<selectedKeys.length;i++)
+    {
+        selectionCount += selectionId[selectedKeys[i]].length
+        for(var j = 0;j<selectionId[selectedKeys[i]].length;j++){
+            
+            wantedId.push(selectionId[selectedKeys[i]][j])
+        }
+    }
+
+    console.log(wantedId)
+
+    var oldWantedId = wantedId;
+
+    console.log(selectionCount, avoidSelectWithFabsAndCombatId.length)
+    if(selectionCount*0.5 > avoidSelectWithFabsAndCombatId.length){//more units than other group
+        wantedId = _.difference(wantedId,avoidSelectWithFabsAndCombatId)
+    }
+    else{
+        wantedId = avoidSelectWithFabsAndCombatId
+    }
+  
+    if(oldWantedId.length <= wantedId.length){return oldWantedId}
+  
+    api.select.unitsById(wantedId);
+  
+  
+  
+  })
 

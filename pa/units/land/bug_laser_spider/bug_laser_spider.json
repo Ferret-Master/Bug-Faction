@@ -49,6 +49,7 @@
     "physics": {
         "radius": 4,
         "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+        "air_friction": 10.0,
         "allow_pushing": false,
         "push_sideways": false
     },

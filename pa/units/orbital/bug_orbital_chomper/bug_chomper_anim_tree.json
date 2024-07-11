@@ -12,27 +12,43 @@
                         "type": "item",
                         "name": "idle",
                         "node": {
-                            "type": "bind_pose"
+                            "type": "playback",
+                            "anim_name": "idle",
+                            "looping": true,
+                            "events": []
                         },
                         "transitions": [
                             {
                                 "transition_forward": {
                                     "func": "is_moving",
-                                    "target": "walk",
+                                    "target": "walking",
                                     "duration": 0.2
                                 },
                                 "transition_reverse": {
                                     "func": "is_moving",
-                                    "target": "walk",
+                                    "target": "walking",
+                                    "duration": 0.2
+                                }
+                            },
+                            {
+                                "transition_forward": {
+                                    "func": "is_firing",
+                                    "target": "firing",
+                                    "duration": 0.2
+                                },
+                                "transition_reverse": {
+                                    "func": "is_firing",
+                                    "target": "firing",
                                     "duration": 0.2
                                 }
                             }
+                            
                         ],
                         "reset": "playback_reset"
                     },
                     {
                         "type": "item",
-                        "name": "walk",
+                        "name": "walking",
                         "node": {
                             "type": "playback",
                             "anim_name": "walk",
@@ -44,12 +60,12 @@
                                 "transition_forward": {
                                     "func": "is_firing",
                                     "target": "firing",
-                                    "duration": 0.5
+                                    "duration": 0.2
                                 },
                                 "transition_reverse": {
                                     "func": "is_firing",
                                     "target": "firing",
-                                    "duration": 0.5
+                                    "duration": 0.2
                                 }
                             },
                             {
@@ -81,13 +97,13 @@
                             {
                                 "transition_forward": {
                                     "func": "is_moving",
-                                    "target": "walk",
+                                    "target": "walking",
                                     "anim_complete": true,
                                     "duration": 0.5
                                 },
                                 "transition_reverse": {
                                     "func": "is_moving",
-                                    "target": "walk",
+                                    "target": "walking",
                                     "duration": 0.2
                                 }
                             },
@@ -123,7 +139,7 @@
             "lerp_func": "not_being_built",
             "child": {
                 "type": "procedural_aim",
-                "rotation_bone": "bone_turret",
+                "rotation_bone": "bone_root",
                 "rotation_axis": "z"
             }
         }

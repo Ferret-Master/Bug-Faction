@@ -4,6 +4,11 @@
 	"model": {
 		"filename": "/pa/units/air/bomb/bomb.papa"
 	},
+	"events": {
+		"died": {
+		  "effect_spec":  "/pa/units/land/bug_boomer/boomer_burrow.pfx"
+		}
+	},
 	"damage": 0,
 	"splash_damage": 0,
 	"splash_radius": 0,

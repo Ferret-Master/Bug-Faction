@@ -3,7 +3,7 @@
     "description": "!LOC:Portal Charge - Long range interplanetary, charges a portal upon landing which lasts for 60 seconds if not destroyed",
     "ammo_type": "Projectile",
 
-    "audio_loop": "/SE/Movement/missile/nuke_missile_fly_loop",
+    "audio_loop": "/SE/Weapons/commander/Commander_uber_cannon_fire",
     "build_metal_cost": 5000,
     "collision_check": "ground",
     "cruise_height": 150,

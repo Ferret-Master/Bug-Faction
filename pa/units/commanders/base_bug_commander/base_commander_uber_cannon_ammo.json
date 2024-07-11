@@ -31,7 +31,7 @@
     "splash_radius": 20,
     "full_damage_splash_radius": 5,
     "lifetime": 5,
-    "initial_velocity": 130.0,
+    "initial_velocity": 110.0,
     "max_velocity": 130.0,
     "burn_damage": 200,
     "burn_radius": 15,

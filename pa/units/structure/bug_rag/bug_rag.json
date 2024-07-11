@@ -4,6 +4,7 @@
     "TEMP_texelinfo": 32.0,
     "atrophy_cool_down": 15.0,
     "atrophy_rate": 650,
+    "si_name":"bug_rag",
     "audio": {
       "loops": {
         "enabled": {
@@ -24,7 +25,8 @@
     },
     "events": {
       "fired": {
-        "audio_cue": ""
+        "audio_cue": "",
+        "effect_spec": "/pa/units/structure/bug_rag/meteor_impact.pfx bone_planet"
       },
       "build_complete": {
         "audio_cue": "/SE/Build_Complete/delta_v"
@@ -34,27 +36,21 @@
         "effect_spec": ""
       }
     },
-    "has_death_effects": true,
-    "max_health": 15000,
+    "enable_orbital_shell": true,
+    "max_health": 13000,
     "mesh_bounds": [
       50.0454,
       50.0306,
       43
     ],
     "model": {
-      "filename": "/pa/units/land/titan_structure/titan_structure.papa",
-      "animations": {
-        "start": "/pa/units/land/titan_structure/titan_structure_anim_start.papa",
-        "loop": "/pa/units/land/titan_structure/titan_structure_anim_loop.papa",
-        "end": "/pa/units/land/titan_structure/titan_structure_anim_end.papa",
-        "death": "/pa/units/land/titan_structure/titan_structure_anim_death.papa",
-        "dead": "/pa/units/land/titan_structure/titan_structure_anim_dead.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/titan_structure_anim_tree.json",
-      "skirt_decal": "/pa/effects/specs/skirt_titan_structure.json"
+      "layer": "WL_Orbital",
+      "filename": "/pa/units/structure/bug_rag/bug_orbital_rag.papa"
     },
     "physics": {
-      "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
+      "radius": 40,
+      "collision_layers": "WL_Orbital",
+      "ignore_gravity": true
     },
     "recon": {
       "observable": {
@@ -73,32 +69,52 @@
             "channel": "sight",
             "shape": "capsule",
             "radius": 110
+          },
+          {
+            "layer": "orbital",
+            "channel": "sight",
+            "shape": "sphere",
+            "radius": 250
           }
         ]
       }
     },
+    "fx_offsets": [
+      {
+        "bone": "bone_root",
+        "filename": "/pa/units/structure/bug_rag/rag_attract.pfx",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "orientation": [
+          0,
+          0,
+          0
+        ],
+        "type": "idle"
+      }
+    ],
     "selection_icon": {
       "diameter": 98.0
     },
     "tools": [
       {
-        "spec_id": "/pa/units/land/titan_structure/titan_structure_tool_weapon.json",
+        "spec_id": "/pa/units/structure/bug_rag/bug_rag_weapon.json",
         "aim_bone": "bone_root"
       }
     ],
+    "spawn_layers": "WL_Orbital",
     "unit_types": [
       "UNITTYPE_Structure",
       "UNITTYPE_Custom2",
-      "UNITTYPE_Land",
+      "UNITTYPE_Orbital",
       "UNITTYPE_Advanced",
       "UNITTYPE_SelfDestruct",
-      "UNITTYPE_FabAdvBuild",
+      "UNITTYPE_FabOrbBuild",
       "UNITTYPE_Important",
       "UNITTYPE_Titan"
     ],
-    "wreckage_mesh_bounds": [
-      50.0454,
-      50.0306,
-      43
-    ]
+    "wreckage_health_frac": 0.0
   }

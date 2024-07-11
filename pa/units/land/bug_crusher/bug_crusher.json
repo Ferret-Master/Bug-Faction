@@ -95,9 +95,6 @@
         "spec_id": "/pa/units/land/bug_crusher/bug_crusher_weapon.json"
       }
     ],
-    "transportable": {
-      "size": 1
-    },
     "unit_types": [
       "UNITTYPE_Tank",
       "UNITTYPE_Heavy",

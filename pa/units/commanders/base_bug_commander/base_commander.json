@@ -78,6 +78,7 @@
     },
     "physics": {
         "radius": 9,
+        "air_friction": 10.0,
         "sync_radius_to_extents": true
     },
     "recon": {

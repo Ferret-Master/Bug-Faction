@@ -1,7 +1,7 @@
 {
     "audio_loop": "/SE/Movement/missile/tactical_missile_fly_loop",
     "base_spec": "/pa/ammo/base_artillery/base_artillery.json",
-    "damage": 400,
+    "damage": 500,
     "events": {
       "died": {
         "effect_spec": "/pa/units/land/bug_hydra/plasma_explosion.pfx"
@@ -27,7 +27,7 @@
       "gravity_scalar": 10,
       "add_to_spatial_db": true
     },
-    "splash_damage": 400,
+    "splash_damage": 500,
     "splash_damages_allies": false,
     "splash_radius": 12
   }

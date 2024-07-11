@@ -44,154 +44,31 @@
     "factory": {
       "store_units": true,
       "spawn_points": [
-        "bone_missile01"
+        "bone_load"
       ],
-      "initial_build_spec": "/pa/units/land/nuke_launcher/nuke_launcher_ammo.json",
+      "initial_build_spec": "/pa/units/structure/control_node/portal/portal_ammo.json",
       "default_build_stance": "Continuous"
     },
-    "fx_offsets": [
-      {
-        "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "bone": "socket_muzzle01",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          0
-        ]
-      }
-    ],
-    "lamps": [
-      {
-        "offset": [
-          0.06,
-          1.06,
-          -0.01
-        ],
-        "radius": 2.0,
-        "color": [
-          0.1,
-          1.0,
-          0.1
-        ],
-        "intensity": 2.0,
-        "bone": "bone_armBase"
-      },
-      {
-        "offset": [
-          -2.36,
-          0.0,
-          -1.78
-        ],
-        "radius": 4.0,
-        "color": [
-          0.1,
-          1.0,
-          0.1
-        ],
-        "intensity": 2.0,
-        "bone": "bone_armElbow"
-      },
-      {
-        "offset": [
-          2.8,
-          2.8,
-          5.6
-        ],
-        "radius": 3.5,
-        "color": [
-          1.0,
-          1.0,
-          1.0
-        ],
-        "intensity": 5.0
-      },
-      {
-        "offset": [
-          2.8,
-          -2.8,
-          5.6
-        ],
-        "radius": 3.5,
-        "color": [
-          1.0,
-          1.0,
-          1.0
-        ],
-        "intensity": 5.0
-      },
-      {
-        "offset": [
-          -2.8,
-          2.8,
-          5.6
-        ],
-        "radius": 3.5,
-        "color": [
-          1.0,
-          1.0,
-          1.0
-        ],
-        "intensity": 5.0
-      },
-      {
-        "offset": [
-          -2.8,
-          -2.8,
-          5.6
-        ],
-        "radius": 3.5,
-        "color": [
-          1.0,
-          1.0,
-          1.0
-        ],
-        "intensity": 5.0
-      }
-    ],
-    "max_health": 1500,
+   
+    "max_health": 18000,
     "mesh_bounds": [
-      14,
-      14,
-      22.5
+      50,
+      50,
+      30
     ],
     "model": [
       {
         "layer": "WL_LandHorizontal",
-        "filename": "/pa/units/land/nuke_launcher/nuke_launcher.papa",
-        "animations": {
-          "build_start": "/pa/units/land/nuke_launcher/nuke_launcher_anim_buildStart.papa",
-          "build_loop": "/pa/units/land/nuke_launcher/nuke_launcher_anim_buildLoop.papa",
-          "build_end": "/pa/units/land/nuke_launcher/nuke_launcher_anim_buildEnd.papa",
-          "fire_start": "/pa/units/land/nuke_launcher/nuke_launcher_anim_fireStart.papa",
-          "fire_loop": "/pa/units/land/nuke_launcher/nuke_launcher_anim_fireLoop.papa",
-          "fire_end": "/pa/units/land/nuke_launcher/nuke_launcher_anim_fireEnd.papa"
-        },
-        "animtree": "/pa/anim/anim_trees/missile_launcher_anim_tree.json",
-        "skirt_decal": "/pa/effects/specs/skirt_nuke.json"
+        "filename": "/pa/units/structure/control_node/bug_launcher_adv.papa"
       },
       {
         "layer": "WL_WaterSurface",
-        "filename": "/pa/units/sea/nuke_launcher/nuke_launcher.papa",
-        "animations": {
-          "build_start": "/pa/units/land/nuke_launcher/nuke_launcher_anim_buildStart.papa",
-          "build_loop": "/pa/units/land/nuke_launcher/nuke_launcher_anim_buildLoop.papa",
-          "build_end": "/pa/units/land/nuke_launcher/nuke_launcher_anim_buildEnd.papa",
-          "fire_start": "/pa/units/land/nuke_launcher/nuke_launcher_anim_fireStart.papa",
-          "fire_loop": "/pa/units/land/nuke_launcher/nuke_launcher_anim_fireLoop.papa",
-          "fire_end": "/pa/units/land/nuke_launcher/nuke_launcher_anim_fireEnd.papa"
-        },
-        "animtree": "/pa/anim/anim_trees/missile_launcher_anim_tree.json"
+        "filename": "/pa/units/structure/control_node/bug_launcher_adv.papa"
       }
     ],
     "placement_size": [
-      20,
-      20
+      65,
+      65
     ],
     "recon": {
       "observer": {
@@ -221,7 +98,7 @@
         "aim_bone": "bone_root"
       },
       {
-        "spec_id": "/pa/units/land/nuke_launcher/nuke_launcher_build_arm.json",
+        "spec_id": "/pa/units/structure/control_node/control_node_build_arm.json",
         "aim_bone": "bone_root"
       }
     ],

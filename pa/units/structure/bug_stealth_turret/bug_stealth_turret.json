@@ -5,7 +5,7 @@
     "si_name": "bug_stealth_turret",
     "description": "!LOC:Stealth turret, invisible to normal units, attacks at mid range with a infrequent high damage aoe",
     "max_health": 4000,
-    "build_metal_cost": 2000,
+    "build_metal_cost": 1800,
     "atrophy_rate": 7.5,
     "atrophy_cool_down": 15.0,
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",

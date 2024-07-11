@@ -98,9 +98,6 @@
         "muzzle_bone": "socket_muzzle"
       }
     ],
-    "transportable": {
-      "size": 1
-    },
     "unit_types": [
       "UNITTYPE_Tank",
       "UNITTYPE_Mobile",

@@ -77,7 +77,8 @@
       "turn_speed": 720
     },
     "physics": {
-      "radius": 3.5
+      "radius": 3.5,
+      "air_friction": 10.0
     },
     "recon": {
       "observer": {

@@ -1,0 +1,14 @@
+{
+    "recon": {
+        "observable": {
+            "layer": "surface_and_air",
+            "sphere_radius": 5,
+            "ignore_radar": true,
+            "always_visible": true
+        }
+    },
+    "spawn_response": {
+        "audio_cue": "/SE/Impacts/missile_nuke",
+        "effect_spec": "/pa/units/structure/bug_nuke/bug_nuke_explosion.pfx"
+    }
+}
