@@ -1,6 +1,6 @@
 {
     "display_name": "Cataclysm",
-    "description": "!LOC:Doomsday Titan - Destroys the planet it's built on once finished.",
+    "description": "!LOC:Doomsday Titan - Wipes the surface of whatever planet it is built on, built in orbit",
     "TEMP_texelinfo": 32.0,
     "atrophy_cool_down": 15.0,
     "atrophy_rate": 650,
