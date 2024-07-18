@@ -4,6 +4,9 @@ var newBuildScenario = {
     "/pa/units/structure/control_node/portal/portal_ammo.json": ["bug_ammo", 4, {row: 2, column: 0}],
     "/pa/units/structure/control_node/control_node.json": ["bug_combat", 4, {row: 0, column: 5}],
 
+    //ammo
+    "/pa/units/structure/bug_nuke/ammo/bug_nuke_ammo.json": ["bug_nuke_ammo", 4, {row: 2, column: 0}],
+
 
     //factorys
     "/pa/units/structure/basic_hive/basic_hive.json": ["bug_factory", 16, {row: 2, column: 4}],

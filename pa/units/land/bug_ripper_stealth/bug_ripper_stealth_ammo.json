@@ -10,7 +10,7 @@
   "collision_check": "enemies",
   "fx_collision_spec": "/pa/units/land/bug_grunt/melee_sparks.pfx",
   "fx_beam_spec": "/pa/units/land/bug_grunt/melee_beam.pfx",
-    "damage": 50,
+    "damage": 45,
     "recon": {
       "observable": {
         "ignore_radar": true

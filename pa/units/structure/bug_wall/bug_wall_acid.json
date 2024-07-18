@@ -13,7 +13,7 @@
         "audio_cue": "/SE/Death/barrier"
       }
     },
-    "max_health": 100,
+    "max_health": 140,
     "passive_health_regen": -20,
     "mesh_bounds": [
       1.0,

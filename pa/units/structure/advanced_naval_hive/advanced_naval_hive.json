@@ -44,7 +44,7 @@
     "fx_offsets": [
       {
         "bone": "socket_muzzle01",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "filename": "/pa/effects/specs/bug_fab_spray.pfx",
         "offset": [
           0,
           0,
@@ -59,7 +59,7 @@
       },
       {
         "bone": "socket_muzzle02",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "filename": "/pa/effects/specs/bug_fab_spray.pfx",
         "offset": [
           0,
           0,
@@ -74,7 +74,7 @@
       },
       {
         "bone": "socket_muzzle03",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "filename": "/pa/effects/specs/bug_fab_spray.pfx",
         "offset": [
           0,
           0,
@@ -89,7 +89,7 @@
       },
       {
         "bone": "socket_muzzle04",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "filename": "/pa/effects/specs/bug_fab_spray.pfx",
         "offset": [
           0,
           0,

@@ -61,7 +61,7 @@
       "turn_speed": 140,
       "hover_time": -1.0,
       "aggressive_behavior": "line",
-      "aggressive_distance": 50,
+      "aggressive_distance": 10,
       "bank_factor": 1,
       "turn_in_place": true
     },

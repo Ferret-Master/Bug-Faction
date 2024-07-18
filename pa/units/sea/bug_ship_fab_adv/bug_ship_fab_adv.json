@@ -56,7 +56,7 @@
   "fx_offsets": [
     {
       "bone": "socket_rightMuzzle",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "filename": "/pa/effects/specs/bug_fab_spray.pfx",
       "offset": [
         0,
         0,
@@ -71,7 +71,7 @@
     },
     {
       "bone": "socket_leftMuzzle",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "filename": "/pa/effects/specs/bug_fab_spray.pfx",
       "offset": [
         0,
         0,

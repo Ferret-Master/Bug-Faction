@@ -17,7 +17,7 @@ var paeiouIcons = [
 	//other units
 	"bug_transport",
 	"scourge_toxin_launcher",
-	"scourge_ammo",
+	"bug_nuke_ammo",
 	"portal_ammo",
 	"control_node",
 	"bug_teleporter",
@@ -88,7 +88,7 @@ var paeiouIcons = [
 	"big_grunt",
 	"grunt",
 	"spitter",
-	"warrior",
+	"crusher",
 	"bug_zapper",
 	"big_warrior",
 	"basilisk",

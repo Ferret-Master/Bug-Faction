@@ -90,11 +90,14 @@
       ],
     "events": {
         "build_complete": {
-            "audio_cue": "/SE/Build_Complete/barrier"
+            "audio_cue": "/SE/Weapons/orb/orb_ssx_laser_fire"
         },
         "died": {
             "audio_cue": "/SE/Death/barrier",
             "effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx"
+        },
+        "fired": {
+          "audio_cue": "/SE/Weapons/air/solar_drone_fire"
         }
     },
     "selection_icon": {

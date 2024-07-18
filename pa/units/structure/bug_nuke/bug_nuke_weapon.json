@@ -1,5 +1,5 @@
 {
-    "ammo_id": "/pa/units/structure/bug_nuke/bug_nuke_ammo.json",
+    "ammo_id": "/pa/units/structure/bug_nuke/ammo/bug_nuke_ammo.json",
     "ammo_source": "factory",
     "auto_attack": false,
     "auto_task_type": "none",

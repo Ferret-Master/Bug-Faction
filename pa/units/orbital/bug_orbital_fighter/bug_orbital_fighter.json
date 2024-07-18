@@ -60,6 +60,7 @@
     "model": {
       "filename": "/pa/units/orbital/bug_orbital_fighter/bug_orbital_fighter.papa"
     },
+    "attack_range_frac": 0.9,
     "navigation": {
       "type": "orbital",
       "acceleration": 65,

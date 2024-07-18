@@ -63,7 +63,7 @@
     "fx_offsets": [
       {
         "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "filename": "/pa/effects/specs/bug_fab_spray.pfx",
         "bone": "socket_muzzle02"
       }
     ],

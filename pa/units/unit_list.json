@@ -5,7 +5,7 @@
         "/pa/units/structure/control_node/portal/portal_charging.json",
         "/pa/units/structure/control_node/control_node.json",
         "/pa/units/structure/control_node/portal/portal_ammo.json",
-        "/pa/units/structure/bug_nuke/bug_nuke_ammo.json",
+        "/pa/units/structure/bug_nuke/ammo/bug_nuke_ammo.json",
 
         "/pa/units/structure/bug_basic_torp/bug_basic_torp.json",
         "/pa/units/structure/bug_advanced_torp/bug_advanced_torp.json",

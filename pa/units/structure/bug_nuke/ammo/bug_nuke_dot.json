@@ -27,18 +27,25 @@
       }
     ],
     "physics": {
-      "type": "Structure",
-
-      "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-      "shape": "Box",
-      "radius": 0,
-      "allow_pushing": false,
+      "radius": 1,
+      "gravity_scalar": 1,
       "push_sideways": false,
-      "allow_underground": false,
-      "collide_with_types": [
-        "Projectile"
-      ]
+      "allow_pushing": false,
+      "air_friction": 1.0,
+      "add_to_spatial_db": true
     },
+    "navigation": {
+      "type": "air",
+      "acceleration": 1000,
+      "brake": -1,
+      "move_speed": 0.01,
+      "turn_speed": 180,
+      "vertical_speed": 0.01,
+      "hover_time": -1.0,
+      "bank_factor": 0,
+      "wobble_factor": 0.1,
+      "wobble_speed": 0.1
+  },
  
     "recon": {
         "observable": {
@@ -70,12 +77,12 @@
     "strategic_icon_priority": 3,
     "tools": [
       {
-        "spec_id": "/pa/units/structure/bug_nuke/bug_nuke_dot_weapon.json",
+        "spec_id": "/pa/units/structure/bug_nuke/ammo/bug_nuke_dot_weapon.json",
         "aim_bone": "bone_root",
         "muzzle_bone": "bone_root"
       },
       {
-         "spec_id": "/pa/units/structure/bug_nuke/bug_nuke_dot_death_weapon.json",
+         "spec_id": "/pa/units/structure/bug_nuke/ammo/bug_nuke_dot_death_weapon.json",
         "aim_bone": "bone_root",
         "muzzle_bone": "bone_root"
       }

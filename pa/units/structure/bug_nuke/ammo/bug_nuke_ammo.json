@@ -5,7 +5,7 @@
     "audio_loop": "/SE/Movement/missile/nuke_missile_fly_loop",
     "build_metal_cost": 30000,
     "burn_damage": 200,
-    "si_name":"scourge_ammo",
+    "si_name":"bug_nuke_ammo",
     "burn_radius": 137,
     "collision_check": "ground",
     "cruise_height": 100,
@@ -97,7 +97,7 @@
       }
     ],
     "system_velocity_multiplier": 30.0,
-    "spawn_unit_on_death": "/pa/units/structure/bug_nuke/bug_nuke_dot.json",
+    "spawn_unit_on_death": "/pa/units/structure/bug_nuke/ammo/bug_nuke_dot.json",
     "spawn_unit_on_death_with_velocity": false,
     "turn_rate": 180,
     "unit_types": [

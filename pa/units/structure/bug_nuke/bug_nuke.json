@@ -23,7 +23,7 @@
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "build_metal_cost": 15840,
     "buildable_projectiles": [
-      "/pa/units/structure/bug_nuke/bug_nuke_ammo.json"
+      "/pa/units/structure/bug_nuke/ammo/bug_nuke_ammo.json"
     ],
     "command_caps": [
       "ORDER_FactoryBuild",
@@ -46,13 +46,13 @@
       "spawn_points": [
         "bone_missile01"
       ],
-      "initial_build_spec": "/pa/units/structure/bug_nuke/bug_nuke_ammo.json",
+      "initial_build_spec": "/pa/units/structure/bug_nuke/ammo/bug_nuke_ammo.json",
       "default_build_stance": "Continuous"
     },
     "fx_offsets": [
       {
         "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "filename": "/pa/effects/specs/bug_fab_spray.pfx",
         "bone": "socket_muzzle01",
         "offset": [
           0,
