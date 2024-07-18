@@ -5,6 +5,7 @@
         "/pa/units/structure/control_node/portal/portal_charging.json",
         "/pa/units/structure/control_node/control_node.json",
         "/pa/units/structure/control_node/portal/portal_ammo.json",
+        "/pa/units/structure/bug_nuke/ammo/bug_nuke_ammo.json",
 
         "/pa/units/structure/bug_basic_torp/bug_basic_torp.json",
         "/pa/units/structure/bug_advanced_torp/bug_advanced_torp.json",
@@ -105,6 +106,7 @@
         "/pa/units/air/bug_air_scout/bug_air_scout.json",
         "/pa/units/air/bug_air_fab/bug_air_fab.json",
         "/pa/units/air/bug_air_fab_adv/bug_air_fab_adv.json",
+        "/pa/units/air/bug_transport/bug_transport.json",
         "/pa/units/air/bug_harpy/bug_harpy.json",
         "/pa/units/air/bug_basilisk/bug_basilisk.json",
         "/pa/units/air/bug_air_titan/bug_air_titan.json",

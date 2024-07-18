@@ -1,9 +1,9 @@
 {
-    "display_name": "!LOC:Nuclear Missile Launcher",
-    "description": "!LOC:Nuclear Missile Launcher - Builds interplanetary long range nuclear missile with large area damage.",
+    "display_name": "!LOC:Scourge Toxin Launcher",
+    "description": "!LOC:Scourge Toxin Launcher - Builds interplanetary long range biological missile with a large damage over time area",
     "TEMP_texelinfo": 19.5004,
     "alt_area_build_type": "Sphere",
-    "si_name":"nuke_launcher",
+    "si_name":"scourge_toxin_launcher",
     "alt_area_max_radius": 100.0,
     "atrophy_cool_down": 15.0,
     "atrophy_rate": 240.0,
@@ -23,7 +23,7 @@
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "build_metal_cost": 15840,
     "buildable_projectiles": [
-      "/pa/units/land/nuke_launcher/nuke_launcher_ammo.json"
+      "/pa/units/structure/bug_nuke/ammo/bug_nuke_ammo.json"
     ],
     "command_caps": [
       "ORDER_FactoryBuild",
@@ -46,13 +46,13 @@
       "spawn_points": [
         "bone_missile01"
       ],
-      "initial_build_spec": "/pa/units/land/nuke_launcher/nuke_launcher_ammo.json",
+      "initial_build_spec": "/pa/units/structure/bug_nuke/ammo/bug_nuke_ammo.json",
       "default_build_stance": "Continuous"
     },
     "fx_offsets": [
       {
         "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "filename": "/pa/effects/specs/bug_fab_spray.pfx",
         "bone": "socket_muzzle01",
         "offset": [
           0,
@@ -217,7 +217,7 @@
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
     "tools": [
       {
-        "spec_id": "/pa/units/land/nuke_launcher/nuke_launcher_tool_weapon.json",
+        "spec_id": "/pa/units/structure/bug_nuke/bug_nuke_weapon.json",
         "aim_bone": "bone_root"
       },
       {

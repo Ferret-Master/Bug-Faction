@@ -78,6 +78,7 @@
     },
     "physics": {
         "radius": 9,
+        "air_friction": 10.0,
         "sync_radius_to_extents": true
     },
     "recon": {
@@ -150,7 +151,7 @@
     "fx_offsets": [
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "filename": "/pa/effects/specs/bug_fab_spray.pfx",
             "bone": "socket_leftMuzzle"
         }
     ],

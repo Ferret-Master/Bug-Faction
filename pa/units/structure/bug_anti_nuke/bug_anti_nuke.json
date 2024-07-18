@@ -56,7 +56,7 @@
     "fx_offsets": [
       {
         "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "filename": "/pa/effects/specs/bug_fab_spray.pfx",
         "bone": "bone_rightWrist",
         "offset": [
           1,
@@ -71,7 +71,7 @@
       },
       {
         "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "filename": "/pa/effects/specs/bug_fab_spray.pfx",
         "bone": "bone_leftWrist",
         "offset": [
           1,

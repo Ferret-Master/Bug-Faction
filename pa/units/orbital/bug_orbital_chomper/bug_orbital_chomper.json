@@ -45,6 +45,7 @@
       {
         "filename": "/pa/units/orbital/bug_orbital_chomper/bug_orbital_chomper.papa",
         "animations": {
+          "idle": "/pa/units/orbital/bug_orbital_chomper/bug_orbital_chomper_move.papa",
           "walk": "/pa/units/orbital/bug_orbital_chomper/bug_orbital_chomper_move.papa",
           "firing": "/pa/units/orbital/bug_orbital_chomper/bug_orbital_chomper_chomp.papa"
         },
@@ -54,14 +55,13 @@
     "attack_range_frac": 0.5,
     "navigation": {
       "type": "orbital",
-      "acceleration": 40,
-      "brake": 40,
+      "acceleration": 60,
+      "brake": 100,
       "move_speed": 55,
-      "turn_speed": 80,
-      "circle_min_time": 2,
-      "circle_max_time": 4,
+      "turn_speed": 140,
       "hover_time": -1.0,
-      "aggressive_distance": 15,
+      "aggressive_behavior": "line",
+      "aggressive_distance": 10,
       "bank_factor": 1,
       "turn_in_place": true
     },

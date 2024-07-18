@@ -82,7 +82,7 @@
       }
     },
   
-    "max_health": 1000,
+    "max_health": 1200,
     "mesh_bounds": [
       7,
       7,

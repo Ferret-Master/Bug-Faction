@@ -9,7 +9,7 @@
       "energy": 1750,
       "metal": 30
     },
-    "max_range": 30,
+    "max_range": 45,
     "pitch_range": 90,
     "pitch_rate": 90,
     "reclaim_layers": [

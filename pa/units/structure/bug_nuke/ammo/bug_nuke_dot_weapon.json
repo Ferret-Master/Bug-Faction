@@ -1,0 +1,19 @@
+{
+  "ammo_id": "/pa/units/structure/bug_nuke/ammo/bug_nuke_dot_ammo.json",
+    "ammo_capacity": 50,
+    "ammo_demand": 50,
+    "ammo_per_shot": 1,
+    "ammo_source": "energy",
+    "auto_fire_when_charged": true,
+    "base_spec": "/pa/tools/base_artillery_turret/base_artillery_turret.json",
+    "firing_arc_pitch": 360,
+    "firing_arc_yaw": 360,
+    "max_range": 0,
+    "pitch_range": 0,
+    "pitch_rate": 0,
+    "rate_of_fire": 5.0,
+    "start_fully_charged": false,
+    "carpet_fire": true,
+    "yaw_range": 0,
+    "yaw_rate": 0
+  }

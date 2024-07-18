@@ -47,7 +47,7 @@
     "fx_offsets": [
       {
         "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "filename": "/pa/effects/specs/bug_fab_spray.pfx",
         "bone": "bone_nozzle",
         "offset": [
           17,
@@ -62,7 +62,7 @@
       },
       {
         "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "filename": "/pa/effects/specs/bug_fab_spray.pfx",
         "bone": "bone_nozzle",
         "offset": [
           -17,
@@ -77,7 +77,7 @@
       },
       {
         "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "filename": "/pa/effects/specs/bug_fab_spray.pfx",
         "bone": "bone_nozzle",
         "offset": [
           9.5,
@@ -92,7 +92,7 @@
       },
       {
         "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "filename": "/pa/effects/specs/bug_fab_spray.pfx",
         "bone": "bone_nozzle",
         "offset": [
           -9.5,
@@ -107,7 +107,7 @@
       },
       {
         "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "filename": "/pa/effects/specs/bug_fab_spray.pfx",
         "bone": "bone_nozzle",
         "offset": [
           9.5,
@@ -122,7 +122,7 @@
       },
       {
         "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
+        "filename": "/pa/effects/specs/bug_fab_spray.pfx",
         "bone": "bone_nozzle",
         "offset": [
           -9.5,

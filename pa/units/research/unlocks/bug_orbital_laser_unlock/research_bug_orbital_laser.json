@@ -113,5 +113,6 @@
       "UNITTYPE_Custom2",
       "UNITTYPE_LaserPlatform"
     ],
-    "wait_to_rolloff_time": 0
+    "wait_to_rolloff_time": 0,
+    "wreckage_health_frac": 0.0
   }

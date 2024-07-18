@@ -23,6 +23,6 @@
       "add_to_spatial_db": true
     },
     "splash_damage": 200,
-    "splash_radius":16,
-    "full_damage_splash_radius": 10
+    "splash_radius":18,
+    "full_damage_splash_radius": 12
   }

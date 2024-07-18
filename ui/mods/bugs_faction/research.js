@@ -190,6 +190,7 @@ researchLoop = function(){
                         pair[1].forEach(function(unit){
                             console.log("unlocking ",+unit)
                             api.Panel.message("build_bar", 'unlockUnit',unit)
+                            api.Panel.message(api.panels["LiveGame_FloatZone"].id, 'unlockResearch', pair[0]);
                      
                         })
                         if(pair[2] !== undefined){
@@ -205,16 +206,19 @@ researchLoop = function(){
                             for(var i = 0; i< pair[2].length;i++){
                                 if(pair[1][i] == pair[2][i] && pair[1][i] !== undefined){//needed for more unlocks combined with replace
                                     api.Panel.message("build_bar", 'unlockUnit',pair[1][i])
+                                    api.Panel.message(api.panels["LiveGame_FloatZone"].id, 'unlockResearch', pair[0]);
                                 }
                                 else if(pair[1][i] !== undefined){//matching replace
                                  
                                     api.Panel.message("build_bar", 'replaceUnit',[[pair[2][i]],[pair[1][i]], pair[3]])
+                                    api.Panel.message(api.panels["LiveGame_FloatZone"].id, 'unlockResearch', pair[0]);
                                 }
                                 else{//lock the pair 2 as it has no match
                                    
                                     //replace that sets the new unit to undefined as a way to cancel its build order
                                     api.Panel.message("build_bar", 'replaceUnit',[[pair[2][i]],[undefined], pair[3]])
                                     api.Panel.message("build_bar", 'lockUnit',pair[2][i])
+                                    api.Panel.message(api.panels["LiveGame_FloatZone"].id, 'unlockResearch', pair[0]);
                                 }
                             }
                         }

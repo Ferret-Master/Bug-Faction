@@ -4,6 +4,9 @@ var newBuildScenario = {
     "/pa/units/structure/control_node/portal/portal_ammo.json": ["bug_ammo", 4, {row: 2, column: 0}],
     "/pa/units/structure/control_node/control_node.json": ["bug_combat", 4, {row: 0, column: 5}],
 
+    //ammo
+    "/pa/units/structure/bug_nuke/ammo/bug_nuke_ammo.json": ["bug_nuke_ammo", 4, {row: 2, column: 0}],
+
 
     //factorys
     "/pa/units/structure/basic_hive/basic_hive.json": ["bug_factory", 16, {row: 2, column: 4}],
@@ -116,6 +119,7 @@ var newBuildScenario = {
     "/pa/units/land/bug_grunt/bug_grunt.json": ["bug_ground", 13, {row: 2, column: 2}],
     "/pa/units/land/bug_aa/bug_aa.json": ["bug_ground", 18, {row: 2, column: 3}],
     "/pa/units/land/bug_gren/bug_gren.json": ["bug_ground", 13, {row: 2, column: 4}],
+    "/pa/units/land/bug_belcher/bug_belcher.json": ["bug_ground", 16, {row: 2, column: 5}],
 
     //t2 hive
     "/pa/units/land/bug_bot_fab_advanced/bug_bot_fab_advanced.json": ["bug_ground", 6, {row: 1, column: 0}],
@@ -133,12 +137,13 @@ var newBuildScenario = {
     "/pa/units/land/bug_boomer/bug_boomer.json": ["bug_ground_2", 17, {row: 2, column: 1}],
     "/pa/units/land/bug_ripper/bug_ripper.json": ["bug_ground_2", 14, {row: 2, column: 2}],
     "/pa/units/land/bug_runner/bug_runner.json": ["bug_ground_2", 16, {row: 2, column: 3}],
-    "/pa/units/land/bug_belcher/bug_belcher.json": ["bug_ground_2", 16, {row: 2, column: 4}],
+
 
     //t1 air hive
     "/pa/units/air/bug_fighter/bug_fighter.json": ["bug_air", 13, {row: 2, column: 1}],
     "/pa/units/air/bug_bomber/bug_bomber.json": ["bug_air", 14, {row: 2, column: 2}],
     //"/pa/units/air/bug_air_scout/bug_air_scout.json": ["bug_air", 15, {row: 2, column: 3}],
+    "/pa/units/air/bug_transport/bug_transport.json": ["bug_air", 17, {row: 2, column: 4}],
     "/pa/units/air/bug_air_fab/bug_air_fab.json": ["bug_air", 12, {row: 2, column: 0}],
     "/pa/units/air/bug_harpy/bug_harpy.json": ["bug_air", 17, {row: 2, column: 5}],
 
