@@ -17,7 +17,7 @@
   "max_range": 100,
   "pitch_range": 60,
   "pitch_rate": 3600,
-  "rate_of_fire": 2.5,
+  "rate_of_fire": 3.0,
   "spread_fire": true,
   "fire_delay":0.3,
   "idle_aim_delay": 5,

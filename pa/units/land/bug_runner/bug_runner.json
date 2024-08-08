@@ -69,13 +69,13 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 160,
+          "radius": 200,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 160,
+          "radius": 200,
           "shape": "capsule"
         },
         {
@@ -102,7 +102,7 @@
     "aggressive_behavior": "follow",
     "acceleration": 50,
     "brake": -1,
-    "move_speed": 40,
+    "move_speed": 45,
     "turn_speed": 500,
     "group_preference": "front"
   },

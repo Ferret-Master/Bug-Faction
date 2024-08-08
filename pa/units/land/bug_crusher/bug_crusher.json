@@ -32,7 +32,7 @@
       }
     },
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-    "build_metal_cost": 1600,
+    "build_metal_cost": 1500,
     "events": {
       "died": {
         "audio_cue": "/SE/Death/Bot",
