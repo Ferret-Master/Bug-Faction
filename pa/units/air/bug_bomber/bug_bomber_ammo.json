@@ -3,6 +3,7 @@
   "damage": 40,
   "events": {
     "died": {
+      "effect_scale": 1.0,
       "effect_spec":  "/pa/units/air/bug_bomber/acid_puddle.pfx"
     }
   },
@@ -23,5 +24,5 @@
     "gravity_scalar": 10
   },
   "splash_damage": 15,
-  "splash_radius": 8
+  "splash_radius": 15
 }
