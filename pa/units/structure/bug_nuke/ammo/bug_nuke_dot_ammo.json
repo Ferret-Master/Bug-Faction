@@ -4,11 +4,11 @@
   "ammo_type": "PBAOE",
   "armor_damage_map": {
     "AT_Orbital": 0.0,
-    "AT_Commander": 0.25
+    "AT_Commander": 0.7
   },
   "burn_damage": 200,
   "burn_radius": 137,
-  "damage": 300,
+  "damage": 100,
   "damage_volume": {
     "initial_radius": 20.0,
     "radius_velocity": 280.0,
