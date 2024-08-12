@@ -94,6 +94,7 @@
     }
   ],
   "unit_types": [
+    "UNITTYPE_CmdBuild",
     "UNITTYPE_Factory",
     "UNITTYPE_Land",
     "UNITTYPE_Structure",
