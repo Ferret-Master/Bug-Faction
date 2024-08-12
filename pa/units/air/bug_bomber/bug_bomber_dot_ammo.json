@@ -7,13 +7,11 @@
     },
     "damage": 8,
     "damage_volume": {
-      "burnable_remove_radius": 20,
-      "delay": 1,
-      "initial_radius": 5.0,
-      "radius_accel": -25.0,
-      "radius_velocity": 140.0
+      "initial_radius": 12.0,
+      "radius_accel": -1.0,
+      "radius_velocity": 1.0
     },
-    "full_damage_splash_radius": 15,
+    "full_damage_splash_radius": 12,
     "splash_damages_allies": false,
-    "splash_radius": 15
+    "splash_radius": 12
   }
