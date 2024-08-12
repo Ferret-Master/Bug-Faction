@@ -5,7 +5,7 @@
       "AT_Orbital": 0.0,
       "AT_Commander": 0.5
     },
-    "damage": 6,
+    "damage": 8,
     "damage_volume": {
       "burnable_remove_radius": 20,
       "delay": 1,
@@ -13,7 +13,7 @@
       "radius_accel": -25.0,
       "radius_velocity": 140.0
     },
-    "full_damage_splash_radius": 7,
+    "full_damage_splash_radius": 15,
     "splash_damages_allies": false,
-    "splash_radius": 14
+    "splash_radius": 15
   }

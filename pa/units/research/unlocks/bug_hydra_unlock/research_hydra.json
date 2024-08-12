@@ -17,7 +17,7 @@
       }
     },
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "build_metal_cost": 1000,
+    "build_metal_cost": 800,
     "buildable_types": "(Bot & Artillery & Advanced & FactoryBuild & Custom2) - Mobile",
     "command_caps": [
     

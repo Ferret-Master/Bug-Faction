@@ -93,7 +93,7 @@
       "type": "air",
       "acceleration": 60,
       "brake": 60,
-      "move_speed": 50,
+      "move_speed": 60,
       "turn_speed": 120,
       "vertical_speed": 50,
       "aggressive_distance": 65.0,

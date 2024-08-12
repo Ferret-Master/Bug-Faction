@@ -1,6 +1,6 @@
 {
     "display_name": "!LOC:Pariah Control Node",
-    "description": "!LOC:Spawns infiltrators and others stealth units across the solar system, launches portal rings.",
+    "description": "!LOC:Launches portal rings.",
     "TEMP_texelinfo": 19.5004,
     "alt_area_build_type": "Sphere",
     "alt_area_max_radius": 100.0,

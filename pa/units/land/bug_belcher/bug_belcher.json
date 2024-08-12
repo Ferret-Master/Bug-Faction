@@ -58,8 +58,7 @@
         "audio_cue": "/SE/Build_Complete/bot"
       },
       "fired": {
-        "audio_cue": "/SE/Weapons/bot/assault_fire",
-        "effect_spec": "/pa/units/land/bug_needler/needler_muzzle.pfx bone_root"
+        "audio_cue": "/SE/Weapons/bot/assault_fire"
       },
       "died": {
         "audio_cue": "/SE/Death/Bot",
