@@ -67,6 +67,7 @@
             "effect_spec": "/pa/units/land/bug_scout/bug_muzzle_flash.pfx bone_barrel"
           },
         "died": {
+            "effect_spec": "/pa/effects/specs/bug_building_explosion.pfx",
             "audio_cue": "/SE/Death/structure_small",
             "effect_scale": 0.6
         }
