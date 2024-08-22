@@ -2,6 +2,7 @@
   "display_name": "!LOC:Advanced Fabrication Ship",
   "description": "!LOC:Advanced fabricator- Wired to build naval structures.",
   "TEMP_texelinfo": 11.3243,
+  "si_name":"fabrication_ship_adv",
   "attachable": {
     "offsets": {
       "head": [
@@ -34,7 +35,7 @@
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "build_metal_cost": 2400,
-  "buildable_types": "(Naval & Structure & Advanced | Naval & Factory & Advanced | FabAdvBuild | FabBuild) ",
+  "buildable_types": "((Naval & Structure & Advanced | Naval & Factory & Advanced | FabAdvBuild | FabBuild) & Custom2)",
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",

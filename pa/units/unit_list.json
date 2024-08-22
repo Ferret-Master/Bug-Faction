@@ -41,6 +41,7 @@
         "/pa/units/structure/basic_air_hive/basic_air_hive.json",
         "/pa/units/structure/advanced_air_hive/advanced_air_hive.json",
         "/pa/units/structure/basic_naval_hive/basic_naval_hive.json",
+        "/pa/units/structure/advanced_naval_hive/advanced_naval_hive.json",
         "/pa/units/structure/bug_teleporter/bug_teleporter.json",
         "/pa/units/structure/bug_arty_small/bug_arty_small.json",
         "/pa/units/structure/bug_arty_large/bug_arty_large.json",
@@ -110,6 +111,9 @@
         "/pa/units/air/bug_harpy/bug_harpy.json",
         "/pa/units/air/bug_basilisk/bug_basilisk.json",
         "/pa/units/air/bug_air_titan/bug_air_titan.json",
+
+        "/pa/units/sea/bug_ship_fab/bug_ship_fab.json",
+        "/pa/units/sea/bug_ship_fab_adv/bug_ship_fab_adv.json",
 
         "/pa/units/land/bug_combat_fab/bug_combat_fab.json",
         "/pa/units/land/bug_combat_fab/bug_combat_fab_cheap.json",

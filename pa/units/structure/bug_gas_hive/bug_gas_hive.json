@@ -1,6 +1,6 @@
 {
     "display_name": "!LOC:Gas Hive",
-    "description": "!LOC:Advanced Manufacturing - Builds orbital units, can only make on gas planets.",
+    "description": "!LOC:Manufacturing - Builds orbital units, can only make on gas planets.",
     "TEMP_texelinfo": 65.6074,
     "si_name":"bug_gas_hive",
     "area_build_separation": 7,
