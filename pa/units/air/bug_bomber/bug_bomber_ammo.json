@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_bomb/base_bomb.json",
-  "damage": 40,
+  "damage": 30,
   "events": {
     "died": {
       "effect_scale": 1.0,
@@ -16,9 +16,9 @@
   },
   "spawn_unit_on_death": "/pa/units/air/bug_bomber/bug_bomber_dot.json",
   "spawn_unit_on_death_with_velocity": false,
-  "initial_velocity": 150.0,
+  "initial_velocity": 130.0,
   "lifetime": 3,
-  "max_velocity": 150.0,
+  "max_velocity": 130.0,
   "physics": {
     "add_to_spatial_db": true,
     "gravity_scalar": 10

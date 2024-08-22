@@ -7,7 +7,6 @@
   "auto_attack": true,
   "base_spec": "/pa/tools/base_bomb_bay/base_bomb_bay.json",
   "carpet_fire": true,
-  "firing_standard_deviation": 5,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_artillery",
