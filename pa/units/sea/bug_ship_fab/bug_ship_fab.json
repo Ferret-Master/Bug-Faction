@@ -2,6 +2,7 @@
   "display_name": "!LOC:Bug Fabrication Ship",
   "description": "!LOC:Bug Basic fabricator- Wired to build naval structures.",
   "TEMP_texelinfo": 7.50603,
+  "si_name":"fabrication_ship",
   "attachable": {
     "offsets": {
       "head": [

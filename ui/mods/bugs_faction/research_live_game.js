@@ -194,7 +194,6 @@ var bugSelectionChecker = ko.computed(function(){
             avoidSelectWithFabsAndCombatId =  _.union(avoidSelectWithFabsAndCombatId, selectionId[avoidSelectWithFabsAndCombat[i]])
         } 
     }
-    console.log(avoidSelectWithFabsAndCombatId)
   
     var wantedId = [];
   
@@ -209,11 +208,8 @@ var bugSelectionChecker = ko.computed(function(){
         }
     }
 
-    console.log(wantedId)
 
     var oldWantedId = wantedId;
-
-    console.log(selectionCount, avoidSelectWithFabsAndCombatId.length)
     if(selectionCount*0.5 > avoidSelectWithFabsAndCombatId.length){//more units than other group
         wantedId = _.difference(wantedId,avoidSelectWithFabsAndCombatId)
     }

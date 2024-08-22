@@ -18,6 +18,7 @@ var newBuildScenario = {
     "/pa/units/structure/basic_air_hive/basic_air_hive.json": ["bug_factory", 14, {row: 2, column: 2}],
     "/pa/units/structure/advanced_air_hive/advanced_air_hive.json": ["bug_factory", 14, {row: 1, column: 2}],
     "/pa/units/structure/basic_naval_hive/basic_naval_hive.json": ["bug_factory", 13, {row: 2, column: 1}],
+    "/pa/units/structure/advanced_naval_hive/advanced_naval_hive.json": ["bug_factory", 13, {row: 1, column: 1}],
 
     //utility
     "/pa/units/structure/bug_basic_energy/bug_basic_energy.json": ["bug_utility", 9, {row: 1, column: 3}],
@@ -119,7 +120,7 @@ var newBuildScenario = {
     "/pa/units/land/bug_grunt/bug_grunt.json": ["bug_ground", 13, {row: 2, column: 2}],
     "/pa/units/land/bug_aa/bug_aa.json": ["bug_ground", 18, {row: 2, column: 3}],
     "/pa/units/land/bug_gren/bug_gren.json": ["bug_ground", 13, {row: 2, column: 4}],
-    "/pa/units/land/bug_belcher/bug_belcher.json": ["bug_ground", 16, {row: 2, column: 5}],
+
 
     //t2 hive
     "/pa/units/land/bug_bot_fab_advanced/bug_bot_fab_advanced.json": ["bug_ground", 6, {row: 1, column: 0}],
@@ -133,10 +134,11 @@ var newBuildScenario = {
 
    
     //swarm hive
+    "/pa/units/land/bug_belcher/bug_belcher.json": ["bug_ground_2", 16, {row: 2, column: 3}],
     "/pa/units/land/bug_combat_fab/bug_combat_fab.json": ["bug_ground_2", 15, {row: 2, column: 0}],
     "/pa/units/land/bug_boomer/bug_boomer.json": ["bug_ground_2", 17, {row: 2, column: 1}],
     "/pa/units/land/bug_ripper/bug_ripper.json": ["bug_ground_2", 14, {row: 2, column: 2}],
-    "/pa/units/land/bug_runner/bug_runner.json": ["bug_ground_2", 16, {row: 2, column: 3}],
+    "/pa/units/land/bug_runner/bug_runner.json": ["bug_ground_2", 16, {row: 2, column: 4}],
 
 
     //t1 air hive
@@ -153,11 +155,17 @@ var newBuildScenario = {
     "/pa/units/air/bug_air_fab_adv/bug_air_fab_adv.json": ["bug_air", 6, {row: 1, column: 0}],
     "/pa/units/air/bug_fighter_adv/bug_fighter_adv.json": ["bug_air", 7, {row: 1, column: 1}],
 
+    //t1 naval hive
+    "/pa/units/sea/bug_ship_fab/bug_ship_fab.json": ["b_naval", 12, {row: 2, column: 0}],
+
+    //t2 naval hive
+    "/pa/units/sea/bug_ship_fab_adv/bug_ship_fab_adv.json": ["b_naval", 12, {row: 1, column: 0}],
+
     //titans
     "/pa/units/land/bug_titan/bug_titan.json": ["bug_factory", 3, {row: 0, column: 3}],
     "/pa/units/air/bug_air_titan/bug_air_titan.json": ["bug_factory", 2, {row: 0, column: 2}],
-    "/pa/units/land/bug_matriarch/bug_matriarch.json": ["bug_factory", 3, {row: 1, column: 1}],
-    "/pa/units/land/bug_laser_spider/bug_laser_spider.json": ["bug_factory", 3, {row: 1, column:0}],
+    "/pa/units/land/bug_matriarch/bug_matriarch.json": ["bug_factory", 3, {row: 0, column: 1}],
+    "/pa/units/land/bug_laser_spider/bug_laser_spider.json": ["bug_factory", 3, {row: 0, column:0}],
   
 }
 if (Build && Build.HotkeyModel && Build.HotkeyModel.SpecIdToGridMap) {

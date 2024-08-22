@@ -21,7 +21,7 @@
     "events": {
       "died": {
         "audio_cue": "/SE/Impacts/cannon_uber",
-        "effect_spec": "/pa/units/land/tank_flak/flak_tank_explosion.pfx"
+        "effect_spec": "/pa/units/land/bug_aa_big/flak_tank_explosion.pfx"
       }
     },
     "full_damage_splash_radius": 20,

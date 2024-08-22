@@ -30,8 +30,8 @@
     ],
     "events": {
       "died": {
-        "effect_scale": 1.0,
-        "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx"
+        "effect_scale": 2.0,
+        "effect_spec": "/pa/effects/specs/bug_building_explosion.pfx"
       }
     },
     "factory_cooldown_time": 2,

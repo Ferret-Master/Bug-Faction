@@ -35,6 +35,7 @@
     },
     "events": {
       "died": {
+        "effect_spec": "/pa/effects/specs/bug_building_explosion.pfx",
         "effect_scale": 1.0
       }
     },
