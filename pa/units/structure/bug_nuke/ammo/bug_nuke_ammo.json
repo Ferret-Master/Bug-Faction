@@ -63,7 +63,8 @@
     "sim_impact_effect": "/pa/units/structure/bug_nuke/bug_nuke_impact_ent.json",
     "spawn_layers": "WL_Air",
 
-  
+    "splash_damage": 0,
+    "splash_radius": 160,
     "stage_on_planet_handoff": 2,
     "stages": [
       {
