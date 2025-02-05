@@ -110,6 +110,7 @@
         "/pa/units/air/bug_transport/bug_transport.json",
         "/pa/units/air/bug_harpy/bug_harpy.json",
         "/pa/units/air/bug_basilisk/bug_basilisk.json",
+        "/pa/units/air/bug_siren/bug_siren.json",
         "/pa/units/air/bug_air_titan/bug_air_titan.json",
 
         "/pa/units/sea/bug_ship_fab/bug_ship_fab.json",
