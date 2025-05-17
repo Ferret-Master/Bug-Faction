@@ -23,6 +23,7 @@
       "WL_LandHorizontal",
       "WL_WaterSurface"
     ],
+    "exclude_unit_types": "Land & Advanced & NoBuild & Custom1",
     "tool_type": "TOOL_Weapon",
     "yaw_range": 180,
     "yaw_rate": 3000

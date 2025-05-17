@@ -8,7 +8,8 @@
     "collision_check": "ground",
     "cruise_height": 150,
     "damage": 0,
-   
+    "splash_damage": 0,
+    "splash_radius": 60,
     "enable_orbital_shell": true,
     "events": {
       "collided": {

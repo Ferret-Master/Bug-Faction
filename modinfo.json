@@ -1,6 +1,6 @@
 {
   "context": "server",
-  "identifier": "com.pa.ferretmaster.bugs",
+  "identifier": "com.pa.ferretmaster.bugs-dev",
   "display_name": "Bug Faction[WIP]",
   "description": "Adds a biological bugs faction",
   "author": "Ferretmaster, BillTheBlueBot, Anonemous2, Taiga, Quitch, Quildtide",
@@ -39,10 +39,10 @@
     ]
   },
   "dependencies": [
-    "com.pa.ferretmaster.bugs-client",
-    "com.pa.ferretmaster.commander-merge"
+    "com.pa.ferretmaster.bugs-client-dev",
+    "com.pa.ferretmaster.commander-merge-dev"
   ],
   "companions": [
-    "com.pa.ferretmaster.bugs-client"
+    "com.pa.ferretmaster.bugs-client-dev"
   ]
 }
