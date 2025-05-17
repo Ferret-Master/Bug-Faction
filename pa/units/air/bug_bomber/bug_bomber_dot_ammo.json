@@ -11,7 +11,7 @@
       "radius_accel": -1.0,
       "radius_velocity": 1.0
     },
-    "full_damage_splash_radius": 12,
+    "full_damage_splash_radius": 4,
     "splash_damages_allies": false,
     "splash_radius": 12
   }
