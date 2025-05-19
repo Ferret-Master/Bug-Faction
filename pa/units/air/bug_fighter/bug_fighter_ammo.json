@@ -8,5 +8,8 @@
     "max_velocity": 180.0,
     "splash_damage": 3,
     "splash_radius": 0.75,
-    "turn_rate": 420
+    "turn_rate": 420,
+     "physics": {
+    "add_to_spatial_db": true
+  }
   }
