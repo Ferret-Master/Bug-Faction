@@ -17,6 +17,9 @@
       ]
     },
    
+"burn_damage": 200,
+  "burn_radius": 10,
+
     "initial_velocity": 150.0,
     "lifetime": 20,
     "max_velocity": 300.0,

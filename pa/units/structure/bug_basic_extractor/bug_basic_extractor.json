@@ -50,12 +50,14 @@
     "model": [
         {
             "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/structure/bug_basic_extractor/bug_basic_extractor.papa"
+            "filename": "/pa/units/structure/bug_basic_extractor/bug_basic_extractor.papa",
+            "skirt_decal": "/pa/units/structure/bug_basic_extractor/bug_creep_skirt.json"
             
         },
         {
             "layer": "WL_WaterSurface",
-            "filename": "/pa/units/structure/bug_basic_extractor/bug_basic_extractor.papa"
+            "filename": "/pa/units/structure/bug_basic_extractor/bug_basic_extractor.papa",
+            "skirt_decal": "/pa/units/structure/bug_basic_extractor/bug_creep_skirt.json"
            
         }
     ],
@@ -105,7 +107,7 @@
     "mesh_bounds": [
         9.2,
         10.0407,
-        23.5
+        14
     ],
     "placement_size": [
         16,

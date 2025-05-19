@@ -12,6 +12,7 @@
     "area_max_radius": 150.0,
     "unit_types": [
         "UNITTYPE_Structure",
+        "UNITTYPE_Important",
         "UNITTYPE_Land",
         "UNITTYPE_Naval",
         "UNITTYPE_Defense",

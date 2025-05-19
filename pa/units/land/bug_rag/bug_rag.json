@@ -1,0 +1,121 @@
+{
+    "display_name": "Cataclysm",
+    "description": "!LOC:Doomsday Titan - Wipes the surface of whatever planet it is built on other than full health commanders, built in orbit",
+    "TEMP_texelinfo": 32.0,
+    "atrophy_cool_down": 15.0,
+    "atrophy_rate": 650,
+    "si_name":"bug_rag",
+    "audio": {
+      "loops": {
+        "enabled": {
+          "cue": "/SE/Celestial/Ragnarock_charge_loop",
+          "flag": "weapon_current_ammo_changed",
+          "should_start_func": "is_charging",
+          "should_stop_func": "is_not_charging",
+          "interplanetary": true
+        }
+      }
+    },
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "build_metal_cost": 60000,
+    "death": {
+      "decals": [
+        "/pa/effects/specs/scorch_titan_01.json"
+      ]
+    },
+    "events": {
+      "fired": {
+        "audio_cue": "",
+        "effect_spec": "/pa/units/structure/bug_rag/meteor_impact.pfx bone_planet"
+      },
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/delta_v"
+      },
+      "died": {
+        "audio_cue": "/SE/Death/delta_v",
+        "effect_spec": ""
+      }
+    },
+    "enable_orbital_shell": true,
+    "max_health": 13000,
+    "mesh_bounds": [
+      50.0454,
+      50.0306,
+      43
+    ],
+    "model": {
+      "layer": "WL_Orbital",
+      "filename": "/pa/units/structure/bug_rag/bug_orbital_rag.papa"
+    },
+    "physics": {
+      "radius": 40,
+      "collision_layers": "WL_Orbital",
+      "ignore_gravity": true
+    },
+    "recon": {
+      "observable": {
+        "always_visible": true
+      },
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 110
+          },
+          {
+            "layer": "underwater",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 110
+          },
+          {
+            "layer": "orbital",
+            "channel": "sight",
+            "shape": "sphere",
+            "radius": 250
+          }
+        ]
+      }
+    },
+    "fx_offsets": [
+      {
+        "bone": "bone_root",
+        "filename": "/pa/units/structure/bug_rag/rag_attract.pfx",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "orientation": [
+          0,
+          0,
+          0
+        ],
+        "type": "idle"
+      }
+    ],
+    "selection_icon": {
+      "diameter": 98.0
+    },
+    "tools": [
+      {
+        "spec_id": "/pa/units/structure/bug_rag/bug_rag_weapon.json",
+        "aim_bone": "bone_root"
+      }
+    ],
+    "spawn_layers": "WL_Orbital",
+    "unit_types": [
+      "UNITTYPE_Structure",
+      "UNITTYPE_Important",
+      "UNITTYPE_Custom2",
+      "UNITTYPE_Orbital",
+      "UNITTYPE_Advanced",
+      "UNITTYPE_SelfDestruct",
+      "UNITTYPE_FabOrbBuild",
+      "UNITTYPE_Important",
+      "UNITTYPE_Titan"
+    ],
+    "wreckage_health_frac": 0.0
+  }

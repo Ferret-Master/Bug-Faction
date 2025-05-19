@@ -1,7 +1,7 @@
 {
     "display_name": "Landed Bug Orbital Fabricator",
     "description": "!LOC:Proxy Orbital Fab - Builds basic structures. Has a minor ability to defend itself.",
-    "armor_type": "AT_Orbital",
+    "armor_type": "AT_Bot",
     "si_name":"bug_orbital_fabricator_landed",
     "attachable": {
       "offsets": {

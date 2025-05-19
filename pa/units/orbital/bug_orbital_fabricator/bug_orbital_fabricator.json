@@ -53,7 +53,7 @@
       {
         "type": "build",
         "filename": "/pa/effects/specs/bug_fab_spray.pfx",
-        "bone": "bone_nozzle",
+        "bone": "bone_root",
         "offset": [
           1.755,
           0,

@@ -99,8 +99,8 @@
             "effect_scale": 4
         },
         "fired": {
-            "audio_cue": "",
-            "effect_spec": ""
+            "audio_cue": "/SE/Weapons/bot/swarm",
+            "effect_spec": "/pa/units/land/bug_laser_spider/rak_muzzle_flash.pfx socket_muzzle"
         }
     
     },

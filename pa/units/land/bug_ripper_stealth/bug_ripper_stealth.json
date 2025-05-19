@@ -50,7 +50,7 @@
         "effect_scale": 0.5
       }
     },
-    "max_health": 80,
+    "max_health": 60,
     "attack_range_frac": 0.5,
     "mesh_bounds": [
       3.5,

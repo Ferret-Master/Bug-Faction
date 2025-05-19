@@ -7,7 +7,7 @@
     ],
     "auto_attack": true,
     "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
-    "max_range": 70,
+    "max_range": 75,
     "idle_aim_delay": 1.0,
     "pitch_range": 180,
     "pitch_rate": 360,
