@@ -113,7 +113,7 @@
     },
     {
       "name": "Bugs - Advanced Naval Fabber",
-      "to_build": "BugsAdvancedNavalFabber",
+      "to_build": "BugAdvancedNavalFabber",
       "instance_count": 1,
       "max_num_assisters": 15,
       "priority": 200,
