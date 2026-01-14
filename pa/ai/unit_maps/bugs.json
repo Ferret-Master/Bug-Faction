@@ -114,6 +114,9 @@
     "BasicNavalHive": {
       "spec_id": "/pa/units/structure/basic_naval_hive/basic_naval_hive.json"
     },
+    "AdvancedNavalHive": {
+      "spec_id": "/pa/units/structure/advanced_naval_hive/advanced_naval_hive.json"
+    },
     "BugTeleporter": {
       "spec_id": "/pa/units/structure/bug_teleporter/bug_teleporter.json"
     },
