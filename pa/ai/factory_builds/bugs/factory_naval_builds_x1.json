@@ -28,6 +28,48 @@
           }
         ]
       ]
+    },
+    {
+      "name": "Bugs - Hover Ship",
+      "to_build": "HoverShip",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": ["AdvancedNavalHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bugs - Drone Carrier",
+      "to_build": "DroneCarrier",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": ["AdvancedNavalHive"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
     }
   ]
 }
