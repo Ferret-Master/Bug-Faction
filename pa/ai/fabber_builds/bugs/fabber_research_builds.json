@@ -9,7 +9,7 @@
       "priority": 360,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
-      "builders": ["AnyBugFabberBasic", "AnyBugFabberAdvanced"],
+      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -65,7 +65,7 @@
       "priority": 360,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
-      "builders": ["AnyBugFabberBasic", "AnyBugFabberAdvanced"],
+      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -115,7 +115,7 @@
       "priority": 360,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
-      "builders": ["AnyBugFabberBasic", "AnyBugFabberAdvanced"],
+      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -165,7 +165,7 @@
       "priority": 0,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
-      "builders": ["AnyBugFabberBasic", "AnyBugFabberAdvanced"],
+      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -193,6 +193,50 @@
           {
             "test_type": "CanFindPlaceToBuild",
             "string0": "CheapCombatFabUnlock"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bugs - Boomer Mine Unlock",
+      "to_build": "BoomerMineUnlock",
+      "instance_count": 1,
+      "shared_instance_count": "BasicResearchFactory",
+      "cross_planet_shared_count": true,
+      "priority": 0,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["BugCommander", "AnyBugFabberBasic", "AnyBugFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BoomerMineUnlock"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Custom2 & Bot & Basic & SelfDestruct) - Mobile",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Custom2 & Bot & Factory & Construction",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BoomerMineUnlock"
           }
         ]
       ],

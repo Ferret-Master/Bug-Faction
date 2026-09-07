@@ -7,6 +7,79 @@
           "max_count": 1
         }
       ]
+    },
+    "Bugs_Land_Scout": {
+      "units": [
+        {
+          "unit_types": "Land & Scout & Mobile",
+          "max_count": 1
+        }
+      ]
+    },
+    "Bugs_Orbital_Radar": {
+      "units": [
+        {
+          "unit_types": "Orbital & (Recon | Scout) & Mobile - Structure",
+          "max_count": 1
+        }
+      ]
+    },
+    "Bugs_Orbital_Fighter_Attack": {
+      "units": [
+        {
+          "unit_types": "Orbital & Fighter & Mobile",
+          "min_count": 1,
+          "max_count": -1
+        }
+      ]
+    },
+    "Bugs_Orbital_Titan_Attack": {
+      "units": [
+        {
+          "unit_types": "Orbital & Titan & Mobile",
+          "min_count": 1,
+          "max_count": -1
+        },
+        {
+          "unit_types": "Orbital & Fighter & Mobile",
+          "min_count": 0,
+          "max_count": 15,
+          "squad": "Escort"
+        }
+      ]
+    },
+    "Bugs_Orbital_Laser_Attack": {
+      "units": [
+        {
+          "unit_types": "Orbital & LaserPlatform & Mobile - Titan",
+          "min_count": 1,
+          "max_count": -1
+        },
+        {
+          "unit_types": "Orbital & Fighter & Mobile",
+          "min_count": 0,
+          "max_count": 8,
+          "squad": "Escort"
+        }
+      ]
+    },
+    "Bugs_Orbital_Offense_Transfer": {
+      "units": [
+        {
+          "unit_types": "Orbital & (Fighter | LaserPlatform) & Mobile",
+          "min_count": 1,
+          "max_count": -1
+        }
+      ]
+    },
+    "Bugs_UnitCannon": {
+      "units": [
+        {
+          "unit_types": "Structure & Artillery & Factory - Tank",
+          "min_count": 1,
+          "max_count": -1
+        }
+      ]
     }
   }
 }

@@ -2,7 +2,7 @@
   "build_list": [
     {
       "name": "Bugs - Nuke Missile",
-      "to_build": "NukeMissile",
+      "to_build": "BugNukeMissile",
       "instance_count": -1,
       "priority": 151,
       "builders": ["BugNuke"],
@@ -19,7 +19,7 @@
     },
     {
       "name": "Bugs - Nuke Missile - No Antis",
-      "to_build": "NukeMissile",
+      "to_build": "BugNukeMissile",
       "instance_count": 2,
       "min_num_assisters": 3,
       "max_num_assisters": 12,
