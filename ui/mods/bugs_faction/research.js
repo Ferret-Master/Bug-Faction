@@ -2,6 +2,29 @@
  * This file controls locking/unlocking units even when a scenario is not picked
  */
 
+// Galactic War (and GW Overhaul) tags every unit spec a player's own army
+// can build with a per-army suffix appended after ".json" - e.g.
+// "/pa/units/land/bug_crusher/bug_crusher.json.player" instead of the plain
+// path below - so a live army's unit keys can differ from the untagged
+// paths hardcoded throughout this file. These helpers let the unlock logic
+// find the right key regardless of tag instead of requiring an exact match.
+function unitPathBase(path){
+    if(typeof path !== "string"){return path}
+    var jsonIndex = path.lastIndexOf(".json");
+    return jsonIndex === -1 ? path : path.slice(0, jsonIndex + 5);
+}
+
+function findMatchingKey(map, wantedPath){
+    if(map == undefined){return undefined}
+    if(map[wantedPath] !== undefined){return wantedPath}
+    var wantedBase = unitPathBase(wantedPath);
+    var keys = _.keys(map);
+    for(var i = 0;i<keys.length;i++){
+        if(unitPathBase(keys[i]) === wantedBase){return keys[i]}
+    }
+    return undefined;
+}
+
 
 model.unitsToCommand = [["/pa/units/structure/control_node/portal/portal_charging.json", "altFireSelf"]]
 
@@ -154,18 +177,19 @@ researchLoop = function(){
     if(model.lockedUnits.length > 0){
        
         var armyPromise = model.allPlayerArmy(model.armyIndex())
-        
+
         armyPromise.then(function(result){
-            
-            var armyKeys = _.keys(result)
+
             model.unitsToCommand.forEach(function(unitCommandArray){
                 var unitSpec = unitCommandArray[0]
                 var unitCommand = unitCommandArray[1]
-                var unitDataPromise = api.getWorldView(0).getUnitState(result[unitSpec])
+                var matchedSpecKey = findMatchingKey(result, unitSpec)
+                var commandedUnits = matchedSpecKey !== undefined ? result[matchedSpecKey] : []
+                var unitDataPromise = api.getWorldView(0).getUnitState(commandedUnits)
                 unitDataPromise.then(function(ready){
-     
+
                     for(var i = 0; i<ready.length;i++){
-                        model.unitCommand(result[unitSpec][i],ready[i],unitCommand)
+                        model.unitCommand(commandedUnits[i],ready[i],unitCommand)
                     }
 
                 })
@@ -174,11 +198,11 @@ researchLoop = function(){
               
                 
                 if(_.contains(model.lockedUnits,pair[1][0])){//if the pair is not already unlocked
-                
-                 
-                    if(_.contains(armyKeys,pair[0])){//unlock unit exists so unit should be unlocked
-                      
-                        var armyDataPromise = api.getWorldView(0).getUnitState(result[pair[0]])
+
+                    var matchedUnlockKey = findMatchingKey(result, pair[0]);
+                    if(matchedUnlockKey !== undefined){//unlock unit exists so unit should be unlocked
+
+                        var armyDataPromise = api.getWorldView(0).getUnitState(result[matchedUnlockKey])
                         armyDataPromise.then(function(result){
                        
                         if(result[0].built_frac == undefined){
