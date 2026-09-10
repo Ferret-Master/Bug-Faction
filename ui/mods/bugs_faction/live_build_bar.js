@@ -11,29 +11,66 @@
 
 var lockedUnits = []
 
+// Galactic War (and GW Overhaul) tags every unit spec a player's own army
+// can build with a per-army suffix appended after ".json" - e.g.
+// "...bug_crusher.json.player" instead of the plain path research.js
+// hardcodes - so this build set's own unit keys can differ from the
+// untagged names research.js sends over. These helpers match and preserve
+// that tag instead of requiring an exact untagged key.
+function unitPathBase(path){
+    if(typeof path !== "string"){return path}
+    var jsonIndex = path.lastIndexOf(".json");
+    return jsonIndex === -1 ? path : path.slice(0, jsonIndex + 5);
+}
+
+function sameUnitBase(a,b){
+    return unitPathBase(a) === unitPathBase(b);
+}
+
+//whatever GW appended after ".json" on taggedPath (e.g. ".player"), or ""
+//if taggedPath isn't a tagged form of basePath
+function specTagSuffix(taggedPath, basePath){
+    if(typeof taggedPath !== "string" || typeof basePath !== "string"){return ""}
+    var base = unitPathBase(basePath);
+    if(taggedPath.slice(0, base.length) !== base){return ""}
+    return taggedPath.slice(base.length);
+}
+
+model.findBuildUnitKey = function(unitName){
+    var units = model.buildSet().units;
+    if(units[unitName] !== undefined){return unitName}
+    var keys = _.keys(units);
+    for(var i = 0;i<keys.length;i++){
+        if(sameUnitBase(keys[i], unitName)){return keys[i]}
+    }
+    return undefined;
+}
+
 
 model.lockUnit = function(unitName){//units are locked by adding _disabled to the end of the id
     var buildSet = model.buildSet();
     if(buildSet == undefined){_.delay(model.lockUnit,100,unitName)}
     var units = model.buildSet().units
-    if(units[unitName] !== undefined){
-        var unitId = units[unitName].id 
+    var resolvedName = model.findBuildUnitKey(unitName);
+    if(resolvedName !== undefined){
+        var unitId = units[resolvedName].id
         if(unitId.endsWith("_disabled")){return}
-        units[unitName].id = unitId + "_disabled"
+        units[resolvedName].id = unitId + "_disabled"
     }
 }
 
 model.unlockUnit = function(unitName){//units are unlocked by removing the _disabled for units that otherwise match the id
 
     var units = model.buildSet().units
-    if(units[unitName] !== undefined){
-        var unitId = units[unitName].id 
+    var resolvedName = model.findBuildUnitKey(unitName);
+    if(resolvedName !== undefined){
+        var unitId = units[resolvedName].id
         if(unitId.endsWith("_disabled")){
-            units[unitName].id = unitName
+            units[resolvedName].id = resolvedName
         }
         else{return}
-       
-    
+
+
     }
 }
 //model.buildSet().tabs()[0].items()[0][0]
@@ -54,10 +91,21 @@ model.replaceUnit = function(originalNames, replacementNames, replaceQueue){
             for(var k = 0;k<row.length;k++){
                 var slot = row[k];
                 for(var nameIndex = 0;nameIndex < originalNames.length;nameIndex++){
-                 
-                    if(slot.id == originalNames[nameIndex]){
-                        
-                        model.buildSet().tabs()[i].items()[j][k].id =  replacementNames[nameIndex]
+
+                    if(sameUnitBase(slot.id, originalNames[nameIndex])){
+
+                        //keep whatever GW tagged this player's own copy of the
+                        //slot with, rather than overwriting it with the bare
+                        //untagged path - the tagged replacement spec is what
+                        //this army can actually build. A non-string
+                        //replacement (undefined) cancels the build order and
+                        //is passed through as-is.
+                        var newId = replacementNames[nameIndex]
+                        if(typeof newId === "string"){
+                            newId = unitPathBase(newId) + specTagSuffix(slot.id, originalNames[nameIndex])
+                        }
+
+                        model.buildSet().tabs()[i].items()[j][k].id =  newId
                         var buildbarReplacement = replacementNames[nameIndex].replace('.json','_icon_buildbar.png')
                         buildbarReplacement =  "coui:/" + buildbarReplacement
                         // console.log("old image")
